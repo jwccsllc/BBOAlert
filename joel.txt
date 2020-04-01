@@ -1,0 +1,44 @@
+BBOalert, file must begin with BBOalert keyword
+1.	1NT Opening
+,1N,15-17 Balanced
+1N--,2C,Stayman at least 1 4CM
+1N--,2D,Transfer !H
+1N--,2H,Transfer !S
+1N--,2S,Range Ask or clubs
+1N--2S--,2N,Minimum NT
+1N--2S--2N,3C,Max NT
+1N--,2N,Transfer !D 3D is S/A
+1N--2N--,3C,Weak diamonds
+1N--2N--,3D,SuperAccept diamonds
+1N--,3C,Low Info Puppet not 4=4 majors
+1N--3C--,3D,No 5-card major
+1N--3C--3D--,3H,Holding 4!S
+1N--3C--3D--,3S,Holding 4!H
+1N--3C--,3H,5!H
+1N--3C--,3S,5!S
+1N--,3D,5-5 Minors GF
+1N--,3H,3=1-(5-4) GF
+1N--,3S,1=3-(5-4) GF
+1N--,4C,Transfer 4!H,South African Texas
+1N--,4D,Transfer 4!S,South African Texas
+# 1N--,4H,To Play,South African Texas
+# 1N--,4S,To Play,South African Texas
+1N--2C--2D,3H,4!H 5+!S GF Smolen
+1N--2C--2D,3S,4!S 5+!H GF Smolen
+# Minor Suit Openings.
+1C--,2C,Constructive Raise
+1C--,2D,Strong Raise
+1D--,2D,Constructive Raise
+1CDb,2N,Requires 3D, possible GF
+1DDb,2N,Requires 3D, possible GF
+1CDb,3C,Limit Raise
+1DDb,3D,Limit Raise
+# Defense Against NT
+1N,2C,!D or !H and !S
+1N,3C,!D or !H and !S
+1N,2D,!H or !S and !C
+1N,3D,!H or !S and !C
+1N,2S,!C and !H or !D and !S
+2N,3C,!D or !H and !S
+2N,3D,!H or !S and !C
+2N,3S,!C and !H or !D and !S

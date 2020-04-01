@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>JavaScript testing</title>
+	<meta http-equiv="Content-Type" content="application/html+xml; charset=us-ascii" />
+	<script type="text/javascript">
+		function testfun() {
+			var msg = "<p>Goodbye World</p>";
+			var url = 'http://www.bridgebase.com/forum/?lang=en';
+			var re = new RegExp('https*://www.bridgebase.com/.*?lang=([a-z]+)');
+			var myArray = re.exec(url)
+			document.open();
+			document.write(msg);
+			document.write(url);
+			document.write('<br>')
+			if(myArray != null && myArray[1] == 'en') {
+				document.write(myArray[1]);
+			}
+			document.close();
+		}
+	</script>
+</head>
+<body onload="testfun()">
+</body>
+</html>

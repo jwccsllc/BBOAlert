@@ -1,0 +1,6 @@
+*.zip
+*.patch
+BBOalert.js
+sample.docx
+sample.txt
+tmp*

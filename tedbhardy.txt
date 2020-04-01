@@ -1,0 +1,290 @@
+BBOalert, file must begin with BBOalert keyword
+1.    1NT Opening
+,1N,11-14 Balanced
+1N--,2C,Stayman at least 1 4CM
+1N__,2D,Transfer !H
+1N__,2H,Transfer !S
+1N2C,2H,Transfer !S
+1N--,2S,Range Ask or clubs
+1N--2C--,2S,Range Ask or clubs
+1N--2S__,2N,Minimum NT
+1N--2S__2N--,3C,Max NT
+1N--,2N,Transfer !D 3D is S/A
+1N--2N--,3C,Weak diamonds
+1N--2N--,3D,SuperAccept diamonds
+1N--,3C,Low Info Puppet not 4=4 majors
+1N--3C--,3D,No 5-card major
+1N--3C--3D--,3H,Holding 4!S
+1N--3C--3D--,3S,Holding 4!H
+1N--3C--,3H,5!H
+1N--3C--,3S,5!S
+1N--,3D,5-5 Minors GF
+1N--,3H,3=1-(5-4) GF
+1N--,3S,1=3-(5-4) GF
+1N--,4C,Transfer 4!H,South African Texas
+1N--,4D,Transfer 4!S,South African Texas
+1N--,4H,To Play,South African Texas
+1N--,4S,To Play,South African Texas
+1N--2C--2D,3H,4!H 5+!S GF Smolen
+1N--2C--2D,3S,4!S 5+!H GF Smolen
+# Suction Defense Against NT
+1N,2C,!D or !H and !S
+1N,3C,!D or !H and !S
+1N,2D,!H or !S and !C
+1N,3D,!H or !S and !C
+1N,2H,!S or !C and !D
+1N,3H,!S or !C and !D
+1N,2S,!C and !H or !D and !S
+1N,3S,!C and !H or !D and !S
+2N,3C,!D or !H and !S
+2N,3D,!H or !S and !C
+2N,3S,!C and !H or !D and !S
+2N,3H,!S or !C and !D
+1N,3S,!C and !H or !D and !S
+# Minor Openings
+,1C,3+!C unbalanced or balanced 15-17 NT
+1C__,2C,5+!C Nuisance
+1C--,2C,5+!C strong no 4CM or NT stops
+1C__,3C,5+!C Weak
+,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
+1D__,2D,5+!D Nuisance
+1D--,2D,4+!D Strong no 4CM or NT stops
+1D__,3D,5+!D Weak
+1D--,3C,5+!C Invitational no 4CM or NT stops
+1C--1H--,1N,15-17 Balanced < 4!H
+1C--1H--,1S,4!S unbalanced for NT.
+1D--1H--,1N,15-17 Balanced < 4!H
+1D--1H--,1S,4!S unbalanced for NT.
+1C--1S--,1N,15-17 Balanced < 4!H
+1D--1S--,1N,15-17 Balanced < 4!H
+# Spiral Bids
+1C--1H--2H--,2S,Quantity and Quality Ask in !H
+1C--1H--2H--2S--,2N,3-!H minimum
+1C--1H--2H--2S--,3C,3-!H maximum
+1C--1H--2H--2S--,3D,4-!H minimum
+1C--1H--2H--2S--,3H,4-!H maximum
+1D--1H--2H--,2S,Quantity and Quality Ask in !H
+1D--1H--2H--2S--,2N,3-!H minimum
+1D--1H--2H--2S--,3C,3-!H maximum
+1D--1H--2H--2S--,3D,4-!H minimum
+1D--1H--2H--2S--,3H,4-!H maximum
+1C--1S--2S--,2N,Quantity and Quality Ask in !S
+1C--1H--2S--2N--,3C,3-!S minimum
+1C--1H--2S--2N--,3D,3-!S maximum
+1C--1H--2S--2N--,3H,4-!S minimum
+1C--1H--2S--2N--,3S,4-!S maximum
+1D--1H--2S--,2N,Quantity and Quality Ask in !S
+1D--1H--2S--2N--,3C,3-!S minimum
+1D--1H--2S--2N--,3D,3-!S maximum
+1D--1H--2S--2N--,3H,4-!S minimum
+1D--1H--2S--2N--,3S,4-!S maximum
+# XYZ
+1C__1H__1S,2C,Invitational Force 2!D
+1C__1H__1S,2D,Artificial Game Force
+1C__1H__1S,2H,5+!H Less than invitational
+1C__1H__1S,2N,Invitational < 4!C Support
+1C__1S__1N,2C,Invitational Force 2!D
+1C__1S__1N,2D,Artificial Game Force
+1D__1S__1N,2C,Invitational Force 2!D
+1D__1S__1N,2S,5+!S Less than invitational
+1D__1S__1N,2N,Invitational < 4!D Support
+# Majors
+,1H,
+,2S,
+,2D,Flannery 11-15HCP 4!S=5!H
+1H--,1N,May have 4 !S
+1H--,1S,5+ !S
+2D--,2N,Ask for description
+2D--2N--,3H,4=5=2=2 minimum
+2D--2N--,3S,4=5=2=2 maximum
+2D--2N--,3N,4=5=2=2 maximum
+2D--2N--,3N,4=5=2=2 maximum
+2D--2N--,3C,4=5=1=3 3!C
+2D--2N--,4C,4=5=0=4 4!C
+2D--2N--,3D,4=5=3=1 3!D
+2D--2N--,4D,4=5=4=0 4!D
+# Hardy Responses
+1H--,3C,9+-12- 3!H shortness 4!H no shortness
+1H--3C--3D,Describe hand
+1H--3C--3D--,3H,4!H no shortness
+1H--3C--3D--,3N,Short !S
++,4C,Short !C
++,4D,Short !D
++,4H,Short !S
+1H--3C--3D--,3S,Shortness is void
+1H--3C--3D--3S--,3N,Where is Shortness
+1H--3C--3D--3S--3N--,4C, Void !C
++,4D, Void !D
++,4H, Void !S
+1S--,3C,9+-12- 3!S shortness 4!S no shortness
+1S--3C--3D,Describe hand
+1S--3C--3D--,3S,4!S no shortness
+1S--3C--3D--,3C,Short !C
++,4C,Short !C
++,4D,Short !D
++,4H,Short !S
+1S--3C--3D--,3H,Shortness is void
+1S--3C--3D--3H--,3S,Where is shortness
+1S--3C--3D--3H--,3S,Where is Shortness
+1S--3C--3D--3H--3S--,4C,Void !C
++,4D,Void !D
++,4H,Void !H
++,4S,Void !C
+# Under Jump Shift 9+-12 with shortness
+1H--,3D,9+-12 4+!H Shortness
+1H--3D--,3H,Describe Hand
+1H--3D--3H--,4C,Short !C
++,3N,Short !S
++,4D,Short !D
++,3S,Shortness is void
+1H--3D--3H--3S--,3N,Where is void?
+1H--3D--3H--3S--3N--,4C,Void !C
++,4D,Void !D
++,4H,Void !S
+# Spades
+1S--,3H,9+-12 4+!S Shortness
+1S--3H--,3S,Describe Hand
+1S--3H--3S--,4C,Short !C
+1S--3H--3S--,4D,Short !D
+1S--3H--3S--,4H,Short !H
+1S--3H--3S--,3N,Shortness is void
+1H--3H--3S--3N--,4C,Where is shortness?
+1H--3H--3S--3N--4C--,4D,Void !D
+1H--3H--3S--3N--4C--,4H,Void !H
+1H--3H--3S--3N--4C--,4S,Void !C
+# Power Raises with shortness, Over Jump Shifts
+1H--,3S,12+-15- 4+!H with Shortness
+1H--3S--,3N,Where is shortness?
+1H--3S--3N--,4C,Singleton or void !C
+1H--3S--3N--,4D,Singleton or void !D
+1H--3S--3N--,4H,Singleton or void !S
+1S--,3N,12+-15- 4+!S with shortness
+1S--3N--,4C,Where is Shortness
+1S--3N--4C--,4D,Singleton or void !D
+1S--3N--4C--,4H,Singleton or void !H
+1S--3N--4C--,4S,Singleton or void !C
+1H--,4C,12+15- good trump No shortness#4!H with two of A K or Q or 5!H with A or K
+1H--,4D,12+15- 4+!H No shortness
+1H--,2N,15+ Jacoby 2NT Standard Responses
+1S--,4C,12+15- good trump No shortness#4!S with two of A K or Q or 5!S with A or K
+1S--,4D,12+15- 4+!S No shortness
+1S--,2N,15+ Jacoby 2NT Standard Responses
+# bids after double of major
+1HDb,1N,Transfer to !C
+1HDb,2C,Transfer to !D
+1HDb,2D,constructive raise of hearts,2020225_15:21 Deal 11
+1HDb,2H,weak raise of hearts
+1HDb,2N,3-card limit raise of !H no shortness
+1SDb,1N,Transfer to !C
+1SDb,2C,Transfer to !D
+1SDb,2D,Transfer to !H
+1SDb,2H,Constructive raise of !S
+1SDb,2H,weak raise of !S
+1SDb,2N,3-card limit raise of !S no shortness
+# Kokish Game Tries
+1H--2H--,2S,Kokish GT where could you help?
+1H--2H--2S--,2N,Help in !S
+1H--2H--2S--,3C,Help in !C
+1H--2H--2S--,3D,Help in !D
+1H--2H--2S--,3H,No help
+1H--2H--,3H,Trump Quality Ask
+1H--2H--3H--,Pa,Bad !H weak
+1H--2H--3H--,3N,Bad !H good hand for NT
+1H--2H--3H--,4H,Good !H good hand
+# spades
+1S--2S--,2N,Kokish GT where could you help?
+1S--2S--2N--,3C,Help in !C
+1S--2S--2N--,3D,Help in !D
+1S--2S--2N--,3H,Help in !H
+1S--2S--2N--,3S,No help
+1S--2S--,3S,Trump Quality Ask
+1S--2S--3S--,Pa,Bad !S weak
+1S--2S--3S--,3N,Bad !S good hand for NT
+1S--2S--3S--,4S,Good !S good hand
+# Competitive biddin
+1D1H--,2D,Limit+ Raise of hearts,2020225_15:26 Deal 12
+1C1D1H2D,Db,Support DBL 3!H,2020225_16:0 Deal 17
+# Shortcuts
+Shortcut,UD,UDCA Trump Suit Preference
+Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
+Shortcut,LN,Journalist vs NT Low from Interest
+BBOalert
+1N2S,2N,Lebensohl ,2020226_14:18 Deal 5
+1D--1H--,2N,18-19 Balanced,2020226_14:24 Deal 6
+2H--,2N,Ogust,2020226_15:17 Deal 13
+2H--2N,3C Bad Hand bad Suit
+2H--2N,3D Bad Hand good Suit
+2H--2N,3H Good Hand Good Suit
+2H--2N,3S Good Hand Good Suit
+2S--,2N,Ogust,2020226_15:17 Deal 13
+2S--2N,3C Bad Hand bad Suit
+2S--2N,3D Bad Hand good Suit
+2S--2N,3H Good Hand Bad Suit
+2S--2N,3S Good Hand Good Suit
+1C,2H,Weak,2020226_15:45 Deal 17
+BBOalert
+1N2C,2D,Transfer !H,2020227_14:10 Deal undefined
+1N--2H--,2S,Fewer than 4!S,2020227_14:33 Deal undefined
+1S--2H--3H,3N,Non-Serious 3NT
+1S--2H--3H--3N--,4C,1st or 2nd round control in !K,2020227_15:8 Deal undefined
+1S--,1N,Forcing
+1H--,1N,Forcing
+----1H--,2C,3Card Limit Raise (Drury)
+----1H--,2D,4Card Limit Raise (Drury)
+----1S--,2C,3Card Limit Raise (Drury)
+----1S--2C--,3D,Shortness ?
+------1S--2C--,3D,Shortness ?
+----1S--,2D,4Card Limit Raise (Drury)
+------1H--,2C,3Card Limit Raise (Drury)
+------1H--2C--,3D,Shortness ?
+------1H--,2D,4Card Limit Raise (Drury)
+------1S--,2C,3Card Limit Raise (Drury)
+------1S--2C--,3D,Shortness ?
+------1S--,2D,4Card Limit Raise (Drury)
+
+BBOalert
+1C--1S--,1N,15-17 Balanced < 4!S
+1C--1S--1N--2D--,2S,3!S
+2N--3C__,3D,1 or more 4card majors
+1NDb----,2C,5 !C Runout
+1NDb,Pa,Forcing runout single suited#Partner bids 5 card suit or XX
+
+BBOalert
+1S--1N--2D--,3S,3-card LR no shortness
+1C--1D--1N--,2C,Forcing, Invitational
+1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+
+# Defense Against Strong Club
+Option,1!C Standard
+1C,Db,Take-out Double
+Option,1!C Forcing
+1C,Db,!D or !H and !S
+1C,2C,!D or !H and !S
+1C,3C,!D or !H and !S
+1C,4C,!D or !H and !S
+1C,1D,!H or !S and !C
+1C,2D,!H or !S and !C
+1C,3D,!H or !S and !C
+1C,4D,!H or !S and !C
+1C,1H,!S or !C and !D
+1C,2H,!S or !C and !D
+1C,3H,!S or !C and !D
+1C,4H,!S or !C and !D
+1C,1S,!C and !H or !D and !S
+1C,2S,!C and !H or !D and !S
+1C,3S,!C and !H or !D and !S
+1C,4S,!C and !H or !D and !S
+1C--1D,2C,!D or !H and !S
+1C--1D,3C,!D or !H and !S
+1C--1D,4C,!D or !H and !S
+1C--1D,2D,!H or !S and !C
+1C--1D,3D,!H or !S and !C
+1C--1D,4D,!H or !S and !C
+1C--1D,1H,!S or !C and !D
+1C--1D,2H,!S or !C and !D
+1C--1D,3H,!S or !C and !D
+1C--1D,4H,!S or !C and !D
+1C--1D,1S,!C and !H or !D and !S
+1C--1D,2S,!C and !H or !D and !S
+1C--1D,3S,!C and !H or !D and !S
+1C--1D,4S,!C and !H or !D and !S
