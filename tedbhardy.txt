@@ -5,13 +5,13 @@ BBOalert, file must begin with BBOalert keyword
 1N__,2D,Transfer !H
 1N__,2H,Transfer !S
 1N2C,2H,Transfer !S
-1N--,2S,Range Ask or clubs
-1N--2C--,2S,Range Ask or clubs
+1N--,2S,Range Ask or !C
+1N--2C--,2S,Range Ask or !C
 1N--2S__,2N,Minimum NT
 1N--2S__2N--,3C,Max NT
 1N--,2N,Transfer !D 3D is S/A
-1N--2N--,3C,Weak diamonds
-1N--2N--,3D,SuperAccept diamonds
+1N--2N--,3C,Weak !D
+1N--2N--,3D,SuperAccept !D
 1N--,3C,Low Info Puppet not 4=4 majors
 1N--3C--,3D,No 5-card major
 1N--3C--3D--,3H,Holding 4!S
@@ -91,19 +91,29 @@ BBOalert, file must begin with BBOalert keyword
 # Majors
 ,1H,
 ,2S,
-,2D,Flannery 11-15HCP 4!S=5!H
+,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
 1H--,1N,May have 4 !S
 1H--,1S,5+ !S
 2D--,2N,Ask for description
 2D--2N--,3H,4=5=2=2 minimum
 2D--2N--,3S,4=5=2=2 maximum
 2D--2N--,3N,4=5=2=2 maximum
-2D--2N--,3N,4=5=2=2 maximum
+2D--2N--,3N,4=6-x-x 6!H
 2D--2N--,3C,4=5=1=3 3!C
 2D--2N--,4C,4=5=0=4 4!C
 2D--2N--,3D,4=5=3=1 3!D
 2D--2N--,4D,4=5=4=0 4!D
-# Hardy Responses
+# Hardy Major Responses
+1H--,3H,5+!H probably balanced
+1H--,4H,5+!H probable shortness
+1H--1N--2C--,4H,5+!H Weak outside Ace or King
+1H--1N--2D--,4H,5+!H Weak outside Ace or King
+1H--1N--2C--,4H,5+!H Weak outside Ace or King
+1H--1N--,2N,18-19 HCP Transfers on
+1H--1N--2N--,3C,Transfer !D
+1H--1N--2N--,3D,Transfer !H
+1H--1N--2N--,3H,Transfer !S Stronger
+1H--1N--2N--,3S,Weak raise of !S
 1H--,3C,9+-12- 3!H shortness 4!H no shortness
 1H--3C--3D,Describe hand
 1H--3C--3D--,3H,4!H no shortness
@@ -116,6 +126,15 @@ BBOalert, file must begin with BBOalert keyword
 1H--3C--3D--3S--3N--,4C, Void !C
 +,4D, Void !D
 +,4H, Void !S
+1S--,3S,5+!S probably balanced
+1S--,4S,5+!S probable shortness
+1S--1N--2C--,4S,5+!S Weak outside Ace or King
+1S--1N--2D--,4S,5+!S Weak outside Ace or King
+1S--1N--2H--,4S,5+!S Weak outside Ace or King
+1S--1N--,2N,18-19 HCP Transfers on
+1S--1N--2N--,3C,Transfer !D
+1S--1N--2N--,3D,Transfer !H Stronger
+1S--1N--2N--,3H,Weak Raise of !H
 1S--,3C,9+-12- 3!S shortness 4!S no shortness
 1S--3C--3D,Describe hand
 1S--3C--3D--,3S,4!S no shortness

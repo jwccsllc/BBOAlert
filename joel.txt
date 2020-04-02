@@ -4,12 +4,12 @@ BBOalert, file must begin with BBOalert keyword
 1N--,2C,Stayman at least 1 4CM
 1N--,2D,Transfer !H
 1N--,2H,Transfer !S
-1N--,2S,Range Ask or clubs
+1N--,2S,Range Ask or !C
 1N--2S--,2N,Minimum NT
 1N--2S--2N,3C,Max NT
 1N--,2N,Transfer !D 3D is S/A
-1N--2N--,3C,Weak diamonds
-1N--2N--,3D,SuperAccept diamonds
+1N--2N--,3C,Weak !D
+1N--2N--,3D,SuperAccept !D
 1N--,3C,Low Info Puppet not 4=4 majors
 1N--3C--,3D,No 5-card major
 1N--3C--3D--,3H,Holding 4!S
