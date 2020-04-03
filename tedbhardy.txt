@@ -56,6 +56,7 @@ BBOalert, file must begin with BBOalert keyword
 1D--1H--,1N,15-17 Balanced < 4!H
 1D--1H--,1S,4!S unbalanced for NT.
 1C--1S--,1N,15-17 Balanced < 4!H
+1C--1S--,3S,18-19 4!S
 1D--1S--,1N,15-17 Balanced < 4!H
 # Spiral Bids
 1C--1H--2H--,2S,Quantity and Quality Ask in !H
@@ -425,6 +426,7 @@ BBOalert, file must begin with BBOalert keyword
 1H--2H--3H--,Pa,Bad !H weak
 1H--2H--3H--,3N,Bad !H good hand for NT
 1H--2H--3H--,4H,Good !H good hand
+1H1S,2S,Limit Raise or better !H
 # spades
 1S--2S--,2N,Kokish GT where could you help?
 1S--2S--2N--,3C,Help in !C
@@ -442,6 +444,7 @@ BBOalert, file must begin with BBOalert keyword
 Shortcut,UD,UDCA Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
 Shortcut,LN,Journalist vs NT Low from Interest
+1N2S----,Db,Take Out
 1N2S,2N,Lebensohl ,2020226_14:18 Deal 5
 1D--1H--,2N,18-19 Balanced,2020226_14:24 Deal 6
 2H--,2N,Ogust,2020226_15:17 Deal 13
