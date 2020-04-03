@@ -79,31 +79,154 @@ BBOalert, file must begin with BBOalert keyword
 1D--1H--2S--2N--,3H,4-!S minimum
 1D--1H--2S--2N--,3S,4-!S maximum
 # XYZ
-1C__1H__1S,2C,Invitational Force 2!D
-1C__1H__1S,2D,Artificial Game Force
-1C__1H__1S,2H,5+!H Less than invitational
-1C__1H__1S,2N,Invitational < 4!C Support
-1C__1S__1N,2C,Invitational Force 2!D
-1C__1S__1N,2D,Artificial Game Force
-1D__1S__1N,2C,Invitational Force 2!D
-1D__1S__1N,2S,5+!S Less than invitational
-1D__1S__1N,2N,Invitational < 4!D Support
+1C--1D--1N--,2C,Forcing, Invitational
+1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+1C__1D__1H__,2C,Invitational Force 2!D
+1C__1D__1H__,2D,Artifical Game Force
+1C__1D__1N__,2C,Invitational Force 2!D
+1C__1D__1N__,2D,Artifical Game Force
+1C__1D__1S__,2C,Invitational Force 2!D
+1C__1D__1S__,2D,Artifical Game Force
+1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+1C__1H__1N__,2N,Invitational Fewer 4!C
+1C__1H__1S__,2C,Invitational Force 2!D
+1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+1C__1H__1S__,2D,Artificial Game Force
+1C--1H--1S--2D--,2H,3!H
+--1C--1H--1S--2D--,2H,3!H
+----1C--1H--1S--2D--,2H,3!H
+1C__1H__1S__,2H,5+!H Less than invitational
+1C__1H__1S__,2N,Invitational < 4!C Support
+1C__1H__1S__,2N,Invitational Fewer 4!C
+1C__1S__1N--,2C,Invitational Force 2!D
+1C__1S__1N__,2D,Artificial Game Force
+1C--1S--1N--2D--,2S,3!S not 3!H
+--1C--1S--1N--2D--,2S,3!S not 3!H
+----1C--1S--1N--2D--,2S,3!S not 3!H
+------1C--1S--1N--2D--,2S,3!S not 3!H
+1C--1S--1N--2D--,2H,!4H may have 3!S
+--1C--1S--1N--2D--,2H,!4H may have 3!S
+----1C--1S--1N--2D--,2H,!4H may have 3!S
+------1C--1S--1N--2D--,2H,!4H may have 3!S
+1D__1S__1N__,2C,Invitational Force 2!D
+1D__1S__1N__,2N,Invitational < 4!D Support
+1D__1S__1N__,2S,5+!S Less than invitational
+# 2nd seat
+--1C--1D--1N--,2C,Forcing, Invitational
+--1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+--1C__1D__1H__,2C,Invitational Force 2!D
+--1C__1D__1H__,2D,Artifical Game Force
+--1C__1D__1N__,2C,Invitational Force 2!D
+--1C__1D__1N__,2D,Artifical Game Force
+--1C__1D__1S__,2C,Invitational Force 2!D
+--1C__1D__1S__,2D,Artifical Game Force
+--1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+--1C__1H__1N__,2N,Invitational Fewer 4!C
+--1C__1H__1S__,2C,Invitational Force 2!D
+--1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+--1C__1H__1S__,2D,Artificial Game Force
+--1C__1H__1S__,2H,5+!H Less than invitational
+--1C__1H__1S__,2N,Invitational < 4!C Support
+--1C__1H__1S__,2N,Invitational Fewer 4!C
+--1C__1S__1N--,2C,Invitational Force 2!D
+--1C__1S__1N__,2D,Artificial Game Force
+--1D__1S__1N__,2C,Invitational Force 2!D
+--1D__1S__1N__,2N,Invitational < 4!D Support
+--1D__1S__1N__,2S,5+!S Less than invitational
+# 3rd seat
+----1C--1D--1N--,2C,Forcing, Invitational
+----1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+----1C__1D__1H__,2C,Invitational Force 2!D
+----1C__1D__1N__,2C,Invitational Force 2!D
+----1C__1D__1N__,2D,Artifical Game Force
+----1C__1D__1S__,2C,Invitational Force 2!D
+----1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+----1C__1H__1N__,2N,Invitational Fewer 4!C
+----1C__1H__1S__,2C,Invitational Force 2!D
+----1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+----1C__1H__1S__,2H,5+!H Less than invitational
+----1C__1H__1S__,2N,Invitational < 4!C Support
+----1C__1H__1S__,2N,Invitational Fewer 4!C
+----1C__1S__1N--,2C,Invitational Force 2!D
+----1C__1S__1N__,2D,Artificial Game Force
+----1D__1S__1N__,2C,Invitational Force 2!D
+----1D__1S__1N__,2N,Invitational < 4!D Support
+----1D__1S__1N__,2S,5+!S Less than invitational
+# forth seat
+------1C--1D--1N--,2C,Forcing, Invitational
+------1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+------1C__1D__1H__,2C,Invitational Force 2!D
+------1C__1D__1N__,2C,Invitational Force 2!D
+------1C__1D__1N__,2D,Artifical Game Force
+------1C__1D__1S__,2C,Invitational Force 2!D
+------1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+------1C__1H__1N__,2N,Invitational Fewer 4!C
+------1C__1H__1S__,2C,Invitational Force 2!D
+------1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+------1C__1H__1S__,2H,5+!H Less than invitational
+------1C__1H__1S__,2N,Invitational < 4!C Support
+------1C__1H__1S__,2N,Invitational Fewer 4!C
+------1C__1S__1N--,2C,Invitational Force 2!D
+------1C__1S__1N__,2D,Artificial Game Force
+------1D__1S__1N__,2C,Invitational Force 2!D
+------1D__1S__1N__,2N,Invitational < 4!D Support
+------1D__1S__1N__,2S,5+!S Less than invitational
 # Majors
 ,1H,
 ,2S,
+--,1H,
+--,1S,
+----,1H,
+----,1S,
+------,1H,
+------,1S,
 ,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
-1H--,1N,May have 4 !S
-1H--,1S,5+ !S
+1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+--1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+----1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+------1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+--1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+----1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+------1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+# Queries
 2D--,2N,Ask for description
-2D--2N--,3H,4=5=2=2 minimum
-2D--2N--,3S,4=5=2=2 maximum
-2D--2N--,3N,4=5=2=2 maximum
-2D--2N--,3N,4=6-x-x 6!H
 2D--2N--,3C,4=5=1=3 3!C
-2D--2N--,4C,4=5=0=4 4!C
 2D--2N--,3D,4=5=3=1 3!D
+2D--2N--,3H,4=5=2=2 minimum
+2D--2N--,3N,4=6-x-x 6!H
+2D--2N--,3S,4=5=2=2 maximum
+2D--2N--,4C,4=5=0=4 4!C
 2D--2N--,4D,4=5=4=0 4!D
+# 2nd seat
+--2D--,2N,Ask for description
+--2D--2N--,3C,4=5=1=3 3!C
+--2D--2N--,3D,4=5=3=1 3!D
+--2D--2N--,3H,4=5=2=2 minimum
+--2D--2N--,3N,4=6-x-x 6!H
+--2D--2N--,3S,4=5=2=2 maximum
+--2D--2N--,4C,4=5=0=4 4!C
+--2D--2N--,4D,4=5=4=0 4!D
+# 3rd seat
+----2D--,2N,Ask for description
+----2D--2N--,3C,4=5=1=3 3!C
+----2D--2N--,3D,4=5=3=1 3!D
+----2D--2N--,3H,4=5=2=2 minimum
+----2D--2N--,3N,4=6-x-x 6!H
+----2D--2N--,3S,4=5=2=2 maximum
+----2D--2N--,4C,4=5=0=4 4!C
+----2D--2N--,4D,4=5=4=0 4!D
+# 4th seat
+------2D--,2N,Ask for description
+------2D--2N--,3C,4=5=1=3 3!C
+------2D--2N--,3D,4=5=3=1 3!D
+------2D--2N--,3H,4=5=2=2 minimum
+------2D--2N--,3N,4=6-x-x 6!H
+------2D--2N--,3S,4=5=2=2 maximum
+------2D--2N--,4C,4=5=0=4 4!C
+------2D--2N--,4D,4=5=4=0 4!D
 # Hardy Major Responses
+# 1st Seat
 1H--,3H,5+!H probably balanced
 1H--,4H,5+!H probable shortness
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
@@ -118,14 +241,14 @@ BBOalert, file must begin with BBOalert keyword
 1H--3C--3D,Describe hand
 1H--3C--3D--,3H,4!H no shortness
 1H--3C--3D--,3N,Short !S
-+,4C,Short !C
-+,4D,Short !D
-+,4H,Short !S
+1H--3C--3D--,4C,Short !C
+1H--3C--3D--,4D,Short !D
+1H--3C--3D--,4H,Short !S
 1H--3C--3D--,3S,Shortness is void
 1H--3C--3D--3S--,3N,Where is Shortness
 1H--3C--3D--3S--3N--,4C, Void !C
-+,4D, Void !D
-+,4H, Void !S
+1H--3C--3D--3S--3N--,4D, Void !D
+1H--3C--3D--3S--3N--,4H, Void !S
 1S--,3S,5+!S probably balanced
 1S--,4S,5+!S probable shortness
 1S--1N--2C--,4S,5+!S Weak outside Ace or King
@@ -139,55 +262,147 @@ BBOalert, file must begin with BBOalert keyword
 1S--3C--3D,Describe hand
 1S--3C--3D--,3S,4!S no shortness
 1S--3C--3D--,3C,Short !C
-+,4C,Short !C
-+,4D,Short !D
-+,4H,Short !S
+1S--3C--3D--,4C,Short !C
+1S--3C--3D--,4D,Short !D
+1S--3C--3D--,4H,Short !S
 1S--3C--3D--,3H,Shortness is void
 1S--3C--3D--3H--,3S,Where is shortness
-1S--3C--3D--3H--,3S,Where is Shortness
 1S--3C--3D--3H--3S--,4C,Void !C
-+,4D,Void !D
-+,4H,Void !H
-+,4S,Void !C
+1S--3C--3D--3H--3S--,4D,Void !D
+1S--3C--3D--3H--3S--,4H,Void !H
+# 2nd seat
+--1H--,3H,5+!H probably balanced
+--1H--,4H,5+!H probable shortness
+--1H--1N--2C--,4H,5+!H Weak outside Ace or King
+--1H--1N--2D--,4H,5+!H Weak outside Ace or King
+--1H--1N--2C--,4H,5+!H Weak outside Ace or King
+--1H--1N--,2N,18-19 HCP Transfers on
+--1H--1N--2N--,3C,Transfer !D
+--1H--1N--2N--,3D,Transfer !H
+--1H--1N--2N--,3H,Transfer !S Stronger
+--1H--1N--2N--,3S,Weak raise of !S
+--1H--,3C,9+-12- 3!H shortness 4!H no shortness
+--1H--3C--3D,Describe hand
+--1H--3C--3D--,3H,4!H no shortness
+--1H--3C--3D--,3N,Short !S
+--1H--3C--3D--,4C,Short !C
+--1H--3C--3D--,4D,Short !D
+--1H--3C--3D--,4H,Short !S
+--1H--3C--3D--,3S,Shortness is void
+--1H--3C--3D--3S--,3N,Where is Shortness
+--1H--3C--3D--3S--3N--,4C, Void !C
+--1H--3C--3D--3S--3N--,4D, Void !D
+--1H--3C--3D--3S--3N--,4H, Void !S
+--1S--,3S,5+!S probably balanced
+--1S--,4S,5+!S probable shortness
+--1S--1N--2C--,4S,5+!S Weak outside Ace or King
+--1S--1N--2D--,4S,5+!S Weak outside Ace or King
+--1S--1N--2H--,4S,5+!S Weak outside Ace or King
+--1S--1N--,2N,18-19 HCP Transfers on
+--1S--1N--2N--,3C,Transfer !D
+--1S--1N--2N--,3D,Transfer !H Stronger
+--1S--1N--2N--,3H,Weak Raise of !H
+--1S--,3C,9+-12- 3!S shortness 4!S no shortness
+--1S--3C--3D,Describe hand
+--1S--3C--3D--,3S,4!S no shortness
+--1S--3C--3D--,3C,Short !C
+--1S--3C--3D--,4C,Short !C
+--1S--3C--3D--,4D,Short !D
+--1S--3C--3D--,4H,Short !S
+--1S--3C--3D--,3H,Shortness is void
+--1S--3C--3D--3H--,3S,Where is shortness
+--1S--3C--3D--3H--3S--,4C,Void !C
+--1S--3C--3D--3H--3S--,4D,Void !D
+--1S--3C--3D--3H--3S--,4H,Void !H
 # Under Jump Shift 9+-12 with shortness
+# 1st seat
 1H--,3D,9+-12 4+!H Shortness
 1H--3D--,3H,Describe Hand
 1H--3D--3H--,4C,Short !C
-+,3N,Short !S
-+,4D,Short !D
-+,3S,Shortness is void
+1H--3D--3H--,4D,Short !D
+1H--3D--3H--,4H,Short !S
+1H--3D--3H--,3S,Shortness is void
 1H--3D--3H--3S--,3N,Where is void?
 1H--3D--3H--3S--3N--,4C,Void !C
-+,4D,Void !D
-+,4H,Void !S
+1H--3D--3H--3S--3N--,4D,Void !D
+1H--3D--3H--3S--3N--,4H,Void !S
+# 2nd seat
+--1H--,3D,9+-12 4+!H Shortness
+--1H--3D--,3H,Describe Hand
+--1H--3D--3H--,4C,Short !C
+--1H--3D--3H--,4D,Short !D
+--1H--3D--3H--,4H,Short !S
+--1H--3D--3H--,3S,Shortness is void
+--1H--3D--3H--3S--,3N,Where is void?
+--1H--3D--3H--3S--3N--,4C,Void !C
+--1H--3D--3H--3S--3N--,4D,Void !D
+--1H--3D--3H--3S--3N--,4H,Void !S
 # Spades
+# 1st seat
 1S--,3H,9+-12 4+!S Shortness
 1S--3H--,3S,Describe Hand
 1S--3H--3S--,4C,Short !C
 1S--3H--3S--,4D,Short !D
 1S--3H--3S--,4H,Short !H
 1S--3H--3S--,3N,Shortness is void
-1H--3H--3S--3N--,4C,Where is shortness?
-1H--3H--3S--3N--4C--,4D,Void !D
-1H--3H--3S--3N--4C--,4H,Void !H
-1H--3H--3S--3N--4C--,4S,Void !C
+1S--3H--3S--3N--,4C,Where is shortness?
+1S--3H--3S--3N--4C--,4D,Void !D
+1S--3H--3S--3N--4C--,4H,Void !H
+1S--3H--3S--3N--4C--,4S,Void !C
+# 2nd seat
+--1S--,3H,9+-12 4+!S Shortness
+--1S--3H--,3S,Describe Hand
+--1S--3H--3S--,4C,Short !C
+--1S--3H--3S--,4D,Short !D
+--1S--3H--3S--,4H,Short !H
+--1S--3H--3S--,3N,Shortness is void
+--1S--3H--3S--3N--,4C,Where is shortness?
+--1S--3H--3S--3N--4C--,4D,Void !D
+--1S--3H--3S--3N--4C--,4H,Void !H
+--1S--3H--3S--3N--4C--,4S,Void !C
 # Power Raises with shortness, Over Jump Shifts
+# 1st seat
 1H--,3S,12+-15- 4+!H with Shortness
 1H--3S--,3N,Where is shortness?
 1H--3S--3N--,4C,Singleton or void !C
 1H--3S--3N--,4D,Singleton or void !D
 1H--3S--3N--,4H,Singleton or void !S
+# 2nd seat
+--1H--,3S,12+-15- 4+!H with Shortness
+--1H--3S--,3N,Where is shortness?
+--1H--3S--3N--,4C,Singleton or void !C
+--1H--3S--3N--,4D,Singleton or void !D
+--1H--3S--3N--,4H,Singleton or void !S
+1H--,2N,15+ Jacoby 2NT Standard Responses
+1H--2N--,3C,Short !C rebid shows void
+1H--2N--,3D,Short !D rebid shows void
+1H--2N--,3H,Strong !H no shortness
+1H--2N--,3S,Short !S rebid shows void
+1H--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1H--2N--,4C,5+ good !C
+1H--2N--,4D,5+ good !D
+1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+# Power Raises no shortness
+1H--,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5!H with A or K
+1H--,4D,12+-15 4+!H No shortness
+# Spades
 1S--,3N,12+-15- 4+!S with shortness
 1S--3N--,4C,Where is Shortness
 1S--3N--4C--,4D,Singleton or void !D
 1S--3N--4C--,4H,Singleton or void !H
 1S--3N--4C--,4S,Singleton or void !C
-1H--,4C,12+15- good trump No shortness#4!H with two of A K or Q or 5!H with A or K
-1H--,4D,12+15- 4+!H No shortness
-1H--,2N,15+ Jacoby 2NT Standard Responses
-1S--,4C,12+15- good trump No shortness#4!S with two of A K or Q or 5!S with A or K
 1S--,4D,12+15- 4+!S No shortness
-1S--,2N,15+ Jacoby 2NT Standard Responses
+1S--,4C,12+15- good trump No shortness#4!S with two of A K or Q or 5!S with A or K
+1S--,4D,12+-15 4+!S 
+1S--,2N,15+ Jacoby 2NT
+1S--2N--,3C,Short !C rebid shows void
+1S--2N--,3D,Short !D rebid shows void
+1S--2N--,3H,Short !H rebid shows void
+1S--2N--,3S,Strong !S no shortness
+1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1S--2N--,4C,5+ good !C
+1S--2N--,4D,5+ good !D
+1S--2N--,4H,5+ good !H
 # bids after double of major
 1HDb,1N,Transfer to !C
 1HDb,2C,Transfer to !D
@@ -227,7 +442,6 @@ BBOalert, file must begin with BBOalert keyword
 Shortcut,UD,UDCA Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
 Shortcut,LN,Journalist vs NT Low from Interest
-BBOalert
 1N2S,2N,Lebensohl ,2020226_14:18 Deal 5
 1D--1H--,2N,18-19 Balanced,2020226_14:24 Deal 6
 2H--,2N,Ogust,2020226_15:17 Deal 13
@@ -241,7 +455,6 @@ BBOalert
 2S--2N,3H Good Hand Bad Suit
 2S--2N,3S Good Hand Good Suit
 1C,2H,Weak,2020226_15:45 Deal 17
-BBOalert
 1N2C,2D,Transfer !H,2020227_14:10 Deal undefined
 1N--2H--,2S,Fewer than 4!S,2020227_14:33 Deal undefined
 1S--2H--3H,3N,Non-Serious 3NT
@@ -260,18 +473,14 @@ BBOalert
 ------1S--,2C,3Card Limit Raise (Drury)
 ------1S--2C--,3D,Shortness ?
 ------1S--,2D,4Card Limit Raise (Drury)
-
-BBOalert
-1C--1S--,1N,15-17 Balanced < 4!S
-1C--1S--1N--2D--,2S,3!S
 2N--3C__,3D,1 or more 4card majors
 1NDb----,2C,5 !C Runout
 1NDb,Pa,Forcing runout single suited#Partner bids 5 card suit or XX
-
-BBOalert
-1S--1N--2D--,3S,3-card LR no shortness
-1C--1D--1N--,2C,Forcing, Invitational
-1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+1NDbPa--,Rd,No five card suit
+1NDbPa--,2C,5!C Runout
+1NDbPa--,2D,5!D Runout
+1NDbPa--,2H,5!H Runout
+1NDbPa--,2S,5!S Runout
 
 # Defense Against Strong Club
 Option,1!C Standard
