@@ -1,4 +1,5 @@
 BBOalert, file must begin with BBOalert keyword
+Option
 1.    1NT Opening
 ,1N,11-14 Balanced
 1N--,2C,Stayman at least 1 4CM
@@ -58,6 +59,22 @@ BBOalert, file must begin with BBOalert keyword
 1C--1S--,1N,15-17 Balanced < 4!H
 1C--1S--,3S,18-19 4!S
 1D--1S--,1N,15-17 Balanced < 4!H
+Option,UMJOOMO
+1C--,2H,5!S and 4!H or 5!H Constructive
+1C--,2S,5!S 4!H or 5!H invitational
+1C--2H--,2N,Asks for Description
+1C--2H--2N--,3C,5=4-x-x minimum
+1C--2H--2N--,3D,5=4-x-x maximum
+1C--2H--2N--,3H,5=5-x-x minimum
+1C--2H--2N--,3S,5=5-x-x maximum
+1D--,2H,5!S and 4!H or 5!H Constructive
+1D--,2S,5!S 4!H or 5!H invitational
+1D--2H--,2N,Asks for Description
+1D--2H--2N--,3C,5=4-x-x minimum
+1D--2H--2N--,3D,5=4-x-x maximum
+1D--2H--2N--,3H,5=5-x-x minimum
+1D--2H--2N--,3S,5=5-x-x maximum
+Option
 # Spiral Bids
 1C--1H--2H--,2S,Quantity and Quality Ask in !H
 1C--1H--2H--2S--,2N,3-!H minimum
@@ -416,17 +433,17 @@ BBOalert, file must begin with BBOalert keyword
 1SDb,2H,Constructive raise of !S
 1SDb,2H,weak raise of !S
 1SDb,2N,3-card limit raise of !S no shortness
-# Kokish Game Tries
+1H1S,2S,Limit Raise or better !H
+Option,KokishGT
 1H--2H--,2S,Kokish GT where could you help?
 1H--2H--2S--,2N,Help in !S
 1H--2H--2S--,3C,Help in !C
 1H--2H--2S--,3D,Help in !D
 1H--2H--2S--,3H,No help
 1H--2H--,3H,Trump Quality Ask
-1H--2H--3H--,Pa,Bad !H weak
 1H--2H--3H--,3N,Bad !H good hand for NT
 1H--2H--3H--,4H,Good !H good hand
-1H1S,2S,Limit Raise or better !H
+1H--2H--3H--,Pa,Bad !H weak
 # spades
 1S--2S--,2N,Kokish GT where could you help?
 1S--2S--2N--,3C,Help in !C
@@ -437,6 +454,7 @@ BBOalert, file must begin with BBOalert keyword
 1S--2S--3S--,Pa,Bad !S weak
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
+Option
 # Competitive biddin
 1D1H--,2D,Limit+ Raise of hearts,2020225_15:26 Deal 12
 1C1D1H2D,Db,Support DBL 3!H,2020225_16:0 Deal 17
@@ -452,11 +470,16 @@ Shortcut,LN,Journalist vs NT Low from Interest
 2H--2N,3D Bad Hand good Suit
 2H--2N,3H Good Hand Good Suit
 2H--2N,3S Good Hand Good Suit
+2H--2NDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2H--2NDb,3D,McCabe#Lead Directing Partner should raise to 3!H
 2S--,2N,Ogust,2020226_15:17 Deal 13
 2S--2N,3C Bad Hand bad Suit
 2S--2N,3D Bad Hand good Suit
 2S--2N,3H Good Hand Bad Suit
 2S--2N,3S Good Hand Good Suit
+2S--2NDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2S--2NDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2S--2NDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 1C,2H,Weak,2020226_15:45 Deal 17
 1N2C,2D,Transfer !H,2020227_14:10 Deal undefined
 1N--2H--,2S,Fewer than 4!S,2020227_14:33 Deal undefined
