@@ -27,6 +27,7 @@ Option
 1N--,4H,To Play,South African Texas
 1N--,4S,To Play,South African Texas
 1N--2C--2D,3H,4!H 5+!S GF Smolen
+1N----2D--2H2N--,3C,Lebensohl response
 1N--2C--2D,3S,4!S 5+!H GF Smolen
 # Suction Defense Against NT
 1N,2C,!D or !H and !S
@@ -455,7 +456,33 @@ Option,KokishGT
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
 Option
+,2C,
+Option,ControlSteps
+2C--,2D,1 Control 1 King or fewer
+2C--,2H,2 Controls Ace or 2 Kings
+2C--,2S,3 Controls Ace and King
+2C--,2N,3 Controls 3 Kings
+2C--,3C,4 Controls Ace==2 King==1
+2C--,3D,5 Controls Ace==2 King==1
+Option,KokishRelay
+2C--2D--,2H,Relay to 2!S
+2C--2D--2H--,2S,Mandatory Response to 2!H
+2C--2D--2H--2S--,2N,25+ HCP Balanced Systems On
+2C--2D--2H--2S--,3C,!H and !C
+2C--2D--2H--2S--,3D,!H and !D
+2C--2D--2H--2S--,3H,!H and no second suit
+2C--2D--,2S,Relay to 2!NT
+2C--2D--2S--,2N,Mandatory Response to 2!S
+2C--2D--2S--2N--,2S,!S and no 2nd suit
+2C--2D--2S--2N--,3C,!S and !C
+2C--2D--2S--2N--,3D,!S and !D
+2C--2D--2S--2N--,3H,!S and !H with longer !S
+2C--2D--,2N,22-24 HCP Balanced Systems On
+Option
 # Competitive biddin
+1C,2D,Weak
+1C,2H,Weak
+1C,2S,Weak
 1D1H--,2D,Limit+ Raise of hearts,2020225_15:26 Deal 12
 1C1D1H2D,Db,Support DBL 3!H,2020225_16:0 Deal 17
 # Shortcuts
@@ -463,42 +490,39 @@ Shortcut,UD,UDCA Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
 Shortcut,LN,Journalist vs NT Low from Interest
 1N2S----,Db,Take Out
-1N2S,2N,Lebensohl ,2020226_14:18 Deal 5
+1N2S,2N,Lebensohl
 1D--1H--,2N,18-19 Balanced,2020226_14:24 Deal 6
 2H--,2N,Ogust,2020226_15:17 Deal 13
 2H--2N,3C Bad Hand bad Suit
 2H--2N,3D Bad Hand good Suit
 2H--2N,3H Good Hand Good Suit
 2H--2N,3S Good Hand Good Suit
-2H--2NDb,3C,McCabe#Lead Directing Partner should raise to 3!H
-2H--2NDb,3D,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
 2S--,2N,Ogust,2020226_15:17 Deal 13
 2S--2N,3C Bad Hand bad Suit
 2S--2N,3D Bad Hand good Suit
 2S--2N,3H Good Hand Bad Suit
 2S--2N,3S Good Hand Good Suit
-2S--2NDb,3C,McCabe#Lead Directing Partner should raise to 3!S
-2S--2NDb,3D,McCabe#Lead Directing Partner should raise to 3!S
-2S--2NDb,3H,McCabe#Lead Directing Partner should raise to 3!S
-1C,2H,Weak,2020226_15:45 Deal 17
-1N2C,2D,Transfer !H,2020227_14:10 Deal undefined
-1N--2H--,2S,Fewer than 4!S,2020227_14:33 Deal undefined
-1S--2H--3H,3N,Non-Serious 3NT
-1S--2H--3H--3N--,4C,1st or 2nd round control in !K,2020227_15:8 Deal undefined
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
+1N2C,2D,Transfer !H
+1N--2H--,2S,Fewer than 4!S
+1S--2H--3H--,3N,Non-Serious 3NT
+1S--2H--3H--3N--,4C,1st or 2nd round control in !K
 1S--,1N,Forcing
 1H--,1N,Forcing
+----1H--,1N,Semi-Forcing
+------1H--,1N,Semi-Forcing
 ----1H--,2C,3Card Limit Raise (Drury)
 ----1H--,2D,4Card Limit Raise (Drury)
-----1S--,2C,3Card Limit Raise (Drury)
-----1S--2C--,3D,Shortness ?
-------1S--2C--,3D,Shortness ?
-----1S--,2D,4Card Limit Raise (Drury)
-------1H--,2C,3Card Limit Raise (Drury)
-------1H--2C--,3D,Shortness ?
-------1H--,2D,4Card Limit Raise (Drury)
 ------1S--,2C,3Card Limit Raise (Drury)
-------1S--2C--,3D,Shortness ?
 ------1S--,2D,4Card Limit Raise (Drury)
+------1S--2C--,3D,Shortness ?
+----1S--,2C,3Card Limit Raise (Drury)
+----1S--,2D,4Card Limit Raise (Drury)
+----1S--2C--,3D,Shortness ?
 2N--3C__,3D,1 or more 4card majors
 1NDb----,2C,5 !C Runout
 1NDb,Pa,Forcing runout single suited#Partner bids 5 card suit or XX
@@ -511,7 +535,7 @@ Shortcut,LN,Journalist vs NT Low from Interest
 # Defense Against Strong Club
 Option,1!C Standard
 1C,Db,Take-out Double
-Option,1!C Forcing
+Option,1!C Precision
 1C,Db,!D or !H and !S
 1C,2C,!D or !H and !S
 1C,3C,!D or !H and !S
