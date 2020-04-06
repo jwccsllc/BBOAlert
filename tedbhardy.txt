@@ -199,6 +199,7 @@ Option
 ----,1S,
 ------,1H,
 ------,1S,
+Option,Flannery
 ,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
 1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 --1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
@@ -244,6 +245,7 @@ Option
 ------2D--2N--,3S,4=5=2=2 maximum
 ------2D--2N--,4C,4=5=0=4 4!C
 ------2D--2N--,4D,4=5=4=0 4!D
+Option
 # Hardy Major Responses
 # 1st Seat
 1H--,3H,5+!H probably balanced
@@ -485,6 +487,7 @@ Option
 1C,2S,Weak
 1D1H--,2D,Limit+ Raise of hearts,2020225_15:26 Deal 12
 1C1D1H2D,Db,Support DBL 3!H,2020225_16:0 Deal 17
+2D2N--,3H,Transfer !S
 # Shortcuts
 Shortcut,UD,UDCA Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
@@ -526,11 +529,11 @@ Shortcut,LN,Journalist vs NT Low from Interest
 2N--3C__,3D,1 or more 4card majors
 1NDb----,2C,5 !C Runout
 1NDb,Pa,Forcing runout single suited#Partner bids 5 card suit or XX
-1NDbPa--,Rd,No five card suit
-1NDbPa--,2C,5!C Runout
-1NDbPa--,2D,5!D Runout
-1NDbPa--,2H,5!H Runout
-1NDbPa--,2S,5!S Runout
+1NDb----,Rd,No five card suit
+1NDb----,2C,5!C Runout
+1NDb----,2D,5!D Runout
+1NDb----,2H,5!H Runout
+1NDb----,2S,5!S Runout
 
 # Defense Against Strong Club
 Option,1!C Standard
