@@ -68,6 +68,12 @@ Option
 1C__,2C,5+!C Nuisance
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,3C,5+!C Weak
+1C--1H--2D--,3C,Game Forcing, Ingberman
+1C--1H--2D--,2S,<= 7HCP weak Ingberman
+1C--1H--2D--,2N,Game Forcing, Ingberman
+1C--1S--2D--,3C,Game Forcing, Ingberman
+1C--1S--2D--,2H,<= 7HCP weak Ingberman
+1C--1S--2D--,2N,Game Forcing, Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D__,2D,5+!D Nuisance
 1D--,2D,4+!D Strong no 4CM or NT stops
@@ -510,11 +516,17 @@ Option
 1D1H--,2D,Limit+ Raise of hearts,2020225_15:26 Deal 12
 1C1D1H2D,Dbl,Support DBL 3!H,2020225_16:0 Deal 17
 2D2N--,3H,Transfer !S
-# Shortcuts
-Shortcut,UD,UDCA Trump Suit Preference
-Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
-Shortcut,LN,Journalist vs NT Low from Interest
-1N2S----,Dbl,Take Out
+1N2D,Dbl,Negative DSI
+1N2D----,Dbl,Negative DSI
+1N2D,2N,Lebensohl
+1N2D,2H,To Play
+1N2D,2S,To Play
+1N2H,Dbl,Negative DSI
+1N2H,2S,To Play
+1N2H----,Dbl,Negative DSI
+1N2H,2N,Lebensohl
+1N2S,Dbl,Negative DSI
+1N2S----,Dbl,Negative DSI
 1N2S,2N,Lebensohl
 1D--1H--,2N,18-19 Balanced,2020226_14:24 Deal 6
 2H--,2N,Ogust,2020226_15:17 Deal 13
@@ -536,12 +548,14 @@ Shortcut,LN,Journalist vs NT Low from Interest
 1N--2H--,2S,Fewer than 4!S
 1S--2H--3H--,3N,Non-Serious 3NT
 1S--2H--3H--3N--,4C,1st or 2nd round control in !K
-1S--,1N,Forcing
 1H--,1N,Forcing
+1S--,1N,Forcing
 ----1H--,1N,Semi-Forcing
 ------1H--,1N,Semi-Forcing
 ----1H--,2C,3Card Limit Raise (Drury)
 ----1H--,2D,4Card Limit Raise (Drury)
+--1S--,1N,Semi Forcing
+----1S--,1N,Semi Forcing
 ------1S--,2C,3Card Limit Raise (Drury)
 ------1S--,2D,4Card Limit Raise (Drury)
 ------1S--2C--,3D,Shortness ?
@@ -598,3 +612,8 @@ Option,1!C Precision
 1C--1D,2S,!C and !H or !D and !S
 1C--1D,3S,!C and !H or !D and !S
 1C--1D,4S,!C and !H or !D and !S
+Option
+# Shortcuts
+Shortcut,UD,UDCA Trump Suit Preference
+Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
+Shortcut,LN,Journalist vs NT Low from Interest
