@@ -1,3 +1,4 @@
+*.swp
 *.zip
 *.patch
 .DS_Store

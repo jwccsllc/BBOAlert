@@ -278,6 +278,7 @@ Option
 2C--,2N,5+!S; with two or three of the top honors
 2C--,3C,2 or 3 of top honors
 2C--,3D,2 or 3 of top honors
+# Kokish Relay
 2C--2D--,2H,Responder must bid 2!S. Opener will then describe the nature of his hand.
 2C--2D--,2S,Forcing to game 5+!Ss
 2C--2D--,2N,22-24 balanced (may have 5-card major)
@@ -325,7 +326,7 @@ Option
 2C--2D--3S--,4D,ACE of !D
 2C--2D--3S--,4H,ACE !HS
 2C--2D--3S--,4S,No ACE; no KING
-Option
+Option,Feature
 2D,--, 
 2D--,2H,Forcing 5+!Hs
 2D--,2S,Forcing 
@@ -340,7 +341,9 @@ Option
 Option
 2H,--, 
 2H--,2S,Forcing 5+!Ss
+Option,Feature
 2H--,2N,Feature Ask
+Option
 2H--,3C,Forcing 5+!Cs
 2H--,3D,Forcing 5+!Ds
 2H--,3H,to play
@@ -349,6 +352,7 @@ Option
 2H--,4C,splinter
 2H--,4D,splinter
 2H--,4H,to play
+Option,Feature
 2H--2N--,3C,!C values
 2H--2N--,3D,!D value
 2H--2N--,3H,No side feature; minimum
@@ -356,7 +360,9 @@ Option
 2H--2N--,3N,maximum; great suit
 Option
 2S,--, 
+Option,Feature
 2S--,2N,Feature Ask
+Option
 2S--,3C,Forcing 5+!Cs
 2S--,3D,Forcing 5+!Ds
 2S--,3H,Forcing 5+!Hs
@@ -366,6 +372,7 @@ Option
 2S--,4D,splinter
 2S--,4H,splinter
 2S--,4S,to play
+Option,Feature
 2S--2N--,3C,!C values
 2S--2N--,3D,!D value
 2S--2N--,3H,!H value
@@ -1053,9 +1060,9 @@ Option
 1D--1S--,3D,constructive jump rebid
 1D--1S--,3H,strong raise; splinter
 1D--1S--,3S,strong raise
-1D--1S--,3N,running clubs; d/h stops; short spades
+1D--1S--,3N,running clubs; !D/!H stops; short !S
 1D--1S--,4C,strong raise; splinter
-1D--1S--,4D,near-solid D; 4 card spade fit
+1D--1S--,4D,near-solid !D; 4 card !S fit
 1D--1S--,4H,strong raise; void splinter
 1D--1S--,4S,usually no singleton or void
 1D--1S--2H--,2S,Forcing 5+!Ss
@@ -1960,4 +1967,119 @@ Option
 1SDbl,4H,splinter; 4+!S
 1SDbl,4S,Preemptive 3+!Ss
 Option
-
+# Additions by jwc.
+# 1NT responses
+1N--,2S,Transfer to !Cs Pass or Correct
+1N--,2N,Invitational
+1N--,3H,3!S 1!H 54 or 45 in minors
+1N--,3S,1!S 3!H 54 or 45 in minors
+2C--2D--2N--,3C,Puppet Stayman
+Option,Ogust
+2D--2N,Ogust
+2D--2N,3C Bad Hand bad Suit
+2D--2N,3D Bad Hand good Suit
+2D--2N,3H Good Hand Good Suit
+2D--2N,3S Good Hand Good Suit
+2H--2N,Ogust
+2H--2N,3C Bad Hand bad Suit
+2H--2N,3D Bad Hand good Suit
+2H--2N,3H Good Hand Good Suit
+2H--2N,3S Good Hand Good Suit
+2S--2N,Ogust
+2S--2N,3C Bad Hand bad Suit
+2S--2N,3D Bad Hand good Suit
+2S--2N,3H Good Hand Good Suit
+2S--2N,3S Good Hand Good Suit
+Option,XYZ
+1C--1D--1N--,2C,Forcing, Invitational
+1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+1C__1D__1H__,2C,Invitational Force 2!D
+1C__1D__1H__,2D,Artifical Game Force
+1C__1D__1N__,2C,Invitational Force 2!D
+1C__1D__1N__,2D,Artifical Game Force
+1C__1D__1S__,2C,Invitational Force 2!D
+1C__1D__1S__,2D,Artifical Game Force
+1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+1C__1H__1N__,2N,Invitational Fewer 4!C
+1C__1H__1S__,2C,Invitational Force 2!D
+1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+1C__1H__1S__,2D,Artificial Game Force
+1C--1H--1S--2D--,2H,3!H
+--1C--1H--1S--2D--,2H,3!H
+----1C--1H--1S--2D--,2H,3!H
+1C__1H__1S__,2H,5+!H Less than invitational
+1C__1H__1S__,2N,Invitational < 4!C Support
+1C__1H__1S__,2N,Invitational Fewer 4!C
+1C__1S__1N--,2C,Invitational Force 2!D
+1C__1S__1N__,2D,Artificial Game Force
+1C--1S--1N--2D--,2S,3!S not 3!H
+--1C--1S--1N--2D--,2S,3!S not 3!H
+----1C--1S--1N--2D--,2S,3!S not 3!H
+------1C--1S--1N--2D--,2S,3!S not 3!H
+1C--1S--1N--2D--,2H,!4H may have 3!S
+--1C--1S--1N--2D--,2H,!4H may have 3!S
+----1C--1S--1N--2D--,2H,!4H may have 3!S
+------1C--1S--1N--2D--,2H,!4H may have 3!S
+1D__1S__1N__,2C,Invitational Force 2!D
+1D__1S__1N__,2N,Invitational < 4!D Support
+1D__1S__1N__,2S,5+!S Less than invitational
+# 2nd seat
+--1C--1D--1N--,2C,Forcing, Invitational
+--1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+--1C__1D__1H__,2C,Invitational Force 2!D
+--1C__1D__1H__,2D,Artifical Game Force
+--1C__1D__1N__,2C,Invitational Force 2!D
+--1C__1D__1N__,2D,Artifical Game Force
+--1C__1D__1S__,2C,Invitational Force 2!D
+--1C__1D__1S__,2D,Artifical Game Force
+--1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+--1C__1H__1N__,2N,Invitational Fewer 4!C
+--1C__1H__1S__,2C,Invitational Force 2!D
+--1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+--1C__1H__1S__,2D,Artificial Game Force
+--1C__1H__1S__,2H,5+!H Less than invitational
+--1C__1H__1S__,2N,Invitational < 4!C Support
+--1C__1H__1S__,2N,Invitational Fewer 4!C
+--1C__1S__1N--,2C,Invitational Force 2!D
+--1C__1S__1N__,2D,Artificial Game Force
+--1D__1S__1N__,2C,Invitational Force 2!D
+--1D__1S__1N__,2N,Invitational < 4!D Support
+--1D__1S__1N__,2S,5+!S Less than invitational
+# 3rd seat
+----1C--1D--1N--,2C,Forcing, Invitational
+----1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+----1C__1D__1H__,2C,Invitational Force 2!D
+----1C__1D__1N__,2C,Invitational Force 2!D
+----1C__1D__1N__,2D,Artifical Game Force
+----1C__1D__1S__,2C,Invitational Force 2!D
+----1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+----1C__1H__1N__,2N,Invitational Fewer 4!C
+----1C__1H__1S__,2C,Invitational Force 2!D
+----1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+----1C__1H__1S__,2H,5+!H Less than invitational
+----1C__1H__1S__,2N,Invitational < 4!C Support
+----1C__1H__1S__,2N,Invitational Fewer 4!C
+----1C__1S__1N--,2C,Invitational Force 2!D
+----1C__1S__1N__,2D,Artificial Game Force
+----1D__1S__1N__,2C,Invitational Force 2!D
+----1D__1S__1N__,2N,Invitational < 4!D Support
+----1D__1S__1N__,2S,5+!S Less than invitational
+# forth seat
+------1C--1D--1N--,2C,Forcing, Invitational
+------1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+------1C__1D__1H__,2C,Invitational Force 2!D
+------1C__1D__1N__,2C,Invitational Force 2!D
+------1C__1D__1N__,2D,Artifical Game Force
+------1C__1D__1S__,2C,Invitational Force 2!D
+------1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+------1C__1H__1N__,2N,Invitational Fewer 4!C
+------1C__1H__1S__,2C,Invitational Force 2!D
+------1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+------1C__1H__1S__,2H,5+!H Less than invitational
+------1C__1H__1S__,2N,Invitational < 4!C Support
+------1C__1H__1S__,2N,Invitational Fewer 4!C
+------1C__1S__1N--,2C,Invitational Force 2!D
+------1C__1S__1N__,2D,Artificial Game Force
+------1D__1S__1N__,2C,Invitational Force 2!D
+------1D__1S__1N__,2N,Invitational < 4!D Support
+------1D__1S__1N__,2S,5+!S Less than invitational

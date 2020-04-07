@@ -425,17 +425,17 @@ Option
 1S--2N--,4D,5+ good !D
 1S--2N--,4H,5+ good !H
 # bids after double of major
-1HDb,1N,Transfer to !C
-1HDb,2C,Transfer to !D
-1HDb,2D,constructive raise of hearts,2020225_15:21 Deal 11
-1HDb,2H,weak raise of hearts
-1HDb,2N,3-card limit raise of !H no shortness
-1SDb,1N,Transfer to !C
-1SDb,2C,Transfer to !D
-1SDb,2D,Transfer to !H
-1SDb,2H,Constructive raise of !S
-1SDb,2H,weak raise of !S
-1SDb,2N,3-card limit raise of !S no shortness
+1HDbl,1N,Transfer to !C
+1HDbl,2C,Transfer to !D
+1HDbl,2D,constructive raise of hearts,2020225_15:21 Deal 11
+1HDbl,2H,weak raise of hearts
+1HDbl,2N,3-card limit raise of !H no shortness
+1SDbl,1N,Transfer to !C
+1SDbl,2C,Transfer to !D
+1SDbl,2D,Transfer to !H
+1SDbl,2H,Constructive raise of !S
+1SDbl,2H,weak raise of !S
+1SDbl,2N,3-card limit raise of !S no shortness
 1H1S,2S,Limit Raise or better !H
 Option,KokishGT
 1H--2H--,2S,Kokish GT where could you help?
@@ -446,7 +446,7 @@ Option,KokishGT
 1H--2H--,3H,Trump Quality Ask
 1H--2H--3H--,3N,Bad !H good hand for NT
 1H--2H--3H--,4H,Good !H good hand
-1H--2H--3H--,Pa,Bad !H weak
+1H--2H--3H--,--,Bad !H weak
 # spades
 1S--2S--,2N,Kokish GT where could you help?
 1S--2S--2N--,3C,Help in !C
@@ -454,7 +454,7 @@ Option,KokishGT
 1S--2S--2N--,3H,Help in !H
 1S--2S--2N--,3S,No help
 1S--2S--,3S,Trump Quality Ask
-1S--2S--3S--,Pa,Bad !S weak
+1S--2S--3S--,--,Bad !S weak
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
 Option
@@ -486,13 +486,13 @@ Option
 1C,2H,Weak
 1C,2S,Weak
 1D1H--,2D,Limit+ Raise of hearts,2020225_15:26 Deal 12
-1C1D1H2D,Db,Support DBL 3!H,2020225_16:0 Deal 17
+1C1D1H2D,Dbl,Support DBL 3!H,2020225_16:0 Deal 17
 2D2N--,3H,Transfer !S
 # Shortcuts
 Shortcut,UD,UDCA Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
 Shortcut,LN,Journalist vs NT Low from Interest
-1N2S----,Db,Take Out
+1N2S----,Dbl,Take Out
 1N2S,2N,Lebensohl
 1D--1H--,2N,18-19 Balanced,2020226_14:24 Deal 6
 2H--,2N,Ogust,2020226_15:17 Deal 13
@@ -500,16 +500,16 @@ Shortcut,LN,Journalist vs NT Low from Interest
 2H--2N,3D Bad Hand good Suit
 2H--2N,3H Good Hand Good Suit
 2H--2N,3S Good Hand Good Suit
-2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
-2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
+2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
 2S--,2N,Ogust,2020226_15:17 Deal 13
 2S--2N,3C Bad Hand bad Suit
 2S--2N,3D Bad Hand good Suit
 2S--2N,3H Good Hand Bad Suit
 2S--2N,3S Good Hand Good Suit
-2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
-2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
-2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
 1N2C,2D,Transfer !H
 1N--2H--,2S,Fewer than 4!S
 1S--2H--3H--,3N,Non-Serious 3NT
@@ -527,19 +527,19 @@ Shortcut,LN,Journalist vs NT Low from Interest
 ----1S--,2D,4Card Limit Raise (Drury)
 ----1S--2C--,3D,Shortness ?
 2N--3C__,3D,1 or more 4card majors
-1NDb----,2C,5 !C Runout
-1NDb,Pa,Forcing runout single suited#Partner bids 5 card suit or XX
-1NDb----,Rd,No five card suit
-1NDb----,2C,5!C Runout
-1NDb----,2D,5!D Runout
-1NDb----,2H,5!H Runout
-1NDb----,2S,5!S Runout
+1NDbl----,2C,5 !C Runout
+1NDbl,--,Forcing runout single suited#Partner bids 5 card suit or XX
+1NDbl----,Rd,No five card suit
+1NDbl----,2C,5!C Runout
+1NDbl----,2D,5!D Runout
+1NDbl----,2H,5!H Runout
+1NDbl----,2S,5!S Runout
 
 # Defense Against Strong Club
 Option,1!C Standard
-1C,Db,Take-out Double
+1C,Dbl,Take-out Double
 Option,1!C Precision
-1C,Db,!D or !H and !S
+1C,Dbl,!D or !H and !S
 1C,2C,!D or !H and !S
 1C,3C,!D or !H and !S
 1C,4C,!D or !H and !S
