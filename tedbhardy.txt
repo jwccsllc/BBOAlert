@@ -284,7 +284,7 @@ Option
 1H--1N--2N--,3D,Transfer !H
 1H--1N--2N--,3H,Transfer !S Stronger
 1H--1N--2N--,3S,Weak raise of !S
-1H--,3C,9+-12- 3!H shortness 4!H no shortness
+1H--,3C,9+-12 3!H shortness 4!H no shortness
 1H--3C--3D,Describe hand
 1H--3C--3D--,3H,4!H no shortness
 1H--3C--3D--,3N,Short !S
@@ -305,7 +305,7 @@ Option
 1S--1N--2N--,3C,Transfer !D
 1S--1N--2N--,3D,Transfer !H Stronger
 1S--1N--2N--,3H,Weak Raise of !H
-1S--,3C,9+-12- 3!S shortness 4!S no shortness
+1S--,3C,9+-12 3!S shortness 4!S no shortness
 1S--3C--3D,Describe hand
 1S--3C--3D--,3S,4!S no shortness
 1S--3C--3D--,3C,Short !C
@@ -510,6 +510,7 @@ Option,KokishRelay
 2C--2D--,2N,22-24 HCP Balanced Systems On
 Option
 # Competitive biddin
+1H--1N,3D,Weak,20200408_16:21 Deal undefined
 1C,2D,Weak
 1C,2H,Weak
 1C,2S,Weak
@@ -530,17 +531,17 @@ Option
 1N2S,2N,Lebensohl
 1D--1H--,2N,18-19 Balanced,2020226_14:24 Deal 6
 2H--,2N,Ogust,2020226_15:17 Deal 13
-2H--2N,3C Bad Hand bad Suit
-2H--2N,3D Bad Hand good Suit
-2H--2N,3H Good Hand Good Suit
-2H--2N,3S Good Hand Good Suit
+2H--2N--,3C Bad Hand bad Suit
+2H--2N--,3D Bad Hand good Suit
+2H--2N--,3H Good Hand Good Suit
+2H--2N--,3S Good Hand Good Suit
 2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
 2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
 2S--,2N,Ogust,2020226_15:17 Deal 13
-2S--2N,3C Bad Hand bad Suit
-2S--2N,3D Bad Hand good Suit
-2S--2N,3H Good Hand Bad Suit
-2S--2N,3S Good Hand Good Suit
+2S--2N--,3C Bad Hand bad Suit
+2S--2N--,3D Bad Hand good Suit
+2S--2N--,3H Good Hand Bad Suit
+2S--2N--,3S Good Hand Good Suit
 2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
 2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
 2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
