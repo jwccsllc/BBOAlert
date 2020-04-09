@@ -1,4 +1,54 @@
 BBOalert
+Shortcut,W0,Welcome; We use 2/1 Upside Down Count Standard Attitude; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
+
+Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndMelindaWestgate.pdf
+
+Shortcut,W2,Standard Leads and Carding; spot leads 4th best
+
+Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
+Shortcut,ML,My last deal; Thanks to all
+
+
+Shortcut,TC,Texas !C
+Shortcut,TD,Texas !D
+Shortcut,TH,Texas !H
+Shortcut,TS,Texas !S
+
+Shortcut,XC,Transfer->!C
+Shortcut,XD,Transfer->!D
+Shortcut,XH,Transfer->!H
+Shortcut,XS,Transfer->!S
+
+Shortcut,CC,Control !C
+Shortcut,CD,Control !D
+Shortcut,CH,Control !H
+Shortcut,CS,Control !S
+
+Shortcut,SC,Stopper !C
+Shortcut,SD,Stopper !D
+Shortcut,SH,Stopper !H
+Shortcut,SS,Stopper !S
+
+Shortcut,KE,Even number of key cards
+Shortcut,KC,Odd number of key cards; Control !C
+Shortcut,KD,Odd number of key cards; Control !D
+Shortcut,KH,Odd number of key cards; Control !H
+Shortcut,KS,Odd number of key cards; Control !S
+
+Shortcut,NA,Lead against NT : A = typically AKx
+Shortcut,NK,Lead against NT : K = typically AKJ AKQ KQJ or KQT
+Shortcut,NQ,Lead against NT : Q = typically QJT or QJ9
+Shortcut,NJ,Lead against NT : J = typically AQJ or JTx
+Shortcut,NT,Lead against NT : 10 = typically AJ10 or KJ10 ot 109x
+
+Shortcut,SA,Lead against suit : A = typically AK even number of cards
+Shortcut,SK,Lead against suit : K = typically AK odd number of cards
+Shortcut,SQ,Lead against suit : Q = typically KQx
+Shortcut,SJ,Lead against suit : J = typically QJx
+Shortcut,ST,Lead against suit : 10 = typically J10x
+
+
+BBOalert
 Option
 ,1N,15-17 HCP; balanced
 ,2C,Art; strong
@@ -19,22 +69,27 @@ Option
 1N--,2C,Stayman
 1N--,2D,Jacoby transfer; 5+!Hs
 1N--,2H,Jacoby transfer; 5+!Ss
-1N--,2S,Transfer to !Cs
-1N--,2N,Transfer to !Ds
+1N--,2S,Transfer to !Cs; P/C
+1N--,2N,Invitational
 1N--,3C,5+!Cs; 5+!Ds; weak
-1N--,3D,5+!C; 5+!Ds; strong
-1N--,3H,54 or 45 in minors
-1N--,3S,54 or 45 in minors
+1N--,3D,5+!C; 5+!Ds; Game Forcing
+1N--,3H,3=1-4-5 Short !H Game Force
+1N--,3S,1=3-4-5 Short !S Game Force
 1N--,3N,to play
-1N--,4C,Gerber
+1N--,4C,1430 Gerber
+1N--4C--,4D,1 or 4 Aces
+1N--4C--,4H,0 or 3 Aces
+1N--4C--,4S,2 Aces; I hate my hand
+1N--4C--,4N,2 Aces; I love my hand
 1N--,4D,Texas transfer; 6+!Hs
 1N--,4H,Texas transfer; 6+!S
 1N--,4N,quantitative; NF
 1N--2C--,2D,No four card major
-1N--2C--,2H,Non-forcing 4-5!Hs
+1N--2C--,2H,Non-forcing 4-5!Hs; May have 4!S
 1N--2C--,2S,4/5!S; denies 4!Hs
-1N--2C--2D--,2H,weak with both majors
-1N--2C--2D--,2S,invite 5!S; 4!H
+1H--2C--2H--,3N,4!S; denies 4!H
+1N--2C--2D--,2H,4+!H; May have 4!S
+1N--2C--2D--,2S,4+!S; Denies 4!H; Looking for 4-3 or better fit
 1N--2C--2D--,2N,Invitational 
 1N--2C--2D--,3C,with a 4M
 1N--2C--2D--,3D,with a 4M
@@ -44,7 +99,7 @@ Option
 1N--2C--2D--,4D,Delayed Texas
 1N--2C--2D--,4H,Delayed Texas
 1N--2C--2H--,2S,not 4!H
-1N--2C--2H--,2N,no 4-card major
+1N--2C--2H--,2N,Invitational; May have 4!S
 1N--2C--2H--,3C,5+!C; 4+!S
 1N--2C--2H--,3D,5+!D; 4+!S
 1N--2C--2H--,3H,Invitational 4+!Hs
@@ -1976,20 +2031,20 @@ Option
 2C--2D--2N--,3C,Puppet Stayman
 Option,Ogust
 2D--2N,Ogust
-2D--2N,3C Bad Hand bad Suit
-2D--2N,3D Bad Hand good Suit
-2D--2N,3H Good Hand Good Suit
-2D--2N,3S Good Hand Good Suit
+2D--2N--,3C Bad Hand bad Suit
+2D--2N--,3D Bad Hand good Suit
+2D--2N--,3H Good Hand Good Suit
+2D--2N--,3S Good Hand Good Suit
 2H--2N,Ogust
-2H--2N,3C Bad Hand bad Suit
-2H--2N,3D Bad Hand good Suit
-2H--2N,3H Good Hand Good Suit
-2H--2N,3S Good Hand Good Suit
+2H--2N--,3C Bad Hand bad Suit
+2H--2N--,3D Bad Hand good Suit
+2H--2N--,3H Good Hand Good Suit
+2H--2N--,3S Good Hand Good Suit
 2S--2N,Ogust
-2S--2N,3C Bad Hand bad Suit
-2S--2N,3D Bad Hand good Suit
-2S--2N,3H Good Hand Good Suit
-2S--2N,3S Good Hand Good Suit
+2S--2N--,3C Bad Hand bad Suit
+2S--2N--,3D Bad Hand good Suit
+2S--2N--,3H Good Hand Good Suit
+2S--2N--,3S Good Hand Good Suit
 Option,XYZ
 1C--1D--1N--,2C,Forcing, Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
@@ -2083,3 +2138,22 @@ Option,XYZ
 ------1D__1S__1N__,2C,Invitational Force 2!D
 ------1D__1S__1N__,2N,Invitational < 4!D Support
 ------1D__1S__1N__,2S,5+!S Less than invitational
+Option,KokishGT
+1H--2H--,2S,Kokish; Ask where Responder would accept a help-suit Game Try
+1H--2H--2S--,2N,Help in !S
+1H--2H--2S--,3C,Help in !C
+1H--2H--2S--,3D,Help in !D
+1H--2H--2S--,3H,No help
+1H--2H--,2N,!S Short Suit Game Try
+1H--2H--,3C,!C Short Suit Game Try
+1H--2H--,3D,!D Short Suit Game Try
+1S--2S--,2N,Kokish; Ask where Responder would accept a help-suit Game Try
+1S--2S--2N--,3C,Help in !C
+1S--2S--2N--,3D,Help in !D
+1S--2S--2N--,3H,Help in !H
+1S--2S--2N--,3S,No help
+1S--2S--,3C,!C Short Suit Game Try
+1S--2S--,3D,!D Short Suit Game Try
+1S--2S--,3H,!H Short Suit Game Try
+
+

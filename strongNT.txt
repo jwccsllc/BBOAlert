@@ -1,0 +1,56 @@
+BBOalert, file must begin with BBOalert keyword
+Option,strongNT
+,1N.    1NT Opening
+,1N,15-17 Balanced
+1N--,2C,Stayman at least 1 4CM
+1N__,2D,Transfer !H
+1N__,2H,Transfer !S
+1N2C,2H,Transfer !S
+1N--,2S,Range Ask or !C
+1N--2S__,2N,Minimum NT
+1N--2S__2N--,3C,Max NT
+1N--,2N,Transfer !D 3D is S/A
+1N--2N--,3C,Weak !D
+1N--2N--,3D,SuperAccept !D
+1N--,3C,Low Info Puppet not 4=4 majors
+1N--3C--,3D,No 5-card major
+1N--3C--3D--,3H,Holding 4!S
+1N--3C--3D--,3S,Holding 4!H
+1N--3C--,3H,5!H
+1N--3C--,3S,5!S
+1N--,3D,5-5 Minors GF
+1N--,3H,3=1-(5-4) GF
+1N--,3S,1=3-(5-4) GF
+1N--,4C,Transfer 4!H,South African Texas
+1N--,4D,Transfer 4!S,South African Texas
+1N--,4H,To Play,South African Texas
+1N--,4S,To Play,South African Texas
+1N--2C--2D,3H,4!H 5+!S GF Smolen
+1N--2C--2D,3S,4!S 5+!H GF Smolen
+1N----2D--2H2N--,3C,Lebensohl response
+# Slam Tries
+1N--,4C,1430 Gerber
+1N--4C--,4D,1 or 4 Aces
+1N--4C--,4H,0 or 3 Aces
+1N--4C--,4S,2 Aces I hate my hand
+1N--4C--,4N,2 Aces I love my hand
+Option,RevBaze
+1N--2C--2H--,3S,Forcing with shortness
+1N--2C--2H--3S,3N,Where is shortness?
+1N--2C--2H--3S--3N--,4C,Short !C
+1N--2C--2H--3S--3N--,4D,Short !D
+1N--2C--2H--3S--3N--,4H,Short !S
+1N--2C--2H--,4C,Quantitative with fit
+1N--2C--2H--,4D,Keycard for !H
+1N--2C--2S--,3H,Forcing with shortness
+1N--2C--2S--3H,3S,Where is shortness?
+1N--2C--2S--3H--3S--,4C,Short !C
+1N--2C--2S--3H--3S--,4D,Short !D
+1N--2C--2S--3H--3S--,4H,Short !H
+1N--2C--2S--3H--3S--,3N,Shortness is void
+1N--2C--2S--3H--3S--3N--,4C,Where is void
+1N--2C--2S--3H--3S--3N--4C,4D,Void !C
+1N--2C--2S--3H--3S--3N--4C,4H,Void !D
+1N--2C--2S--3H--3S--3N--4C,4S,Void !H
+1N--2C--2S--,4C,Quantitative with fit
+1N--2C--2S--,4D,Keycard for !H

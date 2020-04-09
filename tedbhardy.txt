@@ -1,13 +1,12 @@
 BBOalert, file must begin with BBOalert keyword
 Option
-1.    1NT Opening
+,1N.    1NT Opening
 ,1N,11-14 Balanced
 1N--,2C,Stayman at least 1 4CM
 1N__,2D,Transfer !H
 1N__,2H,Transfer !S
 1N2C,2H,Transfer !S
 1N--,2S,Range Ask or !C
-1N--2C--,2S,Range Ask or !C
 1N--2S__,2N,Minimum NT
 1N--2S__2N--,3C,Max NT
 1N--,2N,Transfer !D 3D is S/A
@@ -54,7 +53,9 @@ Option
 2N--3C--3D--,3N,No 4 card major
 2N--,3D,Transfer -> !H
 2N--,3H,Transfer -> !S
-# 2N--,3S,Minor Suit Stayman
+Option,MSS
+2N--,3S,Minor Suit Stayman
+Option
 2N--,4C,1430 Gerber
 2N--,4D,Texas Transfer !H
 2N--,4H,Texas Transfer !S
