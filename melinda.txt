@@ -2155,5 +2155,24 @@ Option,KokishGT
 1S--2S--,3C,!C Short Suit Game Try
 1S--2S--,3D,!D Short Suit Game Try
 1S--2S--,3H,!H Short Suit Game Try
-
-
+Option
+1D1H,2H,Limit Raise or better in !D
+1D1S,2S,Limit Raise or better in !D
+1H1S,2S,Limit Raise or better in !H
+1H2C,3C,Limit Raise or better in !H
+1H2D,3D,Limit Raise or better in !H
+1S2C,3C,Limit Raise or better in !S
+1S2D,3D,Limit Raise or better in !S
+1S2H,3H,Limit Raise or better in !S
+------1H--,1N,Semi-Forcing
+------1H--,2C,Drury 3!H Limit Raise
+------1H--,2D,Drury 4!H Limit Raise
+------1S--,1N,Semi-Forcing
+------1S--,2C,Drury 3!S Limit Raise
+------1S--,2D,Drury 4!S Limit Raise
+----1H--,1N,Semi-Forcing
+----1H--,2C,Drury 3!H Limit Raise
+----1H--,2D,Drury 4!H Limit Raise
+----1S--,1N,Semi-Forcing
+----1S--,2C,Drury 3!S Limit Raise
+----1S--,2D,Drury 4!S Limit Raise
