@@ -1,4 +1,62 @@
 BBOalert, file must begin with BBOalert keyword
+Shortcut,W0,Welcome; We use 2/1; 11-14 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
+
+Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndTedBartunek.pdf
+
+Shortcut,W2,UDCA Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even Low from Odd; Journalist Leads vs Notrump; Low from Interest
+
+Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
+Shortcut,ML,My last deal; Thanks to all
+
+Shortcut,TC,Texas !C
+Shortcut,TD,Texas !D
+Shortcut,TH,Texas !H
+Shortcut,TS,Texas !S
+
+Shortcut,XC,Transfer->!C
+Shortcut,XD,Transfer->!D
+Shortcut,XH,Transfer->!H
+Shortcut,XS,Transfer->!S
+
+Shortcut,CC,Control !C
+Shortcut,CD,Control !D
+Shortcut,CH,Control !H
+Shortcut,CS,Control !S
+Shortcut,IC,Italian Controls; 1st or 2nd round A K Singleton or Void
+
+Shortcut,SC,Stopper !C
+Shortcut,SD,Stopper !D
+Shortcut,SH,Stopper !H
+Shortcut,SS,Stopper !S
+# Step Controls
+Shortcut,STC,Step Controls (King is 1 Ace is 2)
+Shortcut,SCD,<=1 Control (Kokish Relays on)
+Shortcut,SCH,2 Controls (Ace or 2 Kings)
+Shortcut,SCS,3 Controls (Ace and a King)
+Shortcut,SCN,3 Kings (OK NT coming up to Responder)
+Shortcut,SC3C,4 Controls
+Shortcut,SC3D,4 Controls
+
+Shortcut,KE,Even number of key cards
+Shortcut,KC,Odd number of key cards; Control !C
+Shortcut,KD,Odd number of key cards; Control !D
+Shortcut,KH,Odd number of key cards; Control !H
+Shortcut,KS,Odd number of key cards; Control !S
+
+Shortcut,NA,Lead against NT : A = Demands Unblock or Count
+Shortcut,NK,Lead against NT : K = AK or KQ when unblock is not desired
+Shortcut,NQ,Lead against NT : Q = QJ or KQ perhaps AQT sometimes KQT demands J from partner
+Shortcut,NJ,Lead against NT : J = JT denies higher honor
+Shortcut,NT,Lead against NT : T = AJT KJT AT9 KT9 QT9 or perhaps AQT
+Shortcut,N9,Lead against NT : 9 = T9 denies higher honor
+
+Shortcut,SA,Lead against suit : A = Denies K except for shortness
+Shortcut,SK,Lead against suit : K = A or at most 2
+Shortcut,SQ,Lead against suit : Q = K or at most 2
+Shortcut,SJ,Lead against suit : J = Q or at most 2
+Shortcut,ST,Lead against suit : T = J (possible KJT) or at most 2
+Shortcut,S9,Lead against suit : 9 = T (possible KJ9 QT9 or at most 2)
+
 Option
 ,1N.    1NT Opening
 ,1N,11-14 Balanced
@@ -488,12 +546,12 @@ Option,KokishGT
 Option
 ,2C,
 Option,ControlSteps
-2C--,2D,1 Control 1 King or fewer
+2C--,2D,1 Control 1 King or fewer (Kokish Relays on)
 2C--,2H,2 Controls Ace or 2 Kings
 2C--,2S,3 Controls Ace and King
 2C--,2N,3 Controls 3 Kings
-2C--,3C,4 Controls Ace==2 King==1
-2C--,3D,5 Controls Ace==2 King==1
+2C--,3C,4 Controls Ace=2 King=1
+2C--,3D,5 Controls Ace=2 King=1
 Option,KokishRelay
 2C--2D--2H,
 2C--2D--,2H,Relay to 2!S
