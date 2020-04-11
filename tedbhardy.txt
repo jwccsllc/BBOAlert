@@ -513,7 +513,7 @@ Option
 # bids after double of major
 1HDbl,1N,Transfer to !C
 1HDbl,2C,Transfer to !D
-1HDbl,2D,constructive raise of hearts,2020225_15:21 Deal 11
+1HDbl,2D,constructive raise of !H
 1HDbl,2H,weak raise of hearts
 1HDbl,2N,3-card limit raise of !H no shortness
 1SDbl,1N,Transfer to !C
@@ -524,6 +524,10 @@ Option
 1SDbl,2N,3-card limit raise of !S no shortness
 1SDb,Rd,10+ HCP no fit
 1H1S,2S,Limit Raise or better !H
+1H2C,3C,Limit Raise or better !H
+1H2D,3D,Limit Raise or better !H
+1S2C,3C,Limit Raise or better !S
+1S2D,3D,Limit Raise or better !S
 Option,KokishGT
 1H--2H--,2S,Kokish GT where could you help?
 1H--2H--2S--,2N,Help in !S
