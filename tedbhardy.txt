@@ -47,9 +47,10 @@ Shortcut,NA,Lead against NT : A = Demands Unblock or Count
 Shortcut,NK,Lead against NT : K = AK or KQ when unblock is not desired
 Shortcut,NQ,Lead against NT : Q = QJ or KQ perhaps AQT sometimes KQT demands J from partner
 Shortcut,NJ,Lead against NT : J = JT denies higher honor
-Shortcut,NT,Lead against NT : T = AJT KJT AT9 KT9 QT9 or perhaps AQT
+Shortcut,NT,Lead against NT : T = At least one higher A K or Q; AJT KJT AT9 KT9 QT9 or perhaps AQT
 Shortcut,N9,Lead against NT : 9 = T9 denies higher honor
 
+Shortcut,SHL,Rusinow; 2nd from touching honors unless short; K from AKx A from AK; Q from KQx K from KQ; J from QJx Q from QJ; T from JTx J from JT
 Shortcut,SA,Lead against suit : A = Denies K except for shortness
 Shortcut,SK,Lead against suit : K = A or at most 2
 Shortcut,SQ,Lead against suit : Q = K or at most 2
@@ -333,7 +334,7 @@ Option,Flannery
 Option
 # Hardy Major Responses
 # 1st Seat
-1H--,3H,5+!H probably balanced
+1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--2D--,4H,5+!H Weak outside Ace or King
@@ -355,7 +356,7 @@ Option
 1H--3C--3D--3S--3N--,4C, Void !C
 1H--3C--3D--3S--3N--,4D, Void !D
 1H--3C--3D--3S--3N--,4H, Void !S
-1S--,3S,5+!S probably balanced
+1S--,3S,4+!S probably balanced
 1S--,4S,5+!S probable shortness
 1S--1N--2C--,4S,5+!S Weak outside Ace or King
 1S--1N--2D--,4S,5+!S Weak outside Ace or King
@@ -377,7 +378,7 @@ Option
 1S--3C--3D--3H--3S--,4D,Void !D
 1S--3C--3D--3H--3S--,4H,Void !H
 # 2nd seat
---1H--,3H,5+!H probably balanced
+--1H--,3H,4+!H probably balanced
 --1H--,4H,5+!H probable shortness
 --1H--1N--2C--,4H,5+!H Weak outside Ace or King
 --1H--1N--2D--,4H,5+!H Weak outside Ace or King
@@ -399,7 +400,7 @@ Option
 --1H--3C--3D--3S--3N--,4C, Void !C
 --1H--3C--3D--3S--3N--,4D, Void !D
 --1H--3C--3D--3S--3N--,4H, Void !S
---1S--,3S,5+!S probably balanced
+--1S--,3S,4+!S probably balanced
 --1S--,4S,5+!S probable shortness
 --1S--1N--2C--,4S,5+!S Weak outside Ace or King
 --1S--1N--2D--,4S,5+!S Weak outside Ace or King
