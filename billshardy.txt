@@ -513,7 +513,7 @@ Option
 # bids after double of major
 1HDbl,1N,Transfer to !C
 1HDbl,2C,Transfer to !D
-1HDbl,2D,constructive raise of hearts,2020225_15:21 Deal 11
+1HDbl,2D,constructive raise of !H
 1HDbl,2H,weak raise of hearts
 1HDbl,2N,3-card limit raise of !H no shortness
 1SDbl,1N,Transfer to !C
@@ -524,6 +524,10 @@ Option
 1SDbl,2N,3-card limit raise of !S no shortness
 1SDb,Rd,10+ HCP no fit
 1H1S,2S,Limit Raise or better !H
+1H2C,3C,Limit Raise or better !H
+1H2D,3D,Limit Raise or better !H
+1S2C,3C,Limit Raise or better !S
+1S2D,3D,Limit Raise or better !S
 Option,KokishGT
 1H--2H--,2S,Kokish GT where could you help?
 1H--2H--2S--,2N,Help in !S
@@ -544,6 +548,59 @@ Option,KokishGT
 1S--2S--3S--,--,Bad !S weak
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
+Option,XfersAfterJump2NT
+1C--1D--,2N,18-19 HCP Transfer Responses on
+1C--1H--,2N,18-19 HCP Transfer Responses on
+1C--1S--,2N,18-19 HCP Transfer Responses on
+1C--1H--,2N,18-19 HCP Transfer Responses on
+1C--1S--,2N,18-19 HCP Transfer Responses on
+1D--1H--,2N,18-19 HCP Transfer Responses on
+1D--1S--,2N,18-19 HCP Transfer Responses on
+1D--1H--,2N,18-19 HCP Transfer Responses on
+1D--1S--,2N,18-19 HCP Transfer Responses on
+1H--1S--,2N,18-19 HCP Transfer Responses on
+1H--1N--,2N,18-19 HCP Transfer Responses on
+1S--1N--,2N,18-19 HCP Transfer Responses on
+# 1C-1D-,2N, responses
+1C--1D--2N--,3C,5+!D x-x=5+=x
+1C--1D--2N--,3D,4!H x-4=5+-x Walsh Opening Values
+1C--1D--2N--,3H,4!H 5=x=5+-x Walsh Opening Values
+1C--1D--2N--,3S,5+!C x-x=4=5+ Slam Interest
+# 1C-1H--,2N Responses
+1C--1H--2N--,3C,4+D x=4=4+=x
+1C--1H--2N--,3D,5+H x=5+=x-x
+1C--1H--2N--,3H,4!S 4!H 4=4-x-x
+1C--1H--2N--,3S,6+!C x=4=x=6+ Slam Interest
+# 1C-1S--,2N Responses
+1C--1S--2N--,3C,4+D 4-x=4+=x
+1C--1S--2N--,3D,4+H 5=4+=x-x
+1C--1S--2N--,3H,5!S 5+=x-x-x
+1C--1S--2N--,3S,6+!C 4=x=x=6+ Slam Interest
+# 1D--1H--2N-- Responses 
+1D--1H--2N--,3C,4+D x=4=4+=x
+1D--1H--2N--,3D,5+H x=5+=x-x
+1D--1H--2N--,3H,4!S 4!H 4=4-x-x
+1D--1H--2N--,3S,6+!C x=4=x=6+ Slam Interest
+# 1D-1S--,2N Responses
+1D--1S--2N--,3C,4+D 4-x=4+=x
+1D--1S--2N--,3D,4+H 5=4+=x-x
+1D--1S--2N--,3H,5!S 5+=x-x-x
+1D--1S--2N--,3S,6+!C 4=x=x=6+ Slam Interest
+# 1H-1S--2N-- Responses
+1H--1S--2N--,3C,4+D 4+-x=4+=x
+1H--1S--2N--,3D,3+H Strong !H Raise
+1H--1S--2N--,3H,3+H Weak !H Raise
+1H--1S--2N--,3S,6+!C 4=x=x=6+ Slam Interest
+# 1M--2N--2N-- Responses
+# 1H--1N--2N-- Responses
+1H--1N--2N--,3C,5+!C Opener accepts xfer Pass or Correct
+1H--1N--2N--,3D,3!H Strong !H Raise
+1H--1N--2N--,3H,3!H Weak !H Raise
+# 1S--1N--2N-- Responses
+1S--1N--2N--,3C,5+!C Opener accepts xfer Pass or Correct
+1S--1N--2N--,3D,5+!H Opener accepts xfer Pass or Correct
+1S--1N--2N--,3H,3!S Strong !S Raise
+1S--1N--2N--,3S,3!S Weak !S Raise
 Option
 ,2C,
 Option,ControlSteps
