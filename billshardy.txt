@@ -124,7 +124,7 @@ Option
 ,1C,
 ,1D,
 # Minor Openings
-,1C,3+!C unbalanced or balanced 15-17 NT
+,1C,3+!C unbalanced or balanced 15-19 NT
 1C__,2C,5+!C Nuisance
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,3C,5+!C Weak
@@ -143,9 +143,9 @@ Option
 1C--1H--,1S,4!S unbalanced for NT.
 1D--1H--,1N,15-17 Balanced < 4!H
 1D--1H--,1S,4!S unbalanced for NT.
-1C--1S--,1N,15-17 Balanced < 4!H
+1C--1S--,1N,15-17 Balanced < 4!S
 1C--1S--,3S,18-19 4!S
-1D--1S--,1N,15-17 Balanced < 4!H
+1D--1S--,1N,15-17 Balanced < 4!S
 Option,UMJOOMO
 1C--,2H,5!S and 4!H or 5!H Constructive
 1C--,2S,5!S 4!H or 5!H invitational
@@ -566,6 +566,7 @@ Option,XfersAfterJump2NT
 1C--1D--2N--,3D,4!H x-4=5+-x Walsh Opening Values
 1C--1D--2N--,3H,4!H 5=x=5+-x Walsh Opening Values
 1C--1D--2N--,3S,5+!C x-x=4=5+ Slam Interest
+1C--1D--2N--3D--3H--,3S,4=4=4=1 or 4=4=5=0 distribution
 # 1C-1H--,2N Responses
 1C--1H--2N--,3C,4+D x=4=4+=x
 1C--1H--2N--,3D,5+H x=5+=x-x
@@ -574,8 +575,13 @@ Option,XfersAfterJump2NT
 # 1C-1S--,2N Responses
 1C--1S--2N--,3C,4+D 4-x=4+=x
 1C--1S--2N--,3D,4+H 5=4+=x-x
+1C--1S--2N--3D--3H--,4H, 5th !H 5=5=x=x no slam interest
 1C--1S--2N--,3H,5!S 5+=x-x-x
-1C--1S--2N--,3S,6+!C 4=x=x=6+ Slam Interest
+1C--1S--2N--,3S,6+!C (optional transfer)#Very good !C fit with !C Slam Interest
+1C--1S--2N--3S--,4C,Opener ha 4 to 6 !C; 4C is 1430 RKC for !C
+1C--1S--2N--,4C,1430 Gerber
+1C--1S--2N--,5C,To play -- no slam interest
+1C--1S--2N--,4D,5!S 5!H 5=5=x-x Slam Interest
 # 1D--1H--2N-- Responses 
 1D--1H--2N--,3C,4+D x=4=4+=x
 1D--1H--2N--,3D,5+H x=5+=x-x
@@ -591,6 +597,7 @@ Option,XfersAfterJump2NT
 1H--1S--2N--,3D,3+H Strong !H Raise
 1H--1S--2N--,3H,3+H Weak !H Raise
 1H--1S--2N--,3S,6+!C 4=x=x=6+ Slam Interest
+1H--1S--3C--3D--,4D,4!S 6!D Unbalanced invitional#Any other bid is a slam try
 # 1M--2N--2N-- Responses
 # 1H--1N--2N-- Responses
 1H--1N--2N--,3C,5+!C Opener accepts xfer Pass or Correct
