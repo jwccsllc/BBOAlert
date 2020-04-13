@@ -2176,3 +2176,10 @@ Option
 ----1S--,1N,Semi-Forcing
 ----1S--,2C,Drury 3!S Limit Raise
 ----1S--,2D,Drury 4!S Limit Raise
+Option,ModHamiltonVs1NT
+1N,2C,Single suit or Major Minor; Modified Hamilto
+1N,2D,Majors; Modified Hamilton
+1N,2H,!H Natural
+1N,2S,!S Natural
+1N,2N,Minors
+1N,Db,15+ Penalty vs Weak NT; Action vs Strong NT
