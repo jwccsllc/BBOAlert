@@ -1,0 +1,16 @@
+BBOalert
+Option,1NTDefense Cap v Strong
+1N,2C,Single Suit
+1N,2D,Both Majors
+1N,2H,!H + Minor
+1N,2S,!S + Minor
+1N,2N,Minors
+1N,Db,15+ HCP DSI
+Option,1NTDefense Cap v Weak
+1N,2C,Single Suit
+1N,2D,Both Majors
+1N,2H,!H + Minor
+1N,2S,!S + Minor
+1N,2N,Minors
+1N,Db,15+ HCP Penalty (Systems On)
+Option
