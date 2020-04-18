@@ -1,6 +1,7 @@
+*.gz
+*.patch
 *.swp
 *.zip
-*.patch
 .DS_Store
 BBOalert.js
 sample.docx
