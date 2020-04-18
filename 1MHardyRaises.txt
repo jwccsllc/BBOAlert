@@ -1,8 +1,8 @@
 BBOalert, file must begin with BBOalert keyword
-Option,1M Hardy Raises
+Option,1MOpening @1@2 Hardy Raises
 ,1H,
 ,1S,
-# 1st Seat
+# 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
@@ -47,7 +47,7 @@ Option,1M Hardy Raises
 1S--3C--3D--3H--3S--,4D,Void !D
 1S--3C--3D--3H--3S--,4H,Void !H
 # Under Jump Shift 9+-12 with shortness
-# 1st seat
+# 1st and 2nd seats
 1H--,3D,9+-12 4+!H Shortness
 1H--3D--,3H,Describe Hand
 1H--3D--3H--,4C,Short !C
@@ -59,7 +59,7 @@ Option,1M Hardy Raises
 1H--3D--3H--3S--3N--,4D,Void !D
 1H--3D--3H--3S--3N--,4H,Void !S
 # Spades
-# 1st seat
+# 1st and 2nd seats
 1S--,3H,9+-12 4+!S Shortness
 1S--3H--,3S,Describe Hand
 1S--3H--3S--,4C,Short !C
@@ -127,7 +127,7 @@ Option,1M Hardy Raises
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
 # Majors
-Option,1M 2/1 Vanilla
+Option,1MOpening 2/1 Vanilla
 ,1H,
 ,1S,
 ,1H,2H,

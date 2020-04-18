@@ -319,8 +319,10 @@ Option,Flannery
 2D--2N--,3S,4=6=x-x 6!H
 2D--2N--,4C,4=5=0=4 4!C
 2D--2N--,4D,4=5=4=0 4!D
-Option
 # Hardy Major Responses
+Option,1M Hardy Raises
+,1H,
+,1S,
 # 1st Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
@@ -516,6 +518,10 @@ Option
 1H2D,3D,Limit Raise or better !H
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
+Option,1M 2/1 Vanilla
+,1H,
+,1S,
+,1H,2H,
 Option,KokishGT
 1H--2H--,2S,Kokish GT where could you help?
 1H--2H--2S--,2N,Help in !S

@@ -158,6 +158,11 @@ Option
 1C--1H--,1S,4!S unbalanced for NT.
 1D--1H--,1N,15-17 Balanced < 4!H
 1D--1H--,1S,4!S unbalanced for NT.
+1D--1H--,3H,4+!H 18-19HCP
+1D--1H--3H--4D--,4S,Kickback Keycard asking for !H
+1D--1H--3H--4D--4S--,5C,0 or 3 keycards
+1D--1H--3H--4D--4S--5C--,5D,Have Q!H?
+1D--1H--3H--4D--4S--5C--5D--,6D,Q! and K!D
 1C--1S--,1N,15-17 Balanced < 4!S
 1C--1S--,3S,18-19 4!S
 1D--1S--,1N,15-17 Balanced < 4!S
@@ -319,14 +324,17 @@ Option,Flannery
 2D--2N--,3S,4=6=x-x 6!H
 2D--2N--,4C,4=5=0=4 4!C
 2D--2N--,4D,4=5=4=0 4!D
-Option
 # Hardy Major Responses
-# 1st Seat
-1H--,3H,4+!H probably balanced
-1H--,4H,5+!H probable shortness
+Option,1MOpening @1@2 Hardy Raises
+,1H,
+,1S,
+1H--,3H,4+!H Weak probably balanced
+1H--,4H,5+!H Weak probable shortness
+(1H|1S)--,1N,Forcing
+1H--1N--,2S,Reverse Promises another bid
+1H--1N--2S--,2N,Minimum not Game Forcing#Request xfer to 3!C but Opener may refuse xfer
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--2D--,4H,5+!H Weak outside Ace or King
-1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--,2N,18-19 HCP Transfers on
 1H--1N--2N--,3C,Transfer !D
 1H--1N--2N--,3D,Transfer !H
@@ -516,6 +524,29 @@ Option
 1H2D,3D,Limit Raise or better !H
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
+Option,1MOpening @1@2 2/1 Vanilla
+,1H,
+,1S,
+Option,1MOpening @3@4 Drury On
+------1H--,1N,Semi Forcing
+------1H--,2C,3Card Limit Raise (Drury)
+------1H--,2D,4Card Limit Raise (Drury)
+------1H--2D--,2N,Shortness?
+------1S--,1N,Semi Forcing
+------1S--,2C,3Card Limit Raise (Drury)
+------1S--,2D,4Card Limit Raise (Drury)
+------1S--2C--,3D,Shortness ?
+------1S--2D--,2N,Shortness?
+----1H--,1N,Semi Forcing
+----1H--,2C,3Card Limit Raise (Drury)
+----1H--,2D,4Card Limit Raise (Drury)
+----1H--2C--,3D,Shortness ?
+----1H--2D--,2N,Shortness?
+----1S--,1N,Semi Forcing
+----1S--,2C,3Card Limit Raise (Drury)
+----1S--,2D,4Card Limit Raise (Drury)
+----1S--2C--,3D,Shortness ?
+----1S--2D--,2N,Shortness?
 Option,KokishGT
 1H--2H--,2S,Kokish GT where could you help?
 1H--2H--2S--,2N,Help in !S
@@ -596,9 +627,8 @@ Option,XfersAfterJump2NT
 1S--1N--2N--,3D,5+!H Opener accepts xfer Pass or Correct
 1S--1N--2N--,3H,3!S Strong !S Raise
 1S--1N--2N--,3S,3!S Weak !S Raise
-Option
+Option,2COpening Strong ControlSteps
 ,2C,
-Option,ControlSteps
 2C--,2D,1 Control 1 King or fewer (Kokish Relays on)
 2C--,2H,2 Controls Ace or 2 Kings
 2C--,2S,3 Controls Ace and King
@@ -606,7 +636,6 @@ Option,ControlSteps
 2C--,3C,4 Controls Ace=2 King=1
 2C--,3D,5 Controls Ace=2 King=1
 2C--3D--3H--4H--4S--,5D,2 Keycards without Q!H
-
 Option,KokishRelay
 2C--2D--2H,
 2C--2D--,2H,Relay to 2!S
