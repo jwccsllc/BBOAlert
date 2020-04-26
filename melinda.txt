@@ -2158,6 +2158,7 @@ Option,KokishGT
 Option
 1D1H,2H,Limit Raise or better in !D
 1D1S,2S,Limit Raise or better in !D
+1D1S,3D,Weak
 1H1S,2S,Limit Raise or better in !H
 1H2C,3C,Limit Raise or better in !H
 1H2D,3D,Limit Raise or better in !H
@@ -2177,7 +2178,7 @@ Option
 ----1S--,2C,Drury 3!S Limit Raise
 ----1S--,2D,Drury 4!S Limit Raise
 Option,ModHamiltonVs1NT
-1N,2C,Single suit or Major Minor; Modified Hamilto
+1N,2C,Single suit or Major Minor -- Modified Hamilto
 1N,2D,Majors; Modified Hamilton
 1N,2H,!H Natural
 1N,2S,!S Natural

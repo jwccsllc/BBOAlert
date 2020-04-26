@@ -1,0 +1,45 @@
+Option,1NTOpening 11+-14
+,1N,11-14 Balanced
+1N--,2C,Stayman at least 1 4CM
+(1N--|1N2C)2D,Transfer !H
+(1N--|1N2C)2D--,2H,Fewer than 4!H
+(1N--|1N2C)2D--,2H,4+!H 2!H Maximum Values
+(1N--|1N2C)2D--,2N,4+!H 3=4=3=3 Maximum Values
+(1N--|1N2C)2D--,3C,4+!H 2!C Maximum Values
+(1N--|1N2C)2D--,3D,4+!H 2!D Maximum Values
+(1N--|1N2C)2D--,3H,4+!H Balanced Minimum
+(1N--|1N2C)2DDb,--,Fewer than 3!H
+(1N--|1N2C)2DDb,2H,Three !H
+(1N--|1N2C)2H,Transfer !S
+(1N--|1N2C)2HDb,--,Fewer than 3!S
+(1N--|1N2C)2HDb,2S,Three !S
+(1N--|1N2C)2H--,2S,Fewer than 4!S
+(1N--|1N2C)2H__,2N,4+!S 3=4=3=3 Maximum Values
+(1N--|1N2C)2H__,3C,4+!S 2!C Maximum Values
+(1N--|1N2C)2H__,3D,4+!S 2!D Maximum Values
+(1N--|1N2C)2H__,3H,4+!S 2!H Maximum Values
+(1N--|1N2C)2H__,3S,4+!S Balanced Minimum
+(1N--|1N2C)2S,Range Ask or !C
+(1N--|1N2C)2S__,2N,Minimum NT
+(1N--|1N2C)2S__2N--,3C,Max NT
+(1N--|1N2C)2N,Transfer !D 3D is S/A
+(1N--|1N2C)2N--,3C,Weak !D
+(1N--|1N2C)2N--,3D,SuperAccept !D
+1N--,3C,Low Info Puppet not 4=4 majors
+1N--3C--,3D,No 5-card major
+1N--3C--3D--,3H,Holding 4!S
+1N--3C--3D--,3S,Holding 4!H
+1N--3C--,3H,5!H
+1N--3C--,3S,5!S
+1N--,3D,5-5 Minors GF
+1N--,3H,3=1-(5-4) GF
+1N--,3S,1=3-(5-4) GF
+1N--,4C,Transfer 4!H,South African Texas
+1N--,4D,Transfer 4!S,South African Texas
+1N--,4H,To Play,South African Texas
+1N--,4S,To Play,South African Texas
+1N--2C--2D,3H,4!H 5+!S GF Smolen
+1N----2D--2H2N--,3C,Lebensohl response
+1N--2C--2D,3S,4!S 5+!H GF Smolen
+# Suction Defense Against NT
+Option
