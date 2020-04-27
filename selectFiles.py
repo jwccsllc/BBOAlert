@@ -201,6 +201,7 @@ def buildMainMenu(): #{
 	menuList = [
 		menuDict['config'],
 		menuDict['select'],
+		menuDict['write'],
 	]
 	key = 'main'
 	menuDict[key] = Menu(
@@ -213,54 +214,13 @@ def buildMainMenu(): #{
 configScreen = ('''
       Players: [players                                                    ]
       Outfile: [outfile                                                    ]
-  firstModule: [firstmodule                                             ]
  Press F4 or PgDown to save and quit
 
 %metadata
 [DEFAULT]
 type: char
 rname: selectFiles
-	'''[1:]) # strips extra newline at the top
-
-class MyScreen(Csys.Curses.Screen): #{
-	_attributes = dict(
-		cfg	= None,
-	)
-	_attributes.update(Csys.Curses.Screen._attributes)
-	skip_always = set()
-
-	def prefunc(self, field): #{
-		fdesc = field.fdesc
-		lname = fdesc.lname
-		if lname in self.skip_always: return self.cur_motion
-		return 0
-	#}
-	def postfunc(self, field, ier): #{
-		exception = Csys.Curses._ExceptionMap.get(ier)
-		if exception: raise exception(field, ier)
-		fdesc = field.fdesc
-		lname = fdesc.lname
-		if ier == ENTER and lname in self.key_fields: #{
-			raise NeedData(field)
-		#}
-		if not ier in (SUCCEED, SAVE, EXIT_NOW, ENTER, DOWN_ARROW): #{
-			raise UnknownKey(field, ier)
-		#}
-		try: #{{
-			data = fdesc.set(field.str)
-		#}
-		except: #{
-			msg = ('invalid data >%s< field >%s<' %	( field.str, fdesc.lname))
-			raise BadData(field, msg)
-		#}}
-		if data == field.data: #{
-			if ier == SUCCEED: raise EnterKey(field, ier) # hasn't changed
-		#}
-		if not ier in (SUCCEED, ENTER, DOWN_ARROW): #{
-			raise SaveRequested(field, ier)
-		#}
-	#} postfinc
-#} class MyScreen
+	''') # strips extra newline at the top
 
 def getConfig(): #{
 	global configScreen
@@ -274,6 +234,7 @@ def getConfig(): #{
 		fname = fh,
 		hcenter=True, vcenter=False, border=False
 	)
+	windows_title_set('Player Configuration')
 	# unerrs('cols = %s' % repr(cols.keys()))
 	for field in screen.fields: #{
 		fdesc = field.fdesc
@@ -297,15 +258,14 @@ def getConfig(): #{
 		if screen.save_requested: #{
 			for field in screen.fields: #{
 				if field.fdesc: #{
-					lname = field.fdesc.lname
-					data = field.data
-					unerrs('set lname %s data %s' % (lname, data))
+					lname	= field.fdesc.lname
+					data	= field.data
 					cfg.set('bboalert', lname, data)
 				#}
 			#}
-			unerrs('cfg.rewrite')
 			cfg.rewrite()
 			MyGlobals.Config = cfg.getClass('bboalert')
+			MyGlobals.Config.modules = cfg.getList('bboalert', 'modules')
 		#}
 		break
 	#}
@@ -316,6 +276,17 @@ def getConfig(): #{
 def getFiles(): #{
 	pass
 #}
+
+def writeFile(): #{
+	fname = MyGlobals.Config.outfile
+	unerrs('fname = %s' % fname)
+	fh = Csys.openOut(fname)
+	for module in MyGlobals.Config.modules: #{
+		data = open(module).read()
+		fh.write(data)
+	#}
+	fh.close()
+#} writeFiles
 
 def main(stdscr=None): #{
 	global menuDict, cfg
@@ -350,11 +321,10 @@ def main(stdscr=None): #{
 	Csys.getoptionsEnvironment(options)
 
 	MyGlobals.cfg = cfg = ConfigParser(args[0])
-	unerrs('cfg = %s' % repr(cfg))
-	unerrs('here')
 	menuDict.update(dict( 
-		config = MenuLine('Get Configuration', seq=0, action=getConfig),
+		config	= MenuLine('Get Configuration', seq=0, action=getConfig),
 		select	= MenuLine('Get Files', action=getFiles),
+		write	= MenuLine('Write File', action=writeFile),
 	))
 
 	windows_header_set('Select Files', Csys.Config.progname)

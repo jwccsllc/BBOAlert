@@ -1,5 +1,6 @@
 *.gz
 *.patch
+*.save
 *.swp
 *.zip
 .DS_Store

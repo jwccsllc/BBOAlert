@@ -1,49 +1,36 @@
-Shortcut,W0,Welcome; we use very simple but unusual scheme: opening 1x in double Texas (1C=4+!H;1D=4+!S;1H=5+!C or balanced;1S=5+!D); 1st response=relay or Texas; Then natural.We hope you do not mind. Thanks.
-
-Shortcut,W1,Full CC https://drive.google.com/file/d/1yovNTQwEAxppLfONEDuq5EBlqwrCMg6u/view?usp=sharing
-
-Shortcut,W2,Lead 3rd/5th; Sequence:top(NT); Rousinov(suit). Discard:odd=encouraging. On partner’s lead:small=encouraging
-
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
 Shortcut,ML,My last deal; Thanks to all
-
-
 Shortcut,TC,Texas !C
 Shortcut,TD,Texas !D
 Shortcut,TH,Texas !H
 Shortcut,TS,Texas !S
-
 Shortcut,XC,Transfer->!C
 Shortcut,XD,Transfer->!D
 Shortcut,XH,Transfer->!H
 Shortcut,XS,Transfer->!S
-
 Shortcut,CC,Control !C
 Shortcut,CD,Control !D
 Shortcut,CH,Control !H
 Shortcut,CS,Control !S
-
 Shortcut,SC,Stopper !C
 Shortcut,SD,Stopper !D
 Shortcut,SH,Stopper !H
 Shortcut,SS,Stopper !S
-
 Shortcut,KE,Even number of key cards
 Shortcut,KC,Odd number of key cards; Control !C
 Shortcut,KD,Odd number of key cards; Control !D
 Shortcut,KH,Odd number of key cards; Control !H
 Shortcut,KS,Odd number of key cards; Control !S
-
 Shortcut,NA,Lead against NT : A = typically AKx
 Shortcut,NK,Lead against NT : K = typically AKJ AKQ KQJ or KQT
 Shortcut,NQ,Lead against NT : Q = typically QJT or QJ9
 Shortcut,NJ,Lead against NT : J = typically AQJ or JTx
 Shortcut,NT,Lead against NT : 10 = typically AJ10 or KJ10 ot 109x
-
 Shortcut,SA,Lead against suit : A = typically AK even number of cards
 Shortcut,SK,Lead against suit : K = typically AK odd number of cards
 Shortcut,SQ,Lead against suit : Q = typically KQx
 Shortcut,SJ,Lead against suit : J = typically QJx
 Shortcut,ST,Lead against suit : 10 = typically J10x
-
-
+Shortcut,UD,UDCA; Trump Suit Preference
+Shortcut,LS,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
+Shortcut,LN,Journalist vs NT; Spot Leads Low from Interest

@@ -1,3 +1,66 @@
+BBOalert
+Option,1MOpening @1@2 2/1 Vanilla
+,1H,
+,1S,
+1H--,1N,Forcing
+1S==,1N,Forcing
+1H__,2S,Weak Jump Shift
+1H__,3C,Weak Jump Shift
+1H__,3D,Weak Jump Shift
+1H--,3N,13-15 Balanced 3-card support NT stoppers
+1S__,3C,Weak Jump Shift
+1S__,3D,Weak Jump Shift
+1S__,3H,Weak Jump Shift
+1S--,3N,13-15 Balanced 3-card support NT stoppers
+1H--,2N,15+ Jacoby 2NT Standard Responses
+1H--2N--,3C,Short !C rebid shows void
+1H--2N--,3D,Short !D rebid shows void
+1H--2N--,3H,Strong !H no shortness
+1H--2N--,3S,Short !S rebid shows void
+1H--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1H--2N--,4C,5+ good !C
+1H--2N--,4D,5+ good !D
+1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+Option,1MOpening @3@4 Drury On
+------1H--,1N,Semi Forcing
+------1H--,2C,3Card Limit Raise (Drury)
+------1H--,2D,4Card Limit Raise (Drury)
+------1H--2D--,2N,Shortness?
+------1S--,1N,Semi Forcing
+------1S--,2C,3Card Limit Raise (Drury)
+------1S--,2D,4Card Limit Raise (Drury)
+------1S--2C--,3D,Shortness ?
+------1S--2D--,2N,Shortness?
+----1H--,1N,Semi Forcing
+----1H--,2C,3Card Limit Raise (Drury)
+----1H--,2D,4Card Limit Raise (Drury)
+----1H--2C--,3D,Shortness ?
+----1H--2D--,2N,Shortness?
+----1S--,1N,Semi Forcing
+----1S--,2C,3Card Limit Raise (Drury)
+----1S--,2D,4Card Limit Raise (Drury)
+----1S--2C--,3D,Shortness ?
+----1S--2D--,2N,Shortness?
+Option,KokishGT
+1H--2H--,2S,Kokish GT where could you help?
+1H--2H--2S--,2N,Help in !S
+1H--2H--2S--,3C,Help in !C
+1H--2H--2S--,3D,Help in !D
+1H--2H--2S--,3H,No help
+1H--2H--,3H,Trump Quality Ask
+1H--2H--3H--,3N,Bad !H good hand for NT
+1H--2H--3H--,4H,Good !H good hand
+1H--2H--3H--,--,Bad !H weak
+# spades
+1S--2S--,2N,Kokish GT where could you help?
+1S--2S--2N--,3C,Help in !C
+1S--2S--2N--,3D,Help in !D
+1S--2S--2N--,3H,Help in !H
+1S--2S--2N--,3S,No help
+1S--2S--,3S,Trump Quality Ask
+1S--2S--3S--,--,Bad !S weak
+1S--2S--3S--,3N,Bad !S good hand for NT
+1S--2S--3S--,4S,Good !S good hand
 # Hardy Major Responses
 Option,1MOpening @1@2 Hardy Raises
 ,1H,
@@ -198,47 +261,4 @@ Option,1MOpening @1@2 Hardy Raises
 1H2D,3D,Limit Raise or better !H
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
-Option,1MOpening @1@2 2/1 Vanilla
-,1H,
-,1S,
-Option,1MOpening @3@4 Drury On
-------1H--,1N,Semi Forcing
-------1H--,2C,3Card Limit Raise (Drury)
-------1H--,2D,4Card Limit Raise (Drury)
-------1H--2D--,2N,Shortness?
-------1S--,1N,Semi Forcing
-------1S--,2C,3Card Limit Raise (Drury)
-------1S--,2D,4Card Limit Raise (Drury)
-------1S--2C--,3D,Shortness ?
-------1S--2D--,2N,Shortness?
-----1H--,1N,Semi Forcing
-----1H--,2C,3Card Limit Raise (Drury)
-----1H--,2D,4Card Limit Raise (Drury)
-----1H--2C--,3D,Shortness ?
-----1H--2D--,2N,Shortness?
-----1S--,1N,Semi Forcing
-----1S--,2C,3Card Limit Raise (Drury)
-----1S--,2D,4Card Limit Raise (Drury)
-----1S--2C--,3D,Shortness ?
-----1S--2D--,2N,Shortness?
-Option,KokishGT
-1H--2H--,2S,Kokish GT where could you help?
-1H--2H--2S--,2N,Help in !S
-1H--2H--2S--,3C,Help in !C
-1H--2H--2S--,3D,Help in !D
-1H--2H--2S--,3H,No help
-1H--2H--,3H,Trump Quality Ask
-1H--2H--3H--,3N,Bad !H good hand for NT
-1H--2H--3H--,4H,Good !H good hand
-1H--2H--3H--,--,Bad !H weak
-# spades
-1S--2S--,2N,Kokish GT where could you help?
-1S--2S--2N--,3C,Help in !C
-1S--2S--2N--,3D,Help in !D
-1S--2S--2N--,3H,Help in !H
-1S--2S--2N--,3S,No help
-1S--2S--,3S,Trump Quality Ask
-1S--2S--3S--,--,Bad !S weak
-1S--2S--3S--,3N,Bad !S good hand for NT
-1S--2S--3S--,4S,Good !S good hand
-
+Option

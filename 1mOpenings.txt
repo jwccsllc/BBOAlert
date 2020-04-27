@@ -1,0 +1,47 @@
+# Minor Openings
+Option,1mOpenings
+1C__,1D,
+1C__,2C,5+!C Nuisance
+1C--,2C,5+!C strong no 4CM or NT stops
+1C__,3C,5+!C Weak
+1C--1H--2D--,3C,Game Forcing, Ingberman
+1C--1H--2D--,2S,<= 7HCP weak Ingberman
+1C--1H--2D--,2N,Game Forcing, Ingberman
+1C--1S--2D--,3C,Game Forcing, Ingberman
+1C--1S--2D--,2H,<= 7HCP weak Ingberman
+1C--1S--2D--,2N,Game Forcing, Ingberman
+,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
+1D__,2D,5+!D Nuisance
+1D--,2D,4+!D Strong no 4CM or NT stops
+1D__,3D,5+!D Weak
+1D--,3C,5+!C Invitational no 4CM or NT stops
+1C--1H--,1N,15-17 Balanced < 4!H
+1C--1H--,1S,4!S unbalanced for NT.
+1D--1H--,1N,15-17 Balanced < 4!H
+1D--1H--,1S,4!S unbalanced for NT.
+1C--1S--,1N,15-17 Balanced < 4!S
+1C--1S--,3S,18-19 4!S
+1D--1S--,1N,15-17 Balanced < 4!S
+1C--,1N,6-9 HCP no 4-card major
+1C--,2N,10-12 HCP no 4-card major
+1C--,3N,13+ HCP no 4-card major
+Option,1mOpening 15-15 1NT
+,1C,3+!C unbalanced or balanced 12-14 NT
+Option,1mOpening 12-14 1NT
+,1C,3+!C unbalanced or balanced 15-19 NT
+Option,UMJOOMO Off
+Option,UMJOOMO On
+1C--,2H,5!S and 4!H or 5!H Constructive
+1C--,2S,5!S 4!H or 5!H invitational
+1C--2H--,2N,Asks for Description
+1C--2H--2N--,3C,5=4-x-x minimum
+1C--2H--2N--,3D,5=4-x-x maximum
+1C--2H--2N--,3H,5=5-x-x minimum
+1C--2H--2N--,3S,5=5-x-x maximum
+1D--,2H,5!S and 4!H or 5!H Constructive
+1D--,2S,5!S 4!H or 5!H invitational
+1D--2H--,2N,Asks for Description
+1D--2H--2N--,3C,5=4-x-x minimum
+1D--2H--2N--,3D,5=4-x-x maximum
+1D--2H--2N--,3H,5=5-x-x minimum
+1D--2H--2N--,3S,5=5-x-x maximum

@@ -1,0 +1,44 @@
+Option,2DWeak Simple @1@2
+,2D,5-11 Weak 6+!D
+Option,2DWeak Simple @3@4
+,2D,5-11 Weak 5+!D
+Option,2HSWeak @1@2
+,2H,5-11 Weak 6+ !H
+,2H,5-11 Weak 6+ !S
+Option,2HSWeak @3@4
+,2H,5-11 Weak 5+ !H
+,2H,5-11 Weak 5+ !S
+Option,2HSQuery Ogust
+2H--,2N,Ogust
+2H--2N--,3C Bad Hand bad Suit
+2H--2N--,3D Bad Hand good Suit
+2H--2N--,3H Good Hand Good Suit
+2H--2N--,3S Good Hand Good Suit
+2HDbl,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
+2S--,2N,Ogust
+2S--2N--,3C Bad Hand bad Suit
+2S--2N--,3D Bad Hand good Suit
+2S--2N--,3H Good Hand Bad Suit
+2S--2N--,3S Good Hand Good Suit
+2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+Option,2HSQuery Feature
+2H--,2N,Feature Request
+2H--2N--,3C,Feature in !C
+2H--2N--,3D,Feature in !D
+2H--2N--,3H,No Feature
+2S--,2N,Feature Request
+2S--2N--,3C,Feature in !C
+2S--2N--,3D,Feature in !D
+2S--2N--,3H,Feature in !H
+2S--2N--,2S,No Feature
+Option,2H2SMcCable
+2HDbl,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
+2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
