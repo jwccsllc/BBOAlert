@@ -1959,5 +1959,3 @@ Option
 1SDbl,4D,splinter; 4+!S
 1SDbl,4H,splinter; 4+!S
 1SDbl,4S,Preemptive 3+!Ss
-Option
-

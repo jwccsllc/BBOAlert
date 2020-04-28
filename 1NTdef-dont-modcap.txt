@@ -12,5 +12,4 @@ Option,1NTDefense Mod Cap v Weak
 1N,2H,!H
 1N,2S,!S
 1N,2N,Minors
-1N,Db,15+ HCP Penalty
-Option
+1N,Db,15+ HCP Penalty; Systems On

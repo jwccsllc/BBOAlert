@@ -13,4 +13,3 @@ Option,1NTDefense Mohan v Weak
 1N,2S,!S and a Minor
 1N,2N,!H and a Minor
 1N,Db,15+ HCP Penalty
-Option

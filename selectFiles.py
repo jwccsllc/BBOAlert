@@ -279,7 +279,7 @@ def getFiles(): #{
 
 def writeFile(): #{
 	fname = MyGlobals.Config.outfile
-	unerrs('fname = %s' % fname)
+	# unerrs('fname = %s' % fname)
 	fh = Csys.openOut(fname)
 	for module in MyGlobals.Config.modules: #{
 		data = open(module).read()

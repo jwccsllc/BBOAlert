@@ -1,0 +1,8 @@
+BBOalert
+Option,1NTDefense Mod Cap
+1N,2C,Single Suit or Major/Minor
+1N,2D,Both Majors
+1N,2H,!H
+1N,2S,!S
+1N,2N,Minors
+1N,Db,15+ HCP Penalty; Systems On

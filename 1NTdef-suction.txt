@@ -14,4 +14,3 @@ Option,2NTDefense Suction
 2N,3H,!S or !C and !D
 2N,3S,!C and !H or !D and !S
 2N3S__,3N,Asks for Lower Suit
-Option

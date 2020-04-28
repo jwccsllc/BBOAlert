@@ -1,3 +1,5 @@
+
+# melinda.hdr
 BBOalert
 Shortcut,W0,2/1; Upside Down Count; Standard Attitude; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 
@@ -7,6 +9,8 @@ Shortcut,W2,Standard Leads; Upside Down Attitude; Standard Count; spot leads 4th
 
 Shortcut,UDASC,Upside Down Attitude; Standard Count
 
+
+# shortcuts.txt
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
 Shortcut,ML,My last deal; Thanks to all
 Shortcut,TC,Texas !C
@@ -43,6 +47,8 @@ Shortcut,ST,Lead against suit : 10 = typically J10x
 Shortcut,UD,UDCA; Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
 Shortcut,LN,Journalist vs NT; Spot Leads Low from Interest
+
+# 1NTOpening-15-17.txt
 BBOalert
 Option,1NTOpening 15+-17 Basic
 ,1N,
@@ -73,8 +79,8 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 1N2C,4H,Transfer to !S
 1N2C2C--2D--,3H,Smolen 4=5-x-x GF
 1N2C2C--2D--,3S,Smolen 5=4-x-x GF
-Option
 
+# 2NTOpening.txt
 BBOalert
 Option,2NTOpening Puppet Stayman
 ,2N,
@@ -95,17 +101,19 @@ Option,2NTOpening Puppet Stayman
 2N--4C--,4N,2 Aces I love my hand
 2N--,4D,Texas Transfer -> !H
 2N--,4H,Texas Transfer -> !S
-Option,2NT3S MSS
+Option,2NT3S MSS Off
+2N--,3S,
+Option,2NT3S MSS On
 2N--,3S,Minor Suit Stayman#https://www.bridgebum.com/minor_suit_stayman.php
 2N--3S--,3N,No 4 card minor
 2N--3S--,4C,4+!C may have 4!D
 2N--3S--,4D,4+!D fewer than 4!C
-Option,2NT3S NoMSS
-2N--,3S,
 Option,3NTOpening Gambling
 ,3N,Gambling 3NT 7+Solid !C or !D#Nothing Higher than Queen outside
 Option,3NTOpening Acol/NAMYATS
 ,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
+
+# 1MOpenings.txt
 BBOalert
 Option,1MOpening @1@2 2/1 Vanilla
 ,1H,
@@ -370,6 +378,8 @@ Option,1MOpening @1@2 Hardy Raises
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
 Option
+
+# 1mOpenings.txt
 # Minor Openings
 Option,1mOpenings
 1C__,1D,
@@ -397,7 +407,7 @@ Option,1mOpenings
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
-Option,1mOpening 15-15 1NT
+Option,1mOpening 15-17 1NT
 ,1C,3+!C unbalanced or balanced 12-14 NT
 Option,1mOpening 12-14 1NT
 ,1C,3+!C unbalanced or balanced 15-19 NT
@@ -417,6 +427,8 @@ Option,UMJOOMO On
 1D--2H--2N--,3D,5=4-x-x maximum
 1D--2H--2N--,3H,5=5-x-x minimum
 1D--2H--2N--,3S,5=5-x-x maximum
+
+# 2DHSOpenings.txt
 Option,2DWeak Simple @1@2
 ,2D,5-11 Weak 6+!D
 Option,2DWeak Simple @3@4
@@ -461,6 +473,8 @@ Option,2H2SMcCable
 2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
 2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
 2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+
+# XYZ.txt
 Option,XYZ @1@2
 1C--1D--1N--,2C,Forcing, Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
@@ -533,22 +547,18 @@ Option,XYZ @3@4
 ------1D__1S__1N__,2N,Invitational < 4!D Support
 ------1D__1S__1N__,2S,5+!S Less than invitational
 
+
+# 1NTdef-modcap.txt
 BBOalert
-Option,1NTDefense DONT v Strong
-1N,2C,!C + Higher Suit
-1N,2D,1D + Higher Suit
-1N,2H,!H + !S
-1N,2S,5+!S Weak (double first if strong)
-1N,2N,Minors
-1N,Db,Single Suited Hand
-Option,1NTDefense Mod Cap v Weak
+Option,1NTDefense Mod Cap
 1N,2C,Single Suit or Major/Minor
 1N,2D,Both Majors
 1N,2H,!H
 1N,2S,!S
 1N,2N,Minors
-1N,Db,15+ HCP Penalty
-Option
+1N,Db,15+ HCP Penalty; Systems On
+
+# melinda.extras
 Option
 1D1H,2H,Limit Raise or better in !D
 1D1S,2S,Limit Raise or better in !D

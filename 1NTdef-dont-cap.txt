@@ -1,11 +1,11 @@
 BBOalert
-Option,1NTDefense Cap v Strong
-1N,2C,Single Suit
-1N,2D,Both Majors
-1N,2H,!H + Minor
-1N,2S,!S + Minor
+Option,1NTDefense DONT v Strong
+1N,2C,!C + Higher Suit
+1N,2D,!D + Higher Suit
+1N,2H,!H + !S
+1N,2S,5+ !S Weaker than Double 2!S
+1N,Db,Single Suited Hand
 1N,2N,Minors
-1N,Db,15+ HCP DSI
 Option,1NTDefense Cap v Weak
 1N,2C,Single Suit
 1N,2D,Both Majors
@@ -13,4 +13,3 @@ Option,1NTDefense Cap v Weak
 1N,2S,!S + Minor
 1N,2N,Minors
 1N,Db,15+ HCP Penalty (Systems On)
-Option
