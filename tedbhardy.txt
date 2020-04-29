@@ -5,6 +5,8 @@ Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndTedBartunek.pdf
 
 Shortcut,W2,UDCA Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even Low from Odd; Journalist Leads vs Notrump; Low from Interest
 
+Shortcut,ZMC,https://zoom.us/j/577828070?pwd=YkNESDZ0M1NickdEaUtUa2Z3ZnJXZz09
+
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
 Shortcut,ML,My last deal; Thanks to all
 
