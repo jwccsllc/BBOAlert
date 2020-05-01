@@ -1,5 +1,6 @@
 *.gz
 *.patch
+*.pyc
 *.save
 *.swp
 *.zip

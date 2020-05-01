@@ -544,16 +544,16 @@ Option,KokishGT
 1S--2S--3S--,--,Bad !S weak
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
-Option
+Option,2COpening
 ,2C,
-Option,ControlSteps
+Option,2COpening ControlSteps
 2C--,2D,1 Control 1 King or fewer (Kokish Relays on)
 2C--,2H,2 Controls Ace or 2 Kings
 2C--,2S,3 Controls Ace and King
 2C--,2N,3 Controls 3 Kings
 2C--,3C,4 Controls Ace=2 King=1
 2C--,3D,5 Controls Ace=2 King=1
-Option,KokishRelay
+Option,2C2D KokishRelay
 2C--2D--2H,
 2C--2D--,2H,Relay to 2!S
 2C--2D--2H--,2S,Mandatory Response to 2!H
@@ -568,21 +568,21 @@ Option,KokishRelay
 2C--2D--2S--2N--,3H,!S and !H with longer !S
 2C--2D--2S--2N--,3S,!S and no 2nd suit
 2C--2D--,2N,22-24 HCP Balanced Systems On
-Option
+Option,1N Competitive
 # Competitive biddin
-1H--1N,3D,Weak,20200408_16:21 Deal undefined
+1H--1N,3D,Weak
 1C,2D,Weak
 1C,2H,Weak
 1C,2S,Weak
 1D1H--,2D,Limit+ Raise of hearts,2020225_15:26 Deal 12
 1C1D1H2D,Dbl,Support DBL 3!H,2020225_16:0 Deal 17
 2D2N--,3H,Transfer !S
-1N2D,Dbl,Negative DSI
+1N2D,Db,Negative DSI
 1N2D----,Dbl,Negative DSI
 1N2D,2N,Lebensohl
 1N2D,2H,To Play
 1N2D,2S,To Play
-1N2H,Dbl,Negative DSI
+1N2H,Db,Negative DSI
 1N2H,2S,To Play
 1N2H----,Dbl,Negative DSI
 1N2H,2N,Lebensohl
@@ -602,9 +602,9 @@ Option
 2S--2N--,3D Bad Hand good Suit
 2S--2N--,3H Good Hand Bad Suit
 2S--2N--,3S Good Hand Good Suit
-2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 1N2C,2D,Transfer !H
 1N--2H--,2S,Fewer than 4!S
 1S--2H--3H--,3N,Non-Serious 3NT
@@ -623,17 +623,20 @@ Option
 ----1S--,2C,3Card Limit Raise (Drury)
 ----1S--,2D,4Card Limit Raise (Drury)
 ----1S--2C--,3D,Shortness ?
-1NDbl----,2C,5 !C Runout
-1NDbl,--,Forcing runout single suited#Partner bids 5 card suit or XX
-1NDbl----,Rd,No five card suit
-1NDbl----,2C,5!C Runout
-1NDbl----,2D,5!D Runout
-1NDbl----,2H,5!H Runout
-1NDbl----,2S,5!S Runout
+1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
+1NDb----,2C,5!C Runout
+1NDb----,2D,5!D Runout
+1NDb----,2H,5!H Runout
+1NDb----,2S,5!S Runout
+1NDb----,Rd,No five card suit
 1NDb,2C,!C and higher suit (DONT Runout)
 1NDb,2D,!D and higher suit (DONT Runout)
 1NDb,2H,!H and !S (DONT Runout)
 1NDb----,Rd,DONT runout no single suit
+1NDb----Rd--,2C,5!C Runout
+1NDb----,2D--,5!D Runout
+1NDb----,2H--,5!H Runout
+1NDb----,2S--,5!S Runout
 # Defense Against Weak 2s
 Option,DefWeak2s
 2D----,3D,Bid 3N with stopper or cheapest suit

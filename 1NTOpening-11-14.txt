@@ -50,20 +50,20 @@ Option,1NTOpening 11+-14
 1N2C,2D--,3C,4+!H 2!C Maximum Values
 1N2C,2D--,3D,4+!H 2!D Maximum Values
 1N2C,2D--,3H,4+!H Balanced Minimum
-1N2C,2DDb,--,Fewer than 3!H
-1N2C,2DDb,2H,Three !H
-1N2C,2DDb,2N,4+!H 3=4=3=3 Maximum Values
-1N2C,2DDb,3C,4+!H 2!C Maximum Values
-1N2C,2DDb,3D,4+!H 2!D Maximum Values
-1N2C,2DDb,3H,4+!H Balanced Minimum
+1N2C2DDb,--,Fewer than 3!H
+1N2C2DDb,2H,Three !H
+1N2C2DDb,2N,4+!H 3=4=3=3 Maximum Values
+1N2C2DDb,3C,4+!H 2!C Maximum Values
+1N2C2DDb,3D,4+!H 2!D Maximum Values
+1N2C2DDb,3H,4+!H Balanced Minimum
 1N2C,2H,Transfer !S
-1N2C,2HDb,--,Fewer than 3!S
-1N2C,2HDb,2S,Three !S
-1N2C,2HDb,2N,4+!S 3=4=3=3 Maximum Values
-1N2C,2HDb,3C,4+!S 2!C Maximum Values
-1N2C,2HDb,3D,4+!S 2!D Maximum Values
-1N2C,2HDb,3H,4+!S 2!H Maximum Values
-1N2C,2HDb,3S,4+!S Balanced Minimum
+1N2C2HDb,--,Fewer than 3!S
+1N2C2HDb,2S,Three !S
+1N2C2HDb,2N,4+!S 3=4=3=3 Maximum Values
+1N2C2HDb,3C,4+!S 2!C Maximum Values
+1N2C2HDb,3D,4+!S 2!D Maximum Values
+1N2C2HDb,3H,4+!S 2!H Maximum Values
+1N2C2HDb,3S,4+!S Balanced Minimum
 1N2C,2S,Range Ask or !C
 1N2C,2S__,2N,Minimum NT
 1N2C,2S__2N--,3C,Max NT
@@ -86,4 +86,31 @@ Option,1NTOpening 11+-14
 1N2C2C--2D,3H,4!H 5+!S GF Smolen
 1N2C--2D--2H2N--,3C,Lebensohl response
 1N2C2C--2D,3S,4!S 5+!H GF Smolen
+1N2D,Db,Negative DSI
+1N2D----,Db,Negative DSI
+1N2D,2N,Lebensohl
+1N2D,2H,To Play
+1N2D,2S,To Play
+1N2H,Db,Negative DSI
+1N2H,2S,To Play
+1N2H----,Db,Negative DSI
+1N2H,2N,Lebensohl
+1N2S,Dbl,Negative DSI
+1N2S----,Dbl,Negative DSI
+1N2S,2N,Lebensohl
+Option,1NTDb Penalty
+1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
+1NDb----,2C,5!C Runout
+1NDb----,2D,5!D Runout
+1NDb----,2H,5!H Runout
+1NDb----,2S,5!S Runout
+1NDb----,Rd,No five card suit
+1NDb,2C,!C and higher suit (DONT Runout)
+1NDb,2D,!D and higher suit (DONT Runout)
+1NDb,2H,!H and !S (DONT Runout)
+1NDb----,Rd,DONT runout no single suit
+1NDb----Rd--,2C,5!C Runout
+1NDb----,2D--,5!D Runout
+1NDb----,2H--,5!H Runout
+1NDb----,2S--,5!S Runout
 # Suction Defense Against NT
