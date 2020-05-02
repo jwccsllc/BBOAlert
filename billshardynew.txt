@@ -71,6 +71,7 @@ Option,1NTOpening 11+-14
 1N--,2H__,3D,4+!S 2!D Maximum Values
 1N--,2H__,3H,4+!S 2!H Maximum Values
 1N--,2H__,3S,4+!S Balanced Minimum
+1N--2H--3C--,3H,Transfer !H
 1N--,2S,Range Ask or !C
 1N--,2S__,2N,Minimum NT
 1N--,2S__2N--,3C,Max NT
@@ -100,20 +101,20 @@ Option,1NTOpening 11+-14
 1N2C,2D--,3C,4+!H 2!C Maximum Values
 1N2C,2D--,3D,4+!H 2!D Maximum Values
 1N2C,2D--,3H,4+!H Balanced Minimum
-1N2C,2DDb,--,Fewer than 3!H
-1N2C,2DDb,2H,Three !H
-1N2C,2DDb,2N,4+!H 3=4=3=3 Maximum Values
-1N2C,2DDb,3C,4+!H 2!C Maximum Values
-1N2C,2DDb,3D,4+!H 2!D Maximum Values
-1N2C,2DDb,3H,4+!H Balanced Minimum
+1N2C2DDb,--,Fewer than 3!H
+1N2C2DDb,2H,Three !H
+1N2C2DDb,2N,4+!H 3=4=3=3 Maximum Values
+1N2C2DDb,3C,4+!H 2!C Maximum Values
+1N2C2DDb,3D,4+!H 2!D Maximum Values
+1N2C2DDb,3H,4+!H Balanced Minimum
 1N2C,2H,Transfer !S
-1N2C,2HDb,--,Fewer than 3!S
-1N2C,2HDb,2S,Three !S
-1N2C,2HDb,2N,4+!S 3=4=3=3 Maximum Values
-1N2C,2HDb,3C,4+!S 2!C Maximum Values
-1N2C,2HDb,3D,4+!S 2!D Maximum Values
-1N2C,2HDb,3H,4+!S 2!H Maximum Values
-1N2C,2HDb,3S,4+!S Balanced Minimum
+1N2C2HDb,--,Fewer than 3!S
+1N2C2HDb,2S,Three !S
+1N2C2HDb,2N,4+!S 3=4=3=3 Maximum Values
+1N2C2HDb,3C,4+!S 2!C Maximum Values
+1N2C2HDb,3D,4+!S 2!D Maximum Values
+1N2C2HDb,3H,4+!S 2!H Maximum Values
+1N2C2HDb,3S,4+!S Balanced Minimum
 1N2C,2S,Range Ask or !C
 1N2C,2S__,2N,Minimum NT
 1N2C,2S__2N--,3C,Max NT
@@ -136,6 +137,33 @@ Option,1NTOpening 11+-14
 1N2C2C--2D,3H,4!H 5+!S GF Smolen
 1N2C--2D--2H2N--,3C,Lebensohl response
 1N2C2C--2D,3S,4!S 5+!H GF Smolen
+1N2D,Db,Negative DSI
+1N2D----,Db,Negative DSI
+1N2D,2N,Lebensohl
+1N2D,2H,To Play
+1N2D,2S,To Play
+1N2H,Db,Negative DSI
+1N2H,2S,To Play
+1N2H----,Db,Negative DSI
+1N2H,2N,Lebensohl
+1N2S,Dbl,Negative DSI
+1N2S----,Dbl,Negative DSI
+1N2S,2N,Lebensohl
+Option,1NTDb Penalty
+1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
+1NDb----,2C,5!C Runout
+1NDb----,2D,5!D Runout
+1NDb----,2H,5!H Runout
+1NDb----,2S,5!S Runout
+1NDb----,Rd,No five card suit
+1NDb,2C,!C and higher suit (DONT Runout)
+1NDb,2D,!D and higher suit (DONT Runout)
+1NDb,2H,!H and !S (DONT Runout)
+1NDb----,Rd,DONT runout no single suit
+1NDb----Rd--,2C,5!C Runout
+1NDb----,2D--,5!D Runout
+1NDb----,2H--,5!H Runout
+1NDb----,2S--,5!S Runout
 # Suction Defense Against NT
 
 # 2NTOpening.txt
@@ -430,7 +458,6 @@ Option,KokishGT
 # Minor Openings
 Option,1mOpenings
 1C__,1D,
-1C__,2C,5+!C Nuisance
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,3C,5+!C Weak
 1C--1H--2D--,3C,Game Forcing, Ingberman
@@ -440,10 +467,9 @@ Option,1mOpenings
 1C--1S--2D--,2H,<= 7HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
-1D__,2D,5+!D Nuisance
 1D--,2D,4+!D Strong no 4CM or NT stops
 1D__,3D,5+!D Weak
-1D--,3C,5+!C Invitational no 4CM or NT stops
+1D--,3C,5+!C Invitational no 4CM or NT stops not GF
 1C--1H--,1N,15-17 Balanced < 4!H
 1C--1H--,1S,4!S unbalanced for NT.
 1D--1H--,1N,15-17 Balanced < 4!H
@@ -454,10 +480,13 @@ Option,1mOpenings
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
-Option,1mOpening 15-17 1NT
-,1C,3+!C unbalanced or balanced 12-14 NT
 Option,1mOpening 12-14 1NT
 ,1C,3+!C unbalanced or balanced 15-19 NT
+1C--1*,1N,Balanced 15-17
+1C1SDb--,1N,15-17 Balanced
+Option,1mOpening 15-17 1NT
+,1C,3+!C unbalanced or balanced 12-14 NT
+1C--1*,1N,Balanced 12-14
 Option,UMJOOMO Off
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
@@ -561,6 +590,8 @@ Option,XYZ @1@2
 1C--1H--1S--2D--,2H,3!H
 --1C--1H--1S--2D--,2H,3!H
 ----1C--1H--1S--2D--,2H,3!H
+1C__1H__1S__,2C,Invitational Forces 2!D
+1C__1H__1S__,2D,Artificial Game Force
 1C__1H__1S__,2H,5+!H Less than invitational
 1C__1H__1S__,2N,Invitational < 4!C Support
 1C__1H__1S__,2N,Invitational Fewer 4!C
@@ -575,6 +606,7 @@ Option,XYZ @1@2
 ----1C--1S--1N--2D--,2H,!4H may have 3!S
 ------1C--1S--1N--2D--,2H,!4H may have 3!S
 1D__1S__1N__,2C,Invitational Force 2!D
+1D__1S__1N__,2D,Artificial Game Force
 1D__1S__1N__,2N,Invitational < 4!D Support
 1D__1S__1N__,2S,5+!S Less than invitational
 Option,XYZ @3@4
@@ -634,6 +666,73 @@ Option,2NTDefense Suction
 2N,3H,!S or !C and !D
 2N,3S,!C and !H or !D and !S
 2N3S__,3N,Asks for Lower Suit
+
+# 1CDef-Suction.txt
+# Defense Against Strong Club
+Option,1CDefense Standard
+1C,Dbl,Take-out Double
+Option,1CDefense Precision
+1C,Dbl,!D or !H and !S
+1C,2C,!D or !H and !S
+1C,3C,!D or !H and !S
+1C,4C,!D or !H and !S
+1C,1D,!H or !S and !C
+1C,2D,!H or !S and !C
+1C,3D,!H or !S and !C
+1C,4D,!H or !S and !C
+1C,1H,!S or !C and !D
+1C,2H,!S or !C and !D
+1C,3H,!S or !C and !D
+1C,4H,!S or !C and !D
+1C,1S,!C and !H or !D and !S
+1C,2S,!C and !H or !D and !S
+1C,3S,!C and !H or !D and !S
+1C,4S,!C and !H or !D and !S
+1C--1D,2C,!D or !H and !S
+1C--1D,3C,!D or !H and !S
+1C--1D,4C,!D or !H and !S
+1C--1D,2D,!H or !S and !C
+1C--1D,3D,!H or !S and !C
+1C--1D,4D,!H or !S and !C
+1C--1D,1H,!S or !C and !D
+1C--1D,2H,!S or !C and !D
+1C--1D,3H,!S or !C and !D
+1C--1D,4H,!S or !C and !D
+1C--1D,1S,!C and !H or !D and !S
+1C--1D,2S,!C and !H or !D and !S
+1C--1D,3S,!C and !H or !D and !S
+1C--1D,4S,!C and !H or !D and !S
+
+
+# 2CDef-Suction.txt
+BBOalerts
+# Defense Against Strong 2 Club
+Option,2CDefense Strong
+2C,Db,!D or !H and !S
+2C,2D,!H or !S and !C
+2C,2H,!S or !C and !D
+2C,2S,!C and !H or !D and !S
+2C,3C,!D or !H and !S
+2C,3D,!H or !S and !C
+2C,3H,!S or !C and !D
+2C,3S,!C and !H or !D and !S
+2C,4C,!D or !H and !S
+2C,4D,!H or !S and !C
+2C,4H,!S or !C and !D
+2C,4S,!C and !H or !D and !S
+2C--2D,Db,!H or !S and !C
+2C--2D,2H,!S or !C and !D
+2C--2D,2S,!C and !H or !D and !S
+2C--2D,3C,!D or !H and !S
+2C--2D,3D,!H or !S and !C
+2C--2D,3H,!S or !C and !D
+2C--2D,3S,!C and !H or !D and !S
+2C--2D,4C,!D or !H and !S
+2C--2D,4D,!H or !S and !C
+2C--2D,4H,!S or !C and !D
+2C--2D,4S,!C and !H or !D and !S
+Option,2CDefense Precision
+2C,Db,Take-out Double
 
 # billshardy.extras
 Option,XfersAfterJump2NT
