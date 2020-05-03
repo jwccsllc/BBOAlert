@@ -114,3 +114,4 @@ Option,1NTDb Penalty
 1NDb----,2D--,5!D Runout
 1NDb----,2H--,5!H Runout
 1NDb----,2S--,5!S Runout
+1[CD]__**__,1NT,Balanced 15-17
