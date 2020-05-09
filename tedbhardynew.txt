@@ -1,3 +1,4 @@
+BBOalert
 
 # tedbhardy.hdr
 BBOalert, file must begin with BBOalert keyword
@@ -148,8 +149,8 @@ Option,1NTOpening 11+-14
 1N2H,2S,To Play
 1N2H----,Db,Negative DSI
 1N2H,2N,Lebensohl
-1N2S,Dbl,Negative DSI
-1N2S----,Dbl,Negative DSI
+1N2S,Db,Negative DSI
+1N2S----,Db,Negative DSI
 1N2S,2N,Lebensohl
 Option,1NTDb Penalty
 1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
@@ -166,6 +167,8 @@ Option,1NTDb Penalty
 1NDb----,2D--,5!D Runout
 1NDb----,2H--,5!H Runout
 1NDb----,2S--,5!S Runout
+,1C,3+!C unbalanced or balanced 15-17 NT
+,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1[CD]__**__,1NT,Balanced 15-17
 
 # 2NTOpening.txt
@@ -482,13 +485,14 @@ Option,1mOpenings
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
-Option,1mOpening 12-14 1NT
-,1C,3+!C unbalanced or balanced 15-17 NT
-1C--1*,1N,Balanced 15-17
-1C1SDb--,1N,15-17 Balanced
-Option,1mOpening 15-17 1NT
-,1C,3+!C unbalanced or balanced 12-14 NT
-1C--1*,1N,Balanced 12-14
+# These are moved to the 1NTOpening-11-14.txt and # 1NTOpening-15-17.txt
+# Option,1mOpening 12-14 1NT
+# ,1C,3+!C unbalanced or balanced 15-17 NT
+# 1C--1*,1N,Balanced 15-17
+# 1C1SDb--,1N,15-17 Balanced
+# Option,1mOpening 15-17 1NT
+# ,1C,3+!C unbalanced or balanced 12-14 NT
+# 1C--1*,1N,Balanced 12-14
 Option,UMJOOMO Off
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
@@ -507,8 +511,6 @@ Option,UMJOOMO On
 1D--2H--2N--,3S,5=5-x-x maximum
 
 # 2COpening.txt
-Option,2COpening
-,2C,
 Option,2COpening ControlSteps On
 2C--,2D,1 Control 1 King or fewer (Kokish Relays on)
 2C--,2H,2 Controls Ace or 2 Kings
@@ -554,17 +556,17 @@ Option,2HSQuery Ogust
 2H--2N--,3D Bad Hand good Suit
 2H--2N--,3H Good Hand Good Suit
 2H--2N--,3S Good Hand Good Suit
-2HDbl,2C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
 2S--,2N,Ogust
 2S--2N--,3C Bad Hand bad Suit
 2S--2N--,3D Bad Hand good Suit
 2S--2N--,3H Good Hand Bad Suit
 2S--2N--,3S Good Hand Good Suit
-2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 Option,2HSQuery Feature
 2H--,2N,Feature Request
 2H--2N--,3C,Feature in !C
@@ -576,12 +578,12 @@ Option,2HSQuery Feature
 2S--2N--,3H,Feature in !H
 2S--2N--,2S,No Feature
 Option,2H2SMcCabe
-2HDbl,2C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
-2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 
 # 2DFlannery.txt
 Option,Flannery
@@ -760,3 +762,13 @@ Option,2CDefense Precision
 2C,Db,Take-out Double
 
 # tedbhardy.extras
+# 4-5-x-x Flannery
+2D--2N--,3H,4=5=2=2 minimum
+2D--2N--,3S,4=5=2-2 maximum
+2D--2N--,3N,4=5-x-x Balanced Maximum
+[12]N--,3C,Puppet Stayman
+[12]N--3C--,3D,No 5 card major at least 1 4 card major
+[12]N--3C--3D--,4D,Both Majors
+[12]N--3C--3D--,3H,4!S fewer !H
+[12]N--3C--3D--,3S,4!H fewer !S
+[12]N--3C--3D--,3N,No 4 card major

@@ -14,17 +14,17 @@ Option,2HSQuery Ogust
 2H--2N--,3D Bad Hand good Suit
 2H--2N--,3H Good Hand Good Suit
 2H--2N--,3S Good Hand Good Suit
-2HDbl,2C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
 2S--,2N,Ogust
 2S--2N--,3C Bad Hand bad Suit
 2S--2N--,3D Bad Hand good Suit
 2S--2N--,3H Good Hand Bad Suit
 2S--2N--,3S Good Hand Good Suit
-2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 Option,2HSQuery Feature
 2H--,2N,Feature Request
 2H--2N--,3C,Feature in !C
@@ -36,9 +36,9 @@ Option,2HSQuery Feature
 2S--2N--,3H,Feature in !H
 2S--2N--,2S,No Feature
 Option,2H2SMcCabe
-2HDbl,2C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
-2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S

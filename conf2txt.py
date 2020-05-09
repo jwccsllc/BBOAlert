@@ -20,6 +20,7 @@ def writeFile(cfg): #{
 	fname	= cfg.get('bboalert', 'outfile')
 	modules	= cfg.getList('bboalert', 'modules')
 	fh = Csys.openOut(fname)
+	fh.write('BBOalert\n')
 	for module in modules: #{
 		fh.write('\n# %s\n' % module)
 		data = open(module).read()

@@ -1,3 +1,4 @@
+BBOalert
 
 # billshardy.hdr
 BBOalert, file must begin with BBOalert keyword
@@ -63,21 +64,21 @@ Option,1NTOpening 11+-14
 1N--,2DDb,3D,4+!H 2!D Maximum Values
 1N--,2DDb,3H,4+!H Balanced Minimum
 1N--,2H,Transfer !S
-1N--,2HDb,--,Fewer than 3!S
-1N--,2HDb,2S,Three !S
-1N--,2H--,2S,Fewer than 4!S
-1N--,2H__,2N,4+!S 4=3=3=3 Maximum Values
-1N--,2H__,3C,4+!S 2!C Maximum Values
-1N--,2H__,3D,4+!S 2!D Maximum Values
-1N--,2H__,3H,4+!S 2!H Maximum Values
-1N--,2H__,3S,4+!S Balanced Minimum
+1N--2HDb,--,Fewer than 3!S
+1N--2HDb,2S,Three !S
+1N--2H--,2S,Fewer than 4!S
+1N--2H__,2N,4+!S 4=3=3=3 Maximum Values
+1N--2H__,3C,4+!S 2!C Maximum Values
+1N--2H__,3D,4+!S 2!D Maximum Values
+1N--2H__,3H,4+!S 2!H Maximum Values
+1N--2H__,3S,4+!S Balanced Minimum
 1N--2H--3C--,3H,Transfer !H
 1N--,2S,Range Ask or !C
 1N--,2S__,2N,Minimum NT
 1N--,2S__2N--,3C,Max NT
 1N--,2N,Transfer !D 3D is S/A
-1N--,2N--,3C,Weak !D
-1N--,2N--,3D,SuperAccept !D
+1N--2N--,3C,Weak !D
+1N--2N--,3D,SuperAccept !D
 1N--,3C,Low Info Puppet not 4=4 majors
 1N--3C--,3D,No 5-card major
 1N--3C--3D--,3H,Holding 4!S
@@ -96,11 +97,11 @@ Option,1NTOpening 11+-14
 1N--2C--2D,3S,4!S 5+!H GF Smolen
 # after 2C interference 
 1N2C,2D,Transfer !H
-1N2C,2D--,2H,Fewer than 4!H
-1N2C,2D--,2N,4+!H 3=4=3=3 Maximum Values
-1N2C,2D--,3C,4+!H 2!C Maximum Values
-1N2C,2D--,3D,4+!H 2!D Maximum Values
-1N2C,2D--,3H,4+!H Balanced Minimum
+1N2C2D--,2H,Fewer than 4!H
+1N2C2D--,2N,4+!H 3=4=3=3 Maximum Values
+1N2C2D--,3C,4+!H 2!C Maximum Values
+1N2C2D--,3D,4+!H 2!D Maximum Values
+1N2C2D--,3H,4+!H Balanced Minimum
 1N2C2DDb,--,Fewer than 3!H
 1N2C2DDb,2H,Three !H
 1N2C2DDb,2N,4+!H 3=4=3=3 Maximum Values
@@ -116,11 +117,11 @@ Option,1NTOpening 11+-14
 1N2C2HDb,3H,4+!S 2!H Maximum Values
 1N2C2HDb,3S,4+!S Balanced Minimum
 1N2C,2S,Range Ask or !C
-1N2C,2S__,2N,Minimum NT
-1N2C,2S__2N--,3C,Max NT
+1N2C2S__,2N,Minimum NT
+1N2C2S__2N--,3C,Max NT
 1N2C,2N,Transfer !D 3D is S/A
-1N2C,2N--,3C,Weak !D
-1N2C,2N--,3D,SuperAccept !D
+1N2C2N--,3C,Weak !D
+1N2C2N--,3D,SuperAccept !D
 1N2C,3C,Low Info Puppet not 4=4 majors
 1N2C3C--,3D,No 5-card major
 1N2C3C--3D--,3H,Holding 4!S
@@ -146,8 +147,8 @@ Option,1NTOpening 11+-14
 1N2H,2S,To Play
 1N2H----,Db,Negative DSI
 1N2H,2N,Lebensohl
-1N2S,Dbl,Negative DSI
-1N2S----,Dbl,Negative DSI
+1N2S,Db,Negative DSI
+1N2S----,Db,Negative DSI
 1N2S,2N,Lebensohl
 Option,1NTDb Penalty
 1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
@@ -164,7 +165,9 @@ Option,1NTDb Penalty
 1NDb----,2D--,5!D Runout
 1NDb----,2H--,5!H Runout
 1NDb----,2S--,5!S Runout
-# Suction Defense Against NT
+,1C,3+!C unbalanced or balanced 15-17 NT
+,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
+1[CD]__**__,1NT,Balanced 15-17
 
 # 2NTOpening.txt
 BBOalert
@@ -480,13 +483,14 @@ Option,1mOpenings
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
-Option,1mOpening 12-14 1NT
-,1C,3+!C unbalanced or balanced 15-19 NT
-1C--1*,1N,Balanced 15-17
-1C1SDb--,1N,15-17 Balanced
-Option,1mOpening 15-17 1NT
-,1C,3+!C unbalanced or balanced 12-14 NT
-1C--1*,1N,Balanced 12-14
+# These are moved to the 1NTOpening-11-14.txt and # 1NTOpening-15-17.txt
+# Option,1mOpening 12-14 1NT
+# ,1C,3+!C unbalanced or balanced 15-17 NT
+# 1C--1*,1N,Balanced 15-17
+# 1C1SDb--,1N,15-17 Balanced
+# Option,1mOpening 15-17 1NT
+# ,1C,3+!C unbalanced or balanced 12-14 NT
+# 1C--1*,1N,Balanced 12-14
 Option,UMJOOMO Off
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
@@ -521,17 +525,17 @@ Option,2HSQuery Ogust
 2H--2N--,3D Bad Hand good Suit
 2H--2N--,3H Good Hand Good Suit
 2H--2N--,3S Good Hand Good Suit
-2HDbl,2C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
 2S--,2N,Ogust
 2S--2N--,3C Bad Hand bad Suit
 2S--2N--,3D Bad Hand good Suit
 2S--2N--,3H Good Hand Bad Suit
 2S--2N--,3S Good Hand Good Suit
-2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 Option,2HSQuery Feature
 2H--,2N,Feature Request
 2H--2N--,3C,Feature in !C
@@ -543,12 +547,12 @@ Option,2HSQuery Feature
 2S--2N--,3H,Feature in !H
 2S--2N--,2S,No Feature
 Option,2H2SMcCabe
-2HDbl,2C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
-2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
-2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
-2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 
 # 2DFlannery.txt
 Option,Flannery
@@ -582,14 +586,14 @@ Option,XYZ @1@2
 1C__1D__1N__,2D,Artifical Game Force
 1C__1D__1S__,2C,Invitational Force 2!D
 1C__1D__1S__,2D,Artifical Game Force
-1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+1C--1H--1N--,2C,Invitational force 2!C by Opener
+1C--1H--1N--,2N,Fewer than 4!C
+1C__1H__1N__2C__2D__,2N,Invitational 4+!C
 1C__1H__1N__,2N,Invitational Fewer 4!C
 1C__1H__1S__,2C,Invitational Force 2!D
-1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+1C__1H__1S__2C__2D__,2N,Invitational 4+!C
 1C__1H__1S__,2D,Artificial Game Force
 1C--1H--1S--2D--,2H,3!H
---1C--1H--1S--2D--,2H,3!H
-----1C--1H--1S--2D--,2H,3!H
 1C__1H__1S__,2C,Invitational Forces 2!D
 1C__1H__1S__,2D,Artificial Game Force
 1C__1H__1S__,2H,5+!H Less than invitational
@@ -598,25 +602,19 @@ Option,XYZ @1@2
 1C__1S__1N--,2C,Invitational Force 2!D
 1C__1S__1N__,2D,Artificial Game Force
 1C--1S--1N--2D--,2S,3!S not 3!H
---1C--1S--1N--2D--,2S,3!S not 3!H
-----1C--1S--1N--2D--,2S,3!S not 3!H
-------1C--1S--1N--2D--,2S,3!S not 3!H
 1C--1S--1N--2D--,2H,!4H may have 3!S
---1C--1S--1N--2D--,2H,!4H may have 3!S
-----1C--1S--1N--2D--,2H,!4H may have 3!S
-------1C--1S--1N--2D--,2H,!4H may have 3!S
 1D__1S__1N__,2C,Invitational Force 2!D
 1D__1S__1N__,2D,Artificial Game Force
 1D__1S__1N__,2N,Invitational < 4!D Support
 1D__1S__1N__,2S,5+!S Less than invitational
 Option,XYZ @3@4
-----1C--1D--1N--,2C,Forcing, Invitational
+----1C--1D--1N--,2C,Forcing to 2!D; Invitational
 ----1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
 ----1C__1D__1H__,2C,Invitational Force 2!D
 ----1C__1D__1N__,2C,Invitational Force 2!D
 ----1C__1D__1N__,2D,Artifical Game Force
 ----1C__1D__1S__,2C,Invitational Force 2!D
-----1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
+----1C__1H__1N__2C__2D__,2N,Invitational 4+!C
 ----1C__1H__1N__,2N,Invitational Fewer 4!C
 ----1C__1H__1S__,2C,Invitational Force 2!D
 ----1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
@@ -638,7 +636,7 @@ Option,XYZ @3@4
 ------1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
 ------1C__1H__1N__,2N,Invitational Fewer 4!C
 ------1C__1H__1S__,2C,Invitational Force 2!D
-------1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
+------1C__1H__1S__2C__2D__,2N,Invitational 4+!C
 ------1C__1H__1S__,2H,5+!H Less than invitational
 ------1C__1H__1S__,2N,Invitational < 4!C Support
 ------1C__1H__1S__,2N,Invitational Fewer 4!C
