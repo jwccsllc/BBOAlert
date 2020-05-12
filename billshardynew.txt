@@ -515,10 +515,10 @@ Option,2DWeak Simple @3@4
 ,2D,5-11 Weak 5+!D
 Option,2HSWeak @1@2
 ,2H,5-11 Weak 6+ !H
-,2H,5-11 Weak 6+ !S
+,2S,5-11 Weak 6+ !S
 Option,2HSWeak @3@4
 ,2H,5-11 Weak 5+ !H
-,2H,5-11 Weak 5+ !S
+,2S,5-11 Weak 5+ !S
 Option,2HSQuery Ogust
 2H--,2N,Ogust
 2H--2N--,3C Bad Hand bad Suit
@@ -586,7 +586,7 @@ Option,XYZ @1@2
 1C__1D__1N__,2D,Artifical Game Force
 1C__1D__1S__,2C,Invitational Force 2!D
 1C__1D__1S__,2D,Artifical Game Force
-1C--1H--1N--,2C,Invitational force 2!C by Opener
+1C--1H--1N--,2C,Invitational force 2!D by Opener
 1C--1H--1N--,2N,Fewer than 4!C
 1C__1H__1N__2C__2D__,2N,Invitational 4+!C
 1C__1H__1N__,2N,Invitational Fewer 4!C

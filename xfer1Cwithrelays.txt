@@ -1,5 +1,5 @@
 BBOalert
 Note.  This if based on Lyle Poe's book, Transfers Over 1C
 Openings with Relays
-Option
+Option,1CForcing, Transfer21C with Relays
 ,1C,Forcing WeakNT or Strong 2-bid 

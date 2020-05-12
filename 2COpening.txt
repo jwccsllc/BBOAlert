@@ -1,5 +1,5 @@
 Option,2COpening ControlSteps On
-2C--,2D,1 Control 1 King or fewer (Kokish Relays on)
+2C--,2D,1 King or fewer (Kokish Relays on)
 2C--,2H,2 Controls Ace or 2 Kings
 2C--,2S,3 Controls Ace and King
 2C--,2N,3 Controls 3 Kings

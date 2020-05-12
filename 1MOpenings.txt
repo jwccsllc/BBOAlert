@@ -3,7 +3,7 @@ Option,1MOpening @1@2 2/1 Vanilla
 ,1H,
 ,1S,
 1H--,1N,Forcing
-1S==,1N,Forcing
+1S--,1N,Forcing
 1H__,2S,Weak Jump Shift
 1H__,3C,Weak Jump Shift
 1H__,3D,Weak Jump Shift
