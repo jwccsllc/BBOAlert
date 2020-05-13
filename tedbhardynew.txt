@@ -512,7 +512,7 @@ Option,UMJOOMO On
 
 # 2COpening.txt
 Option,2COpening ControlSteps On
-2C--,2D,1 Control 1 King or fewer (Kokish Relays on)
+2C--,2D,1 King or fewer (Kokish Relays on)
 2C--,2H,2 Controls Ace or 2 Kings
 2C--,2S,3 Controls Ace and King
 2C--,2N,3 Controls 3 Kings
@@ -546,10 +546,10 @@ Option,2DWeak Simple @3@4
 ,2D,5-11 Weak 5+!D
 Option,2HSWeak @1@2
 ,2H,5-11 Weak 6+ !H
-,2H,5-11 Weak 6+ !S
+,2S,5-11 Weak 6+ !S
 Option,2HSWeak @3@4
 ,2H,5-11 Weak 5+ !H
-,2H,5-11 Weak 5+ !S
+,2S,5-11 Weak 5+ !S
 Option,2HSQuery Ogust
 2H--,2N,Ogust
 2H--2N--,3C Bad Hand bad Suit
