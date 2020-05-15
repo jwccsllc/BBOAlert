@@ -7,6 +7,7 @@ Option,1NTDefense Suction v Strong/Weak
 1N,2H,!S or !C and !D
 1N,2S,!C and !H or !D and !S
 1N2C--,2D,forced response
+1N2C--2D--,2H,!H and !S
 1N2S__,2N,Asks for Lower Suit
 Option,2NTDefense Suction
 2N,3C,!D or !H and !S

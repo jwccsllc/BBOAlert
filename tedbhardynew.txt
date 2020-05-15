@@ -441,7 +441,7 @@ Option,KokishGT
 1H--2H--,2N,Short Suit Game Try !S
 1H--2H--,3C,Short Suit Game Try !C
 1H--2H--,3D,Short Suit Game Try !D
-1H--2H--,3H,Trump Quality Ask
+1H__2H--,3H,Trump Quality Ask
 1H--2H--3H--,3N,Bad !H good hand for NT
 1H--2H--3H--,4H,Good !H good hand
 1H--2H--3H--,--,Bad !H weak
@@ -465,6 +465,7 @@ Option,1mOpenings
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,3C,5+!C Weak
+1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
 1C--1H--2D--,2S,<= 7HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman
@@ -687,6 +688,8 @@ Option,1NTDefense Suction v Strong/Weak
 1N,3D,!H or !S and !C
 1N,2H,!S or !C and !D
 1N,2S,!C and !H or !D and !S
+1N2C--,2D,forced response
+1N2C--2D--,2H,!H and !S
 1N2S__,2N,Asks for Lower Suit
 Option,2NTDefense Suction
 2N,3C,!D or !H and !S

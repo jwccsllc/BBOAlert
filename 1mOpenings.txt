@@ -3,6 +3,7 @@ Option,1mOpenings
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,3C,5+!C Weak
+1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
 1C--1H--2D--,2S,<= 7HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman

@@ -234,7 +234,7 @@ Option,KokishGT
 1H--2H--,2N,Short Suit Game Try !S
 1H--2H--,3C,Short Suit Game Try !C
 1H--2H--,3D,Short Suit Game Try !D
-1H--2H--,3H,Trump Quality Ask
+1H__2H--,3H,Trump Quality Ask
 1H--2H--3H--,3N,Bad !H good hand for NT
 1H--2H--3H--,4H,Good !H good hand
 1H--2H--3H--,--,Bad !H weak
