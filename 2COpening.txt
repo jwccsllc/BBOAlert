@@ -24,4 +24,7 @@ Option,2C2D KokishRelay
 2C--2D--2S--2N--,3H,!S and !H with longer !S
 2C--2D--2S--2N--,3S,!S and no 2nd suit
 2C--2D--,2N,22-24 HCP Balanced Systems On
+Option
+2C--2H--3H--4H--,4S,Kickback; Keycard for !H
+2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
 

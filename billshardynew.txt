@@ -1,6 +1,6 @@
 BBOalert
 
-# billshardy.hdr
+# include billshardy.hdr
 BBOalert, file must begin with BBOalert keyword
 Shortcut,W0,2/1; 11-14 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 
@@ -10,7 +10,7 @@ Shortcut,W2,UDCA; Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even L
 
 
 
-# shortcuts.txt
+# include shortcuts.txt
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
 Shortcut,ML,My last deal; Thanks to all
 Shortcut,TC,Texas !C
@@ -48,7 +48,7 @@ Shortcut,UD,UDCA; Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
 Shortcut,LN,Journalist vs NT; Spot Leads Low from Interest
 
-# 1NTOpening-11-14.txt
+# include 1NTOpening-11-14.txt
 Option,1NTOpening 11+-14
 ,1N,11-14 Balanced
 1N--,2C,Stayman at least 1 4CM
@@ -169,7 +169,7 @@ Option,1NTDb Penalty
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1[CD]__**__,1NT,Balanced 15-17
 
-# 2NTOpening.txt
+# include 2NTOpening.txt
 BBOalert
 Option,2NTOpening Puppet Stayman
 ,2N,
@@ -202,7 +202,7 @@ Option,3NTOpening Gambling
 Option,3NTOpening Acol/NAMYATS
 ,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
 
-# 1MHardyRaises.txt
+# include 1MHardyRaises.txt
 BBOalert, file must begin with BBOalert keyword
 Option,1MOpening @1@2 Hardy Raises
 ,1H,
@@ -439,7 +439,7 @@ Option,KokishGT
 1H--2H--,2N,Short Suit Game Try !S
 1H--2H--,3C,Short Suit Game Try !C
 1H--2H--,3D,Short Suit Game Try !D
-1H--2H--,3H,Trump Quality Ask
+1H__2H--,3H,Trump Quality Ask
 1H--2H--3H--,3N,Bad !H good hand for NT
 1H--2H--3H--,4H,Good !H good hand
 1H--2H--3H--,--,Bad !H weak
@@ -457,12 +457,13 @@ Option,KokishGT
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
 
-# 1mOpenings.txt
+# include 1mOpenings.txt
 # Minor Openings
 Option,1mOpenings
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,3C,5+!C Weak
+1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
 1C--1H--2D--,2S,<= 7HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman
@@ -492,6 +493,8 @@ Option,1mOpenings
 # ,1C,3+!C unbalanced or balanced 12-14 NT
 # 1C--1*,1N,Balanced 12-14
 Option,UMJOOMO Off
+1D--,2H,
+1D--,2S,
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
 1C--,2S,5!S 4!H or 5!H invitational
@@ -508,7 +511,39 @@ Option,UMJOOMO On
 1D--2H--2N--,3H,5=5-x-x minimum
 1D--2H--2N--,3S,5=5-x-x maximum
 
-# 2DHSOpenings.txt
+# include 2COpening.txt
+Option,2COpening ControlSteps On
+2C--,2D,1 King or fewer (Kokish Relays on)
+2C--,2H,2 Controls Ace or 2 Kings
+2C--,2S,3 Controls Ace and King
+2C--,2N,3 Controls 3 Kings
+2C--,3C,4 Controls Ace=2 King=1
+2C--,3D,5 Controls Ace=2 King=1
+Option,2COpening ControlSteps Off
+2C--,2D,Waiting
+2C--2D--2*,2C,Cheapest Minimum
+2C--2D--2*,2D,Cheapest Minimum
+Option,2C2D KokishRelay
+2C--2D--2H,
+2C--2D--,2H,Relay to 2!S
+2C--2D--2H--,2S,Mandatory Response to 2!H
+2C--2D--2H--2S--,2N,25+ HCP Balanced Systems On
+2C--2D--2H--2S--,3C,!H and !C
+2C--2D--2H--2S--,3D,!H and !D
+2C--2D--2H--2S--,3H,!H and no second suit
+2C--2D--,2S,Relay to 2!NT
+2C--2D--2S--,2N,Mandatory Response to 2!S
+2C--2D--2S--2N--,3C,!S and !C
+2C--2D--2S--2N--,3D,!S and !D
+2C--2D--2S--2N--,3H,!S and !H with longer !S
+2C--2D--2S--2N--,3S,!S and no 2nd suit
+2C--2D--,2N,22-24 HCP Balanced Systems On
+Option
+2C--2H--3H--4H--,4S,Kickback; Keycard for !H
+2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
+
+
+# include 2DHSOpenings.txt
 Option,2DWeak Simple @1@2
 ,2D,5-11 Weak 6+!D
 Option,2DWeak Simple @3@4
@@ -554,7 +589,7 @@ Option,2H2SMcCabe
 2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 
-# 2DFlannery.txt
+# include 2DFlannery.txt
 Option,Flannery
 ,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
 1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
@@ -576,7 +611,7 @@ Option,Flannery
 2D--2N--,4D,4=5=4=0 4!D
 
 
-# XYZ.txt
+# include XYZ.txt
 Option,XYZ @1@2
 1C--1D--1N--,2C,Forcing, Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
@@ -647,7 +682,7 @@ Option,XYZ @3@4
 ------1D__1S__1N__,2S,5+!S Less than invitational
 
 
-# 1NTdef-suction.txt
+# include 1NTdef-suction.txt
 BBOalert
 Option,1NTDefense Suction v Strong/Weak
 1N,2C,!D or !H and !S
@@ -656,6 +691,8 @@ Option,1NTDefense Suction v Strong/Weak
 1N,3D,!H or !S and !C
 1N,2H,!S or !C and !D
 1N,2S,!C and !H or !D and !S
+1N2C--,2D,forced response
+1N2C--2D--,2H,!H and !S
 1N2S__,2N,Asks for Lower Suit
 Option,2NTDefense Suction
 2N,3C,!D or !H and !S
@@ -665,7 +702,7 @@ Option,2NTDefense Suction
 2N,3S,!C and !H or !D and !S
 2N3S__,3N,Asks for Lower Suit
 
-# 1CDef-Suction.txt
+# include 1CDef-Suction.txt
 # Defense Against Strong Club
 Option,1CDefense Standard
 1C,Dbl,Take-out Double
@@ -702,7 +739,7 @@ Option,1CDefense Precision
 1C--1D,4S,!C and !H or !D and !S
 
 
-# 2CDef-Suction.txt
+# include 2CDef-Suction.txt
 BBOalerts
 # Defense Against Strong 2 Club
 Option,2CDefense Strong
@@ -732,7 +769,7 @@ Option,2CDefense Strong
 Option,2CDefense Precision
 2C,Db,Take-out Double
 
-# billshardy.extras
+# include billshardy.extras
 Option,XfersAfterJump2NT
 1C--1D--,2N,18-19 HCP Transfer Responses on
 1C--1H--,2N,18-19 HCP Transfer Responses on
@@ -793,30 +830,6 @@ Option,XfersAfterJump2NT
 1S--1N--2N--,3D,5+!H Opener accepts xfer Pass or Correct
 1S--1N--2N--,3H,3!S Strong !S Raise
 1S--1N--2N--,3S,3!S Weak !S Raise
-Option,2COpening Strong ControlSteps
-,2C,
-2C--,2D,1 Control 1 King or fewer (Kokish Relays on)
-2C--,2H,2 Controls Ace or 2 Kings
-2C--,2S,3 Controls Ace and King
-2C--,2N,3 Controls 3 Kings
-2C--,3C,4 Controls Ace=2 King=1
-2C--,3D,5 Controls Ace=2 King=1
-2C--3D--3H--4H--4S--,5D,2 Keycards without Q!H
-Option,KokishRelay
-2C--2D--2H,
-2C--2D--,2H,Relay to 2!S
-2C--2D--2H--,2S,Mandatory Response to 2!H
-2C--2D--2H--2S--,2N,25+ HCP Balanced Systems On
-2C--2D--2H--2S--,3C,!H and !C
-2C--2D--2H--2S--,3D,!H and !D
-2C--2D--2H--2S--,3H,!H and no second suit
-2C--2D--,2S,Relay to 2!NT
-2C--2D--2S--,2N,Mandatory Response to 2!S
-2C--2D--2S--2N--,3C,!S and !C
-2C--2D--2S--2N--,3D,!S and !D
-2C--2D--2S--2N--,3H,!S and !H with longer !S
-2C--2D--2S--2N--,3S,!S and no 2nd suit
-2C--2D--,2N,22-24 HCP Balanced Systems On
 Option
 # Competitive biddin
 1H--1N,3D,Weak,20200408_16:21 Deal undefined

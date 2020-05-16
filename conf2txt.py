@@ -22,7 +22,7 @@ def writeFile(cfg): #{
 	fh = Csys.openOut(fname)
 	fh.write('BBOalert\n')
 	for module in modules: #{
-		fh.write('\n# %s\n' % module)
+		fh.write('\n# include %s\n' % module)
 		data = open(module).read()
 		fh.write(data)
 	#}
@@ -60,9 +60,10 @@ def main(): #{
 	#}
 	Csys.getoptionsEnvironment(options)
 
-	fname = args[0]
-	cfg = Csys.ConfigParser(args)
-	writeFile(cfg)
+	for fname in args: #{
+		cfg = Csys.ConfigParser(fname)
+		writeFile(cfg)
+	#}
 #}
 if __name__ == '__main__': #{
 	main()
