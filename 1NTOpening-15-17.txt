@@ -9,7 +9,7 @@ Option,1NTOpening 15+-17 Basic
 1N--,3C,5-5 Minors Pass or Correct
 1N--,3D,5-5 Minors Game Forcing
 1N--,3H,Short !H 3=1-(54) Game Forcing
-1N--,2S,Short !S 1=3-(54) Game Forcint
+1N--,3S,Short !S 1=3-(54) Game Forcing
 1N--,4D,Transfer to !H
 1N--,4H,Transfer to !S
 1N--2C--2D--,3H,Smolen 4=5-x-x GF
@@ -23,7 +23,7 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 1N2C,3C,5-5 Minors Pass or Correct
 1N2C,3D,5-5 Minors Game Forcing
 1N2C,3H,Short !H 3=1-(54) Game Forcing
-1N2C,2S,Short !S 1=3-(54) Game Forcint
+1N2C,2S,Short !S 1=3-(54) Game Forcing
 1N2C,4D,Transfer to !H
 1N2C,4H,Transfer to !S
 1N2C2C--2D--,3H,Smolen 4=5-x-x GF

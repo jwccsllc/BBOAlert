@@ -75,7 +75,7 @@ Option,1NTOpening 11+-14
 1N--2H--3C--,3H,Transfer !H
 1N--,2S,Range Ask or !C
 1N--,2S__,2N,Minimum NT
-1N--,2S__2N--,3C,Max NT
+1N--2S--,3C,Would accept invite to 3N
 1N--,2N,Transfer !D 3D is S/A
 1N--2N--,3C,Weak !D
 1N--2N--,3D,SuperAccept !D
@@ -493,8 +493,8 @@ Option,1mOpenings
 # ,1C,3+!C unbalanced or balanced 12-14 NT
 # 1C--1*,1N,Balanced 12-14
 Option,UMJOOMO Off
-1D--,2H,
-1D--,2S,
+1[CD]--,2H,
+1[CD]--,2S,
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
 1C--,2S,5!S 4!H or 5!H invitational
