@@ -26,6 +26,7 @@ Shortcut,CC,Control !C
 Shortcut,CD,Control !D
 Shortcut,CH,Control !H
 Shortcut,CS,Control !S
+Shortcut,SA,Super Accept
 Shortcut,SC,Stopper !C
 Shortcut,SD,Stopper !D
 Shortcut,SH,Stopper !H
@@ -35,16 +36,16 @@ Shortcut,KC,Odd number of key cards; Control !C
 Shortcut,KD,Odd number of key cards; Control !D
 Shortcut,KH,Odd number of key cards; Control !H
 Shortcut,KS,Odd number of key cards; Control !S
-Shortcut,NA,Lead against NT : A = typically AKx
-Shortcut,NK,Lead against NT : K = typically AKJ AKQ KQJ or KQT
-Shortcut,NQ,Lead against NT : Q = typically QJT or QJ9
-Shortcut,NJ,Lead against NT : J = typically AQJ or JTx
-Shortcut,NT,Lead against NT : 10 = typically AJ10 or KJ10 ot 109x
-Shortcut,SA,Lead against suit : A = typically AK even number of cards
-Shortcut,SK,Lead against suit : K = typically AK odd number of cards
-Shortcut,SQ,Lead against suit : Q = typically KQx
-Shortcut,SJ,Lead against suit : J = typically QJx
-Shortcut,ST,Lead against suit : 10 = typically J10x
+Shortcut,LNA,Lead against NT : A = typically AKx
+Shortcut,LNK,Lead against NT : K = typically AKJ AKQ KQJ or KQT
+Shortcut,LNQ,Lead against NT : Q = typically QJT or QJ9
+Shortcut,LNJ,Lead against NT : J = typically AQJ or JTx
+Shortcut,LNT,Lead against NT : 10 = typically AJ10 or KJ10 ot 109x
+Shortcut,LSA,Lead against suit : A = typically AK even number of cards
+Shortcut,LSK,Lead against suit : K = typically AK odd number of cards
+Shortcut,LSQ,Lead against suit : Q = typically KQx
+Shortcut,LSJ,Lead against suit : J = typically QJx
+Shortcut,LST,Lead against suit : 10 = typically J10x
 Shortcut,UD,UDCA; Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
 Shortcut,LN,Journalist vs NT; Spot Leads Low from Interest
@@ -61,7 +62,7 @@ Option,1NTOpening 15+-17 Basic
 1N--,3C,5-5 Minors Pass or Correct
 1N--,3D,5-5 Minors Game Forcing
 1N--,3H,Short !H 3=1-(54) Game Forcing
-1N--,2S,Short !S 1=3-(54) Game Forcint
+1N--,3S,Short !S 1=3-(54) Game Forcing
 1N--,4D,Transfer to !H
 1N--,4H,Transfer to !S
 1N--2C--2D--,3H,Smolen 4=5-x-x GF
@@ -75,7 +76,7 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 1N2C,3C,5-5 Minors Pass or Correct
 1N2C,3D,5-5 Minors Game Forcing
 1N2C,3H,Short !H 3=1-(54) Game Forcing
-1N2C,2S,Short !S 1=3-(54) Game Forcint
+1N2C,2S,Short !S 1=3-(54) Game Forcing
 1N2C,4D,Transfer to !H
 1N2C,4H,Transfer to !S
 1N2C2C--2D--,3H,Smolen 4=5-x-x GF
@@ -419,8 +420,8 @@ Option,1mOpenings
 # ,1C,3+!C unbalanced or balanced 12-14 NT
 # 1C--1*,1N,Balanced 12-14
 Option,UMJOOMO Off
-1D--,2H,
-1D--,2S,
+1[CD]--,2H,
+1[CD]--,2S,
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
 1C--,2S,5!S 4!H or 5!H invitational
