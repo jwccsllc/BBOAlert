@@ -13,6 +13,8 @@ Option,1MOpening @1@2 Hardy Raises
 1H--1N--2N--,3D,Transfer !H
 1H--1N--2N--,3H,Transfer !S Stronger
 1H--1N--2N--,3S,Weak raise of !S
+1H**,Db,Negative X showing 4+ !S
+1S**,Db,Negative X showing 4+ !H
 # 3C responses
 1H--,3C,9+-12 3!H shortness 4!H no shortness
 1H--3C--3D,Describe hand

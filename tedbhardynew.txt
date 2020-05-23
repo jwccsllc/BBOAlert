@@ -56,16 +56,16 @@ Option,1NTOpening 11+-14
 ,1N,11-14 Balanced
 1N--,2C,Stayman at least 1 4CM
 1N--,2D,Transfer !H
-1N--,2D--,2H,Fewer than 4!H
-1N--,2D--,2N,4+!H 3=4=3=3 Maximum Values
-1N--,2D--,3C,4+!H 2!C Maximum Values
-1N--,2D--,3D,4+!H 2!D Maximum Values
-1N--,2D--,3H,4+!H Balanced Minimum
-1N--,2DDb,--,Fewer than 3!H
-1N--,2DDb,2H,Three !H
-1N--,2DDb,3C,4+!H 2!C Maximum Values
-1N--,2DDb,3D,4+!H 2!D Maximum Values
-1N--,2DDb,3H,4+!H Balanced Minimum
+1N--2D--,2H,Fewer than 4!H
+1N--2D--,2N,4+!H 3=4=3=3 Maximum Values
+1N--2D--,3C,4+!H 2!C Maximum Values
+1N--2D--,3D,4+!H 2!D Maximum Values
+1N--2D--,3H,4+!H Balanced Minimum
+1N--2DDb,--,Fewer than 3!H
+1N--2DDb,2H,Three !H
+1N--2DDb,3C,4+!H 2!C Maximum Values
+1N--2DDb,3D,4+!H 2!D Maximum Values
+1N--2DDb,3H,4+!H Balanced Minimum
 1N--,2H,Transfer !S
 1N--2HDb,--,Fewer than 3!S
 1N--2HDb,2S,Three !S
@@ -221,6 +221,8 @@ Option,1MOpening @1@2 Hardy Raises
 1H--1N--2N--,3D,Transfer !H
 1H--1N--2N--,3H,Transfer !S Stronger
 1H--1N--2N--,3S,Weak raise of !S
+1H**,Db,Negative X showing 4+ !S
+1S**,Db,Negative X showing 4+ !H
 # 3C responses
 1H--,3C,9+-12 3!H shortness 4!H no shortness
 1H--3C--3D,Describe hand
