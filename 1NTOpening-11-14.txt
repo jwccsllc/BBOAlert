@@ -116,4 +116,5 @@ Option,1NTDb Penalty
 1NDb----,2S--,5!S Runout
 ,1C,3+!C unbalanced or balanced 15-17 NT
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
-1[CD]__**__,1NT,Balanced 15-17
+1[CD]__**__,1N,Balanced 15-17
+1[CD]**----,1N,Balanced 15-17
