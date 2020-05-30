@@ -387,6 +387,7 @@ Option
 # include 1mOpenings.txt
 # Minor Openings
 Option,1mOpenings
+1[CD]--1H1S,Db,Support X 3 card !H Support
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,3C,5+!C Weak
@@ -451,18 +452,18 @@ Option,2HSWeak @3@4
 ,2S,5-11 Weak 5+ !S
 Option,2HSQuery Ogust
 2H--,2N,Ogust
-2H--2N--,3C Bad Hand bad Suit
-2H--2N--,3D Bad Hand good Suit
-2H--2N--,3H Good Hand Good Suit
-2H--2N--,3S Good Hand Good Suit
+2H--2N--,3C, Bad Hand bad Suit
+2H--2N--,3D, Bad Hand good Suit
+2H--2N--,3H, Good Hand Good Suit
+2H--2N--,3S, Good Hand Good Suit
 2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
 2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
 2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
 2S--,2N,Ogust
-2S--2N--,3C Bad Hand bad Suit
-2S--2N--,3D Bad Hand good Suit
-2S--2N--,3H Good Hand Bad Suit
-2S--2N--,3S Good Hand Good Suit
+2S--2N--,3C, Bad Hand bad Suit
+2S--2N--,3D, Bad Hand good Suit
+2S--2N--,3H, Good Hand Bad Suit
+2S--2N--,3S, Good Hand Good Suit
 2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
