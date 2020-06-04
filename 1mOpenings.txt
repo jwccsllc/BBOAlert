@@ -25,6 +25,7 @@ Option,1mOpenings
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
+1D1[HS],3C,Weak
 # These are moved to the 1NTOpening-11-14.txt and # 1NTOpening-15-17.txt
 # Option,1mOpening 12-14 1NT
 # ,1C,3+!C unbalanced or balanced 15-17 NT
