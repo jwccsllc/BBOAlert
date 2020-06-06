@@ -2,6 +2,9 @@ Option,1NTOpening 11+-14
 ,1N,11-14 Balanced
 1N--,2C,Stayman at least 1 4CM
 1N--,2D,Transfer !H
+1N--2D2S,--,Holding 2!H
+1N--2D2S,2H,Holding 3!H
+1N--2D2S----,3D,Transfer !H
 1N--2D--,2H,Fewer than 4!H
 1N--2D--,2N,4+!H 3=4=3=3 Maximum Values
 1N--2D--,3C,4+!H 2!C Maximum Values
