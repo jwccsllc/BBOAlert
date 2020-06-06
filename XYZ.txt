@@ -21,6 +21,7 @@ Option,XYZ @1@2
 1C__1H__1S__,2N,Invitational < 4!C Support
 1C__1H__1S__,2N,Invitational Fewer 4!C
 1C__1S__1N--,2C,Invitational Force 2!D
+/1[CDH]--1[DHS]--1N--2C--/,2D,Required after 2!C
 1C__1S__1N__,2D,Artificial Game Force
 1C--1S--1N--2D--,2S,3!S not 3!H
 1C--1S--1N--2D--,2H,!4H may have 3!S
