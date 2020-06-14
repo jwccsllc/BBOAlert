@@ -214,6 +214,7 @@ BBOalert, file must begin with BBOalert keyword
 Option,1MOpening @1@2 Hardy Raises
 ,1H,
 ,1S,
+1[HS]--,1N,Forcing
 # 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
@@ -472,7 +473,13 @@ Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
+1C__,2D,5+!D Weak
+1C__,2H,5+!H Weak
+1C__,2S,5+!S Weak
 1C__,3C,5+!C Weak
+1D__,2H,5+!H Weak
+1D__,2S,5+!S Weak
+1D__,3D,5+!C Weak
 1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
 1C--1H--2D--,2S,<= 7HCP weak Ingberman

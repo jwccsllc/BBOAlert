@@ -8,6 +8,7 @@ Option,XYZ @1@2
 1C__1D__1S__,2C,Invitational Force 2!D
 1C__1D__1S__,2D,Artifical Game Force
 1C--1H--1N--,2C,Invitational force 2!D by Opener
+1*--1*--1*--2C--,2D,Required response
 1C--1H--1N--,2N,Fewer than 4!C
 1C__1H__1N__2C__2D__,2N,Invitational 4+!C
 1C__1H__1N__,2N,Invitational Fewer 4!C

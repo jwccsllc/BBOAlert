@@ -212,6 +212,7 @@ BBOalert, file must begin with BBOalert keyword
 Option,1MOpening @1@2 Hardy Raises
 ,1H,
 ,1S,
+1[HS]--,1N,Forcing
 # 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness

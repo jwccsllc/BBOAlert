@@ -1,0 +1,4 @@
+# Michaels
+1H,2H,!S + Minor
+1S,2S,!H + Minor
+
