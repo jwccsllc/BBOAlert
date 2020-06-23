@@ -55,6 +55,8 @@ Option,1NTOpening 11+-14
 ,1N,11-14 Balanced
 1N--,2C,Stayman at least 1 4CM
 1N--,2D,Transfer !H
+1N--2D--,3D,4!H Max Values 2!C
+1N--2D--3D--,4D,Transfer !H,20200620_16:03 Deal 17
 1N--2D2S,--,Holding 2!H
 1N--2D2S,2H,Holding 3!H
 1N--2D2S----,3D,Transfer !H
@@ -282,7 +284,13 @@ Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
+1C__,2D,5+!D Weak
+1C__,2H,5+!H Weak
+1C__,2S,5+!S Weak
 1C__,3C,5+!C Weak
+1D__,2H,5+!H Weak
+1D__,2S,5+!S Weak
+1D__,3D,5+!C Weak
 1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
 1C--1H--2D--,2S,<= 7HCP weak Ingberman
@@ -331,6 +339,35 @@ Option,UMJOOMO On
 1D--2H--2N--,3D,5=4-x-x maximum
 1D--2H--2N--,3H,5=5-x-x minimum
 1D--2H--2N--,3S,5=5-x-x maximum
+
+# include 1mSpiral.txt
+Option,Spiral
+1C--1H--2H--,2S,Quantity and Quality Ask in !H
+1C--1H--2H--2S--,2N,3-!H minimum
+1C--1H--2H--2S--,3C,3-!H maximum
+1C--1H--2H--2S--,3D,4-!H minimum
+1C--1H--2H--2S--,3H,4-!H maximum
+1C--1S--2S--,2N,Quantity and Quality Ask in !S
+1C--1S--2S--2N--,3C,3-!S minimum
+1C--1S--2S--2N--,3D,3-!S maximum
+1C--1S--2S--2N--,3H,4-!S minimum
+1C**1S--2S--2N--,3H,4-!S Minimum Hand
+1C--1S--2S--2N--,3S,4-!S maximum
+1D--1H--2H--,2S,Quantity and Quality Ask in !H
+1D--1H--2H--2S--,2N,3-!H minimum
+1D--1H--2H--2S--,3C,3-!H maximum
+1D--1H--2H--2S--,3D,4-!H minimum
+1D--1H--2H--2S--,3H,4-!H maximum
+1D--1S--2S--,2N,Quantity and Quality Ask in !S
+1D--1S--2S--2N--,3C,3-!S minimum
+1D--1S--2S--2N--,3D,3-!S maximum
+1D--1S--2S--2N--,3H,4-!S minimum
+1D--1S--2S--2N--,3S,4-!S maximum
+1H--1S--2S--,2N,Quantity and Quality Ask in !S
+1H--1S--2S--2N--,3C,3-!S minimum
+1H--1S--2S--2N--,3D,3-!S maximum
+1H--1S--2S--2N--,3H,4-!S minimum
+1H--1S--2S--2N--,3S,4-!S maximum
 
 # include 2DHSOpenings.txt
 Option,2DWeak Simple @1@2
@@ -411,6 +448,7 @@ Option,XYZ @1@2
 1C__1D__1S__,2C,Invitational Force 2!D
 1C__1D__1S__,2D,Artifical Game Force
 1C--1H--1N--,2C,Invitational force 2!D by Opener
+1*--1*--1*--2C--,2D,Required response
 1C--1H--1N--,2N,Fewer than 4!C
 1C__1H__1N__2C__2D__,2N,Invitational 4+!C
 1C__1H__1N__,2N,Invitational Fewer 4!C
@@ -471,6 +509,17 @@ Option,XYZ @3@4
 ------1D__1S__1N__,2N,Invitational < 4!D Support
 ------1D__1S__1N__,2S,5+!S Less than invitational
 
+
+# include defensemisc.txt
+# Michaels Cue Bids
+1C,2C,Majors
+1C,2N,!D + !H two suiter
+1D,2D,Majors
+1D,2N,!C + !H two suiter
+1H,2H,!S + Minor
+1S,2S,!H + Minor
+# Unusual vs Unusual
+1[HS],2N,!C + !D two-suiter
 
 # include 1NTdef-dont-cap.txt
 BBOalert

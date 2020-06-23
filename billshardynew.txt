@@ -54,6 +54,8 @@ Option,1NTOpening 11+-14
 ,1N,11-14 Balanced
 1N--,2C,Stayman at least 1 4CM
 1N--,2D,Transfer !H
+1N--2D--,3D,4!H Max Values 2!C
+1N--2D--3D--,4D,Transfer !H,20200620_16:03 Deal 17
 1N--2D2S,--,Holding 2!H
 1N--2D2S,2H,Holding 3!H
 1N--2D2S----,3D,Transfer !H
@@ -538,6 +540,7 @@ Option,Spiral
 1C--1S--2S--2N--,3C,3-!S minimum
 1C--1S--2S--2N--,3D,3-!S maximum
 1C--1S--2S--2N--,3H,4-!S minimum
+1C**1S--2S--2N--,3H,4-!S Minimum Hand
 1C--1S--2S--2N--,3S,4-!S maximum
 1D--1H--2H--,2S,Quantity and Quality Ask in !H
 1D--1H--2H--2S--,2N,3-!H minimum
@@ -729,10 +732,15 @@ Option,XYZ @3@4
 
 
 # include defensemisc.txt
-# Michaels
+# Michaels Cue Bids
+1C,2C,Majors
+1C,2N,!D + !H two suiter
+1D,2D,Majors
+1D,2N,!C + !H two suiter
 1H,2H,!S + Minor
 1S,2S,!H + Minor
-
+# Unusual vs Unusual
+1[HS],2N,!C + !D two-suiter
 
 # include 1NTdef-suction.txt
 BBOalert
