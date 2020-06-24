@@ -7,6 +7,7 @@ Option,1mOpenings
 1C__,2H,5+!H Weak
 1C__,2S,5+!S Weak
 1C__,3C,5+!C Weak
+1[CD]2H,2S,5+ !S Natural
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak

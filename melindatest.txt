@@ -46,6 +46,7 @@ Shortcut,LSK,Lead against suit : K = typically AK odd number of cards
 Shortcut,LSQ,Lead against suit : Q = typically KQx
 Shortcut,LSJ,Lead against suit : J = typically QJx
 Shortcut,LST,Lead against suit : 10 = typically J10x
+Shortcut,LFI,Low from interest
 Shortcut,UD,UDCA; Trump Suit Preference
 Shortcut,LS,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
 Shortcut,LN,Journalist vs NT; Spot Leads Low from Interest
@@ -200,6 +201,7 @@ Option,1mOpenings
 1C__,2H,5+!H Weak
 1C__,2S,5+!S Weak
 1C__,3C,5+!C Weak
+1[CD]2H,2S,5+ !S Natural
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak
