@@ -132,69 +132,6 @@ Option,Weak2Defense
 2H----,3H,Bid 3N with stopper or cheapest suit
 2H2N--,3H,Transfer !S
 2S----,3S,Bid 3N with stopper or cheapest suit
-# Defense Against Strong Club
-Option,1CDefense Standard
-1C,Dbl,Take-out Double
-Option,1CDefense Precision
-1C,Dbl,!D or !H and !S
-1C,2C,!D or !H and !S
-1C,3C,!D or !H and !S
-1C,4C,!D or !H and !S
-1C,1D,!H or !S and !C
-1C,2D,!H or !S and !C
-1C,3D,!H or !S and !C
-1C,4D,!H or !S and !C
-1C,1H,!S or !C and !D
-1C,2H,!S or !C and !D
-1C,3H,!S or !C and !D
-1C,4H,!S or !C and !D
-1C,1S,!C and !H or !D and !S
-1C,2S,!C and !H or !D and !S
-1C,3S,!C and !H or !D and !S
-1C,4S,!C and !H or !D and !S
-1C--1D,2C,!D or !H and !S
-1C--1D,3C,!D or !H and !S
-1C--1D,4C,!D or !H and !S
-1C--1D,2D,!H or !S and !C
-1C--1D,3D,!H or !S and !C
-1C--1D,4D,!H or !S and !C
-1C--1D,1H,!S or !C and !D
-1C--1D,2H,!S or !C and !D
-1C--1D,3H,!S or !C and !D
-1C--1D,4H,!S or !C and !D
-1C--1D,1S,!C and !H or !D and !S
-1C--1D,2S,!C and !H or !D and !S
-1C--1D,3S,!C and !H or !D and !S
-1C--1D,4S,!C and !H or !D and !S
-# Defense Against Strong 2 Club
-Option,2CDefense Strong
-2C,Db,!D or !H and !S
-2C,2D,!H or !S and !C
-2C,2H,!S or !C and !D
-2C,2S,!C and !H or !D and !S
-2C,3C,!D or !H and !S
-2C,3D,!H or !S and !C
-2C,3H,!S or !C and !D
-2C,3S,!C and !H or !D and !S
-2C,4C,!D or !H and !S
-2C,4D,!H or !S and !C
-2C,4H,!S or !C and !D
-2C,4S,!C and !H or !D and !S
-2C--2D,Db,!H or !S and !C
-2C--2D,2H,!S or !C and !D
-2C--2D,2S,!C and !H or !D and !S
-2C--2D,3C,!D or !H and !S
-2C--2D,3D,!H or !S and !C
-2C--2D,3H,!S or !C and !D
-2C--2D,3S,!C and !H or !D and !S
-2C--2D,4C,!D or !H and !S
-2C--2D,4D,!H or !S and !C
-2C--2D,4H,!S or !C and !D
-2C--2D,4S,!C and !H or !D and !S
-Option,2CDefense Precision
-2C,Db,Take-out Double
-Option
-
 Option
 # Shortcuts
 Shortcut,UD,UDCA Trump Suit Preference
