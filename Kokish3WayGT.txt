@@ -25,3 +25,4 @@ Option,KokishGT
 1S--2S--3S--,--,Bad !S weak
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
+Option

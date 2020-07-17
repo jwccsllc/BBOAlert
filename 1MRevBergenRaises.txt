@@ -1,11 +1,11 @@
 BBOalert, file must begin with BBOalert keyword
-Option,1MOpening @1@2 Bergen Raises
+Option,1MOpening @1@2 Reverse Bergen Raises
 ,1H,
 ,1S,
 # 1st and 2nd Seat
 1H--,1N,Forcing
 1H--,1S,4+ !S
-1H--,2H,3 or 4 card raise
+1H--,2H,
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
@@ -51,7 +51,7 @@ Option,1MOpening @1@2 Bergen Raises
 1HDb,2H,Weak Raise
 # 1S (p) 3*
 1S--,1N,Forcing
-1S--,2S,3 or 4 card raise
+1S--,2S,
 1S--,3S,4+!S Weak probably balanced
 1S--,4S,5+!S Weak probable shortness
 1S1*,3S,4+!S Weak probably balanced

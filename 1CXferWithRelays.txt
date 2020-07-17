@@ -1,5 +1,65 @@
 BBOalert
-Note.  This if based on Lyle Poe's book, Transfers Over 1C
-Openings with Relays
+# This is based on Lyle Poe's book, Transfers Over 1C
+# Openings with Relays
 Option,1CForcing, Transfer21C with Relays
-,1C,Forcing WeakNT or Strong 2-bid 
+,1C,Forcing with Transfer Responses#WeakNT (11-14 HCP with Balanced Pattern) \
+or Semi-Balanced hand with primary clubs or strong Two-Bid \
+or any 4-4-4-1 without singleton !C (open 1!D with Singleton !C)
+1C--,1D,Transfer to !H
+1C--1D--,1N,11-14 Balanced
+1C--1D--,2H,4!H
+1C--1D--2H--,3H,Invite with Limit Raise
+1C--1D--,1H,3!H
+1C--1D--1H--,1S,4=4=x=x
+1C--1D--1H--1S--,2S,4!S
+1C--,1H,Transfer to !S
+1C--1H--,1S,3!S
+1C--1H--,1N,11-14 HCP Balanced
+1C--,1S,No 4-card major#May have strong hand with primary !C
+1C--1S--,1N,11-14 HCP Balanced
+1C--1S--1N--,2C,Long !C; no second suit; no slam interest
+1C--1S--1N--2C--,2D,Good !D; looking for 3NT
+1C--1S--1N--2C--,2H,Good !H; looking for 3NT
+1C--1S--1N--2C--,2S,Good !S; looking for 3NT
+1C--1S--1N--2C--,2N,Doesn't like !C with minimum
+1C--1S--1N--2C--,3C,Forward going and Forcing
+1C--1S--1N--2C--,3N,To Play
+1C--1S--1N--,2D,5+ !C; Side 4 card !D
+1C--1S--1N--,3C,To Play
+1C--1S--1N--,3D,To Play
+1C--1S--1N--,3H,Weak in !H#Looking to play in NT or a minor
+1C--1S--1N--,3S,Weak in !S#Looking to play in NT or a minor
+1C--1S--1N--,3S,Weak doubleton in !S
+1C--1S--,2N,18-19 HCP Balanced
+1C--1S--2N--,3C,Game Forcing with !C Only
+1C--1S--2N--,3D,Game Forcing with Primary !C and secondary !D
+1C--1S--2N--,3H,Game Forcing with Primary !C and secondary !H
+1C--1S--2N--,3S,Game Forcing with Primary !C and secondary !S
+1C--1S--2N--,3N,To Play
+1C--1S--2N--,4C,Ace Asking
+1C--1S--2N--,4N,Quantitative
+1C--1S--,3D,Splinter in !D; long !C Good Hand
+1C--1S--,3C,Classic Jump Rebid in !C
+1C--1S--,3H,Splinter in !H; long !C Good Hand
+1C--1S--3H--,4D,3014 Kickback Keycard for !C
+1C--1S--3H--4D--,4H,0 or 3 Keycards
+1C--1S--3H--4D--4H--,4S,Ask for Q1C
+1C--1S--3H--4D--4H--4S--,6C,Have Q!C no kings
+1C--1S--,3N,Natural; Very good !C; Strong Hand
+1C--1S--,3S,Splinter in !S; long !C Good Hand
+1C--,1N,Game forcing with possible slam interest
+1C--,2D,Game Forcing 5-5 or better in minors
+1C--,2H,Weak with long !H
+1C--,2S,Weak with long !S
+1C--,3C,Weak with long !C
+1C--,3D,Weak with long !D
+1C--,2C,Game Forcing with primary !D
+1C--2C--,2D,Describe Responder's hand
+1C--1*--,2C,Strong Two-Bid#Control Step Responses A=2 Controls K=1 Control
+1C--1*--2C--,2D,1 K of fewer
+1C--1*--2C--,2H,Ace or two Kings
+1C--1*--2C--,2S,Ace and a King
+1C--1*--2C--,2N,3 Kings
+1C--1*--2C--,3C,4 Controls
+1C--1*--2C--,3D,5 Controls
+# include XYZ.txt

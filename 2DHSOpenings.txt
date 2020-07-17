@@ -8,6 +8,15 @@ Option,2HSWeak @1@2
 Option,2HSWeak @3@4
 ,2H,5-11 Weak 5+ !H
 ,2S,5-11 Weak 5+ !S
+Option,2DQuery Ogust
+2D--,2N,Ogust
+2D--2N--,3C, Bad Hand bad Suit
+2D--2N--,3D, Bad Hand good Suit
+2D--2N--,3H, Good Hand Good Suit
+2D--2N--,3S, Good Hand Good Suit
+2DDb,2H,McCabe#Lead Directing Partner should raise to 3!D
+2DDb,2S,McCabe#Lead Directing Partner should raise to 3!D
+2DDb,3C,McCabe#Lead Directing Partner should raise to 3!D
 Option,2HSQuery Ogust
 2H--,2N,Ogust
 2H--2N--,3C, Bad Hand bad Suit

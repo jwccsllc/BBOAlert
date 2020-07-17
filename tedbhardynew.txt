@@ -605,6 +605,15 @@ Option,2HSWeak @1@2
 Option,2HSWeak @3@4
 ,2H,5-11 Weak 5+ !H
 ,2S,5-11 Weak 5+ !S
+Option,2DQuery Ogust
+2D--,2N,Ogust
+2D--2N--,3C, Bad Hand bad Suit
+2D--2N--,3D, Bad Hand good Suit
+2D--2N--,3H, Good Hand Good Suit
+2D--2N--,3S, Good Hand Good Suit
+2DDb,2H,McCabe#Lead Directing Partner should raise to 3!D
+2DDb,2S,McCabe#Lead Directing Partner should raise to 3!D
+2DDb,3C,McCabe#Lead Directing Partner should raise to 3!D
 Option,2HSQuery Ogust
 2H--,2N,Ogust
 2H--2N--,3C, Bad Hand bad Suit
@@ -743,29 +752,55 @@ Option,XYZ @3@4
 1D,2N,!C + !H two suiter
 1H,2H,!S + Minor
 1S,2S,!H + Minor
-# Unusual vs Unusual
+# Unusual NT
 1[HS],2N,!C + !D two-suiter
+1C,2N,!D + !H two-suiter
+1D,2N,!C + !H two-suiter
+# Unusual v Unusual
+1H2N,Db,Penalize one of more of their suits
+1H2N,3C,Limit Raise of Better for !H
+1H2N,3D,5+!S 10+HCP
+1H2N,3H,Weak !H Raise
+1H2N,3S,6+!S Weak
+1S2N,Db,Penalize one of more of their suits
+1S2N,3C,5+!H 10+HCP
+1S2N,3D,Limit Raise of Better for !S
+1S2N,3H,6+!H Weak
+1S2N,3S,Weak !S Raise
 
 # include 1NTdef-suction.txt
 BBOalert
 Option,1NTDefense Suction v Strong/Weak
 1N,2C,!D or !H and !S
-1N,3C,!D or !H and !S
-1N,2D,!H or !S and !C
-1N2D--,2H,Required Response
-1N,3D,!H or !S and !C
-1N,2H,!S or !C and !D
-1N,2S,!C and !H or !D and !S
-1N2C--,2D,forced response
+1N2C--,2D,Required Relay
 1N2C--2D--,2H,!H and !S
+1N,3C,!D or !H and !S
+1N3C--,3D,Required Relay
+1N3C--3D--,3H,!H and !S
+1N,2D,!H or !S and !C
+1N2D--,2H,Required Relay
+1N2D--2H--,2S,!S and !C
+1N,3D,!H or !S and !C
+1N3D--,3H,Required Relay
+1N3D--3H--,3S,!S and !C
+1N,2H,!S or !C and !D
+1N2H--,2S,Required Relay
+1N2H--2S--,3C,!C and !D
+1N,2S,!C and !H or !D and !S
 1N2S__,2N,Asks for Lower Suit
+1N2C--2D--,2H,!H and !S
 Option,2NTDefense Suction
 2N,3C,!D or !H and !S
+2N3C--,3D,Required Relay
+2N3C--3D--,3H,!H and !S
 2N,3D,!H or !S and !C
+2N3D--,3H,Required Relay
+2N3D--3H--,3S,!S and !C
 2N,3S,!C and !H or !D and !S
+2N3S--,3N,Asks for lower suit
 2N,3H,!S or !C and !D
-2N,3S,!C and !H or !D and !S
-2N3S__,3N,Asks for Lower Suit
+2N3H--,3S,Required Relay
+2N3H--3S--,4C,!C and !D
 
 # include 1CDef-Suction.txt
 # Defense Against Strong Club

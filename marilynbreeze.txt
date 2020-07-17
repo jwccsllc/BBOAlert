@@ -382,6 +382,15 @@ Option,2HSWeak @1@2
 Option,2HSWeak @3@4
 ,2H,5-11 Weak 5+ !H
 ,2S,5-11 Weak 5+ !S
+Option,2DQuery Ogust
+2D--,2N,Ogust
+2D--2N--,3C, Bad Hand bad Suit
+2D--2N--,3D, Bad Hand good Suit
+2D--2N--,3H, Good Hand Good Suit
+2D--2N--,3S, Good Hand Good Suit
+2DDb,2H,McCabe#Lead Directing Partner should raise to 3!D
+2DDb,2S,McCabe#Lead Directing Partner should raise to 3!D
+2DDb,3C,McCabe#Lead Directing Partner should raise to 3!D
 Option,2HSQuery Ogust
 2H--,2N,Ogust
 2H--2N--,3C, Bad Hand bad Suit
@@ -520,8 +529,21 @@ Option,XYZ @3@4
 1D,2N,!C + !H two suiter
 1H,2H,!S + Minor
 1S,2S,!H + Minor
-# Unusual vs Unusual
+# Unusual NT
 1[HS],2N,!C + !D two-suiter
+1C,2N,!D + !H two-suiter
+1D,2N,!C + !H two-suiter
+# Unusual v Unusual
+1H2N,Db,Penalize one of more of their suits
+1H2N,3C,Limit Raise of Better for !H
+1H2N,3D,5+!S 10+HCP
+1H2N,3H,Weak !H Raise
+1H2N,3S,6+!S Weak
+1S2N,Db,Penalize one of more of their suits
+1S2N,3C,5+!H 10+HCP
+1S2N,3D,Limit Raise of Better for !S
+1S2N,3H,6+!H Weak
+1S2N,3S,Weak !S Raise
 
 # include 1NTdef-dont-cap.txt
 BBOalert
