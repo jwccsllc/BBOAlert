@@ -5,10 +5,12 @@ Option,2COpening ControlSteps On
 2C--,2N,3 Controls 3 Kings
 2C--,3C,4 Controls Ace=2 King=1
 2C--,3D,5 Controls Ace=2 King=1
+2C--2[DHS]--2N--,3C,Puppet Stayman
 Option,2COpening ControlSteps Off
 2C--,2D,Waiting
 2C--2D--2*,2C,Cheapest Minimum
 2C--2D--2*,2D,Cheapest Minimum
+2C--2[DHS]--2N--,3C,Puppet Stayman
 Option,2C2D KokishRelay
 2C--2D--2H,
 2C--2D--,2H,Relay to 2!S
