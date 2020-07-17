@@ -354,7 +354,7 @@ Option,KokishGT
 1S--2S--3S--,4S,Good !S good hand
 Option
 
-# include 1mOpenings.txt
+# include 1minorOpenings.txt
 # Minor Openings
 Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
