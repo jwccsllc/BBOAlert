@@ -716,3 +716,9 @@ Option,Joel
 # turn off South African Texas
 1N--,4C,1430 Gerber
 1N--,4D,
+# 2D 2N is now Feature
+2D--,2N,Feature Ask
+2D--2N--,3C,Feature in !C
+2D--2N--,3D,Weak, No Feature
+2D--2N--,3H,Feature in !H
+2D--2N--,3S,Feature in !S
