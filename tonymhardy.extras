@@ -1,0 +1,139 @@
+Option,XfersAfterJump2NT
+1C--1D--,2N,18-19 HCP Transfer Responses on
+1C--1H--,2N,18-19 HCP Transfer Responses on
+1C--1S--,2N,18-19 HCP Transfer Responses on
+1C--1H--,2N,18-19 HCP Transfer Responses on
+1C--1S--,2N,18-19 HCP Transfer Responses on
+1D--1H--,2N,18-19 HCP Transfer Responses on
+1D--1S--,2N,18-19 HCP Transfer Responses on
+1D--1H--,2N,18-19 HCP Transfer Responses on
+1D--1S--,2N,18-19 HCP Transfer Responses on
+1H--1S--,2N,18-19 HCP Transfer Responses on
+1H--1N--,2N,18-19 HCP Transfer Responses on
+1S--1N--,2N,18-19 HCP Transfer Responses on
+# 1C-1D-,2N, responses
+1C--1D--2N--,3C,5+!D x-x=5+=x
+1C--1D--2N--,3D,4!H x-4=5+-x Walsh Opening Values
+1C--1D--2N--,3H,4!H 5=x=5+-x Walsh Opening Values
+1C--1D--2N--,3S,5+!C x-x=4=5+ Slam Interest
+1C--1D--2N--3D--3H--,3S,4=4=4=1 or 4=4=5=0 distribution
+# 1C-1H--,2N Responses
+1C--1H--2N--,3C,4+D x=4=4+=x
+1C--1H--2N--,3D,5+H x=5+=x-x
+1C--1H--2N--,3H,4!S 4!H 4=4-x-x
+1C--1H--2N--,3S,6+!C x=4=x=6+ Slam Interest
+# 1C-1S--,2N Responses
+1C--1S--2N--,3C,4+D 4-x=4+=x
+1C--1S--2N--,3D,4+H 5=4+=x-x
+1C--1S--2N--3D--3H--,4H, 5th !H 5=5=x=x no slam interest
+1C--1S--2N--,3H,5!S 5+=x-x-x
+1C--1S--2N--,3S,6+!C (optional transfer)#Very good !C fit with !C Slam Interest
+1C--1S--2N--3S--,4C,Opener ha 4 to 6 !C; 4C is 1430 RKC for !C
+1C--1S--2N--,4C,1430 Gerber
+1C--1S--2N--,5C,To play -- no slam interest
+1C--1S--2N--,4D,5!S 5!H 5=5=x-x Slam Interest
+# 1D--1H--2N-- Responses 
+1D--1H--2N--,3C,4+D x=4=4+=x
+1D--1H--2N--,3D,5+H x=5+=x-x
+1D--1H--2N--,3H,4!S 4!H 4=4-x-x
+1D--1H--2N--,3S,6+!C x=4=x=6+ Slam Interest
+# 1D-1S--,2N Responses
+1D--1S--2N--,3C,4+D 4-x=4+=x
+1D--1S--2N--,3D,4+H 5=4+=x-x
+1D--1S--2N--,3H,5!S 5+=x-x-x
+1D--1S--2N--,3S,6+!C 4=x=x=6+ Slam Interest
+# 1H-1S--2N-- Responses
+1H--1S--2N--,3C,4+D 4+-x=4+=x
+1H--1S--2N--,3D,3+H Strong !H Raise
+1H--1S--2N--,3H,3+H Weak !H Raise
+1H--1S--2N--,3S,6+!C 4=x=x=6+ Slam Interest
+1H--1S--3C--3D--,4D,4!S 6!D Unbalanced invitional#Any other bid is a slam try
+# 1M--2N--2N-- Responses
+# 1H--1N--2N-- Responses
+1H--1N--2N--,3C,5+!C Opener accepts xfer Pass or Correct
+1H--1N--2N--,3D,3!H Strong !H Raise
+1H--1N--2N--,3H,3!H Weak !H Raise
+# 1S--1N--2N-- Responses
+1S--1N--2N--,3C,5+!C Opener accepts xfer Pass or Correct
+1S--1N--2N--,3D,5+!H Opener accepts xfer Pass or Correct
+1S--1N--2N--,3H,3!S Strong !S Raise
+1S--1N--2N--,3S,3!S Weak !S Raise
+Option
+# Competitive biddin
+1H--1N,3D,Weak,20200408_16:21 Deal undefined
+1C,2D,Weak
+1C,2H,Weak
+1C,2S,Weak
+1D1H--,2D,Limit+ Raise of hearts,2020225_15:26 Deal 12
+1C1D1H2D,Dbl,Support DBL 3!H,2020225_16:0 Deal 17
+2D2N--,3H,Transfer !S
+1N2D,Dbl,Negative DSI
+1N2D----,Dbl,Negative DSI
+1N2D,2N,Lebensohl
+1N2D,2H,To Play
+1N2D,2S,To Play
+1N2H,Dbl,Negative DSI
+1N2H,2S,To Play
+1N2H----,Dbl,Negative DSI
+1N2H,2N,Lebensohl
+1N2S,Dbl,Negative DSI
+1N2S----,Dbl,Negative DSI
+1N2S,2N,Lebensohl
+1D--1H--,2N,18-19 Balanced,2020226_14:24 Deal 6
+2H--,2N,Ogust,2020226_15:17 Deal 13
+2H--2N--,3C, Bad Hand bad Suit
+2H--2N--,3D, Bad Hand good Suit
+2H--2N--,3H, Good Hand Good Suit
+2H--2N--,3S, Good Hand Good Suit
+2HDbl,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDbl,3D,McCabe#Lead Directing Partner should raise to 3!H
+2S--,2N,Ogust,2020226_15:17 Deal 13
+2S--2N--,3C, Bad Hand bad Suit
+2S--2N--,3D, Bad Hand good Suit
+2S--2N--,3H, Good Hand Bad Suit
+2S--2N--,3S, Good Hand Good Suit
+2SDbl,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDbl,3H,McCabe#Lead Directing Partner should raise to 3!S
+1N2C,2D,Transfer !H
+1N--2H--,2S,Fewer than 4!S
+1S--2H--3H--,3N,Non-Serious 3NT
+1S--2H--3H--3N--,4C,1st or 2nd round control in !K
+1H--,1N,Forcing
+1S--,1N,Forcing
+----1H--,1N,Semi-Forcing
+------1H--,1N,Semi-Forcing
+----1H--,2C,3Card Limit Raise (Drury)
+----1H--,2D,4Card Limit Raise (Drury)
+--1S--,1N,Semi Forcing
+----1S--,1N,Semi Forcing
+------1S--,2C,3Card Limit Raise (Drury)
+------1S--,2D,4Card Limit Raise (Drury)
+------1S--2C--,3D,Shortness ?
+----1S--,2C,3Card Limit Raise (Drury)
+----1S--,2D,4Card Limit Raise (Drury)
+----1S--2C--,3D,Shortness ?
+1NDbl----,2C,5 !C Runout
+1NDbl,--,Forcing runout single suited#Partner bids 5 card suit or XX
+1NDbl----,Rd,No five card suit
+1NDbl----,2C,5!C Runout
+1NDbl----,2D,5!D Runout
+1NDbl----,2H,5!H Runout
+1NDbl----,2S,5!S Runout
+1NDb,2C,!C and higher suit (DONT Runout)
+1NDb,2D,!D and higher suit (DONT Runout)
+1NDb,2H,!H and !S (DONT Runout)
+1NDb----,Rd,DONT runout no single suit
+# Defense Against Weak 2s
+Option,Weak2Defense
+2D----,3D,Bid 3N with stopper or cheapest suit
+2D2N--,3D,Transfer !H
+2D2N--,3H,Transfer !S
+2H----,3H,Bid 3N with stopper or cheapest suit
+2H2N--,3H,Transfer !S
+2S----,3S,Bid 3N with stopper or cheapest suit
+Option
+# Shortcuts
+Shortcut,UD,UDCA Trump Suit Preference
+Shortcut,LS,Rusinow vs Suits 3rd from Even Low from Odd
+Shortcut,LN,Journalist vs NT Low from Interest
