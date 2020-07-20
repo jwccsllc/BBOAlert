@@ -7,6 +7,8 @@ Option,1MOpening @1@2 Reverse Bergen Raises
 1H--,1S,4+ !S
 1H--,2H,
 1H--,3H,4+!H probably balanced
+1H--,3N,13-15 Balanced 3!H
+1S--,3N,13-15 Balanced 3!S
 1H--,4H,5+!H probable shortness
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--2D--,4H,5+!H Weak outside Ace or King
