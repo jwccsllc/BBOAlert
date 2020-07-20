@@ -496,15 +496,22 @@ Option,2H2SMcCabe
 1S2N,3H,6+!H Weak
 1S2N,3S,Weak !S Raise
 
-# include 1NTdef-modcap.txt
+# include 1NTdef-dont-cap.txt
 BBOalert
-Option,1NTDefense Mod Cap
-1N,2C,Single Suit or Major/Minor
-1N,2D,Both Majors
-1N,2H,!H
-1N,2S,!S
+Option,1NTDefense DONT v Strong
+1N,2C,!C + Higher Suit
+1N,2D,!D + Higher Suit
+1N,2H,!H + !S
+1N,2S,5+ !S Weaker than Double 2!S
+1N,Db,Single Suited Hand
 1N,2N,Minors
-1N,Db,15+ HCP Penalty; Systems On
+Option,1NTDefense Cap v Weak
+1N,2C,Single Suit
+1N,2D,Both Majors
+1N,2H,!H + Minor
+1N,2S,!S + Minor
+1N,2N,Minors
+1N,Db,15+ HCP Penalty (Systems On)
 
 # include sfreeling.extras
 Option
