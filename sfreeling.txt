@@ -2,12 +2,13 @@ BBOalert
 
 # include sfreeling.hdr
 BBOalert
-Shortcut,W0,2/1; Reverse Bergen Raises; Kokish 3-Way Game Tries; Weak Jump Shifts; 4th Suit Game Forcing
+Option,FreelingAndCampbell
+Shortcut,W0,2/1; Kokish 3-Way Game Tries; Weak Jump Shifts; 4th Suit Game Forcing
 
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndSandyFreeling.pdf
 
 Shortcut,W2,Standard Leads and Carding; spot leads 4th best
-
+Option
 
 # include shortcuts.txt
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
@@ -121,105 +122,22 @@ Option,3NTOpening Gambling
 Option,3NTOpening Acol/NAMYATS
 ,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
 
-# include 1MRevBergenRaises.txt
-BBOalert, file must begin with BBOalert keyword
-Option,1MOpening @1@2 Reverse Bergen Raises
+# include 1MOpenings.txt
+BBOalert
+Option,1MOpening @1@2 2/1 Vanilla
 ,1H,
 ,1S,
-# 1st and 2nd Seat
 1H--,1N,Forcing
-1H--,1S,4+ !S
-1H--,2H,
-1H--,3H,4+!H probably balanced
-1H--,4H,5+!H probable shortness
-1H--1N--2C--,4H,5+!H Weak outside Ace or King
-1H--1N--2D--,4H,5+!H Weak outside Ace or King
-1H--1N--,2N,18-19 HCP Transfers on
-1H--1N--2N--,3C,Transfer !D
-1H--1N--2N--,3D,Transfer !H
-1H--1N--2N--,3H,Transfer !S Stronger
-1H--1N--2N--,3S,Weak raise of !S
-1H**,Db,Negative X showing 4+ !S
-1S**,Db,Negative X showing 4+ !H
-# 3C responses
-1H--,3C,7-9 4+!H 9+-12 Raise
-1H--3C--3D,Describe hand (show shortness)
-1H--3C--3D--,3H,Minimum
-1H--3C--3D--,3N,Short !S
-1H--3C--3D--,4C,Short !C
-1H--3C--3D--,4D,Short !D
-1H--3C--3D--,4H,Short !S
-# 1H (1X) 3C responses
-1H1*,3C,7-9 4+!H 9+-12 Raise
-1H1*3C--3D,Describe hand (show shortness)
-1H1*3C--3D--,3H,Minimum
-1H1*3C--3D--,3N,Short !S
-1H1*3C--3D--,4C,Short !C
-1H1*3C--3D--,4D,Short !D
-1H1*3C--3D--,4H,Short !S
-# 1H 3D Responses
-1H--,3D,9+-12 4!H Constructive Raise
-1H--3D--,3H,To Play
-1H--3D--,4H,To Play
-1H1*,3D,9+-12 4!H Constructive Raise
-1H1*3D--,3H,To Play
-1H1*3D--,4H,To Play
-1HDb3D,9+-12 4!H Constructive Raise
-1HDb3D--,3H,To Play
-1HDb3D--,4H,To Play
-# 1H Db
-1HDb,1S,Natural Forcing
-1HDb,1N,Xfer to !C
-1HDb,2C,Xrer to 1D
-1HDb,2D,Xrer to 1H Constructive
-1HDb,2H,Weak Raise
-# 1S (p) 3*
 1S--,1N,Forcing
-1S--,2S,
-1S--,3S,4+!S Weak probably balanced
-1S--,4S,5+!S Weak probable shortness
-1S1*,3S,4+!S Weak probably balanced
-1S1*,4S,5+!S Weak probable shortness
-1S--1N--2C--,4S,5+!S Weak outside Ace or King
-1S--1N--2D--,4S,5+!S Weak outside Ace or King
-1S--1N--2H--,4S,5+!S Weak outside Ace or King
-1S--1N--,2N,18-19 HCP Transfers on
-1S--1N--2N--,3C,Transfer !D
-1S--1N--2N--,3D,Transfer !H Stronger
-1S--1N--2N--,3H,Strong Raise of !S
-1S--1N--2N--,3S,Weak Raise of !S
-# 1S 3C Responses
-1S--,3C,7+-9 4+!S 9+12 Limit Raise
-1S--3C--3D,Describe hand
-1S--3C--3D--,3S,4+!S no shortness
-1S--3C--3D--,3H,Short !H
-1S--3C--3D--,4C,Short !C
-1S--3C--3D--,4D,Short !D
-# 1S # 3C Responses
-1SDb,3C,7+-10 4+!S 9+-12 Limit Raise
-1SDb3C--3D,Describe hand
-1SDb3C--3D--,3S,4+!S Minimum
-1SDb3C--3D--,4C,Short !C
-1SDb3C--3D--,4D,Short !D
-1SDb3C--3D--,4H,Short !H
-# 1S (1x) 3D
-1S--,3D,9+-12- 4+!H Constructive Raise
-1S--3D--,3H,Describe Hand
-1S--3D--3H--,4C,Short !C
-1S--3D--3H--,4D,Short !D
-1S--3D--3H--,4H,Short !S
-1S1*,3D,9+-12- 4+!H Constructive Raise
-1S1*3D--,3H,Describe Hand
-1S1*3D--3H--,4C,Short !C
-1S1*3D--3H--,4D,Short !D
-1S1*3D--3H--,4H,Short !S
-1SDb,3D,9+-12- 4+!H Constructive Raise
-1SDb3D--,3H,Describe Hand
-1SDb3D--3H--,4C,Short !C
-1SDb3D--3H--,4D,Short !D
-1SDb3D--3H--,4H,Short !S
-# Jacoby 2NT
-1H--,2N,Jacoby 2NT Standard Responses
+1H__,2S,Weak Jump Shift
+1H__,3C,Weak Jump Shift
+1H__,3D,Weak Jump Shift
+1H--,3N,13-15 Balanced 3-card support NT stoppers
+1S__,3C,Weak Jump Shift
+1S__,3D,Weak Jump Shift
+1S__,3H,Weak Jump Shift
+1S--,3N,13-15 Balanced 3-card support NT stoppers
+1H--,2N,15+ Jacoby 2NT Standard Responses
 1H--2N--,3C,Short !C rebid shows void
 1H--2N--,3D,Short !D rebid shows void
 1H--2N--,3H,Strong !H no shortness
@@ -228,55 +146,8 @@ Option,1MOpening @1@2 Reverse Bergen Raises
 1H--2N--,4C,5+ good !C
 1H--2N--,4D,5+ good !D
 1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
-# Power Raises no shortness
-1H--,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
-1[HS]--,4D,12+-15 4+!H No shortness
-1[HS]1*,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
-1[HS]1*,4D,12+-15 4+!H No shortness
-1S--,2N,Jacoby 2NT
-1S--2N--,3C,Short !C rebid shows void
-1S--2N--,3D,Short !D rebid shows void
-1S--2N--,3H,Short !H rebid shows void
-1S--2N--,3S,Strong !S no shortness
-1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
-1S--2N--,4C,5+ good !C
-1S--2N--,4D,5+ good !D
-1S--2N--,4H,5+ good !H
-# bids after double of major
-1HDb,1N,Transfer to !C
-1HDb,2C,Transfer to !D
-1HDb,2D,constructive raise of !H
-1HDb,2H,weak raise of hearts
-1HDb,2N,3-card limit raise of !H no shortness
-1SDb,1N,Transfer to !C
-1SDb,2C,Transfer to !D
-1SDb,2D,Transfer to !H
-1SDb,2H,Constructive raise of !S
-1SDb,2S,weak raise of !S
-1SDb,2N,3-card limit raise of !S no shortness
-1SDb,Rd,10+ HCP no fit
-1H1S,2S,Limit Raise or better !H
-1H2C,3C,Limit Raise or better !H
-1H2D,3D,Limit Raise or better !H
-1S2C,3C,Limit Raise or better !S
-1S2D,3D,Limit Raise or better !S
-# Undisclosed Splinters
-1H--,3S,GF Limit Raise with undisclosed Shortness
-1H--3S--,3N,Where is the shortness?
-1H--3S--3N--,4C,Shortness in !C
-1H--3S--3N--,4D,Shortness in !D
-1H--3S--3N--,4H,Shortness in !S
-1H--3S--,4H,To Play
-1S--,3H,GF Limit Raise with undisclosed shortness
-1S--3H--,3S,Where is the Shortness
-1S--3H--3S--,3N,Shortness is void
-1S--3H--3S--3N--,4C,Where is shortness
-1S--3H--3S--3N--4C--,4D,!D Void
-1S--3H--3S--3N--4C--,4H,!H Void
-1S--3H--3S--3N--4C--,4S,!C Void
-1S--3H--3S--,4C,Short !C
-1S--3H--3S--,4D,Short !D
-1S--3H--3S--,4H,Short !H
+1S2C2H3C,Db,Support Double 3 !H
+1S2D2H3D,Db,Support Double 3 !H
 Option,1MOpening @3@4 Drury On
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
@@ -303,10 +174,7 @@ Option,KokishGT
 1H--2H--2S--,3C,Help in !C
 1H--2H--2S--,3D,Help in !D
 1H--2H--2S--,3H,No help
-1H--2H--,2N,Short Suit Game Try !S
-1H--2H--,3C,Short Suit Game Try !C
-1H--2H--,3D,Short Suit Game Try !D
-1H__2H--,3H,Trump Quality Ask
+1H--2H--,3H,Trump Quality Ask
 1H--2H--3H--,3N,Bad !H good hand for NT
 1H--2H--3H--,4H,Good !H good hand
 1H--2H--3H--,--,Bad !H weak
@@ -316,13 +184,11 @@ Option,KokishGT
 1S--2S--2N--,3D,Help in !D
 1S--2S--2N--,3H,Help in !H
 1S--2S--2N--,3S,No help
-1S--2S--,3C,Short Suit Game Try !C
-1S--2S--,3D,Short Suit Game Try !D
-1S--2S--,3H,Short Suit Game Try !H
 1S--2S--,3S,Trump Quality Ask
 1S--2S--3S--,--,Bad !S weak
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
+Option
 
 # include Kokish3WayGT.txt
 BBOalert
