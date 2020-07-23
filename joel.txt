@@ -54,8 +54,10 @@ Option,1NTOpening 15+-17 Basic
 ,1N,15-17
 1N--,2C,Stayman
 1N--,2D,Transfer !H
-1N--2D--,3D,4!H Max Values 2!C
-1N--2D--3D--,4D,Transfer !H,20200620_16:03 Deal 17
+1N--2D--,2S,4!H Max Values 2!S
+1N--2D--,3C,4!H Max Values 2!C
+1N--2D--,3D,4!H Max Values 2!D
+1N--2D--3D--,4D,Transfer !H
 1N--2D2S,--,Holding 2!H
 1N--2D2S,2H,Holding 3!H
 1N--,2H,Transfer !S
@@ -130,6 +132,8 @@ Option,1MOpening @1@2 Reverse Bergen Raises
 1H--,1S,4+ !S
 1H--,2H,
 1H--,3H,4+!H probably balanced
+1H--,3N,13-15 Balanced 3!H
+1S--,3N,13-15 Balanced 3!S
 1H--,4H,5+!H probable shortness
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--2D--,4H,5+!H Weak outside Ace or King

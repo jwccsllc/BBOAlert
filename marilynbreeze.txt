@@ -56,8 +56,8 @@ Option,1NTOpening 11+-14
 ,1N,11-14 Balanced
 1N--,2C,Stayman at least 1 4CM
 1N--,2D,Transfer !H
-1N--2D--,3D,4!H Max Values 2!C
-1N--2D--3D--,4D,Transfer !H,20200620_16:03 Deal 17
+1N--2D--,3D,4!H Max Values 2!D
+1N--2D--3D--,4D,Transfer !H
 1N--2D2S,--,Holding 2!H
 1N--2D2S,2H,Holding 3!H
 1N--2D2S----,3D,Transfer !H
@@ -277,6 +277,52 @@ Option,KokishGT
 1S--2S--3S--,--,Bad !S weak
 1S--2S--3S--,3N,Bad !S good hand for NT
 1S--2S--3S--,4S,Good !S good hand
+Option
+Option,1MOvercall1NT Robeson
+# From Andy Robeson's Partnership Bidding Pg 42
+1[CDHS]1N,Db,Penalty forcing to 2!S X
+1H1N,2C,Majors -- 5+!S Hx+!H
+1S1N,2C,Majors -- 5+!H Hx+!S
+1H1N,2D,Sound !H Raise
+1S1N,2D,Sound !S Raise
+1H1N,2S,Natural; No fit; non-forcing
+1S1N,2H,Natural; No fit; non-forcing
+# Preemptive raises of Opener's major
+1H1N,2H,Weak
+1H1N,3H,Weak
+1H1N,4H,Weak
+1S1N,2S,Weak
+1S1N,3S,Weak
+1S1N,4S,Weak
+# Fit-jumps
+1[HS]1N,3C,Fit-Jump, good 5+!C with support
+1[HS]1N,3D,Fit-Jump, good 5+!D with support
+1H1N,3S,Fit-Jump, good 5+!S with support
+1S1N,3H,Fit-Jump, good 5+!H with support
+Option,1MOvercall1NT Off
+Option
+Option,1MOvercall1NT Robeson
+# From Andy Robeson's Partnership Bidding Pg 42
+1[CDHS]1N,Db,Penalty forcing to 2!S X
+1H1N,2C,Majors -- 5+!S Hx+!H
+1S1N,2C,Majors -- 5+!H Hx+!S
+1H1N,2D,Sound !H Raise
+1S1N,2D,Sound !S Raise
+1H1N,2S,Natural; No fit; non-forcing
+1S1N,2H,Natural; No fit; non-forcing
+# Preemptive raises of Opener's major
+1H1N,2H,Weak
+1H1N,3H,Weak
+1H1N,4H,Weak
+1S1N,2S,Weak
+1S1N,3S,Weak
+1S1N,4S,Weak
+# Fit-jumps
+1[HS]1N,3C,Fit-Jump, good 5+!C with support
+1[HS]1N,3D,Fit-Jump, good 5+!D with support
+1H1N,3S,Fit-Jump, good 5+!S with support
+1S1N,3H,Fit-Jump, good 5+!H with support
+Option,1MOvercall1NT Off
 Option
 
 # include 1minorOpenings.txt
