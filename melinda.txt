@@ -95,7 +95,7 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 # include 2NTOpening.txt
 BBOalert
 Option,2NTOpening Puppet Stayman
-,2N,
+,2N,20-21 May have 5-card major
 2N--,3C,Puppet Stayman
 2N--3C--,3D,No 5 card major at least 1 4 card major
 2N--3C--3D--,4D,Both Majors

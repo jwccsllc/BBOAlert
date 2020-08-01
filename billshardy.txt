@@ -2,13 +2,13 @@ BBOalert
 
 # include billshardy.hdr
 BBOalert, file must begin with BBOalert keyword
+Option,StewartAndCampbell
 Shortcut,W0,2/1; 11-14 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndBillS.pdf
 
 Shortcut,W2,UDCA; Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even Low from Odd; Journalist Leads vs Notrump; Low from Interest
-
-
+Option
 
 # include shortcuts.txt
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
@@ -180,7 +180,7 @@ Option,1NTDb Penalty
 # include 2NTOpening.txt
 BBOalert
 Option,2NTOpening Puppet Stayman
-,2N,
+,2N,20-21 May have 5-card major
 2N--,3C,Puppet Stayman
 2N--3C--,3D,No 5 card major at least 1 4 card major
 2N--3C--3D--,4D,Both Majors
