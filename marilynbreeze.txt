@@ -417,6 +417,38 @@ Option,Spiral
 1H--1S--2S--2N--,3H,4-!S minimum
 1H--1S--2S--2N--,3S,4-!S maximum
 
+# include 2COpening.txt
+Option,2COpening ControlSteps On
+2C--,2D,1 King or fewer (Kokish Relays on)
+2C--,2H,2 Controls Ace or 2 Kings
+2C--,2S,3 Controls Ace and King
+2C--,2N,3 Controls 3 Kings
+2C--,3C,4 Controls Ace=2 King=1
+2C--,3D,5 Controls Ace=2 King=1
+2C--2[DHS]--2N--,3C,Puppet Stayman
+Option,2COpening ControlSteps Off
+2C--,2D,Waiting
+2C--2D--2*,3[CD],Cheapest Minimum
+2C--2[DHS]--2N--,3C,Puppet Stayman
+Option,2C2D KokishRelay
+2C--2D--,2H,Relay to 2!S
+2C--2D--2H--,2S,Mandatory Response to 2!H
+2C--2D--2H--2S--,2N,25+ HCP Balanced Systems On
+2C--2D--2H--2S--,3C,!H and !C
+2C--2D--2H--2S--,3D,!H and !D
+2C--2D--2H--2S--,3H,!H and no second suit
+2C--2D--,2S,Relay to 2!NT
+2C--2D--2S--,2N,Mandatory Response to 2!S
+2C--2D--2S--2N--,3C,!S and !C
+2C--2D--2S--2N--,3D,!S and !D
+2C--2D--2S--2N--,3H,!S and !H with longer !S
+2C--2D--2S--2N--,3S,!S and no 2nd suit
+2C--2D--,2N,22-24 HCP Balanced Systems On
+Option
+2C--2H--3H--4H--,4S,Kickback; Keycard for !H
+2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
+
+
 # include 2DHSOpenings.txt
 Option,2DWeak Simple @1@2
 ,2D,5-11 Weak 6+!D
@@ -523,6 +555,7 @@ Option,XYZ @1@2
 1C__1S__1N__,2D,Artificial Game Force
 1C--1S--1N--2D--,2S,3!S not 3!H
 1C--1S--1N--2D--,2H,!4H may have 3!S
+1C--1S--1N--2D--,2S,3!S fewer than 4!H
 1D__1S__1N__,2C,Invitational Force 2!D
 1D__1S__1N__,2D,Artificial Game Force
 1D__1S__1N__,2N,Invitational < 4!D Support
