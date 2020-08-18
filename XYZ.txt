@@ -1,4 +1,4 @@
-Option,XYZ @1@2
+Option,XYZ
 1C--1D--1N--,2C,Forcing, Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
 1C__1D__1H__,2C,Invitational Force 2!D
@@ -31,42 +31,3 @@ Option,XYZ @1@2
 1D__1S__1N__,2D,Artificial Game Force
 1D__1S__1N__,2N,Invitational < 4!D Support
 1D__1S__1N__,2S,5+!S Less than invitational
-Option,XYZ @3@4
-----1C--1D--1N--,2C,Forcing to 2!D; Invitational
-----1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
-----1C__1D__1H__,2C,Invitational Force 2!D
-----1C__1D__1N__,2C,Invitational Force 2!D
-----1C__1D__1N__,2D,Artifical Game Force
-----1C__1D__1S__,2C,Invitational Force 2!D
-----1C__1H__1N__2C__2D__,2N,Invitational 4+!C
-----1C__1H__1N__,2N,Invitational Fewer 4!C
-----1C__1H__1S__,2C,Invitational Force 2!D
-----1C__1H__1S__,2C__2D__,2N,Invitational 4+!C
-----1C__1H__1S__,2H,5+!H Less than invitational
-----1C__1H__1S__,2N,Invitational < 4!C Support
-----1C__1H__1S__,2N,Invitational Fewer 4!C
-----1C__1S__1N--,2C,Invitational Force 2!D
-----1C__1S__1N__,2D,Artificial Game Force
-----1D__1S__1N__,2C,Invitational Force 2!D
-----1D__1S__1N__,2N,Invitational < 4!D Support
-----1D__1S__1N__,2S,5+!S Less than invitational
-# forth seat
-------1C--1D--1N--,2C,Forcing, Invitational
-------1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
-------1C__1D__1H__,2C,Invitational Force 2!D
-------1C__1D__1N__,2C,Invitational Force 2!D
-------1C__1D__1N__,2D,Artifical Game Force
-------1C__1D__1S__,2C,Invitational Force 2!D
-------1C__1H__1N__,2C__2D__,2N,Invitational 4+!C
-------1C__1H__1N__,2N,Invitational Fewer 4!C
-------1C__1H__1S__,2C,Invitational Force 2!D
-------1C__1H__1S__2C__2D__,2N,Invitational 4+!C
-------1C__1H__1S__,2H,5+!H Less than invitational
-------1C__1H__1S__,2N,Invitational < 4!C Support
-------1C__1H__1S__,2N,Invitational Fewer 4!C
-------1C__1S__1N--,2C,Invitational Force 2!D
-------1C__1S__1N__,2D,Artificial Game Force
-------1D__1S__1N__,2C,Invitational Force 2!D
-------1D__1S__1N__,2N,Invitational < 4!D Support
-------1D__1S__1N__,2S,5+!S Less than invitational
-
