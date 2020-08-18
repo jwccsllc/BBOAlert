@@ -790,23 +790,6 @@ Option,XYZ @3@4
 1S2N,3H,6+!H Weak
 1S2N,3S,Weak !S Raise
 
-# include 1NTdef-dont-modcap.txt
-BBOalert
-Option,1NTDefense DONT v Strong
-1N,2C,!C + Higher Suit
-1N,2D,1D + Higher Suit
-1N,2H,!H + !S
-1N,2S,5+!S Weak (double first if strong)
-1N,2N,Minors
-1N,Db,Single Suited Hand
-Option,1NTDefense Mod Cap v Weak
-1N,2C,Single Suit or Major/Minor
-1N,2D,Both Majors
-1N,2H,!H
-1N,2S,!S
-1N,2N,Minors
-1N,Db,15+ HCP Penalty; Systems On
-
 # include 1CDef-Suction.txt
 # Defense Against Strong Club
 Option,1CDefense Standard
