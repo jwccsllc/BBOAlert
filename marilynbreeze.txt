@@ -155,9 +155,11 @@ Option,1NTOpening 11+-14
 1N2H,2S,To Play
 1N2H----,Db,Negative DSI
 1N2H,2N,Lebensohl
+1N2H,3H,4+!S no !H stop
 1N2S,Db,Negative DSI
 1N2S----,Db,Negative DSI
 1N2S,2N,Lebensohl
+1N2S,3S,4+!H no !S Stop
 Option,1NTDb Penalty
 1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
 1NDb----,2C,5!C Runout
@@ -584,6 +586,12 @@ Option,XYZ
 1S2N,3D,Limit Raise of Better for !S
 1S2N,3H,6+!H Weak
 1S2N,3S,Weak !S Raise
+# Weak 2s
+2[DHS]2N--,3C,Puppet Stayman
+2[DHS]2N--,3D,Transfer to !H
+2[DHS]2N--,3H,Transfer to !S
+2[DHS]2N--,4D,Transfer to !H
+2[DHS]2N--,4H,Transfer to !S
 
 # include 1NTdef-dont-cap.txt
 BBOalert

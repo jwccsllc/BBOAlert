@@ -441,6 +441,12 @@ Option,2H2SMcCabe
 1S2N,3D,Limit Raise of Better for !S
 1S2N,3H,6+!H Weak
 1S2N,3S,Weak !S Raise
+# Weak 2s
+2[DHS]2N--,3C,Puppet Stayman
+2[DHS]2N--,3D,Transfer to !H
+2[DHS]2N--,3H,Transfer to !S
+2[DHS]2N--,4D,Transfer to !H
+2[DHS]2N--,4H,Transfer to !S
 
 # include 1NTdef-dont-cap.txt
 BBOalert
