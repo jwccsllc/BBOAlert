@@ -544,6 +544,9 @@ Option,XYZ
 # include defensemisc.txt
 # Michaels Cue Bids
 1C,2C,Majors
+1C----,2C,Majors
+1D,2D,Majors
+1D----,2D,Majors
 1C,2N,!D + !H two suiter
 1D,2D,Majors
 1D,2N,!C + !H two suiter
@@ -570,6 +573,22 @@ Option,XYZ
 2[DHS]2N--,3H,Transfer to !S
 2[DHS]2N--,4D,Transfer to !H
 2[DHS]2N--,4H,Transfer to !S
+# 1NT Overcalls
+1[CDHS],1N,15-18 NT Balanced Systems On
+1[CDHS]1N--,2C,Stayman
+1[CDHS]1N--,2D,Transfer to !H
+1[CDHS]1N--2D--,2H,Fewer than 4!H
+1[CDHS]1N--,2H,Transfer to !S
+1[CDHS]1N--,2S,Range Ask bid 3!C if accept invite
+1[CDHS]1N--2S--,2N,Refuse Invite
+1[CDHS]1N--2S--,3C,Accept Invite
+1[CDHS]1N--,2NT,Transfer to !D 3!D Super Accept
+1[CDHS]1N--2NT--,3C,Weak !D
+1[CDHS]1N--2NT--,3D,3+ good !D Super Accept
+1[CDHS]1N--,3C,Puppet Stayman
+1[CDHS]1N--,3D,5-5 Minors Game Forcing
+1[CDHS]1N--,3H,3=1=4-5 GF
+1[CDHS]1N--,3S,1=3=4-5 GF
 
 # include 1NTdef-suction.txt
 BBOalert
@@ -591,6 +610,7 @@ Option,1NTDefense Suction v Strong/Weak
 1N2H--2S--,3C,!C and !D
 1N,2S,!C and !H or !D and !S
 1N2S__,2N,Asks for Lower Suit
+1N2S--2N--,3C,!C and !H
 1N2C--2D--,2H,!H and !S
 Option,2NTDefense Suction
 2N,3C,!D or !H and !S
