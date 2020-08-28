@@ -1,6 +1,7 @@
 # Minor Openings
 Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
+1[CD]--1H2S,Db,Support X 3 card !H Support
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,2D,5+!D Weak
