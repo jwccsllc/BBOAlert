@@ -11,9 +11,8 @@ Option,1MOpening @1@2 Hardy Raises
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--,2N,18-19 HCP Transfers on
 1H--1N--2N--,3C,Transfer !D
-1H--1N--2N--,3D,Transfer !H
-1H--1N--2N--,3H,Transfer !S Stronger
-1H--1N--2N--,3S,Weak raise of !S
+1H--1N--2N--,3D,Constructive Raise of !H
+1H--1N--2N--,3H,Weak Raise of !H
 1H**,Db,Negative X showing 4+ !S
 1S**,Db,Negative X showing 4+ !H
 # 3C responses
@@ -52,8 +51,9 @@ Option,1MOpening @1@2 Hardy Raises
 1S--1N--2H--,4S,5+!S Weak outside Ace or King
 1S--1N--,2N,18-19 HCP Transfers on
 1S--1N--2N--,3C,Transfer !D
-1S--1N--2N--,3D,Transfer !H Stronger
-1S--1N--2N--,3H,Weak Raise of !H
+1S--1N--2N--,3D,Transfer !H
+1S--1N--2N--,3H,Strong Raise of !S
+1S--1N--2N--,3S,Weak Raise of !S
 # 1S 3C Responses
 1S--,3C,9+-12 3!S shortness 4!S no shortness
 1S--3C--3D,Describe hand
