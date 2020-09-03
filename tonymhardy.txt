@@ -176,8 +176,8 @@ Option,1NTDb Penalty
 1NDb----,2S--,5!S Runout
 ,1C,3+!C unbalanced or balanced 15-17 NT
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
-1[CD]__**__,1N,Balanced 15-17
-1[CD]**----,1N,Balanced 15-17
+1[CD]__..__,1N,Balanced 15-17
+1[CD]..----,1N,Balanced 15-17
 
 # include 2NTOpening.txt
 BBOalert
@@ -228,8 +228,8 @@ Option,1MOpening @1@2 Hardy Raises
 1H--1N--2N--,3C,Transfer !D
 1H--1N--2N--,3D,Constructive Raise of !H
 1H--1N--2N--,3H,Weak Raise of !H
-1H**,Db,Negative X showing 4+ !S
-1S**,Db,Negative X showing 4+ !H
+1H..,Db,Negative X showing 4+ !S
+1S..,Db,Negative X showing 4+ !H
 # 3C responses
 1H--,3C,9+-12 3!H shortness 4!H no shortness
 1H--3C--3D,Describe hand
@@ -244,23 +244,23 @@ Option,1MOpening @1@2 Hardy Raises
 1H--3C--3D--3S--3N--,4D, Void !D
 1H--3C--3D--3S--3N--,4H, Void !S
 # 1H (1X) 3C responses
-1H1*,3C,9+-12 3!H shortness 4!H no shortness
-1H1*3C--3D,Describe hand
-1H1*3C--3D--,3H,4!H no shortness
-1H1*3C--3D--,3N,Short !S
-1H1*3C--3D--,4C,Short !C
-1H1*3C--3D--,4D,Short !D
-1H1*3C--3D--,4H,Short !S
-1H1*3C--3D--,3S,Shortness is void
-1H1*3C--3D--3S--,3N,Where is Shortness
-1H1*3C--3D--3S--3N--,4C, Void !C
-1H1*3C--3D--3S--3N--,4D, Void !D
-1H1*3C--3D--3S--3N--,4H, Void !S
-# 1S (p) 3*
+1H1.,3C,9+-12 3!H shortness 4!H no shortness
+1H1.3C--3D,Describe hand
+1H1.3C--3D--,3H,4!H no shortness
+1H1.3C--3D--,3N,Short !S
+1H1.3C--3D--,4C,Short !C
+1H1.3C--3D--,4D,Short !D
+1H1.3C--3D--,4H,Short !S
+1H1.3C--3D--,3S,Shortness is void
+1H1.3C--3D--3S--,3N,Where is Shortness
+1H1.3C--3D--3S--3N--,4C, Void !C
+1H1.3C--3D--3S--3N--,4D, Void !D
+1H1.3C--3D--3S--3N--,4H, Void !S
+# 1S (p) 3.
 1S--,3S,4+!S Weak probably balanced
 1S--,4S,5+!S Weak probable shortness
-1S1*,3S,4+!S Weak probably balanced
-1S1*,4S,5+!S Weak probable shortness
+1S1.,3S,4+!S Weak probably balanced
+1S1.,4S,5+!S Weak probable shortness
 1S--1N--2C--,4S,5+!S Weak outside Ace or King
 1S--1N--2D--,4S,5+!S Weak outside Ace or King
 1S--1N--2H--,4S,5+!S Weak outside Ace or King
@@ -308,16 +308,16 @@ Option,1MOpening @1@2 Hardy Raises
 1H--3D--3H--3S--3N--,4D,Void !D
 1H--3D--3H--3S--3N--,4H,Void !S
 # 1H (1x) 3D
-1H1*,3D,9+-12- 4+!H Shortness
-1H1*3D--,3H,Describe Hand
-1H1*3D--3H--,4C,Short !C
-1H1*3D--3H--,4D,Short !D
-1H1*3D--3H--,4H,Short !S
-1H1*3D--3H--,3S,Shortness is void
-1H1*3D--3H--3S--,3N,Where is void?
-1H1*3D--3H--3S--3N--,4C,Void !C
-1H1*3D--3H--3S--3N--,4D,Void !D
-1H1*3D--3H--3S--3N--,4H,Void !S
+1H1.,3D,9+-12- 4+!H Shortness
+1H1.3D--,3H,Describe Hand
+1H1.3D--3H--,4C,Short !C
+1H1.3D--3H--,4D,Short !D
+1H1.3D--3H--,4H,Short !S
+1H1.3D--3H--,3S,Shortness is void
+1H1.3D--3H--3S--,3N,Where is void?
+1H1.3D--3H--3S--3N--,4C,Void !C
+1H1.3D--3H--3S--3N--,4D,Void !D
+1H1.3D--3H--3S--3N--,4H,Void !S
 # 1H (X) 3D
 1HDb,3D,9+-12- 4+!H Shortness
 1HDb3D--,3H,Describe Hand
@@ -328,7 +328,7 @@ Option,1MOpening @1@2 Hardy Raises
 1HDb3D--3H--3S--,3N,Where is void?
 1HDb3D--3H--3S--3N--,4C,Void !C
 1HDb3D--3H--3S--3N--,4D,Void !D
-1H1*3D--3H--3S--3N--,4H,Void !S
+1H1.3D--3H--3S--3N--,4H,Void !S
 # Spades
 # 1st and 2nd seats
 1S--,3H,9+-12 4+!S Shortness
@@ -378,8 +378,8 @@ Option,1MOpening @1@2 Hardy Raises
 # Power Raises no shortness
 1H--,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
 1H--,4D,12+-15 4+!H No shortness
-1H1*,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
-1H1*,4D,12+-15 4+!H No shortness
+1H1.,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
+1H1.,4D,12+-15 4+!H No shortness
 # Spades
 1S--,3N,12+-15- 4+!S with shortness
 1S--3N--,4C,Where is Shortness
@@ -389,13 +389,13 @@ Option,1MOpening @1@2 Hardy Raises
 1S--,4C,12+15- good trump No shortness#4!S with two of A K or Q or 5+!S with A or K
 1S--,4D,12+15- 4+!S No shortness
 # 1S (1x) 3N or 4C/4D
-1S1*,3N,12+-15- 4+!S with shortness
-1S1*3N--,4C,Where is Shortness
-1S1*3N--4C--,4D,Singleton or void !D
-1S1*3N--4C--,4H,Singleton or void !H
-1S1*3N--4C--,4S,Singleton or void !C
-1S1*,4C,12+15- good trump No shortness#4!S with two of A K or Q or 5+!S with A or K
-1S1*,4D,12+15- 4+!S No shortness
+1S1.,3N,12+-15- 4+!S with shortness
+1S1.3N--,4C,Where is Shortness
+1S1.3N--4C--,4D,Singleton or void !D
+1S1.3N--4C--,4H,Singleton or void !H
+1S1.3N--4C--,4S,Singleton or void !C
+1S1.,4C,12+15- good trump No shortness#4!S with two of A K or Q or 5+!S with A or K
+1S1.,4D,12+15- 4+!S No shortness
 1S--,2N,15+ Jacoby 2NT
 1S--2N--,3C,Short !C rebid shows void
 1S--2N--,3D,Short !D rebid shows void
@@ -533,11 +533,11 @@ Option,1mOpenings
 # These are moved to the 1NTOpening-11-14.txt and # 1NTOpening-15-17.txt
 # Option,1mOpening 12-14 1NT
 # ,1C,3+!C unbalanced or balanced 15-17 NT
-# 1C--1*,1N,Balanced 15-17
+# 1C--1.,1N,Balanced 15-17
 # 1C1SDb--,1N,15-17 Balanced
 # Option,1mOpening 15-17 1NT
 # ,1C,3+!C unbalanced or balanced 12-14 NT
-# 1C--1*,1N,Balanced 12-14
+# 1C--1.,1N,Balanced 12-14
 Option,UMJOOMO Off
 1[CD]--,2H,
 1[CD]--,2S,
@@ -568,7 +568,7 @@ Option,Spiral
 1C--1S--2S--2N--,3C,3-!S minimum
 1C--1S--2S--2N--,3D,3-!S maximum
 1C--1S--2S--2N--,3H,4-!S minimum
-1C**1S--2S--2N--,3H,4-!S Minimum Hand
+1C..1S--2S--2N--,3H,4-!S Minimum Hand
 1C--1S--2S--2N--,3S,4-!S maximum
 1D--1H--2H--,2S,Quantity and Quality Ask in !H
 1D--1H--2H--2S--,2N,3-!H minimum
@@ -597,7 +597,7 @@ Option,2COpening ControlSteps On
 2C--2[DHS]--2N--,3C,Puppet Stayman
 Option,2COpening ControlSteps Off
 2C--,2D,Waiting
-2C--2D--2*,3[CD],Cheapest Minimum
+2C--2D--2.,3[CD],Cheapest Minimum
 2C--2[DHS]--2N--,3C,Puppet Stayman
 Option,2C2D KokishRelay
 2C--2D--,2H,Relay to 2!S
@@ -706,7 +706,8 @@ Option,XYZ
 1C__1D__1S__,2C,Invitational Force 2!D
 1C__1D__1S__,2D,Artifical Game Force
 1C--1H--1N--,2C,Invitational force 2!D by Opener
-1*--1*--1*--2C--,2D,Required response
+1...1...1...2C..,2D,Required response
+1...1...1...,2D,Artificial Game Forcing
 1C--1H--1N--,2N,Fewer than 4!C
 1C__1H__1N__2C__2D__,2N,Invitational 4+!C
 1C__1H__1N__,2N,Invitational Fewer 4!C
