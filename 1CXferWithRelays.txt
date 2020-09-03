@@ -55,11 +55,11 @@ or any 4-4-4-1 without singleton !C (open 1!D with Singleton !C)
 1C--,3D,Weak with long !D
 1C--,2C,Game Forcing with primary !D
 1C--2C--,2D,Describe Responder's hand
-1C--1*--,2C,Strong Two-Bid#Control Step Responses A=2 Controls K=1 Control
-1C--1*--2C--,2D,1 K of fewer
-1C--1*--2C--,2H,Ace or two Kings
-1C--1*--2C--,2S,Ace and a King
-1C--1*--2C--,2N,3 Kings
-1C--1*--2C--,3C,4 Controls
-1C--1*--2C--,3D,5 Controls
+1C--1.--,2C,Strong Two-Bid#Control Step Responses A=2 Controls K=1 Control
+1C--1.--2C--,2D,1 K of fewer
+1C--1.--2C--,2H,Ace or two Kings
+1C--1.--2C--,2S,Ace and a King
+1C--1.--2C--,2N,3 Kings
+1C--1.--2C--,3C,4 Controls
+1C--1.--2C--,3D,5 Controls
 # include XYZ.txt

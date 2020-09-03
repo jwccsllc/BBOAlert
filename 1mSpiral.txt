@@ -8,7 +8,7 @@ Option,Spiral
 1C--1S--2S--2N--,3C,3-!S minimum
 1C--1S--2S--2N--,3D,3-!S maximum
 1C--1S--2S--2N--,3H,4-!S minimum
-1C**1S--2S--2N--,3H,4-!S Minimum Hand
+1C..1S--2S--2N--,3H,4-!S Minimum Hand
 1C--1S--2S--2N--,3S,4-!S maximum
 1D--1H--2H--,2S,Quantity and Quality Ask in !H
 1D--1H--2H--2S--,2N,3-!H minimum

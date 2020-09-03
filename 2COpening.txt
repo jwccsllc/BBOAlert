@@ -8,7 +8,7 @@ Option,2COpening ControlSteps On
 2C--2[DHS]--2N--,3C,Puppet Stayman
 Option,2COpening ControlSteps Off
 2C--,2D,Waiting
-2C--2D--2*,3[CD],Cheapest Minimum
+2C--2D--2.,3[CD],Cheapest Minimum
 2C--2[DHS]--2N--,3C,Puppet Stayman
 Option,2C2D KokishRelay
 2C--2D--,2H,Relay to 2!S

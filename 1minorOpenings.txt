@@ -37,11 +37,11 @@ Option,1mOpenings
 # These are moved to the 1NTOpening-11-14.txt and # 1NTOpening-15-17.txt
 # Option,1mOpening 12-14 1NT
 # ,1C,3+!C unbalanced or balanced 15-17 NT
-# 1C--1*,1N,Balanced 15-17
+# 1C--1.,1N,Balanced 15-17
 # 1C1SDb--,1N,15-17 Balanced
 # Option,1mOpening 15-17 1NT
 # ,1C,3+!C unbalanced or balanced 12-14 NT
-# 1C--1*,1N,Balanced 12-14
+# 1C--1.,1N,Balanced 12-14
 Option,UMJOOMO Off
 1[CD]--,2H,
 1[CD]--,2S,

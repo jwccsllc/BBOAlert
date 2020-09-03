@@ -15,8 +15,8 @@ Option,1MOpening @1@2 Bergen Raises
 1H--1N--2N--,3D,Transfer !H
 1H--1N--2N--,3H,Transfer !S Stronger
 1H--1N--2N--,3S,Weak raise of !S
-1H**,Db,Negative X showing 4+ !S
-1S**,Db,Negative X showing 4+ !H
+1H..,Db,Negative X showing 4+ !S
+1S..,Db,Negative X showing 4+ !H
 # 3C responses
 1H--,3C,7-9 4!H Constructive Raise
 1H--3C--3D,Describe hand (show shortness)
@@ -26,20 +26,20 @@ Option,1MOpening @1@2 Bergen Raises
 1H--3C--3D--,4D,Short !D
 1H--3C--3D--,4H,Short !S
 # 1H (1X) 3C responses
-1H1*,3C,7-9 4!H Constructive Raise
-1H1*3C--3D,Describe hand (show shortness)
-1H1*3C--3D--,3H,Minimum
-1H1*3C--3D--,3N,Short !S
-1H1*3C--3D--,4C,Short !C
-1H1*3C--3D--,4D,Short !D
-1H1*3C--3D--,4H,Short !S
+1H1..3C,7-9 4!H Constructive Raise
+1H1..C--3D,Describe hand (show shortness)
+1H1..C--3D--,3H,Minimum
+1H1..C--3D--,3N,Short !S
+1H1..C--3D--,4C,Short !C
+1H1..C--3D--,4D,Short !D
+1H1..C--3D--,4H,Short !S
 # 1H 3D Responses
 1H--,3D,9+-12 4!H Limit Raise
 1H--3D--,3H,To Play
 1H--3D--,4H,To Play
-1H1*,3D,9+-12 4!H Limit Raise
-1H1*3D--,3H,To Play
-1H1*3D--,4H,To Play
+1H1..3D,9+-12 4!H Limit Raise
+1H1..D--,3H,To Play
+1H1..D--,4H,To Play
 1HDb3D,9+-12 4!H Limit Raise
 1HDb3D--,3H,To Play
 1HDb3D--,4H,To Play
@@ -49,13 +49,13 @@ Option,1MOpening @1@2 Bergen Raises
 1HDb,2C,Xrer to 1D
 1HDb,2D,Xrer to 1H Constructive
 1HDb,2H,Weak Raise
-# 1S (p) 3*
+# 1S (p) 3.
 1S--,1N,Forcing
 1S--,2S,3 or 4 card raise
 1S--,3S,4+!S Weak probably balanced
 1S--,4S,5+!S Weak probable shortness
-1S1*,3S,4+!S Weak probably balanced
-1S1*,4S,5+!S Weak probable shortness
+1S1..3S,4+!S Weak probably balanced
+1S1..4S,5+!S Weak probable shortness
 1S--1N--2C--,4S,5+!S Weak outside Ace or King
 1S--1N--2D--,4S,5+!S Weak outside Ace or King
 1S--1N--2H--,4S,5+!S Weak outside Ace or King
@@ -84,11 +84,11 @@ Option,1MOpening @1@2 Bergen Raises
 1S--3D--3H--,4C,Short !C
 1S--3D--3H--,4D,Short !D
 1S--3D--3H--,4H,Short !S
-1S1*,3D,9+-12- 4+!H Limit Raise
-1S1*3D--,3H,Describe Hand
-1S1*3D--3H--,4C,Short !C
-1S1*3D--3H--,4D,Short !D
-1S1*3D--3H--,4H,Short !S
+1S1..3D,9+-12- 4+!H Limit Raise
+1S1..D--,3H,Describe Hand
+1S1..D--3H--,4C,Short !C
+1S1..D--3H--,4D,Short !D
+1S1..D--3H--,4H,Short !S
 1SDb,3D,9+-12- 4+!H Limit Raise
 1SDb3D--,3H,Describe Hand
 1SDb3D--3H--,4C,Short !C
@@ -107,8 +107,8 @@ Option,1MOpening @1@2 Bergen Raises
 # Power Raises no shortness
 1H--,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
 1H--,4D,12+-15 4+!H No shortness
-1H1*,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
-1H1*,4D,12+-15 4+!H No shortness
+1H1..4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
+1H1..4D,12+-15 4+!H No shortness
 1S--,4C,12+15- good trump No shortness#4!S with two of A K or Q or 5+!S with A or K
 1S--,4D,12+15- 4+!S No shortness
 1S--,2N,Jacoby 2NT
