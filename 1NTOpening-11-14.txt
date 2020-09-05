@@ -63,6 +63,7 @@ Option,1NTOpening 11+-14
 1N2C2DDb,3D,4+!H 2!D Maximum Values
 1N2C2DDb,3H,4+!H Balanced Minimum
 1N2C,2H,Transfer !S
+1N2C2H--,2S,Fewer than 4 !S
 1N2C2HDb,--,Fewer than 3!S
 1N2C2HDb,2S,Three !S
 1N2C2HDb,2N,4+!S 3=4=3=3 Maximum Values

@@ -27,4 +27,5 @@ Option,2C2D KokishRelay
 Option
 2C--2H--3H--4H--,4S,Kickback; Keycard for !H
 2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
+2C2D----2N--3H--,3S,fewer than 4 !S
 

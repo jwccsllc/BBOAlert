@@ -24,6 +24,7 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 1N2C,2C,Stayman
 1N2C,2D,Transfer !H
 1N2C,2H,Transfer !S
+1N2C2H--,2S,Fewer than 4 !S
 1N2C,2S,Transfer !C Pass or Correct
 1N2C,2N,Invitational
 1N2C,3C,5-5 Minors Pass or Correct
