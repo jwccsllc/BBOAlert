@@ -77,6 +77,7 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 1N2C,2C,Stayman
 1N2C,2D,Transfer !H
 1N2C,2H,Transfer !S
+1N2C2H--,2S,Fewer than 4 !S
 1N2C,2S,Transfer !C Pass or Correct
 1N2C,2N,Invitational
 1N2C,3C,5-5 Minors Pass or Correct
@@ -362,6 +363,7 @@ Option,2C2D KokishRelay
 Option
 2C--2H--3H--4H--,4S,Kickback; Keycard for !H
 2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
+2C2D----2N--3H--,3S,fewer than 4 !S
 
 
 # include 2DHSOpenings.txt

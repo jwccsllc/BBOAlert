@@ -118,6 +118,7 @@ Option,1NTOpening 11+-14
 1N2C2DDb,3D,4+!H 2!D Maximum Values
 1N2C2DDb,3H,4+!H Balanced Minimum
 1N2C,2H,Transfer !S
+1N2C2H--,2S,Fewer than 4 !S
 1N2C2HDb,--,Fewer than 3!S
 1N2C2HDb,2S,Three !S
 1N2C2HDb,2N,4+!S 3=4=3=3 Maximum Values
@@ -219,13 +220,14 @@ BBOalert, file must begin with BBOalert keyword
 Option,1MOpening @1@2 Hardy Raises
 ,1H,
 ,1S,
+1H--,1N,Forcing
+1S--,1N,Forcing
 1[HS]--,1N,Forcing
 # 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--2D--,4H,5+!H Weak outside Ace or King
-1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--,2N,18-19 HCP Transfers on
 1H--1N--2N--,3C,Transfer !D
 1H--1N--2N--,3D,Constructive Raise of !H
@@ -618,6 +620,7 @@ Option,2C2D KokishRelay
 Option
 2C--2H--3H--4H--,4S,Kickback; Keycard for !H
 2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
+2C2D----2N--3H--,3S,fewer than 4 !S
 
 
 # include 2DHSOpenings.txt

@@ -117,6 +117,7 @@ Option,1NTOpening 11+-14
 1N2C2DDb,3D,4+!H 2!D Maximum Values
 1N2C2DDb,3H,4+!H Balanced Minimum
 1N2C,2H,Transfer !S
+1N2C2H--,2S,Fewer than 4 !S
 1N2C2HDb,--,Fewer than 3!S
 1N2C2HDb,2S,Three !S
 1N2C2HDb,2N,4+!S 3=4=3=3 Maximum Values
@@ -450,6 +451,7 @@ Option,2C2D KokishRelay
 Option
 2C--2H--3H--4H--,4S,Kickback; Keycard for !H
 2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
+2C2D----2N--3H--,3S,fewer than 4 !S
 
 
 # include 2DHSOpenings.txt
