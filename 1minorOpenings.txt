@@ -14,11 +14,12 @@ Option,1mOpenings
 1D__,3D,5+!C Weak
 1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
-1C--1H--2D--,2S,<= 7HCP weak Ingberman
+1C--1H--2D--,2S,<= 7 HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman
 1C--1S--2D--,3C,Game Forcing, Ingberman
-1C--1S--2D--,2H,<= 7HCP weak Ingberman
+1C--1S--2D--,2H,<= 7 HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
+1[CD]--1H--2S--,2N,<= 7 HCP weak Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D--,2D,4+!D Strong no 4CM or NT stops
 1D__,3D,5+!D Weak
