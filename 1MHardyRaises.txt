@@ -203,7 +203,7 @@ Option,1MOpening @1@2 Hardy Raises
 1SDb,2H,Constructive raise of !S
 1SDb,2S,weak raise of !S
 1SDb,2N,3-card limit raise of !S no shortness
-1SDb,Rd,10+ HCP no fit
+1[HS]Db,Rd,10+ HCP no fit
 1H1S,2S,Limit Raise or better !H
 1H2C,3C,Limit Raise or better !H
 1H2D,3D,Limit Raise or better !H

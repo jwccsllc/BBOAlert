@@ -420,7 +420,7 @@ Option,1MOpening @1@2 Hardy Raises
 1SDb,2H,Constructive raise of !S
 1SDb,2S,weak raise of !S
 1SDb,2N,3-card limit raise of !S no shortness
-1SDb,Rd,10+ HCP no fit
+1[HS]Db,Rd,10+ HCP no fit
 1H1S,2S,Limit Raise or better !H
 1H2C,3C,Limit Raise or better !H
 1H2D,3D,Limit Raise or better !H
@@ -513,11 +513,12 @@ Option,1mOpenings
 1D__,3D,5+!C Weak
 1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
-1C--1H--2D--,2S,<= 7HCP weak Ingberman
+1C--1H--2D--,2S,<= 7 HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman
 1C--1S--2D--,3C,Game Forcing, Ingberman
-1C--1S--2D--,2H,<= 7HCP weak Ingberman
+1C--1S--2D--,2H,<= 7 HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
+1[CD]--1H--2S--,2N,<= 7 HCP weak Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D--,2D,4+!D Strong no 4CM or NT stops
 1D__,3D,5+!D Weak
@@ -700,10 +701,12 @@ Option,Flannery
 
 
 # include XYZ.txt
+BBOAlert
 Option,XYZ
 1C--1D--1N--,2C,Forcing, Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
 1C__1D__1H__,2C,Invitational Force 2!D
+1...1...1...,2C,Invitational Force 2!D
 1C__1D__1H__,2D,Artifical Game Force
 1C__1D__1N__,2C,Invitational Force 2!D
 1C__1D__1N__,2D,Artifical Game Force
