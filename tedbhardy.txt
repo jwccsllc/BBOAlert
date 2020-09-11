@@ -703,10 +703,12 @@ Option,Flannery
 
 
 # include XYZ.txt
+BBOAlert
 Option,XYZ
 1C--1D--1N--,2C,Forcing, Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
 1C__1D__1H__,2C,Invitational Force 2!D
+1...1...1...,2C,Invitational Force 2!D
 1C__1D__1H__,2D,Artifical Game Force
 1C__1D__1N__,2C,Invitational Force 2!D
 1C__1D__1N__,2D,Artifical Game Force
