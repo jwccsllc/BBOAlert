@@ -746,6 +746,7 @@ Option,XYZ
 1C----,2C,Majors
 1D,2D,Majors
 1D----,2D,Majors
+1C,2D,Weak
 1C,2N,!D + !H two suiter
 1D,2D,Majors
 1D,2N,!C + !H two suiter
