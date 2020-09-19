@@ -12,7 +12,7 @@ Shortcut,CC,Control !C
 Shortcut,CD,Control !D
 Shortcut,CH,Control !H
 Shortcut,CS,Control !S
-Shortcut,SA,Super Accept
+# Shortcut,SA,Super Accept
 Shortcut,SC,Stopper !C
 Shortcut,SD,Stopper !D
 Shortcut,SH,Stopper !H
