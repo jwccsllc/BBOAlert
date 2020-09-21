@@ -27,7 +27,7 @@ Shortcut,CC,Control !C
 Shortcut,CD,Control !D
 Shortcut,CH,Control !H
 Shortcut,CS,Control !S
-Shortcut,SA,Super Accept
+# Shortcut,SA,Super Accept
 Shortcut,SC,Stopper !C
 Shortcut,SD,Stopper !D
 Shortcut,SH,Stopper !H
@@ -162,6 +162,7 @@ Option,1NTOpening 11+-14
 1N2S----,Db,Negative DSI
 1N2S,2N,Lebensohl
 1N2S,3S,4+!H no !S Stop
+1N2[DHS]2N--,3C,Lebensohl Response
 Option,1NTDb Penalty
 1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
 1NDb----,2C,5!C Runout
