@@ -1,5 +1,9 @@
 BBOalert
 Option,1NTDefense Suction v Strong/Weak
+1N,[2-6]C,!D or !H and !S
+1N,[2-6]D,!H or !S and !C
+1N,[2-6]H,!S or !C and !D
+1N,[2-6]S,!C and !H or !D and !S
 1N,2C,!D or !H and !S
 1N2C--,2D,Required Relay
 1N2C--2D--,2H,!H and !S
@@ -9,11 +13,11 @@ Option,1NTDefense Suction v Strong/Weak
 1N,2D,!H or !S and !C
 1N2D--,2H,Required Relay
 1N2D--2H--,2S,!S and !C
-1N,3D,!H or !S and !C
 1N3D--,3H,Required Relay
 1N3D--3H--,3S,!S and !C
 1N,2H,!S or !C and !D
 1N2H--,2S,Required Relay
+1N3H--,3S,Required Relay
 1N2H--2S--,3C,!C and !D
 1N,2S,!C and !H or !D and !S
 1N2S__,2N,Asks for Lower Suit
