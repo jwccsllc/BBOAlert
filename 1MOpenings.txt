@@ -87,26 +87,3 @@ Option,1MOvercall1NT Robeson
 1S1N,3H,Fit-Jump, good 5+!H with support
 Option,1MOvercall1NT Off
 Option
-Option,1MOvercall1NT Robeson
-# From Andy Robeson's Partnership Bidding Pg 42
-1[CDHS]1N,Db,Penalty forcing to 2!S X
-1H1N,2C,Majors -- 5+!S Hx+!H
-1S1N,2C,Majors -- 5+!H Hx+!S
-1H1N,2D,Sound !H Raise
-1S1N,2D,Sound !S Raise
-1H1N,2S,Natural; No fit; non-forcing
-1S1N,2H,Natural; No fit; non-forcing
-# Preemptive raises of Opener's major
-1H1N,2H,Weak
-1H1N,3H,Weak
-1H1N,4H,Weak
-1S1N,2S,Weak
-1S1N,3S,Weak
-1S1N,4S,Weak
-# Fit-jumps
-1[HS]1N,3C,Fit-Jump, good 5+!C with support
-1[HS]1N,3D,Fit-Jump, good 5+!D with support
-1H1N,3S,Fit-Jump, good 5+!S with support
-1S1N,3H,Fit-Jump, good 5+!H with support
-Option,1MOvercall1NT Off
-Option
