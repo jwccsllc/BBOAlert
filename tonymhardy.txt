@@ -217,7 +217,7 @@ Option,3NTOpening Acol/NAMYATS
 
 # include 1MHardyRaises.txt
 BBOalert, file must begin with BBOalert keyword
-Option,1MOpening @1@2 Hardy Raises
+Option,1MOpening_Hardy_Raises_@1@2
 ,1H,
 ,1S,
 1H--,1N,Forcing
@@ -427,7 +427,7 @@ Option,1MOpening @1@2 Hardy Raises
 1H2D,3D,Limit Raise or better !H
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
-Option,1MOpening @3@4 Drury On
+Option,1MOpening_Drury_On_@3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)
@@ -625,14 +625,15 @@ Option
 
 
 # include 2DHSOpenings.txt
-Option,2DWeak Simple @1@2
+BBOalert
+Option,2DWeak_Simple_@1@2
 ,2D,5-11 Weak 6+!D
-Option,2DWeak Simple @3@4
+Option,2DWeak_Simple_@3@4
 ,2D,5-11 Weak 5+!D
-Option,2HSWeak @1@2
+Option,2HSWeak_@1@2
 ,2H,5-11 Weak 6+ !H
 ,2S,5-11 Weak 6+ !S
-Option,2HSWeak @3@4
+Option,2HSWeak_@3@4
 ,2H,5-11 Weak 5+ !H
 ,2S,5-11 Weak 5+ !S
 Option,2DQuery Ogust
@@ -678,6 +679,7 @@ Option,2H2SMcCabe
 2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
+Option
 
 # include 2DFlannery.txt
 Option,Flannery

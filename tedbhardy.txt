@@ -219,7 +219,7 @@ Option,3NTOpening Acol/NAMYATS
 
 # include 1MHardyRaises.txt
 BBOalert, file must begin with BBOalert keyword
-Option,1MOpening @1@2 Hardy Raises
+Option,1MOpening_Hardy_Raises_@1@2
 ,1H,
 ,1S,
 1H--,1N,Forcing
@@ -429,7 +429,7 @@ Option,1MOpening @1@2 Hardy Raises
 1H2D,3D,Limit Raise or better !H
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
-Option,1MOpening @3@4 Drury On
+Option,1MOpening_Drury_On_@3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)
@@ -627,14 +627,15 @@ Option
 
 
 # include 2DHSOpenings.txt
-Option,2DWeak Simple @1@2
+BBOalert
+Option,2DWeak_Simple_@1@2
 ,2D,5-11 Weak 6+!D
-Option,2DWeak Simple @3@4
+Option,2DWeak_Simple_@3@4
 ,2D,5-11 Weak 5+!D
-Option,2HSWeak @1@2
+Option,2HSWeak_@1@2
 ,2H,5-11 Weak 6+ !H
 ,2S,5-11 Weak 6+ !S
-Option,2HSWeak @3@4
+Option,2HSWeak_@3@4
 ,2H,5-11 Weak 5+ !H
 ,2S,5-11 Weak 5+ !S
 Option,2DQuery Ogust
@@ -680,6 +681,7 @@ Option,2H2SMcCabe
 2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
+Option
 
 # include 2DFlannery.txt
 Option,Flannery
@@ -795,40 +797,26 @@ Option,XYZ
 BBOalert
 Option,1NTDefense Suction v Strong/Weak
 1N,[2-6]C,!D or !H and !S
+1N[2-6]C--,[2-6]D,Required Relay
 1N,[2-6]D,!H or !S and !C
+1N[2-6]D--,[2-6]H,Required Relay
 1N,[2-6]H,!S or !C and !D
+1N[2-6]H--,[2-6]S,Required Relay
 1N,[2-6]S,!C and !H or !D and !S
-1N,2C,!D or !H and !S
-1N2C--,2D,Required Relay
-1N2C--2D--,2H,!H and !S
-1N,3C,!D or !H and !S
-1N3C--,3D,Required Relay
-1N3C--3D--,3H,!H and !S
-1N,2D,!H or !S and !C
-1N2D--,2H,Required Relay
-1N2D--2H--,2S,!S and !C
-1N3D--,3H,Required Relay
-1N3D--3H--,3S,!S and !C
-1N,2H,!S or !C and !D
-1N2H--,2S,Required Relay
-1N3H--,3S,Required Relay
-1N2H--2S--,3C,!C and !D
-1N,2S,!C and !H or !D and !S
-1N2S__,2N,Asks for Lower Suit
-1N2S--2N--,3C,!C and !H
-1N2C--2D--,2H,!H and !S
+1N[2-6]S--,[2-6]N,Show Lower Suit
+1N,[2-6]N,!C or !D and !H
+1N[2-6]N--,[2-6]C,Required Relay
 Option,2NTDefense Suction
-2N,3C,!D or !H and !S
-2N3C--,3D,Required Relay
-2N3C--3D--,3H,!H and !S
-2N,3D,!H or !S and !C
-2N3D--,3H,Required Relay
-2N3D--3H--,3S,!S and !C
-2N,3S,!C and !H or !D and !S
-2N3S--,3N,Asks for lower suit
-2N,3H,!S or !C and !D
-2N3H--,3S,Required Relay
-2N3H--3S--,4C,!C and !D
+2N,[3-6]C,!D or !H and !S
+2N[3-6]C--,[2-6]D,Required Relay
+2N,[3-6]D,!H or !S and !C
+2N[3-6]D--,[2-6]H,Required Relay
+2N,[3-6]H,!S or !C and !D
+2N[3-6]H--,[2-6]S,Required Relay
+2N,[3-6]S,!C and !H or !D and !S
+2N[3-6]S--,[2-6]N,Show Lower Suit
+2N,[3-6]N,!C or !D and !H
+2N[3-6]N--,[2-6]C,Required Relay
 
 # include 1CDef-Suction.txt
 # Defense Against Strong Club
