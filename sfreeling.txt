@@ -350,14 +350,19 @@ Option
 BBOalert
 Option,2DWeak_Simple_@1@2
 ,2D,5-11 Weak 6+!D
-Option,2DWeak_Simple_@3@4
+Option,2DWeak_Simple_@3
 ,2D,5-11 Weak 5+!D
+Option,2DWeak_Simple_@4
+,2D,10-15 6+!D
 Option,2HSWeak_@1@2
 ,2H,5-11 Weak 6+ !H
 ,2S,5-11 Weak 6+ !S
-Option,2HSWeak_@3@4
+Option,2HSWeak_@3
 ,2H,5-11 Weak 5+ !H
 ,2S,5-11 Weak 5+ !S
+Option,2HSWeak_@4
+,2H,10-15 6+!H
+,2S,10-15 6+!S
 Option,2DQuery Ogust
 2D--,2N,Ogust
 2D--2N--,3C, Bad Hand bad Suit
