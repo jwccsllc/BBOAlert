@@ -25,7 +25,7 @@ Shortcut,CC,Control !C
 Shortcut,CD,Control !D
 Shortcut,CH,Control !H
 Shortcut,CS,Control !S
-Shortcut,SA,Super Accept
+# Shortcut,SA,Super Accept
 Shortcut,SC,Stopper !C
 Shortcut,SD,Stopper !D
 Shortcut,SH,Stopper !H
@@ -160,6 +160,7 @@ Option,1NTOpening 11+-14
 1N2S----,Db,Negative DSI
 1N2S,2N,Lebensohl
 1N2S,3S,4+!H no !S Stop
+1N2[DHS]2N--,3C,Lebensohl Response
 Option,1NTDb Penalty
 1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
 1NDb----,2C,5!C Runout
@@ -190,6 +191,7 @@ Option,2NTOpening Puppet Stayman
 2N--3C--3D--,3H,4!S fewer !H
 2N--3C--3D--,3S,4!H fewer !S
 2N--3C--3D--,3N,No 4 card major
+2N--3C--,3N,No 4 or 5 card major
 2N--,3D,Transfer -> !H
 2N--,3H,Transfer -> !S
 2N--,4D,Transfer to !H
@@ -419,7 +421,7 @@ Option,1MOpening @1@2 Hardy Raises
 1SDb,2H,Constructive raise of !S
 1SDb,2S,weak raise of !S
 1SDb,2N,3-card limit raise of !S no shortness
-1SDb,Rd,10+ HCP no fit
+1[HS]Db,Rd,10+ HCP no fit
 1H1S,2S,Limit Raise or better !H
 1H2C,3C,Limit Raise or better !H
 1H2D,3D,Limit Raise or better !H
@@ -512,11 +514,12 @@ Option,1mOpenings
 1D__,3D,5+!C Weak
 1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
-1C--1H--2D--,2S,<= 7HCP weak Ingberman
+1C--1H--2D--,2S,<= 7 HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman
 1C--1S--2D--,3C,Game Forcing, Ingberman
-1C--1S--2D--,2H,<= 7HCP weak Ingberman
+1C--1S--2D--,2H,<= 7 HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
+1[CD]--1H--2S--,2N,<= 7 HCP weak Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D--,2D,4+!D Strong no 4CM or NT stops
 1D__,3D,5+!D Weak
@@ -699,10 +702,12 @@ Option,Flannery
 
 
 # include XYZ.txt
+BBOAlert
 Option,XYZ
 1C--1D--1N--,2C,Forcing, Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
 1C__1D__1H__,2C,Invitational Force 2!D
+1...1...1...,2C,Invitational Force 2!D
 1C__1D__1H__,2D,Artifical Game Force
 1C__1D__1N__,2C,Invitational Force 2!D
 1C__1D__1N__,2D,Artifical Game Force
@@ -740,6 +745,7 @@ Option,XYZ
 1C----,2C,Majors
 1D,2D,Majors
 1D----,2D,Majors
+1C,2D,Weak
 1C,2N,!D + !H two suiter
 1D,2D,Majors
 1D,2N,!C + !H two suiter
@@ -786,37 +792,27 @@ Option,XYZ
 # include 1NTdef-suction.txt
 BBOalert
 Option,1NTDefense Suction v Strong/Weak
-1N,2C,!D or !H and !S
-1N2C--,2D,Required Relay
-1N2C--2D--,2H,!H and !S
-1N,3C,!D or !H and !S
-1N3C--,3D,Required Relay
-1N3C--3D--,3H,!H and !S
-1N,2D,!H or !S and !C
-1N2D--,2H,Required Relay
-1N2D--2H--,2S,!S and !C
-1N,3D,!H or !S and !C
-1N3D--,3H,Required Relay
-1N3D--3H--,3S,!S and !C
-1N,2H,!S or !C and !D
-1N2H--,2S,Required Relay
-1N2H--2S--,3C,!C and !D
-1N,2S,!C and !H or !D and !S
-1N2S__,2N,Asks for Lower Suit
-1N2S--2N--,3C,!C and !H
-1N2C--2D--,2H,!H and !S
+1N,[2-6]C,!D or !H and !S
+1N[2-6]C--,[2-6]D,Required Relay
+1N,[2-6]D,!H or !S and !C
+1N[2-6]D--,[2-6]H,Required Relay
+1N,[2-6]H,!S or !C and !D
+1N[2-6]H--,[2-6]S,Required Relay
+1N,[2-6]S,!C and !H or !D and !S
+1N[2-6]S--,[2-6]N,Show Lower Suit
+1N,[2-6]N,!C or !D and !H
+1N[2-6]N--,[2-6]C,Required Relay
 Option,2NTDefense Suction
-2N,3C,!D or !H and !S
-2N3C--,3D,Required Relay
-2N3C--3D--,3H,!H and !S
-2N,3D,!H or !S and !C
-2N3D--,3H,Required Relay
-2N3D--3H--,3S,!S and !C
-2N,3S,!C and !H or !D and !S
-2N3S--,3N,Asks for lower suit
-2N,3H,!S or !C and !D
-2N3H--,3S,Required Relay
-2N3H--3S--,4C,!C and !D
+2N,[3-6]C,!D or !H and !S
+2N[3-6]C--,[2-6]D,Required Relay
+2N,[3-6]D,!H or !S and !C
+2N[3-6]D--,[2-6]H,Required Relay
+2N,[3-6]H,!S or !C and !D
+2N[3-6]H--,[2-6]S,Required Relay
+2N,[3-6]S,!C and !H or !D and !S
+2N[3-6]S--,[2-6]N,Show Lower Suit
+2N,[3-6]N,!C or !D and !H
+2N[3-6]N--,[2-6]C,Required Relay
 
 # include 1CDef-Suction.txt
 # Defense Against Strong Club
