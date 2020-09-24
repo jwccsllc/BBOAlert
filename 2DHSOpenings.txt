@@ -1,11 +1,12 @@
-Option,2DWeak Simple @1@2
+BBOalert
+Option,2DWeak_Simple_@1@2
 ,2D,5-11 Weak 6+!D
-Option,2DWeak Simple @3@4
+Option,2DWeak_Simple_@3@4
 ,2D,5-11 Weak 5+!D
-Option,2HSWeak @1@2
+Option,2HSWeak_@1@2
 ,2H,5-11 Weak 6+ !H
 ,2S,5-11 Weak 6+ !S
-Option,2HSWeak @3@4
+Option,2HSWeak_@3@4
 ,2H,5-11 Weak 5+ !H
 ,2S,5-11 Weak 5+ !S
 Option,2DQuery Ogust
@@ -51,3 +52,4 @@ Option,2H2SMcCabe
 2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
+Option

@@ -443,7 +443,7 @@ Option
 3N--4D--,4N,Shortness in other minor
 3N--4D--,5C,No shortness: 2=2=2=7
 3N--4D--,5D,No shortness: 2=2=7=2
-Option,Openings seat @1@2
+Option,Openings_seat_@1@2
 ,1C,See chat message#12-14 or 18-19 when balanced3 cards only when 4=4=2=3 or (4-3)=3=3
 ,1D,See chat message#12-14 or 18-19 when balanced3 cards only if 4=4=3=2
 ,1H,12-20 pts.
@@ -1320,7 +1320,7 @@ Option
 1SDbl,4D,splinter; 4+!S
 1SDbl,4H,splinter; 4+!S
 1SDbl,4S,Preemptive 4+!Ss
-Option,Openings seat @3@4
+Option,Openings_seat_@3@4
 ,1C,See chat message#12-14 or 18-19 when balanced3 cards only when (4-3)=3=3 or 4=4=2=3
 ,1D,See chat message#12-14 or 18-19 when balanced3 cards only when 4=4=3=2
 ,1H,10-20 pts.
