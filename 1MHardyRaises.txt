@@ -1,5 +1,5 @@
 BBOalert, file must begin with BBOalert keyword
-Option,1MOpening @1@2 Hardy Raises
+Option,1MOpening Hardy Raises @1@2
 ,1H,
 ,1S,
 1H--,1N,Forcing
@@ -209,7 +209,7 @@ Option,1MOpening @1@2 Hardy Raises
 1H2D,3D,Limit Raise or better !H
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
-Option,1MOpening @3@4 Drury On
+Option,1MOpening Drury On @3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)

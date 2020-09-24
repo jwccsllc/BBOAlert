@@ -1,5 +1,5 @@
 BBOalert, file must begin with BBOalert keyword
-Option,1MOpening @1@2 Reverse Bergen Raises
+Option,1MOpening Reverse Bergen Raises @1@2
 ,1H,
 ,1S,
 # 1st and 2nd Seat
@@ -155,7 +155,7 @@ Option,1MOpening @1@2 Reverse Bergen Raises
 1S--3H--3S--,4C,Short !C
 1S--3H--3S--,4D,Short !D
 1S--3H--3S--,4H,Short !H
-Option,1MOpening @3@4 Drury On
+Option,1MOpening Drury On @3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)
