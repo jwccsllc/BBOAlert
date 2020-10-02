@@ -610,6 +610,13 @@ Option,2C2D KokishRelay
 2C--2D--,2H,Relay to 2!S
 2C--2D--2H--,2S,Mandatory Response to 2!H
 2C--2D--2H--2S--,2N,25+ HCP Balanced Systems On
+2C--2D--2H--2S--2N--,3C,Puppet Stayman
+2C--2D--2H--2S--2N--,3D,Xfer to !H
+2C--2D--2H--2S--2N--3D--,3H,Fewer than 4!H
+2C--2D--2H--2S--2N--3D--,4H,4+ !H
+2C--2D--2H--2S--2N--,3H,Xfer to !S
+2C--2D--2H--2S--2N--3H--,4S,4+ !S
+2C--2D--2H--2S--2N--3H--,3S,Fewer than 4!S
 2C--2D--2H--2S--,3C,!H and !C
 2C--2D--2H--2S--,3D,!H and !D
 2C--2D--2H--2S--,3H,!H and no second suit
@@ -619,11 +626,13 @@ Option,2C2D KokishRelay
 2C--2D--2S--2N--,3D,!S and !D
 2C--2D--2S--2N--,3H,!S and !H with longer !S
 2C--2D--2S--2N--,3S,!S and no 2nd suit
+Option
 2C--2D--,2N,22-24 HCP Balanced Systems On
+2C--2D--2N--3D--,3H,fewer than 4 !S
+2C--2D--2N--3H--,3S,fewer than 4 !S
 Option
 2C--2H--3H--4H--,4S,Kickback; Keycard for !H
 2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
-2C2D----2N--3H--,3S,fewer than 4 !S
 
 
 # include 2DHSOpenings.txt
