@@ -278,3 +278,4 @@ Option,1MOvercall1NT Robeson
 1S1N,3H,Fit-Jump, good 5+!H with support
 Option,1MOvercall1NT Off
 Option
+1S--2H--2S--3S--,3N,Non-Serious 3NT%Mild Slam Try Responder Starts making control bids with slam interest
