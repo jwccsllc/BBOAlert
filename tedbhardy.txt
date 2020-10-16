@@ -508,7 +508,8 @@ Option,1mOpenings
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,2D,5+!D Weak
-1C__,2H,5+!H Weak
+1[CD]--,2H,5+!H Weak
+1[CD]1S,2H,5+!H too strong for support double
 1C__,2S,5+!S Weak
 1C__,3C,5+!C Weak
 1[CD]2H,2S,5+ !S Natural
@@ -564,6 +565,7 @@ Option,UMJOOMO On
 1D--2H--2N--,3D,5=4-x-x maximum
 1D--2H--2N--,3H,5=5-x-x minimum
 1D--2H--2N--,3S,5=5-x-x maximum
+Option
 
 # include 1mSpiral.txt
 Option,Spiral
