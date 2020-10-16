@@ -1,3 +1,4 @@
+BBOalert
 # Defense Against Strong Club
 Option,1CDefense Standard
 1C,Dbl,Take-out Double
@@ -18,7 +19,15 @@ Option,1CDefense Precision
 1C,2S,!C and !H or !D and !S
 1C,3S,!C and !H or !D and !S
 1C,4S,!C and !H or !D and !S
+1C,1N,!C or !D and !H
+1C1N--,2C,Relay to !D
+1C,2N,!C or !D and !H
+1C,3N,!C or !D and !H
+1C,4N,!C or !D and !H
 1C--1D,2C,!D or !H and !S
+1C2N--,3C,Relay to !D
+1C3N--,4C,Relay to !D
+1C4N--,5C,Relay to !D
 1C--1D,3C,!D or !H and !S
 1C--1D,4C,!D or !H and !S
 1C--1D,2D,!H or !S and !C
