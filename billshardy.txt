@@ -496,8 +496,10 @@ Option,1MOvercall1NT Robeson
 1S1N,3H,Fit-Jump, good 5+!H with support
 Option,1MOvercall1NT Off
 Option
+1S--2H--2S--3S--,3N,Non-Serious 3NT%Mild Slam Try Responder Starts making control bids with slam interest
 
 # include 1minorOpenings.txt
+BBOalert
 # Minor Openings
 Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
@@ -505,10 +507,21 @@ Option,1mOpenings
 1C__,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C__,2D,5+!D Weak
-1C__,2H,5+!H Weak
-1C__,2S,5+!S Weak
-1C__,3C,5+!C Weak
-1[CD]2H,2S,5+ !S Natural
+1C1S,2H,5+!H too strong for negative double
+1D1S,2H,5+!H Too strong for negative double
+1C--,2H,5+!H Weak
+1C--,2S,5+!S Weak
+1C1D,2S,5+!S Weak
+1C1H,2S,5+!S Weak
+1D--,2H,5+!H Weak
+1D--,2S,5+!S Weak
+1D1H,2S,5+!S Weak
+1C1D,3C,5+!C Weak
+1C1H,3C,5+!C Weak
+1C1S,3C,5+!C Weak
+1C1--,3C,5+!C Weak
+1C2H,2S,5+ !S Natural
+1D2H,2S,5+ !S Natural
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak
@@ -519,7 +532,8 @@ Option,1mOpenings
 1C--1S--2D--,3C,Game Forcing, Ingberman
 1C--1S--2D--,2H,<= 7 HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
-1[CD]--1H--2S--,2N,<= 7 HCP weak Ingberman
+1C--1H--2S--,2N,<= 7 HCP weak Ingberman
+1D--1H--2S--,2N,<= 7 HCP weak Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D--,2D,4+!D Strong no 4CM or NT stops
 1D__,3D,5+!D Weak
@@ -534,7 +548,8 @@ Option,1mOpenings
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
-1D1[HS],3C,Weak
+1D1H,3C,Weak
+1D1S,3C,Weak
 # These are moved to the 1NTOpening-11-14.txt and # 1NTOpening-15-17.txt
 # Option,1mOpening 12-14 1NT
 # ,1C,3+!C unbalanced or balanced 15-17 NT
@@ -561,6 +576,7 @@ Option,UMJOOMO On
 1D--2H--2N--,3D,5=4-x-x maximum
 1D--2H--2N--,3H,5=5-x-x minimum
 1D--2H--2N--,3S,5=5-x-x maximum
+Option
 
 # include 1mSpiral.txt
 Option,Spiral
@@ -831,6 +847,7 @@ Option,2NTDefense Suction
 2N[3-6]N--,[2-6]C,Required Relay
 
 # include 1CDef-Suction.txt
+BBOalert
 # Defense Against Strong Club
 Option,1CDefense Standard
 1C,Dbl,Take-out Double
@@ -851,7 +868,15 @@ Option,1CDefense Precision
 1C,2S,!C and !H or !D and !S
 1C,3S,!C and !H or !D and !S
 1C,4S,!C and !H or !D and !S
+1C,1N,!C or !D and !H
+1C1N--,2C,Relay to !D
+1C,2N,!C or !D and !H
+1C,3N,!C or !D and !H
+1C,4N,!C or !D and !H
 1C--1D,2C,!D or !H and !S
+1C2N--,3C,Relay to !D
+1C3N--,4C,Relay to !D
+1C4N--,5C,Relay to !D
 1C--1D,3C,!D or !H and !S
 1C--1D,4C,!D or !H and !S
 1C--1D,2D,!H or !S and !C
