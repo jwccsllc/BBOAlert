@@ -101,9 +101,9 @@ Option,1NTOpening 11+-14
 1N--,4D,Transfer 4!S,South African Texas
 1N--,4H,To Play,South African Texas
 1N--,4S,To Play,South African Texas
-1N--2C--2D,3H,4!H 5+!S GF Smolen
+1N--2C--2D--,3H,4!H 5+!S GF Smolen
 1N----2D--2H2N--,3C,Lebensohl response
-1N--2C--2D,3S,4!S 5+!H GF Smolen
+1N--2C--2D--,3S,4!S 5+!H GF Smolen
 # after 2C interference 
 1N2C,2D,Transfer !H
 1N2C2D--,2H,Fewer than 4!H
@@ -145,9 +145,9 @@ Option,1NTOpening 11+-14
 1N2C,4D,Transfer 4!S,South African Texas
 1N2C,4H,To Play,South African Texas
 1N2C,4S,To Play,South African Texas
-1N2C2C--2D,3H,4!H 5+!S GF Smolen
+1N2CDb--2D--,3H,4!H 5+!S GF Smolen
 1N2C--2D--2H2N--,3C,Lebensohl response
-1N2C2C--2D,3S,4!S 5+!H GF Smolen
+1N2CDb--2D--,3S,4!S 5+!H GF Smolen
 1N2D,Db,Negative DSI
 1N2D----,Db,Negative DSI
 1N2D,2N,Lebensohl
@@ -506,11 +506,15 @@ BBOalert
 Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
 1[CD]--1H2S,Db,Support X 3 card !H Support
-1C__,1D,
+1C--,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
-1C__,2D,5+!D Weak
+1C--,2D,5+!D Weak
 1C1S,2H,5+!H too strong for negative double
 1D1S,2H,5+!H Too strong for negative double
+1C1H,2D,
+1C1S,2D,
+1D1H,2C,
+1D1S,2C,
 1C--,2H,5+!H Weak
 1C--,2S,5+!S Weak
 1C1D,2S,5+!S Weak
@@ -849,6 +853,7 @@ Option,2NTDefense Suction
 2N[3-6]N--,[2-6]C,Required Relay
 
 # include 1CDef-Suction.txt
+BBOalert
 # Defense Against Strong Club
 Option,1CDefense Standard
 1C,Dbl,Take-out Double
@@ -869,7 +874,15 @@ Option,1CDefense Precision
 1C,2S,!C and !H or !D and !S
 1C,3S,!C and !H or !D and !S
 1C,4S,!C and !H or !D and !S
+1C,1N,!C or !D and !H
+1C1N--,2C,Relay to !D
+1C,2N,!C or !D and !H
+1C,3N,!C or !D and !H
+1C,4N,!C or !D and !H
 1C--1D,2C,!D or !H and !S
+1C2N--,3C,Relay to !D
+1C3N--,4C,Relay to !D
+1C4N--,5C,Relay to !D
 1C--1D,3C,!D or !H and !S
 1C--1D,4C,!D or !H and !S
 1C--1D,2D,!H or !S and !C

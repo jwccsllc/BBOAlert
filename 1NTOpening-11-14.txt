@@ -46,9 +46,9 @@ Option,1NTOpening 11+-14
 1N--,4D,Transfer 4!S,South African Texas
 1N--,4H,To Play,South African Texas
 1N--,4S,To Play,South African Texas
-1N--2C--2D,3H,4!H 5+!S GF Smolen
+1N--2C--2D--,3H,4!H 5+!S GF Smolen
 1N----2D--2H2N--,3C,Lebensohl response
-1N--2C--2D,3S,4!S 5+!H GF Smolen
+1N--2C--2D--,3S,4!S 5+!H GF Smolen
 # after 2C interference 
 1N2C,2D,Transfer !H
 1N2C2D--,2H,Fewer than 4!H
@@ -90,9 +90,9 @@ Option,1NTOpening 11+-14
 1N2C,4D,Transfer 4!S,South African Texas
 1N2C,4H,To Play,South African Texas
 1N2C,4S,To Play,South African Texas
-1N2C2C--2D,3H,4!H 5+!S GF Smolen
+1N2CDb--2D--,3H,4!H 5+!S GF Smolen
 1N2C--2D--2H2N--,3C,Lebensohl response
-1N2C2C--2D,3S,4!S 5+!H GF Smolen
+1N2CDb--2D--,3S,4!S 5+!H GF Smolen
 1N2D,Db,Negative DSI
 1N2D----,Db,Negative DSI
 1N2D,2N,Lebensohl
