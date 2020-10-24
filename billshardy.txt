@@ -526,6 +526,8 @@ Option,1mOpenings
 1C1--,3C,5+!C Weak
 1C2H,2S,5+ !S Natural
 1D2H,2S,5+ !S Natural
+1D--1H--2C--,2S,4th suit forcing
+1D--1S--2C--,2H,4th suit forcing
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak
