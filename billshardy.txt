@@ -11,6 +11,7 @@ Shortcut,W2,UDCA; Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even L
 Option
 
 # include shortcuts.txt
+Shortcut,SLC,System Leads and Carding?
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
 Shortcut,ML,My last deal; Thanks to all
 Shortcut,TC,Texas !C
@@ -25,7 +26,7 @@ Shortcut,CC,Control !C
 Shortcut,CD,Control !D
 Shortcut,CH,Control !H
 Shortcut,CS,Control !S
-# Shortcut,SA,Super Accept
+Shortcut,SA_,Super Accept
 Shortcut,SC,Stopper !C
 Shortcut,SD,Stopper !D
 Shortcut,SH,Stopper !H
@@ -46,9 +47,9 @@ Shortcut,LSQ,Lead against suit : Q = typically KQx
 Shortcut,LSJ,Lead against suit : J = typically QJx
 Shortcut,LST,Lead against suit : 10 = typically J10x
 Shortcut,LFI,Low from interest
-Shortcut,UD,UDCA; Trump Suit Preference
-Shortcut,LS,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
-Shortcut,LN,Journalist vs NT; Spot Leads Low from Interest
+Shortcut,UD_,UDCA; Trump Suit Preference
+Shortcut,LS_,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
+Shortcut,LN_,Journalist vs NT; Spot Leads Low from Interest
 
 # include 1NTOpening-11-14.txt
 Option,1NTOpening 11+-14
@@ -379,6 +380,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1H--2N--,4C,5+ good !C
 1H--2N--,4D,5+ good !D
 1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1S--2D--3C--3S--,3N,Non-Serious 3NT#No slam interest partner control bids if interested
 # Power Raises no shortness
 1H--,4C,12+-15 good trump No shortness#4!H with two of A K or Q or 5+!H with A or K
 1H--,4D,12+-15 4+!H No shortness
