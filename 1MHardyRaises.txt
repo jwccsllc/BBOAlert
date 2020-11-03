@@ -211,6 +211,8 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
 Option,1MOpening_Drury_On_@3@4
+--1H--,1N,Forcing
+--1S--,1N,Forcing
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)

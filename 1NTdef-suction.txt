@@ -10,7 +10,13 @@ Option,1NTDefense Suction v Strong/Weak
 1N[2-6]S--,[2-6]N,Show Lower Suit
 1N,[2-6]N,!C or !D and !H
 1N[2-6]N--,[2-6]C,Required Relay
+1N,Db,!C or !D and !H
+1N,2N,!C or !D and !H
+1NDb--,2C,Required Relay
+1N2N--,3C,Required Relay
 Option,2NTDefense Suction
+2N,3N,!C or !D and !H
+2N3N--,4!C,Required Relay
 2N,[3-6]C,!D or !H and !S
 2N[3-6]C--,[2-6]D,Required Relay
 2N,[3-6]D,!H or !S and !C
