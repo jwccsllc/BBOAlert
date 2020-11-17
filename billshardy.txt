@@ -933,6 +933,7 @@ Option,2CDefense Strong
 2C--2D,3C,!D or !H and !S
 2C--2D,3D,!H or !S and !C
 2C--2D,3H,!S or !C and !D
+2C--2D3S--,3N,Show lowest suit of 2-suiter
 2C--2D,3S,!C and !H or !D and !S
 2C--2D,4C,!D or !H and !S
 2C--2D,4D,!H or !S and !C
