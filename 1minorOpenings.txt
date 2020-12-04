@@ -2,10 +2,13 @@ BBOalert
 # Minor Openings
 Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
-1[CD]--1H2S,Db,Support X 3 card !H Support
+1[CD]--1HDb,Rd,Support XX; 3-card !H support
+1[CD]--1SDb,Rd,Support XX; 3-card !S support
 1C--,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C--,2D,5+!D Weak
+1C__,3C,Weak,
+1C--1HDb,Rd,3 card support for !H,20201204_11:42 Deal 16
 1C1S,2H,5+!H too strong for negative double
 1D1S,2H,5+!H Too strong for negative double
 1C1H,2D,
@@ -30,7 +33,6 @@ Option,1mOpenings
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak
-1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
 1C--1H--2D--,2S,<= 7 HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman
