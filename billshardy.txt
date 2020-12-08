@@ -572,8 +572,8 @@ Option,1mOpenings
 # ,1C,3+!C unbalanced or balanced 12-14 NT
 # 1C--1.,1N,Balanced 12-14
 Option,UMJOOMO Off
-1[CD]--,2H,
-1[CD]--,2S,
+1[CD]--,2H,Weak
+1[CD]--,2S,Weak
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
 1C--,2S,5!S 4!H or 5!H invitational
