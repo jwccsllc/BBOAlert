@@ -509,10 +509,13 @@ BBOalert
 # Minor Openings
 Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
-1[CD]--1H2S,Db,Support X 3 card !H Support
+1[CD]--1HDb,Rd,Support XX; 3-card !H support
+1[CD]--1SDb,Rd,Support XX; 3-card !S support
 1C--,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C--,2D,5+!D Weak
+1C__,3C,Weak,
+1C--1HDb,Rd,3 card support for !H,20201204_11:42 Deal 16
 1C1S,2H,5+!H too strong for negative double
 1D1S,2H,5+!H Too strong for negative double
 1C1H,2D,
@@ -537,7 +540,6 @@ Option,1mOpenings
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak
-1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
 1C--1H--2D--,2S,<= 7 HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman
@@ -557,6 +559,7 @@ Option,1mOpenings
 1C--1S--,1N,15-17 Balanced < 4!S
 1C--1S--,3S,18-19 4!S
 1D--1S--,1N,15-17 Balanced < 4!S
+1D--1S--2H--,2N,<= 7HCP Weak Ingberman#Opener may relay to 3!C
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
@@ -572,8 +575,8 @@ Option,1mOpenings
 # ,1C,3+!C unbalanced or balanced 12-14 NT
 # 1C--1.,1N,Balanced 12-14
 Option,UMJOOMO Off
-1[CD]--,2H,
-1[CD]--,2S,
+1[CD]--,2H,Weak
+1[CD]--,2S,Weak
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
 1C--,2S,5!S 4!H or 5!H invitational
@@ -833,6 +836,8 @@ Option,XYZ
 1[CDHS]1N--,3D,5-5 Minors Game Forcing
 1[CDHS]1N--,3H,3=1=4-5 GF
 1[CDHS]1N--,3S,1=3=4-5 GF
+# Weak 3s
+3[CHS]Db--4D--,4H,Keycard for !D (Kickback)
 
 # include 1NTdef-suction.txt
 BBOalert
