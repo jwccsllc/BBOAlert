@@ -511,6 +511,7 @@ Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
 1[CD]--1HDb,Rd,Support XX; 3-card !H support
 1[CD]--1SDb,Rd,Support XX; 3-card !S support
+1[CD]Db1H1S,Db,Support X; 3 card !H support
 1C--,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
 1C--,2D,5+!D Weak
