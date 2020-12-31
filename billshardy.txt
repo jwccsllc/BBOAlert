@@ -841,78 +841,78 @@ Option,XYZ
 # include 1NTdef-suction.txt
 BBOalert
 Option,1NTDefense Suction v Strong/Weak
-1N,[2-6]C,!D or !H and !S
+1N,[2-6]C,Single-Suit !D OR Two-Suit !H and !S
 1N[2-6]C--,[2-6]D,Required Relay
-1N,[2-6]D,!H or !S and !C
+1N,[2-6]D,Single-Suit !H OR Two-Suit !S and !C
 1N[2-6]D--,[2-6]H,Required Relay
-1N,[2-6]H,!S or !C and !D
+1N,[2-6]H,Single-Suit !S OR Two-Suit !C and !D
 1N[2-6]H--,[2-6]S,Required Relay
-1N,[2-6]S,!C and !H or !D and !S
+1N,[2-6]S,Non-Suits !C and !H OR !D and !S
 1N[2-6]S--,[2-6]N,Show Lower Suit
-1N,[2-6]N,!C or !D and !H
+1N,[2-6]N,Single-Suit !C OR Two-Suit !D and !H
 1N[2-6]N--,[2-6]C,Required Relay
-1N,Db,!C or !D and !H
-1N,2N,!C or !D and !H
+1N,Db,Single-Suit !C OR Two-Suit !D and !H
+1N,2N,Single-Suit !C OR Two-Suit !D and !H
 1NDb--,2C,Required Relay
 1N2N--,3C,Required Relay
 Option,2NTDefense Suction
-2N,3N,!C or !D and !H
+2N,3N,Single-Suit !C OR Two-Suit !D and !H
 2N3N--,4!C,Required Relay
-2N,[3-6]C,!D or !H and !S
+2N,[3-6]C,Single-Suit !D OR Two-suit !H and !S
 2N[3-6]C--,[2-6]D,Required Relay
-2N,[3-6]D,!H or !S and !C
+2N,[3-6]D,Single-Suit !H OR Two-Suit !S and !C
 2N[3-6]D--,[2-6]H,Required Relay
-2N,[3-6]H,!S or !C and !D
+2N,[3-6]H,Single-Suit !S OR Two-Suit !C and !D
 2N[3-6]H--,[2-6]S,Required Relay
-2N,[3-6]S,!C and !H or !D and !S
+2N,[3-6]S,Two-Suits !C and !H OR !D and !S
 2N[3-6]S--,[2-6]N,Show Lower Suit
-2N,[3-6]N,!C or !D and !H
+2N,[3-6]N,Single-Suit !C OR Two-Suit !D and !H
 2N[3-6]N--,[2-6]C,Required Relay
 
 # include 1CDef-Suction.txt
 BBOalert
 # Defense Against Strong Club
 Option,1CDefense Standard
-1C,Dbl,Take-out Double
+1C,Db,Take-out Double
 Option,1CDefense Precision
-1C,Dbl,!D or !H and !S
-1C,2C,!D or !H and !S
-1C,3C,!D or !H and !S
-1C,4C,!D or !H and !S
-1C,1D,!H or !S and !C
-1C,2D,!H or !S and !C
-1C,3D,!H or !S and !C
-1C,4D,!H or !S and !C
-1C,1H,!S or !C and !D
-1C,2H,!S or !C and !D
-1C,3H,!S or !C and !D
-1C,4H,!S or !C and !D
-1C,1S,!C and !H or !D and !S
-1C,2S,!C and !H or !D and !S
-1C,3S,!C and !H or !D and !S
-1C,4S,!C and !H or !D and !S
-1C,1N,!C or !D and !H
+1C,Db,Single-Suit !D OR Two-Suit !H and 1S
+1C,2C,Single-Suit !D OR Two-Suit !H and 1S
+1C,3C,Single-Suit !D OR Two-Suit !H and 1S
+1C,4C,Single-Suit !D OR Two-Suit !H and 1S
+1C,1D,Single-Suit !H OR Two-Suit !S and 1C
+1C,2D,Single-Suit !H OR Two-Suit !S and 1C
+1C,3D,Single-Suit !H OR Two-Suit !S and 1C
+1C,4D,Single-Suit !H OR Two-Suit !S and 1C
+1C,1H,Single-Suit !S OR Two-Suit !C and 1D
+1C,2H,Single-Suit !S OR Two-Suit !C and 1D
+1C,3H,Single-Suit !S OR Two-Suit !C and 1D
+1C,4H,Single-Suit !S OR Two-Suit !C and 1D
+1C,1S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,2S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,3S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,4S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,1N,Single-Suit !C OR Two-Suit !D and !H
 1C1N--,2C,Relay to !D
-1C,2N,!C or !D and !H
-1C,3N,!C or !D and !H
-1C,4N,!C or !D and !H
-1C--1D,2C,!D or !H and !S
+1C,2N,Single-Suit !C OR Two-Suit !D and !H
+1C,3N,Single-Suit !C OR Two-Suit !D and !H
+1C,4N,Single-Suit !C OR Two-Suit !D and !H
+1C--1D,2C,Single-Suit !D OR Two-Suit !H and 1S
 1C2N--,3C,Relay to !D
 1C3N--,4C,Relay to !D
 1C4N--,5C,Relay to !D
-1C--1D,3C,!D or !H and !S
-1C--1D,4C,!D or !H and !S
-1C--1D,2D,!H or !S and !C
-1C--1D,3D,!H or !S and !C
-1C--1D,4D,!H or !S and !C
-1C--1D,1H,!S or !C and !D
-1C--1D,2H,!S or !C and !D
-1C--1D,3H,!S or !C and !D
-1C--1D,4H,!S or !C and !D
-1C--1D,1S,!C and !H or !D and !S
-1C--1D,2S,!C and !H or !D and !S
-1C--1D,3S,!C and !H or !D and !S
-1C--1D,4S,!C and !H or !D and !S
+1C--1D,3C,Single-Suit !D OR Two-Suit !H and !S
+1C--1D,4C,Single-Suit !D OR Two-Suit !H and !S
+1C--1D,2D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,3D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,4D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,1H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,2H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,3H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,4H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,1S,Two-Suit in !C and !H OR !D and !S
+1C--1D,2S,Two-Suit in !C and !H OR !D and !S
+1C--1D,3S,Two-Suit in !C and !H OR !D and !S
+1C--1D,4S,Two-Suit in !C and !H OR !D and !S
 
 
 # include 2CDef-Suction.txt
