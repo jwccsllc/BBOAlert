@@ -193,6 +193,8 @@ Option,2NTOpening Puppet Stayman
 2N--3C--3D--,3S,4!H fewer !S
 2N--3C--3D--,3N,No 4 card major
 2N--3C--,3N,No 4 or 5 card major
+2N--3C--,3H,5 !H
+2N--3C--,3S,5 !S
 2N--,3D,Transfer -> !H
 2N--,3H,Transfer -> !S
 2N--,4D,Transfer to !H
