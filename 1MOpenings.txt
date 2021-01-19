@@ -23,6 +23,7 @@ Option,1MOpening_2/1_Vanilla_@1@2
 1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
 1S2C2H3C,Db,Support Double 3 !H
 1S2D2H3D,Db,Support Double 3 !H
+1H--1N--2S--,2N,Ingberman; weak xfer to !C
 Option,1MOpening_Drury_On_@3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)

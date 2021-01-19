@@ -210,6 +210,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1H2D,3D,Limit Raise or better !H
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
+1H--1N--2S--,2N,Ingberman; weak xfer to !C
 Option,1MOpening_Drury_On_@3@4
 --1H--,1N,Forcing
 --1S--,1N,Forcing
