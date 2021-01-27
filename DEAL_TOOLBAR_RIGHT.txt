@@ -1,0 +1,23 @@
+//BBOalert
+//Script,onDataLoad
+DEAL_TOOLBAR_RIGHT = function () {
+    var nd = getNavDiv();
+    if (nd != null) {
+        var dt = nd.querySelector('.dealViewerToolbarClass');
+        if (dt != null) {
+            var cc = nd.querySelector('.coverClass');
+            if (cc != null) {
+                cc.style.left = '0px';
+                var ds = nd.querySelector('.dealScreenDivClass');
+                if (ds != null) {
+                    dt.style.left = ($(cc).width() + 4) + 'px';
+                }
+            }
+        }
+    }
+};
+//Script,onAnyMutation
+DEAL_TOOLBAR_RIGHT();
+//Script
+
+

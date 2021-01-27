@@ -1,0 +1,20 @@
+//BBOalert
+//Script,onDataLoad
+HOVER_BBOALERT_TAB = function () {
+    var t = document.getElementById('bboalert-tab');
+    if (t.onmouseover == null) t.onmouseover = function () {
+        setOptions(true);
+    };
+    var rd = document.getElementById('rightDiv');
+    var vt = rd.querySelector('.verticalTabBarClass');
+    tabs = vt.querySelectorAll('.verticalClass');
+    for (var i = 0; i < tabs.length; i++) {
+        if (tabs[i].textContent.search('BBOalert') == -1) {
+            if (tabs[i].onmouseover == null) tabs[i].onmouseover = setOptionsOff;
+        }
+    }
+};
+//Script,onAnyMutation
+HOVER_BBOALERT_TAB();
+//Script
+
