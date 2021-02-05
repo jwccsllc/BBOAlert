@@ -5,6 +5,8 @@ Option,1MOpening_Hardy_Raises_@1@2
 1H--,1N,Forcing
 1S--,1N,Forcing
 1[HS]--,1N,Forcing
+1H__,3H,4+!H probably balanced
+1S__,3S,4+!S probably balanced
 # 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
