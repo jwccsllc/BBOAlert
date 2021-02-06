@@ -9,6 +9,7 @@ Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndJoelFuhrman.pdf
 Shortcut,W2,UDCA; Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even Low from Odd; Journalist Leads vs Notrump; Low from Interest
 
 # include shortcuts.txt
+Shortcut,SLC,System Leads and Carding?
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
 Shortcut,ML,My last deal; Thanks to all
 Shortcut,TC,Texas !C
@@ -23,7 +24,7 @@ Shortcut,CC,Control !C
 Shortcut,CD,Control !D
 Shortcut,CH,Control !H
 Shortcut,CS,Control !S
-# Shortcut,SA,Super Accept
+Shortcut,SA_,Super Accept
 Shortcut,SC,Stopper !C
 Shortcut,SD,Stopper !D
 Shortcut,SH,Stopper !H
@@ -44,9 +45,9 @@ Shortcut,LSQ,Lead against suit : Q = typically KQx
 Shortcut,LSJ,Lead against suit : J = typically QJx
 Shortcut,LST,Lead against suit : 10 = typically J10x
 Shortcut,LFI,Low from interest
-Shortcut,UD,UDCA; Trump Suit Preference
-Shortcut,LS,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
-Shortcut,LN,Journalist vs NT; Spot Leads Low from Interest
+Shortcut,UD_,UDCA; Trump Suit Preference
+Shortcut,LS_,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
+Shortcut,LN_,Journalist vs NT; Spot Leads Low from Interest
 
 # include 1NTOpening-15-17.txt
 BBOalert
@@ -90,6 +91,13 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 ,1C,3+!C unbalanced or balanced 12-14 NT
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1[CD]__1.__,1NT,Balanced 12-14
+1C--1H--,1N,12-14 Balanced < 4!H
+1C--1H--,1S,4!S unbalanced for NT.
+1D--1H--,1N,12-14 Balanced < 4!H
+1D--1H--,1S,4!S unbalanced for NT.
+1C--1S--,1N,12-14 Balanced < 4!S
+1C--1S--,3S,18-19 4!S
+1D--1S--,1N,12-14 Balanced < 4!S
 
 # include 2NTOpening.txt
 BBOalert
@@ -102,6 +110,8 @@ Option,2NTOpening Puppet Stayman
 2N--3C--3D--,3S,4!H fewer !S
 2N--3C--3D--,3N,No 4 card major
 2N--3C--,3N,No 4 or 5 card major
+2N--3C--,3H,5 !H
+2N--3C--,3S,5 !S
 2N--,3D,Transfer -> !H
 2N--,3H,Transfer -> !S
 2N--,4D,Transfer to !H
@@ -283,6 +293,7 @@ Option,1MOpening_Reverse_Bergen_Raises_@1@2
 1S--3H--3S--,4C,Short !C
 1S--3H--3S--,4D,Short !D
 1S--3H--3S--,4H,Short !H
+1H--1N--2S--,2N,Ingberman; weak xfer to !C
 Option,1MOpening_Drury_On_@3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
@@ -354,43 +365,61 @@ Option,1MOvercall1NT Off
 Option
 
 # include 1minorOpenings.txt
+BBOalert
 # Minor Openings
 Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
-1[CD]--1H2S,Db,Support X 3 card !H Support
-1C__,1D,
+1[CD]--1HDb,Rd,Support XX; 3-card !H support
+1[CD]--1SDb,Rd,Support XX; 3-card !S support
+1[CD]Db1H1S,Db,Support X; 3 card !H support
+1C--,1D,
 1C--,2C,5+!C strong no 4CM or NT stops
-1C__,2D,5+!D Weak
-1C__,2H,5+!H Weak
-1C__,2S,5+!S Weak
-1C__,3C,5+!C Weak
-1[CD]2H,2S,5+ !S Natural
+1C--,2D,5+!D Weak
+1C__,3C,Weak,
+1C--1HDb,Rd,3 card support for !H,20201204_11:42 Deal 16
+1C1S,2H,5+!H too strong for negative double
+1D1S,2H,5+!H Too strong for negative double
+1C1H,2D,
+1C1S,2D,
+1D1H,2C,
+1D1S,2C,
+1C--,2H,5+!H Weak
+1C--,2S,5+!S Weak
+1C1D,2S,5+!S Weak
+1C1H,2S,5+!S Weak
+1D--,2H,5+!H Weak
+1D--,2S,5+!S Weak
+1D1H,2S,5+!S Weak
+1C1D,3C,5+!C Weak
+1C1H,3C,5+!C Weak
+1C1S,3C,5+!C Weak
+1C1--,3C,5+!C Weak
+1C2H,2S,5+ !S Natural
+1D2H,2S,5+ !S Natural
+1D--1H--2C--,2S,4th suit forcing
+1D--1S--2C--,2H,4th suit forcing
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak
-1D--1HDb,Rd,Support XX; 3-card !H support
 1C--1H--2D--,3C,Game Forcing, Ingberman
 1C--1H--2D--,2S,<= 7 HCP weak Ingberman
 1C--1H--2D--,2N,Game Forcing, Ingberman
 1C--1S--2D--,3C,Game Forcing, Ingberman
 1C--1S--2D--,2H,<= 7 HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
-1[CD]--1H--2S--,2N,<= 7 HCP weak Ingberman
+1C--1H--2S--,2N,<= 7 HCP weak Ingberman
+1D--1H--2S--,2N,<= 7 HCP weak Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D--,2D,4+!D Strong no 4CM or NT stops
 1D__,3D,5+!D Weak
 1D--,3C,5+!C Invitational no 4CM or NT stops not GF
-1C--1H--,1N,15-17 Balanced < 4!H
-1C--1H--,1S,4!S unbalanced for NT.
-1D--1H--,1N,15-17 Balanced < 4!H
-1D--1H--,1S,4!S unbalanced for NT.
-1C--1S--,1N,15-17 Balanced < 4!S
-1C--1S--,3S,18-19 4!S
-1D--1S--,1N,15-17 Balanced < 4!S
+1D--1S--2H--,2N,<= 7HCP Weak Ingberman#Opener may relay to 3!C
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
-1D1[HS],3C,Weak
+1D1H,3C,Weak
+1D1S,3C,Weak
+1D2C,2[HS],
 # These are moved to the 1NTOpening-11-14.txt and # 1NTOpening-15-17.txt
 # Option,1mOpening 12-14 1NT
 # ,1C,3+!C unbalanced or balanced 15-17 NT
@@ -400,8 +429,8 @@ Option,1mOpenings
 # ,1C,3+!C unbalanced or balanced 12-14 NT
 # 1C--1.,1N,Balanced 12-14
 Option,UMJOOMO Off
-1[CD]--,2H,
-1[CD]--,2S,
+1[CD]--,2H,Weak
+1[CD]--,2S,Weak
 Option,UMJOOMO On
 1C--,2H,5!S and 4!H or 5!H Constructive
 1C--,2S,5!S 4!H or 5!H invitational
@@ -417,6 +446,7 @@ Option,UMJOOMO On
 1D--2H--2N--,3D,5=4-x-x maximum
 1D--2H--2N--,3H,5=5-x-x minimum
 1D--2H--2N--,3S,5=5-x-x maximum
+Option
 
 # include 1mSpiral.txt
 Option,Spiral
@@ -464,6 +494,13 @@ Option,2C2D KokishRelay
 2C--2D--,2H,Relay to 2!S
 2C--2D--2H--,2S,Mandatory Response to 2!H
 2C--2D--2H--2S--,2N,25+ HCP Balanced Systems On
+2C--2D--2H--2S--2N--,3C,Puppet Stayman
+2C--2D--2H--2S--2N--,3D,Xfer to !H
+2C--2D--2H--2S--2N--3D--,3H,Fewer than 4!H
+2C--2D--2H--2S--2N--3D--,4H,4+ !H
+2C--2D--2H--2S--2N--,3H,Xfer to !S
+2C--2D--2H--2S--2N--3H--,4S,4+ !S
+2C--2D--2H--2S--2N--3H--,3S,Fewer than 4!S
 2C--2D--2H--2S--,3C,!H and !C
 2C--2D--2H--2S--,3D,!H and !D
 2C--2D--2H--2S--,3H,!H and no second suit
@@ -473,11 +510,13 @@ Option,2C2D KokishRelay
 2C--2D--2S--2N--,3D,!S and !D
 2C--2D--2S--2N--,3H,!S and !H with longer !S
 2C--2D--2S--2N--,3S,!S and no 2nd suit
+Option
 2C--2D--,2N,22-24 HCP Balanced Systems On
+2C--2D--2N--3D--,3H,fewer than 4 !S
+2C--2D--2N--3H--,3S,fewer than 4 !S
 Option
 2C--2H--3H--4H--,4S,Kickback; Keycard for !H
 2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
-2C2D----2N--3H--,3S,fewer than 4 !S
 
 
 # include 2DHSOpenings.txt
@@ -629,67 +668,84 @@ Option,XYZ
 1[CDHS]1N--,3D,5-5 Minors Game Forcing
 1[CDHS]1N--,3H,3=1=4-5 GF
 1[CDHS]1N--,3S,1=3=4-5 GF
+# Weak 3s
+3[CHS]Db--4D--,4H,Keycard for !D (Kickback)
 
 # include 1NTdef-suction.txt
 BBOalert
 Option,1NTDefense Suction v Strong/Weak
-1N,[2-6]C,!D or !H and !S
+1N,[2-6]C,Single-Suit !D OR Two-Suit !H and !S
 1N[2-6]C--,[2-6]D,Required Relay
-1N,[2-6]D,!H or !S and !C
+1N,[2-6]D,Single-Suit !H OR Two-Suit !S and !C
 1N[2-6]D--,[2-6]H,Required Relay
-1N,[2-6]H,!S or !C and !D
+1N,[2-6]H,Single-Suit !S OR Two-Suit !C and !D
 1N[2-6]H--,[2-6]S,Required Relay
-1N,[2-6]S,!C and !H or !D and !S
+1N,[2-6]S,Non-Suits !C and !H OR !D and !S
 1N[2-6]S--,[2-6]N,Show Lower Suit
-1N,[2-6]N,!C or !D and !H
+1N,[2-6]N,Single-Suit !C OR Two-Suit !D and !H
 1N[2-6]N--,[2-6]C,Required Relay
+1N,Db,Single-Suit !C OR Two-Suit !D and !H
+1N,2N,Single-Suit !C OR Two-Suit !D and !H
+1NDb--,2C,Required Relay
+1N2N--,3C,Required Relay
 Option,2NTDefense Suction
-2N,[3-6]C,!D or !H and !S
+2N,3N,Single-Suit !C OR Two-Suit !D and !H
+2N3N--,4!C,Required Relay
+2N,[3-6]C,Single-Suit !D OR Two-suit !H and !S
 2N[3-6]C--,[2-6]D,Required Relay
-2N,[3-6]D,!H or !S and !C
+2N,[3-6]D,Single-Suit !H OR Two-Suit !S and !C
 2N[3-6]D--,[2-6]H,Required Relay
-2N,[3-6]H,!S or !C and !D
+2N,[3-6]H,Single-Suit !S OR Two-Suit !C and !D
 2N[3-6]H--,[2-6]S,Required Relay
-2N,[3-6]S,!C and !H or !D and !S
+2N,[3-6]S,Two-Suits !C and !H OR !D and !S
 2N[3-6]S--,[2-6]N,Show Lower Suit
-2N,[3-6]N,!C or !D and !H
+2N,[3-6]N,Single-Suit !C OR Two-Suit !D and !H
 2N[3-6]N--,[2-6]C,Required Relay
 
 # include 1CDef-Suction.txt
+BBOalert
 # Defense Against Strong Club
 Option,1CDefense Standard
-1C,Dbl,Take-out Double
+1C,Db,Take-out Double
 Option,1CDefense Precision
-1C,Dbl,!D or !H and !S
-1C,2C,!D or !H and !S
-1C,3C,!D or !H and !S
-1C,4C,!D or !H and !S
-1C,1D,!H or !S and !C
-1C,2D,!H or !S and !C
-1C,3D,!H or !S and !C
-1C,4D,!H or !S and !C
-1C,1H,!S or !C and !D
-1C,2H,!S or !C and !D
-1C,3H,!S or !C and !D
-1C,4H,!S or !C and !D
-1C,1S,!C and !H or !D and !S
-1C,2S,!C and !H or !D and !S
-1C,3S,!C and !H or !D and !S
-1C,4S,!C and !H or !D and !S
-1C--1D,2C,!D or !H and !S
-1C--1D,3C,!D or !H and !S
-1C--1D,4C,!D or !H and !S
-1C--1D,2D,!H or !S and !C
-1C--1D,3D,!H or !S and !C
-1C--1D,4D,!H or !S and !C
-1C--1D,1H,!S or !C and !D
-1C--1D,2H,!S or !C and !D
-1C--1D,3H,!S or !C and !D
-1C--1D,4H,!S or !C and !D
-1C--1D,1S,!C and !H or !D and !S
-1C--1D,2S,!C and !H or !D and !S
-1C--1D,3S,!C and !H or !D and !S
-1C--1D,4S,!C and !H or !D and !S
+1C,Db,Single-Suit !D OR Two-Suit !H and 1S
+1C,2C,Single-Suit !D OR Two-Suit !H and 1S
+1C,3C,Single-Suit !D OR Two-Suit !H and 1S
+1C,4C,Single-Suit !D OR Two-Suit !H and 1S
+1C,1D,Single-Suit !H OR Two-Suit !S and 1C
+1C,2D,Single-Suit !H OR Two-Suit !S and 1C
+1C,3D,Single-Suit !H OR Two-Suit !S and 1C
+1C,4D,Single-Suit !H OR Two-Suit !S and 1C
+1C,1H,Single-Suit !S OR Two-Suit !C and 1D
+1C,2H,Single-Suit !S OR Two-Suit !C and 1D
+1C,3H,Single-Suit !S OR Two-Suit !C and 1D
+1C,4H,Single-Suit !S OR Two-Suit !C and 1D
+1C,1S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,2S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,3S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,4S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,1N,Single-Suit !C OR Two-Suit !D and !H
+1C1N--,2C,Relay to !D
+1C,2N,Single-Suit !C OR Two-Suit !D and !H
+1C,3N,Single-Suit !C OR Two-Suit !D and !H
+1C,4N,Single-Suit !C OR Two-Suit !D and !H
+1C--1D,2C,Single-Suit !D OR Two-Suit !H and 1S
+1C2N--,3C,Relay to !D
+1C3N--,4C,Relay to !D
+1C4N--,5C,Relay to !D
+1C--1D,3C,Single-Suit !D OR Two-Suit !H and !S
+1C--1D,4C,Single-Suit !D OR Two-Suit !H and !S
+1C--1D,2D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,3D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,4D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,1H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,2H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,3H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,4H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,1S,Two-Suit in !C and !H OR !D and !S
+1C--1D,2S,Two-Suit in !C and !H OR !D and !S
+1C--1D,3S,Two-Suit in !C and !H OR !D and !S
+1C--1D,4S,Two-Suit in !C and !H OR !D and !S
 
 
 # include 2CDef-Suction.txt
@@ -716,6 +772,7 @@ Option,2CDefense Strong
 2C--2D,3C,!D or !H and !S
 2C--2D,3D,!H or !S and !C
 2C--2D,3H,!S or !C and !D
+2C--2D3S--,3N,Show lowest suit of 2-suiter
 2C--2D,3S,!C and !H or !D and !S
 2C--2D,4C,!D or !H and !S
 2C--2D,4D,!H or !S and !C

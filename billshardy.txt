@@ -226,6 +226,8 @@ Option,1MOpening_Hardy_Raises_@1@2
 1H--,1N,Forcing
 1S--,1N,Forcing
 1[HS]--,1N,Forcing
+1H__,3H,4+!H probably balanced
+1S__,3S,4+!S probably balanced
 # 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
@@ -554,13 +556,6 @@ Option,1mOpenings
 1D--,2D,4+!D Strong no 4CM or NT stops
 1D__,3D,5+!D Weak
 1D--,3C,5+!C Invitational no 4CM or NT stops not GF
-1C--1H--,1N,15-17 Balanced < 4!H
-1C--1H--,1S,4!S unbalanced for NT.
-1D--1H--,1N,15-17 Balanced < 4!H
-1D--1H--,1S,4!S unbalanced for NT.
-1C--1S--,1N,15-17 Balanced < 4!S
-1C--1S--,3S,18-19 4!S
-1D--1S--,1N,15-17 Balanced < 4!S
 1D--1S--2H--,2N,<= 7HCP Weak Ingberman#Opener may relay to 3!C
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major

@@ -39,3 +39,10 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 ,1C,3+!C unbalanced or balanced 12-14 NT
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1[CD]__1.__,1NT,Balanced 12-14
+1C--1H--,1N,12-14 Balanced < 4!H
+1C--1H--,1S,4!S unbalanced for NT.
+1D--1H--,1N,12-14 Balanced < 4!H
+1D--1H--,1S,4!S unbalanced for NT.
+1C--1S--,1N,12-14 Balanced < 4!S
+1C--1S--,3S,18-19 4!S
+1D--1S--,1N,12-14 Balanced < 4!S
