@@ -156,6 +156,10 @@ Option,1MOpening_Reverse_Bergen_Raises_@1@2
 1S--3H--3S--,4D,Short !D
 1S--3H--3S--,4H,Short !H
 1H--1N--2S--,2N,Ingberman; weak xfer to !C
+1HDb,2D,Constructive !H raise
+1HDb,2H,Weak !H raise
+1SDb,2H,Constructive !S raise
+1SDb,2S,Weak !S raise
 Option,1MOpening_Drury_On_@3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)

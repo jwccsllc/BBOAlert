@@ -2,7 +2,13 @@ BBOalert
 
 # include billshardy.hdr
 BBOalert, file must begin with BBOalert keyword
+Script,onAnyOpponentChange
+if ("SE".indexOf(myDirection()) != -1) setChatMessage(findShortcut('ww'), true);
+Script
+
 Option,StewartAndCampbell
+Shortcut,ww,2/1 11-14 Weak NT XYZ UDCA Rusinow v Suits Journalist v Notrump\n
+
 Shortcut,W0,2/1; 11-14 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndBillS.pdf
@@ -434,6 +440,10 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
 1H--1N--2S--,2N,Ingberman; weak xfer to !C
+1HDb,2D,Constructive !H raise
+1HDb,2H,Weak !H raise
+1SDb,2H,Constructive !S raise
+1SDb,2S,Weak !S raise
 Option,1MOpening_Drury_On_@3@4
 --1H--,1N,Forcing
 --1S--,1N,Forcing
