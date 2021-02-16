@@ -1,12 +1,20 @@
 BBOalert
 
-# include billshardy.hdr
-BBOalert, file must begin with BBOalert keyword
+# include stdhdr.txt
+BBOalert
 Script,onAnyOpponentChange
-if ("SE".indexOf(myDirection()) != -1) setChatMessage(findShortcut('ww'), true);
+setChatDestination('Opponents')
+
+if ("NW".indexOf(myDirection()) != -1) {
+	setChatMessage(findShortcut('ww'), true);
+}
 Script
 
+
+# include billshardy.hdr
+BBOalert, file must begin with BBOalert keyword
 Option,StewartAndCampbell
+
 Shortcut,ww,2/1 11-14 Weak NT XYZ UDCA Rusinow v Suits Journalist v Notrump\n
 
 Shortcut,W0,2/1; 11-14 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
