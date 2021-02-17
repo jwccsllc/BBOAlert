@@ -1,8 +1,22 @@
 BBOalert
 
+# include stdhdr.txt
+BBOalert
+Script,onAnyOpponentChange
+setChatDestination('Opponents')
+
+if ("SW".indexOf(myDirection()) != -1) {
+	sendMessageToOpponents(findShortcut('ww'));
+}
+Script
+
+
 # include tedbhardy.hdr
 BBOalert, file must begin with BBOalert keyword
 Option,BartunekAndCampbell
+
+Shortcut,ww,2/1 11-14 Weak NT XYZ UDCA Rusinow v Suits Journalist v Notrump\n
+
 Shortcut,W0,We use 2/1; 11-14 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndTedBartunek.pdf
@@ -436,6 +450,15 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
 1H--1N--2S--,2N,Ingberman; weak xfer to !C
+1HDb,2D,Constructive !H raise
+1HDb,2H,Weak !H raise
+1SDb,2H,Constructive !S raise
+1SDb,2S,Weak !S raise
+# Kickback Sequences
+1H--2H--2S--3D--,4S,Kickback 1430 Keycard Ask
+1H--2H--2S--3D--4S--,4N,1 or 4 keycards
+1H--2H--2S--3D--4S--4N--,5C,Asking for Q!H
+1H--2H--2S--3D--4S--4N--5C--,5H,No Q!H
 Option,1MOpening_Drury_On_@3@4
 --1H--,1N,Forcing
 --1S--,1N,Forcing
@@ -787,6 +810,7 @@ Option,XYZ
 1D__1S__1N__,2S,5+!S Less than invitational
 
 # include defensemisc.txt
+Option
 # Michaels Cue Bids
 1C,2C,Majors
 1C----,2C,Majors
@@ -798,6 +822,8 @@ Option,XYZ
 1D,2N,!C + !H two suiter
 1H,2H,!S + Minor
 1S,2S,!H + Minor
+1H--2H,3H,Michaels !S + minor
+1S--2S,3S,Michaels !H + minor
 # Unusual NT
 1[HS],2N,!C + !D two-suiter
 1C,2N,!D + !H two-suiter
