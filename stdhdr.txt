@@ -2,8 +2,8 @@ BBOalert
 Script,onAnyOpponentChange
 setChatDestination('Opponents')
 
-if ("NW".indexOf(myDirection()) != -1) {
-	setChatMessage(findShortcut('ww'), true);
+if ("SW".indexOf(myDirection()) != -1) {
+	sendMessageToOpponents(findShortcut('ww'));
 }
 Script
 
