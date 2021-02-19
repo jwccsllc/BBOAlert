@@ -5,10 +5,10 @@ BBOalert
 Script,onAnyOpponentChange
 
 if ("SW".indexOf(myDirection()) != -1) {
-	setChatDestination('Opponents')
+	setChatDestination('Opponents');
 	setChatMessage(findShortcut('ww', true));
 }
-setChatDestination('Opponents')
+setChatDestination('Opponents');
 Script
 
 
