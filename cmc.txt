@@ -1,8 +1,20 @@
 BBOalert
 
-# include cmc.hdr
+# include stdhdr.txt
 BBOalert
+Script,onAnyOpponentChange
+if ("NW".indexOf(myDirection()) != -1) {
+	setChatDestination('Opponents')
+	setChatMessage(findShortcut('ww'), true);
+}
+Script
+
+
+# include cmc.hdr
+//BBOalert
 Option,CarolynAndBill
+Shortcut,ww,SAYC Standard Leads and Carding\n
+
 Shortcut,W0,SAYC Standard Leads and Carding
 
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndSandyFreeling.pdf
@@ -164,6 +176,10 @@ Option,1MOpening_2/1_Vanilla_@1@2
 1S2C2H3C,Db,Support Double 3 !H
 1S2D2H3D,Db,Support Double 3 !H
 1H--1N--2S--,2N,Ingberman; weak xfer to !C
+1HDb,2D,Constructive !H raise
+1HDb,2H,Weak !H raise
+1SDb,2H,Constructive !S raise
+1SDb,2S,Weak !S raise
 Option,1MOpening_Drury_On_@3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
