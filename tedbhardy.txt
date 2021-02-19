@@ -3,11 +3,12 @@ BBOalert
 # include stdhdr.txt
 BBOalert
 Script,onAnyOpponentChange
-setChatDestination('Opponents')
 
 if ("SW".indexOf(myDirection()) != -1) {
-	sendMessageToOpponents(findShortcut('ww'));
+	setChatDestination('Opponents')
+	setChatMessage(findShortcut('ww', true));
 }
+setChatDestination('Opponents')
 Script
 
 
