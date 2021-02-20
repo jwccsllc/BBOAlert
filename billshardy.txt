@@ -6,7 +6,7 @@ Script,onAnyOpponentChange
 
 if ("SW".indexOf(myDirection()) != -1) {
 	setChatDestination('Opponents');
-	setChatMessage(findShortcut('ww', true));
+	setChatMessage(findShortcut('ww'), true);
 }
 setChatDestination('Opponents');
 Script
@@ -563,8 +563,6 @@ Option,1mOpenings
 1C1--,3C,5+!C Weak
 1C2H,2S,5+ !S Natural
 1D2H,2S,5+ !S Natural
-1D--1H--2C--,2S,4th suit forcing
-1D--1S--2C--,2H,4th suit forcing
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak
@@ -613,6 +611,10 @@ Option,UMJOOMO On
 1D--2H--2N--,3D,5=4-x-x maximum
 1D--2H--2N--,3H,5=5-x-x minimum
 1D--2H--2N--,3S,5=5-x-x maximum
+Option,4th_suit_forcing
+1H--1S--2D--,3C,4th suit forcing
+1D--1H--2C--,2S,4th suit forcing
+1D--1S--2C--,2H,4th suit forcing
 Option
 
 # include 1mSpiral.txt

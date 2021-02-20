@@ -1,7 +1,20 @@
 BBOalert
 
+# include stdhdr.txt
+BBOalert
+Script,onAnyOpponentChange
+
+if ("SW".indexOf(myDirection()) != -1) {
+	setChatDestination('Opponents');
+	setChatMessage(findShortcut('ww'), true);
+}
+setChatDestination('Opponents');
+Script
+
+
 # include melinda.hdr
 BBOalert
+Shortcut,ww,2/1; Upside Down Count; Standard Attitude; XYZ; Weak Jump Shifts\n
 Shortcut,W0,2/1; Upside Down Count; Standard Attitude; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndMelindaWestgate.pdf
@@ -165,6 +178,15 @@ Option,1MOpening_2/1_Vanilla_@1@2
 1S2C2H3C,Db,Support Double 3 !H
 1S2D2H3D,Db,Support Double 3 !H
 1H--1N--2S--,2N,Ingberman; weak xfer to !C
+1HDb,2D,Constructive !H raise
+1HDb,2H,Weak !H raise
+1SDb,2H,Constructive !S raise
+1SDb,2S,Weak !S raise
+# Kickback Sequences
+1H--2H--2S--3D--,4S,Kickback 1430 Keycard Ask
+1H--2H--2S--3D--4S--,4N,1 or 4 keycards
+1H--2H--2S--3D--4S--4N--,5C,Asking for Q!H
+1H--2H--2S--3D--4S--4N--5C--,5H,No Q!H
 Option,1MOpening_Drury_On_@3@4
 ------1H--,1N,Semi Forcing
 ------1H--,2C,3Card Limit Raise (Drury)
@@ -262,8 +284,6 @@ Option,1mOpenings
 1C1--,3C,5+!C Weak
 1C2H,2S,5+ !S Natural
 1D2H,2S,5+ !S Natural
-1D--1H--2C--,2S,4th suit forcing
-1D--1S--2C--,2H,4th suit forcing
 1D__,2H,5+!H Weak
 1D__,2S,5+!S Weak
 1D__,3D,5+!C Weak
@@ -312,6 +332,10 @@ Option,UMJOOMO On
 1D--2H--2N--,3D,5=4-x-x maximum
 1D--2H--2N--,3H,5=5-x-x minimum
 1D--2H--2N--,3S,5=5-x-x maximum
+Option,4th_suit_forcing
+1H--1S--2D--,3C,4th suit forcing
+1D--1H--2C--,2S,4th suit forcing
+1D--1S--2C--,2H,4th suit forcing
 Option
 
 # include 1mSpiral.txt
@@ -486,6 +510,7 @@ Option,XYZ
 1D__1S__1N__,2S,5+!S Less than invitational
 
 # include defensemisc.txt
+Option
 # Michaels Cue Bids
 1C,2C,Majors
 1C----,2C,Majors
@@ -497,6 +522,8 @@ Option,XYZ
 1D,2N,!C + !H two suiter
 1H,2H,!S + Minor
 1S,2S,!H + Minor
+1H--2H,3H,Michaels !S + minor
+1S--2S,3S,Michaels !H + minor
 # Unusual NT
 1[HS],2N,!C + !D two-suiter
 1C,2N,!D + !H two-suiter
