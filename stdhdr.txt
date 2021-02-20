@@ -3,7 +3,7 @@ Script,onAnyOpponentChange
 
 if ("SW".indexOf(myDirection()) != -1) {
 	setChatDestination('Opponents');
-	setChatMessage(findShortcut('ww', true));
+	setChatMessage(findShortcut('ww'), true);
 }
 setChatDestination('Opponents');
 Script
