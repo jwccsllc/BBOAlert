@@ -4,11 +4,13 @@ BBOalert
 BBOalert
 Script,onAnyOpponentChange
 
-if ("SW".indexOf(myDirection()) != -1) {
-	setChatDestination('Opponents');
-	setChatMessage(findShortcut('ww'), true);
-}
 setChatDestination('Opponents');
+
+if ("SW".indexOf(myDirection()) != -1) {
+	setTimeout(function () {
+		sendMessageToOpponents(findShortcut('ww'));
+	}, 500);
+}
 Script
 
 
