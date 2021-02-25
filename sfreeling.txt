@@ -6,11 +6,11 @@ Script,onAnyOpponentChange
 
 setChatDestination('Opponents');
 
-if ("SW".indexOf(myDirection()) != -1) {
-	setTimeout(function () {
-		sendMessageToOpponents(findShortcut('ww'));
-	}, 500);
-}
+// if ("SW".indexOf(myDirection()) != -1) {
+// 	setTimeout(function () {
+// 		sendMessageToOpponents(findShortcut('ww'));
+// 	}, 500);
+// }
 Script
 
 
@@ -258,6 +258,7 @@ Option,1MOpening_Reverse_Bergen_Raises_@1@2
 1H--2N--,3H,Strong !H no shortness
 1H--2N--,3S,Short !S rebid shows void
 1H--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1S--2D--2N--3S--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
 1H--2N--,4C,5+ good !C
 1H--2N--,4D,5+ good !D
 1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
@@ -272,6 +273,7 @@ Option,1MOpening_Reverse_Bergen_Raises_@1@2
 1S--2N--,3H,Short !H rebid shows void
 1S--2N--,3S,Strong !S no shortness
 1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1S--2D--2N--3S--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
 1S--2N--,4C,5+ good !C
 1S--2N--,4D,5+ good !D
 1S--2N--,4H,5+ good !H

@@ -3,10 +3,10 @@ Script,onAnyOpponentChange
 
 setChatDestination('Opponents');
 
-if ("SW".indexOf(myDirection()) != -1) {
-	setTimeout(function () {
-		sendMessageToOpponents(findShortcut('ww'));
-	}, 500);
-}
+// if ("SW".indexOf(myDirection()) != -1) {
+// 	setTimeout(function () {
+// 		sendMessageToOpponents(findShortcut('ww'));
+// 	}, 500);
+// }
 Script
 
