@@ -1,4 +1,4 @@
-BBAalert
+BBOalert
 Option,Transfers_After_Overcall
 1C1H--,1S,Forcing with !S
 1C1H--,2N,Natural
