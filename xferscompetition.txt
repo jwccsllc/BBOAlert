@@ -1,0 +1,21 @@
+BBAalert
+Option,Transfers_After_Overcall
+1C1H--,1S,Forcing with !S
+1C1H--,2N,Natural
+1C1H--,2C,Transfer to !D#Nonforcing 2!D or Forcing 2!D
+1C1H--,2D,Forcing Raise of !H or GF !H
+1C1H--,2H,Simple Raise
+# Partner bid a 2-level
+1D2C--,2D,Transfer to !H
+1D2C--,2H,Transfer to !S
+1D2C--,2S,Cue Bid Stronger !C Raise
+1D2C--,2N,Natural
+1D2C--,3C,Simple Raise
+# After the transfer
+1D2C--2H--2S--,Pa,Non-Forcing with !S
+1D2C--2H--2S--,2N,Invitational to 3NT 5+!S
+1D2C--2H--2S--,3C,Secondary !C Support#Without stopper non-forcing
+1D2C--2H--2S--,3D,GF Asking for Stopper
+1D2C--2H--2S--,3H,GF With both majors
+1D2C--2H--2S--,3S,Invitations 6+!S
+1D2C--2H--2S--,3N,Natural to play
