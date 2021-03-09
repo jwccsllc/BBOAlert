@@ -230,10 +230,12 @@ Option,1MOpening_Drury_On_@3@4
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)
 ------1H--2D--,2N,Shortness?
+------1H--2C--2D--,2H,No shortness
 ------1S--,1N,Semi Forcing
 ------1S--,2C,3Card Limit Raise (Drury)
 ------1S--,2D,4Card Limit Raise (Drury)
 ------1S--2C--,3D,Shortness ?
+------1S--2C--2D--,2S,No shortness
 ------1S--2D--,2N,Shortness?
 ----1H--,1N,Semi Forcing
 ----1H--,2C,3Card Limit Raise (Drury)
