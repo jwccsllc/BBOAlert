@@ -99,7 +99,7 @@ Option,1NTOpening 11+-14
 1N--2H__,3S,4+!S Balanced Minimum
 1N--2H--3C--,3H,Transfer !H
 1N--,2S,Range Ask or !C
-1N--,2S__,2N,Minimum NT
+1N--2S--,2N,Minimum NT would not accept invitation
 1N--2S--,3C,Would accept invite to 3N
 1N--,2N,Transfer !D 3D is S/A
 1N--2N--,3C,Weak !D
@@ -468,10 +468,12 @@ Option,1MOpening_Drury_On_@3@4
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)
 ------1H--2D--,2N,Shortness?
+------1H--2C--2D--,2H,No shortness
 ------1S--,1N,Semi Forcing
 ------1S--,2C,3Card Limit Raise (Drury)
 ------1S--,2D,4Card Limit Raise (Drury)
 ------1S--2C--,3D,Shortness ?
+------1S--2C--2D--,2S,No shortness
 ------1S--2D--,2N,Shortness?
 ----1H--,1N,Semi Forcing
 ----1H--,2C,3Card Limit Raise (Drury)
@@ -576,6 +578,7 @@ Option,1mOpenings
 1C--1S--2D--,2H,<= 7 HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
 1C--1H--2S--,2N,<= 7 HCP weak Ingberman
+1C--1S--2H--2N--,3C,Required Ingberman Response
 1D--1H--2S--,2N,<= 7 HCP weak Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D--,2D,4+!D Strong no 4CM or NT stops
