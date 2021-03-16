@@ -28,7 +28,7 @@ Option,1NTOpening 11+-14
 1N--2H__,3S,4+!S Balanced Minimum
 1N--2H--3C--,3H,Transfer !H
 1N--,2S,Range Ask or !C
-1N--,2S__,2N,Minimum NT
+1N--2S--,2N,Minimum NT would not accept invitation
 1N--2S--,3C,Would accept invite to 3N
 1N--,2N,Transfer !D 3D is S/A
 1N--2N--,3C,Weak !D
