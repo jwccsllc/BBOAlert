@@ -101,7 +101,7 @@ Option,1NTOpening 11+-14
 1N--2H__,3S,4+!S Balanced Minimum
 1N--2H--3C--,3H,Transfer !H
 1N--,2S,Range Ask or !C
-1N--,2S__,2N,Minimum NT
+1N--2S--,2N,Minimum NT would not accept invitation
 1N--2S--,3C,Would accept invite to 3N
 1N--,2N,Transfer !D 3D is S/A
 1N--2N--,3C,Weak !D
@@ -470,10 +470,12 @@ Option,1MOpening_Drury_On_@3@4
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)
 ------1H--2D--,2N,Shortness?
+------1H--2C--2D--,2H,No shortness
 ------1S--,1N,Semi Forcing
 ------1S--,2C,3Card Limit Raise (Drury)
 ------1S--,2D,4Card Limit Raise (Drury)
 ------1S--2C--,3D,Shortness ?
+------1S--2C--2D--,2S,No shortness
 ------1S--2D--,2N,Shortness?
 ----1H--,1N,Semi Forcing
 ----1H--,2C,3Card Limit Raise (Drury)
@@ -536,6 +538,107 @@ Option,1MOvercall1NT Off
 Option
 1S--2H--2S--3S--,3N,Non-Serious 3NT%Mild Slam Try Responder Starts making control bids with slam interest
 
+# include 1MDruryResponses.txt
+BBOalert
+Option
+----1[HS]--,2C,Drury 10-15 HCP 3-card support
+----1[HS]--,2D,Drury 10-15 HCP 4-card support
+------1[HS]--,2C,Drury 10-15 HCP 3-card support
+------1[HS]--,2D,Drury 10-15 HCP 4-card support
+----1H--2[CD]--,2H,Minimum Opener
+----1S--2[CD]--,2S,Minimum Opener
+------1H--2[CD]--,2H,Minimum Opener
+------1S--2[CD]--,2S,Minimum Opener
+----1H--2[CD]--,4H,Natural
+----1S--2[CD]--,4S,Natural
+------1H--2[CD]--,4H,Natural
+------1S--2[CD]--,4S,Natural
+Option,1MDruryRebids Hardy
+# 3-card support
+# Heart Opening
+----1[HS]--2C--,2D,Asks for shortness
+----1H--2C--2D--,2H,No shortness
+----1H--2C--2D--,2S,Short !S
+----1H--2C--2D--,3C,Short !C
+----1H--2C--2D--,3D,Short !D
+------1H--2C--2D--,2S,Short !S
+------1H--2C--2D--,3C,Short !C
+------1H--2C--2D--,3D,Short !D
+# Spade Opening
+----1S--2C--2D--,2S,No shortness
+----1S--2C--2D--,2H,Short !H
+----1S--2C--2D--,3C,Short !C
+----1S--2C--2D--,3D,Short !D
+------1S--2C--2D--,2H,Short !H
+------1S--2C--2D--,3C,Short !C
+------1S--2C--2D--,3D,Short !D
+------1[HS]--2C--,2D,Asks for shortness
+# 4-card support
+----1[HS]--2D--,2NT,Asks for Shortness
+# Heart Opening
+----1H--2D--2N--,3C,Short !C
+----1H--2D--2N--,3D,Short !D
+----1H--2D--2N--,3H,No shortness
+----1H--2D--2N--,3S,Short !S
+------1H--2D--2N--,3C,Short !C
+------1H--2D--2N--,3D,Short !D
+------1H--2D--2N--,3H,No shortness
+------1H--2D--2N--,3S,Short !S
+# Spade
+----1S--2D--2N--,3C,Short !C
+----1S--2D--2N--,3D,Short !D
+----1S--2D--2N--,3H,Short !H
+----1S--2D--2N--,3S,No Shortness
+------1S--2D--2N--,3C,Short !C
+------1S--2D--2N--,3D,Short !D
+------1S--2D--2N--,3H,Short !H
+------1S--2D--2N--,3S,No Shortness
+Option,1MDruryRebids Kokish
+# 3-card support
+# Heart Opening
+----1H--2C--,2D,Full Opening with !D
+----1H--2C--,2S,Kokish GT; Where can you help
+----1H--2C--,2N,Shortness in !S
+----1H--2C--,3C,Shortness in !C
+----1H--2C--,3D,Shortness in !D
+------1H--2C--,2D,Full Opening with !D
+------1H--2C--,2S,Kokish GT; Where can you help
+------1H--2C--,2N,Shortness in !S
+------1H--2C--,3C,Shortness in !C
+------1H--2C--,3D,Shortness in !D
+# Spade Opening
+----1S--2C--,2D,Full Opening with !D
+----1S--2C--,2H,Full Opening with !H
+----1S--2C--,2N,Kokish GT; Where can you help
+----1S--2C--,3C,Shortness in !C
+----1S--2C--,3D,Shortness in !D
+----1S--2C--,3H,Shortness in !H
+------1S--2C--,2D,Full Opening with !D
+------1S--2C--,2H,Full Opening with !H
+------1S--2C--,2S,Kokish GT: Where can you help
+------1S--2C--,2N,Shortness in !S
+------1S--2C--,3C,Shortness in !C
+------1S--2C--,3H,Shortness in !H
+# 4-card support
+# Heart Opening
+----1H--2D--,2S,Kokish GT: Where can you help
+----1H--2D--,2N,Shortness in !S
+----1H--2D--,3C,Shortness in !C
+----1H--2D--,3D,Shortness in !D
+------1H--2D--,2S,Kokish GT: Where can you help
+------1H--2D--,2N,Shortness in !S
+------1H--2D--,3C,Shortness in !C
+------1H--2D--,3D,Shortness in !D
+# Spade
+----1S--2D--,2H,4+ !H
+----1S--2D--,2N,Kokish GT; where can you help
+----1S--2D--,3C,Shortness in !C
+----1S--2D--,3D,Shortness in !D
+------1S--2D--,2H,4+ !H
+------1S--2D--,2N,Shortness in !H
+------1S--2D--,3C,Shortness in !C
+------1S--2D--,3D,Shortness in !D
+
 # include 1minorOpenings.txt
 BBOalert
 # Minor Openings
@@ -578,6 +681,7 @@ Option,1mOpenings
 1C--1S--2D--,2H,<= 7 HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
 1C--1H--2S--,2N,<= 7 HCP weak Ingberman
+1C--1S--2H--2N--,3C,Required Ingberman Response
 1D--1H--2S--,2N,<= 7 HCP weak Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D--,2D,4+!D Strong no 4CM or NT stops
@@ -814,6 +918,13 @@ Option,XYZ
 1D__1S__1N__,2D,Artificial Game Force
 1D__1S__1N__,2N,Invitational < 4!D Support
 1D__1S__1N__,2S,5+!S Less than invitational
+# Slam Bidding Sequences
+1C--1H--,1S,4!S may have 3!H Probably balanced
+1C--1H--1S--2D--,2H,3-card !H Support
+1C--1H--1S--2D--2H--,3H,6+ !H
+1C--1H--1S--2D--2H--3H--,4H,No slam interest
+1C--1H--1S--2D--2H--3H--4H--,4S,Kickback 1430 Keycard Asc
+1C--1H--1S--2D--2H--3H--4H--4S--,5C,0 or 3 keycards
 
 # include defensemisc.txt
 Option
