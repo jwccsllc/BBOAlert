@@ -4,6 +4,8 @@ Option,1MOpening_2/1_Vanilla_@1@2
 ,1S,
 1H--,1N,Forcing
 1S--,1N,Forcing
+1H--1N--2[CD]--,2N,< 3!H Balanced Invitational
+1S--1N--2[CD]--,2N,< 3!S Balanced Invitational
 1H__,2S,Weak Jump Shift
 1H__,3C,Weak Jump Shift
 1H__,3D,Weak Jump Shift
@@ -39,11 +41,14 @@ Option,1MOpening_Drury_On_@3@4
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)
 ------1H--2D--,2N,Shortness?
+------1H--2D--2N--,2H,No Shortness
 ------1S--,1N,Semi Forcing
 ------1S--,2C,3Card Limit Raise (Drury)
 ------1S--,2D,4Card Limit Raise (Drury)
 ------1S--2C--,3D,Shortness ?
+------1S--2C--2D--,2S,No shortness
 ------1S--2D--,2N,Shortness?
+------1S--2D--2N--,3S,No Shortness
 ----1H--,1N,Semi Forcing
 ----1H--,2C,3Card Limit Raise (Drury)
 ----1H--,2D,4Card Limit Raise (Drury)
