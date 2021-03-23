@@ -33,10 +33,11 @@ Option,1NTOpening 11+-14
 1N--,2N,Transfer !D 3D is S/A
 1N--2N--,3C,Weak !D
 1N--2N--,3D,SuperAccept !D
-1N--,3C,Low Info Puppet not 4=4 majors
-1N--3C--,3D,No 5-card major
+1N--,3C,Puppet Stayman
+1N--3C--,3D,No 5-card major; at least 1 4CD Major
 1N--3C--3D--,3H,Holding 4!S
 1N--3C--3D--,3S,Holding 4!H
+1N--3C--3D--,4D,4!H and 4!S; Take your pick
 1N--3C--,3H,5!H
 1N--3C--,3S,5!S
 1N--,3D,5-5 Minors GF
