@@ -1,7 +1,7 @@
 Option,Flannery
 ,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
-1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
---1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+1H--,1N,Forcing; May have 4!S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+--1H--,1N,Forcing; May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 ----1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 ------1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
@@ -9,12 +9,12 @@ Option,Flannery
 ----1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 ------1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 # Queries
-2D--,2N,Ask for description
-2D--2N--,3C,4=5=1=3 3!C
-2D--2N--,3D,4=5=3=1 3!D
-2D--2N--,3H,4=5=2=2 minimum
-2D--2N--,3N,4=5-x-x Balanced Maximum
-2D--2N--,3S,4=6=x-x 6!H
-2D--2N--,4C,4=5=0=4 4!C
-2D--2N--,4D,4=5=4=0 4!D
+2D__,2N,Ask for description
+2D__2N--,3C,4=5=1=3 3!C
+2D__2N--,3D,4=5=3=1 3!D
+2D__2N--,3H,4=5=2=2 minimum
+2D__2N--,3N,4=5-x-x Balanced Maximum
+2D__2N--,3S,4=6=x-x 6!H
+2D__2N--,4C,4=5=0=4 4!C
+2D__2N--,4D,4=5=4=0 4!D
 
