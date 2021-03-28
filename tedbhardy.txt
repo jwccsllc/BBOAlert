@@ -201,6 +201,7 @@ Option,1NTDb Penalty
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1[CD]__..__,1N,Balanced 15-17
 1[CD]..----,1N,Balanced 15-17
+1N2C2H--3D--,3H,Transfer !S
 
 # include 2NTOpening.txt
 BBOalert
@@ -1069,16 +1070,19 @@ Option,2CDefense Strong
 2C,2D,!H or !S and !C
 2C,2H,!S or !C and !D
 2C,2S,!C and !H or !D and !S
+2C2S--,2N,Asks about suits
 2C,2N,!C or !D and !H
 2C2N--,3C,Required Response
 2C,3C,!D or !H and !S
 2C,3D,!H or !S and !C
 2C,3H,!S or !C and !D
 2C,3S,!C and !H or !D and !S
+2C3S--,3N,Asks about suits
 2C,4C,!D or !H and !S
 2C,4D,!H or !S and !C
 2C,4H,!S or !C and !D
 2C,4S,!C and !H or !D and !S
+2C4S--,4N,Asks about suits
 2C--2D,Db,!H or !S and !C
 2C--2D,2H,!S or !C and !D
 2C--2D,2S,!C and !H or !D and !S
