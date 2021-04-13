@@ -209,7 +209,7 @@ Option,2NTOpening Puppet Stayman
 2N--3C--,3D,No 5 card major at least 1 4 card major
 2N--3C--3D--,4D,Both Majors
 2N--3C--3D--,3H,4!S fewer !H
-2N--3C--3D--,3S,4!H fewer !S
+2N--3C__3D--,3S,4!H fewer !S
 2N--3C--3D--,3N,No 4 card major
 2N--3C--,3N,No 4 or 5 card major
 2N--3C--,3H,5 !H
@@ -967,16 +967,19 @@ Option,2CDefense Strong
 2C,2D,!H or !S and !C
 2C,2H,!S or !C and !D
 2C,2S,!C and !H or !D and !S
+2C2S--,2N,Asks about suits
 2C,2N,!C or !D and !H
 2C2N--,3C,Required Response
 2C,3C,!D or !H and !S
 2C,3D,!H or !S and !C
 2C,3H,!S or !C and !D
 2C,3S,!C and !H or !D and !S
+2C3S--,3N,Asks about suits
 2C,4C,!D or !H and !S
 2C,4D,!H or !S and !C
 2C,4H,!S or !C and !D
 2C,4S,!C and !H or !D and !S
+2C4S--,4N,Asks about suits
 2C--2D,Db,!H or !S and !C
 2C--2D,2H,!S or !C and !D
 2C--2D,2S,!C and !H or !D and !S
