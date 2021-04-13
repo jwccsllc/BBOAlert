@@ -209,7 +209,7 @@ Option,2NTOpening Puppet Stayman
 2N--3C--,3D,No 5 card major at least 1 4 card major
 2N--3C--3D--,4D,Both Majors
 2N--3C--3D--,3H,4!S fewer !H
-2N--3C--3D--,3S,4!H fewer !S
+2N--3C__3D--,3S,4!H fewer !S
 2N--3C--3D--,3N,No 4 card major
 2N--3C--,3N,No 4 or 5 card major
 2N--3C--,3H,5 !H
