@@ -19,8 +19,6 @@ Option,2NTOpening Puppet Stayman
 2N--4C--,4H,0 or 3 Aces
 2N--4C--,4S,2 Aces I hate my hand
 2N--4C--,4N,2 Aces I love my hand
-2N--,4D,Texas Transfer -> !H
-2N--,4H,Texas Transfer -> !S
 Option,2NT3S MSS Off
 2N--,3S,
 Option,2NT3S MSS On

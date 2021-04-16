@@ -1,5 +1,6 @@
 *.bak
 *.gz
+*.orig
 *.patch
 *.pyc
 *.save
@@ -7,6 +8,7 @@
 *.zip
 .DS_Store
 BBOalert.js
+d.*
 sample.docx
 sample.txt
 tmp*

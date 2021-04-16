@@ -15,28 +15,23 @@ Option,XYZ
 1C--1H--1N--,2N,Fewer than 4!C
 1C__1H__1N__2C__2D__,2N,Invitational 4+!C
 1C__1H__1N__,2N,Invitational Fewer 4!C
-1C__1H__1S__,2C,Invitational Force 2!D
+1C__1H__1S__,2C,Invitational Forces 2!D
 1C__1H__1S__2C__2D__,2N,Invitational 4+!C
 1C__1H__1S__,2D,Artificial Game Force
-1C--1H--1S--2D--,2H,3!H
-1C__1H__1S__,2C,Invitational Forces 2!D
-1C__1H__1S__,2D,Artificial Game Force
+1C--1H--1S--2D--,2H,3-card !H Support
 1C__1H__1S__,2H,5+!H Less than invitational
-1C__1H__1S__,2N,Invitational < 4!C Support
 1C__1H__1S__,2N,Invitational Fewer 4!C
 1C__1S__1N--,2C,Invitational Force 2!D
 /1[CDH]--1[DHS]--1N--2C--/,2D,Required after 2!C
 1C__1S__1N__,2D,Artificial Game Force
-1C--1S--1N--2D--,2S,3!S not 3!H
-1C--1S--1N--2D--,2H,!4H may have 3!S
 1C--1S--1N--2D--,2S,3!S fewer than 4!H
+1C--1S--1N--2D--,2H,!4H may have 3!S
 1D__1S__1N__,2C,Invitational Force 2!D
 1D__1S__1N__,2D,Artificial Game Force
 1D__1S__1N__,2N,Invitational < 4!D Support
 1D__1S__1N__,2S,5+!S Less than invitational
 # Slam Bidding Sequences
 1C--1H--,1S,4!S may have 3!H Probably balanced
-1C--1H--1S--2D--,2H,3-card !H Support
 1C--1H--1S--2D--2H--,3H,6+ !H
 1C--1H--1S--2D--2H--3H--,4H,No slam interest
 1C--1H--1S--2D--2H--3H--4H--,4S,Kickback 1430 Keycard Asc
