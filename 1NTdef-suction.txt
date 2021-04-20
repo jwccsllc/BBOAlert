@@ -2,21 +2,35 @@ BBOalert
 Option,1NTDefense Suction v Strong/Weak
 1N,[2-6]C,Single-Suit !D OR Two-Suit !H and !S
 1N[2-6]C--,[2-6]D,Required Relay
+1N----,[2-6]C,Single-Suit !D OR Two-Suit !H and !S
+1N----[2-6]C--,[2-6]D,Required Relay
 1N,[2-6]D,Single-Suit !H OR Two-Suit !S and !C
 1N[2-6]D--,[2-6]H,Required Relay
+1N----,[2-6]D,Single-Suit !H OR Two-Suit !S and !C
+1N----[2-6]D--,[2-6]H,Required Relay
 1N,[2-6]H,Single-Suit !S OR Two-Suit !C and !D
 1N[2-6]H--,[2-6]S,Required Relay
+1N----,[2-6]H,Single-Suit !S OR Two-Suit !C and !D
+1N----[2-6]H--,[2-6]S,Required Relay
 1N,[2-6]S,Non-Suits !C and !H OR !D and !S
 1N[2-6]S--,[2-6]N,Show Lower Suit
+1N----,[2-6]S,Non-Suits !C and !H OR !D and !S
+1N----[2-6]S--,[2-6]N,Show Lower Suit
 1N,[2-6]N,Single-Suit !C OR Two-Suit !D and !H
 1N[2-6]N--,[2-6]C,Required Relay
+1N----,[2-6]N,Single-Suit !C OR Two-Suit !D and !H
+1N----[2-6]N--,[2-6]C,Required Relay
 1N,Db,Single-Suit !C OR Two-Suit !D and !H
 1N,2N,Single-Suit !C OR Two-Suit !D and !H
+1N----,Db,Single-Suit !C OR Two-Suit !D and !H
+1N----,2N,Single-Suit !C OR Two-Suit !D and !H
 1NDb--,2C,Required Relay
 1N2N--,3C,Required Relay
 Option,2NTDefense Suction
 2N,3N,Single-Suit !C OR Two-Suit !D and !H
-2N3N--,4!C,Required Relay
+2N3N--,4C,Required Relay
+2N---,3N,Single-Suit !C OR Two-Suit !D and !H
+2N---3N,4C,Required Relay
 2N,[3-6]C,Single-Suit !D OR Two-suit !H and !S
 2N[3-6]C--,[2-6]D,Required Relay
 2N,[3-6]D,Single-Suit !H OR Two-Suit !S and !C
