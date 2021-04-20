@@ -6,7 +6,6 @@ Option
 1D----,2D,Majors
 1C,2D,Weak
 1C,2N,!D + !H two suiter
-1D,2D,Majors
 1D,2N,!C + !H two suiter
 1H,2H,!S + Minor
 1S,2S,!H + Minor
@@ -14,8 +13,6 @@ Option
 1S--2S,3S,Michaels !H + minor
 # Unusual NT
 1[HS],2N,!C + !D two-suiter
-1C,2N,!D + !H two-suiter
-1D,2N,!C + !H two-suiter
 # Unusual v Unusual
 1H2N,Db,Penalize one of more of their suits
 1H2N,3C,Limit Raise of Better for !H

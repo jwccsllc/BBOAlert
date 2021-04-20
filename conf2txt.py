@@ -23,7 +23,9 @@ def writeFile(cfg): #{
 	fh.write('BBOalert\n')
 	for module in modules: #{
 		fh.write('\n# include %s\n' % module)
-		data = open(module).read()
+		data = open(module).read().rstrip()
+		data = re.sub(r'^BBOalert.*?\n+', '', data, 0,
+			re.IGNORECASE|re.MULTILINE|re.DOTALL)
 		fh.write(data)
 	#}
 	fh.close()
