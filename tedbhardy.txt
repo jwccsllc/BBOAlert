@@ -11,22 +11,35 @@ setChatDestination('Opponents');
 // 	}, 500);
 // }
 Script
+
 # include tedbhardy.hdr
-## //Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
+//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
 
 Option,BartunekAndCampbell
 
-Shortcut,ww,Toucan Club 2/1 15-17 NT XYZ UDCA Rusinow v Suits Journalist v Notrump\n
-Shortcut,TC_,Transfers after 1!C Openings
+Option,ChangeCardColor OFF
+//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
+Option,ChangeCardColor ON
+//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
 
-Shortcut,W0,2/1; 11-14 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
+Option,HoverBBOalertTab OFF
+//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
+Option,HoverBBOalertTab ON
+//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
+
+Option
+Shortcut,ww,Toucan Club 2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\n
+Shortcut,1C_,Transfers after 1!C Openings
+Shortcut,1D_,6+!D or 4+!D with singleton or void
+
+Shortcut,W0,2/1; 14+-17 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndTedBartunek.pdf
 
 Shortcut,W2,UDCA; Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even Low from Odd; Journalist Leads vs Notrump; Low from Interest
 
-Shortcut,ZMC,https://zoom.us/j/577828070?pwd=YkNESDZ0M1NickdEaUtUa2Z3ZnJXZz09
 Option
+
 # include shortcuts.txt
 Shortcut,SLC,System Leads and Carding?
 Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
@@ -56,17 +69,18 @@ Shortcut,KS,Odd number of key cards; Control !S
 Shortcut,LNA,Lead against NT : A = typically AKx
 Shortcut,LNK,Lead against NT : K = typically AKJ AKQ KQJ or KQT
 Shortcut,LNQ,Lead against NT : Q = typically QJT or QJ9
-Shortcut,LNJ,Lead against NT : J = typically AQJ or JTx
-Shortcut,LNT,Lead against NT : 10 = typically AJ10 or KJ10 ot 109x
-Shortcut,LSA,Lead against suit : A = typically AK even number of cards
-Shortcut,LSK,Lead against suit : K = typically AK odd number of cards
-Shortcut,LSQ,Lead against suit : Q = typically KQx
+Shortcut,LNJ,Lead against NT : J = JTxx No card higher
+Shortcut,LNT,Lead against NT : T = HT9x at least one of A K or Q
+Shortcut,LSA,Lead against suit : A = A[x] may have K shortness
+Shortcut,LSK,Lead against suit : K = AKx Second of touching honors
+Shortcut,LSQ,Lead against suit : Q = KQx Second of touching honors
 Shortcut,LSJ,Lead against suit : J = typically QJx
 Shortcut,LST,Lead against suit : 10 = typically J10x
 Shortcut,LFI,Low from interest
 Shortcut,UD_,UDCA; Trump Suit Preference
 Shortcut,LS_,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
 Shortcut,LN_,Journalist vs NT; Spot Leads Low from Interest
+
 # include 2NTOpening.txt
 Option,2NTOpening Puppet Stayman
 ,2N,20-21 May have 5-card major
@@ -99,6 +113,7 @@ Option,3NTOpening Gambling
 ,3N,Gambling 3NT 7+Solid !C or !D#Nothing Higher than Queen outside
 Option,3NTOpening Acol/NAMYATS
 ,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
+
 # include 1MHardyRaises.txt
 Option,1MOpening_Hardy_Raises_@1@2
 ,1H,
@@ -394,6 +409,7 @@ Option,1MOvercall1NT Robeson
 Option,1MOvercall1NT Off
 Option
 1S--2H--2S--3S--,3N,Non-Serious 3NT%Mild Slam Try Responder Starts making control bids with slam interest
+
 # include 1MDruryResponses.txt
 Option
 ----1[HS]--,2C,Drury 10-15 HCP 3-card support
@@ -493,6 +509,7 @@ Option,1MDruryRebids Kokish
 ------1S--2D--,2N,Shortness in !H
 ------1S--2D--,3C,Shortness in !C
 ------1S--2D--,3D,Shortness in !D
+
 # include 2COpening.txt
 Option,2COpening ControlSteps On
 2C--,2D,1 King or fewer (Kokish Relays on)
@@ -533,6 +550,7 @@ Option
 Option
 2C--2H--3H--4H--,4S,Kickback; Keycard for !H
 2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
+
 # include 2DHSOpenings.txt
 Option,2DWeak_Simple_@1@2
 ,2D,5-11 Weak 6+!D
@@ -593,6 +611,7 @@ Option,2H2SMcCabe
 2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
 2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 Option
+
 # include 2DFlannery.txt
 Option,Flannery
 ,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
@@ -613,6 +632,7 @@ Option,Flannery
 2D__2N--,3S,4=6=x-x 6!H
 2D__2N--,4C,4=5=0=4 4!C
 2D__2N--,4D,4=5=4=0 4!D
+
 # include XYZ.txt
 Option,XYZ
 1C--1D--1N--,2C,Forcing, Invitational
@@ -651,6 +671,7 @@ Option,XYZ
 1C--1H--1S--2D--2H--3H--,4H,No slam interest
 1C--1H--1S--2D--2H--3H--4H--,4S,Kickback 1430 Keycard Asc
 1C--1H--1S--2D--2H--3H--4H--4S--,5C,0 or 3 keycards
+
 # include defensemisc.txt
 Option
 # Michaels Cue Bids
@@ -702,25 +723,40 @@ Option
 1[CDHS]1N--,3S,1=3=4-5 GF
 # Weak 3s
 3[CHS]Db--4D--,4H,Keycard for !D (Kickback)
+
 # include 1NTdef-suction.txt
 Option,1NTDefense Suction v Strong/Weak
 1N,[2-6]C,Single-Suit !D OR Two-Suit !H and !S
 1N[2-6]C--,[2-6]D,Required Relay
+1N----,[2-6]C,Single-Suit !D OR Two-Suit !H and !S
+1N----[2-6]C--,[2-6]D,Required Relay
 1N,[2-6]D,Single-Suit !H OR Two-Suit !S and !C
 1N[2-6]D--,[2-6]H,Required Relay
+1N----,[2-6]D,Single-Suit !H OR Two-Suit !S and !C
+1N----[2-6]D--,[2-6]H,Required Relay
 1N,[2-6]H,Single-Suit !S OR Two-Suit !C and !D
 1N[2-6]H--,[2-6]S,Required Relay
+1N----,[2-6]H,Single-Suit !S OR Two-Suit !C and !D
+1N----[2-6]H--,[2-6]S,Required Relay
 1N,[2-6]S,Non-Suits !C and !H OR !D and !S
 1N[2-6]S--,[2-6]N,Show Lower Suit
+1N----,[2-6]S,Non-Suits !C and !H OR !D and !S
+1N----[2-6]S--,[2-6]N,Show Lower Suit
 1N,[2-6]N,Single-Suit !C OR Two-Suit !D and !H
 1N[2-6]N--,[2-6]C,Required Relay
+1N----,[2-6]N,Single-Suit !C OR Two-Suit !D and !H
+1N----[2-6]N--,[2-6]C,Required Relay
 1N,Db,Single-Suit !C OR Two-Suit !D and !H
 1N,2N,Single-Suit !C OR Two-Suit !D and !H
+1N----,Db,Single-Suit !C OR Two-Suit !D and !H
+1N----,2N,Single-Suit !C OR Two-Suit !D and !H
 1NDb--,2C,Required Relay
 1N2N--,3C,Required Relay
 Option,2NTDefense Suction
 2N,3N,Single-Suit !C OR Two-Suit !D and !H
-2N3N--,4!C,Required Relay
+2N3N--,4C,Required Relay
+2N---,3N,Single-Suit !C OR Two-Suit !D and !H
+2N---3N,4C,Required Relay
 2N,[3-6]C,Single-Suit !D OR Two-suit !H and !S
 2N[3-6]C--,[2-6]D,Required Relay
 2N,[3-6]D,Single-Suit !H OR Two-Suit !S and !C
@@ -731,6 +767,7 @@ Option,2NTDefense Suction
 2N[3-6]S--,[2-6]N,Show Lower Suit
 2N,[3-6]N,Single-Suit !C OR Two-Suit !D and !H
 2N[3-6]N--,[2-6]C,Required Relay
+
 # include 1CDef-Suction.txt
 # Defense Against Strong Club
 Option,1CDefense Standard
@@ -774,6 +811,7 @@ Option,1CDefense Precision
 1C--1D,2S,Two-Suit in !C and !H OR !D and !S
 1C--1D,3S,Two-Suit in !C and !H OR !D and !S
 1C--1D,4S,Two-Suit in !C and !H OR !D and !S
+
 # include 2CDef-Suction.txt
 # Defense Against Strong 2 Club
 Option,2CDefense Strong
@@ -808,6 +846,7 @@ Option,2CDefense Strong
 2C--2D,4S,!C and !H or !D and !S
 Option,2CDefense Precision
 2C,Db,Take-out Double
+
 # include 1CToucan.txt
 Option,Toucan Club
 ,1C,2+!C no 5-card Major -- Transfers On
@@ -918,7 +957,8 @@ Option,Toucan Club
 1C--1D--2N--,3N,To Play
 1C--1D--2N--,4C,Keycard Gerber
 # Page 12, strong jump shifts
-1C--1[DH]--,2[DS],Strong jump shift with !C and !S
+1C--1D--2D--,2S,Strong jump shift with !C and !S
+1C--1H--2D--,2S,Strong jump shift with !C and !S
 1C--1D--,3H,4+!H 16-18 HCP
 1C--1H--,3S,4+!S 16-18 HCP
 1C--1D--,4H,4+!H 19-21 HCP
@@ -1096,6 +1136,24 @@ Option,1NSouth_African_Texas off
 1N__,4C,1430 Gerber
 1N__,4D,Transfer 4!H
 1N__,4H,Transfer 4!S
+# Manual adjustments after training table
+# Sun Apr 25 11:20:34 PDT 2021
+1C--1D--1H--2D--,2S,4!S XYZ Response
+1C--1S--1N--,2N,Invitational Fewer than 4!C
+1C--1D--2H--,3N,!S Short Suit GT Kokish
+1C--1D--2H--,3C,!C Short Suit GT Kokish
+1C--1D--2H--3C--,3D,Help in !D?
+1C--1D--2H--3C--3D--,3H,No Help
+1C--1D--2H--3C--,3H,Help in !H?
+1C--1D--2H--3C--3H--,3H,No Help
+1C--1D--2H--,3D,!D Short Suit GT Kokish
+1C--1D--2H--,2S,Where do you have help? Kokish
+1C--1D--2H--2S--,2N,Help in !S Kokish
+1C--1D--2H--2S--,3C,Help in !C Kokish
+1C--1D--2H--2S--,3D,Help in !D Kokish
+1C--1D--2H--2S--,3H,No game interest
+1C--1D--2H--,3H,Kokish Trump Suit Quality Ask
+
 # include tedbhardy.extras
 # 4-5-x-x Flannery
 2D--2N--,3H,4=5=2=2 minimum
