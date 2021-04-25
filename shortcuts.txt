@@ -26,11 +26,11 @@ Shortcut,KS,Odd number of key cards; Control !S
 Shortcut,LNA,Lead against NT : A = typically AKx
 Shortcut,LNK,Lead against NT : K = typically AKJ AKQ KQJ or KQT
 Shortcut,LNQ,Lead against NT : Q = typically QJT or QJ9
-Shortcut,LNJ,Lead against NT : J = typically AQJ or JTx
-Shortcut,LNT,Lead against NT : 10 = typically AJ10 or KJ10 ot 109x
-Shortcut,LSA,Lead against suit : A = typically AK even number of cards
-Shortcut,LSK,Lead against suit : K = typically AK odd number of cards
-Shortcut,LSQ,Lead against suit : Q = typically KQx
+Shortcut,LNJ,Lead against NT : J = JTxx No card higher
+Shortcut,LNT,Lead against NT : T = HT9x at least one of A K or Q
+Shortcut,LSA,Lead against suit : A = A[x] may have K shortness
+Shortcut,LSK,Lead against suit : K = AKx Second of touching honors
+Shortcut,LSQ,Lead against suit : Q = KQx Second of touching honors
 Shortcut,LSJ,Lead against suit : J = typically QJx
 Shortcut,LST,Lead against suit : 10 = typically J10x
 Shortcut,LFI,Low from interest
