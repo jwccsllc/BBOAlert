@@ -26,7 +26,7 @@ def writeFile(cfg): #{
 		data = open(module).read().rstrip()
 		data = re.sub(r'^BBOalert.*?\n+', '', data, 0,
 			re.IGNORECASE|re.MULTILINE|re.DOTALL)
-		fh.write(data)
+		fh.write(data + '\n')
 	#}
 	fh.close()
 #} writeFile
