@@ -26,8 +26,11 @@ Option
 
 # include shortcuts.txt
 Shortcut,SLC,System Leads and Carding?
-Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
-Shortcut,ML,My last deal; Thanks to all
+Shortcut,SJS,Soloway Jump Shift (Strong suit with possibly only one loser opposite singleton)
+Shortcut,nexs,North Extremely Slow
+Shortcut,eexs,East Extremely Slow
+Shortcut,sexs,South Extremely Slow
+Shortcut,wexs,West Extremely Slow
 Shortcut,TC,Texas !C
 Shortcut,TD,Texas !D
 Shortcut,TH,Texas !H
