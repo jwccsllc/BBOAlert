@@ -45,23 +45,24 @@ Option,Toucan Club
 1C--1D--,3H,4!H 16-18 Support Points
 1C--1D--,3N,Strong hand long !C and stoppers
 1C--1D--,4C,4!H Strong !C likely 1=4=1=7
-1C--1D--,4D,4!H Void !D
+1C--1D--,4D,4!H strong playing Void !D
 1C--1D--,4H,4!H 19-21 Support Points
+1C--1D--2N--,4C,1430 Gerber
 1C--,1H,Transfer to !S
 1C--1H--,1S,3-Card !S Support
+1C--1H--,2N,Balanced 18-19 Fewer 3!S possibly 4!H
+1C--1H--,4C,4-Card Support -- Powerful !C suit
 1C--1H--1S--,1N,To Play
 1C--1H--1S--,2C,Artificial Invitational Req 2D (XYZ)
+1C--1H--1S--1N--,2N,18-19
 1C--1H--1S--2C--,2D,Required (XYZ)
 1C--1H--1S--2C--2D--,2H,5+!S and 4+!H (XYZ)
 1C--1H--1S--2C--2D--,2S,5+!S (XYZ)
-1C--1H--,2N,Balanced 18-19 Fewer 3!S possibly 4!H
-1C--1[DH]--2N--,3C,!D Length
-1C--1H--1S--1N--,2N,18-19
+1C--1H--2N--,3C,!D Length
 1C--1H--2N--,3H,4!S and 4!H
-1C--1[DH]--2N--,3S,4+!C with slam interest
-1C--1[DH]--,4C,4-Card Support -- Powerful !C suit
-1C--1[DH]--2N--,3N,To Play
-1C--1[DH]--2N--,4C,1430 Gerber
+1C--1H--2N--,3N,To Play
+1C--1H--2N--,3S,4+!C with slam interest
+1C--1H--2N--,4C,1430 Gerber
 1C--1H--2N--,4H,6+ !S
 # Stronger responses to 1C--,1D,
 1C--1D--,2D,Strong Jump Shift with !C and !H
@@ -83,7 +84,9 @@ Option,Toucan Club
 1C--1H--,4H,!H Void Slammish
 1C__,1S,Suggests Opener bid 1NT
 1C--1S--1N--,2C,Natural Invitational
-1C--1S--1N--,2[HDS],Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--,2H,Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--,2D,Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--,2S,Slammish Potential#Weak suit denying 2 of top 3 honors
 1C--1S--1N--,3C,Slammish Potential#Weak !C denying 2 of top 3 honors
 1C__,1N,Possibly weak hand with !C
 # Transfer to 2D
@@ -146,17 +149,15 @@ Option,Toucan Club
 1C--,4D,Transfer to !H
 1C--,4H,Transfer to !S
 # Page 11, 1C 1D/H 2NT
-1C--1[CD]--,2NT,18-19 Bal. no 4CS for partner's major
-1C--1D--2N--,4C,Keycard Gerber
+1C--1C--,2NT,18-19 Bal. no 4CS for partner's major
+1C--1D--,2NT,18-19 Bal. no 4CS for partner's major
 # Page 12, strong jump shifts
 1C--1D--2D--,2S,Strong jump shift with !C and !S
 1C--1H--2D--,2S,Strong jump shift with !C and !S
 1C--1H--,3S,4+!S 16-18 HCP
+1C--1H--,4D,4+!S; strong playing; void !D
 1C--1H--,4S,4+!S 19-21 HCP
-# Void showing with 4CS
-1C--1[DH]D--,4D,4CS; strong playing; void !D
 # 1C 1D 4C and 1C 1H 4C
-1C--1H--,4C,4!S probably 4=1=1=7 distribution
 # Page 13 Weak sequences
 1C--1H--1S--,P,0-4HCP possibly 5=5-x-x
 1C--1H--1N--,2H,0-4HCP 5=5-x-x
@@ -319,7 +320,9 @@ Option,1NTOpening 15+-17 Advanced
 1N2S----,Db,Negative DSI
 1N2S,2N,Lebensohl
 1N2S,3S,4+!H no !S Stop
-1N2[DHS]2N--,3C,Lebensohl Response
+1N2D2N--,3C,Lebensohl Response
+1N2H2N--,3C,Lebensohl Response
+1N2S2N--,3C,Lebensohl Response
 Option,1NSouth_African_Texas on
 1N__,4C,Transfer 4!H South African Texas
 1N__,4D,Transfer 4!S South African Texas
