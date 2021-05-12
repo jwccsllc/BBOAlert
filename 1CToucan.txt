@@ -1,14 +1,60 @@
 BBOalert, Toucan Club
+Option
+Shortcut,ww,Toucan Club 2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\n
+Shortcut,1C_,Transfers after 1!C Openings
+Shortcut,1D_,6+!D or 4+!D with singleton or void
 Option,Toucan Club
 ,1C,2+!C no 5-card Major -- Transfers On
 1C--,1D,4+!H Transfer
 1C__1D--,1H,3!H Minimum Balanced
-1C--1D3C,Db,3!H Support
+1C--1D--1H--,1S,4!H and 4!S
+1C--1D--1H--,1N,To Play
+1C--1D--1H--,2C,XYZ Invitational Requires 2!D
+1C--1D--1H--2C--,2D,XYZ Required Response
+2C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
+2C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
+1C--1D--1H--,2D,Artificial Game Force (XYZ)
+1C--1D--1H--2D--,2S,4!S (XYZ)
+1C--1D--1H--2D--,2N,Fewer than 4!S (XYZ)
+1C--1D--1H--,2H,5+1H Less than invitational
+1C--1D__,Db,3!H Support
 1C__1D__,1S,4!S fewer than 3!H
-1C__1D__,1N,Balanced 11-14 fewer than 3!H not 4!S
+1C__1D__,1N,Balanced 11-14 fewer than 3!H fewer than 4!S
 1C__1D__,2H,4!H
+1C--1D--2H--,2S,Where do you have help? Kokish
+1C--1D--2H--2S--,2N,Help in !S Kokish
+1C--1D--2H--2S--,3C,Help in !C Kokish
+1C--1D--2H--2S--,3D,Help in !D Kokish
+1C--1D--2H--2S--,3H,No game interest
+1C--1D--2H--,2N,!S Short Suit GT Kokish
+1C--1D--2H--,3C,!C Short Suit GT Kokish
+1C--1D--2H--3C--,3D,Help in !D?
+1C--1D--2H--3C--3D--,3H,No Help
+1C--1D--2H--3C--,3H,Help in !H?
+1C--1D--2H--3C--3H--,3H,No Help
+1C--1D--2H--,3D,!D Short Suit GT Kokish
+1C--1D--2H--,3H,Kokish Trump Suit Quality Ask
 # Opener with 18-19 no major support
-1C--1[DH]--,2N,Balanced 18-19 -- no 4-card support
+1C--1D--,2N,Balanced 18-19 Fewer 3!H and fewer 4!S
+1C--1D--2N--,3C,Shows length in !D
+1C--1D--2N--,3D,5+ !H
+1C--1D--2N--,3H,4!S and 4!H
+1C--1D--2N--,3S,6+!C Potential Slam Interest
+1C--1D--2N--,3N,To Play
+1C--1D--2N--,4D,6+ !H
+1C--1D--,3H,4!H 16-18 Support Points
+1C--1D--,3N,Strong hand long !C and stoppers
+1C--1D--,4C,4!H Strong !C likely 1=4=1=7
+1C--1D--,4D,4!H Void !D
+1C--1D--,4H,4!H 19-21 Support Points
+1C--,1H,Transfer to !S
+1C--1H--,1S,3-Card !S Support
+1C--1H--1S--,1N,To Play
+1C--1H--1S--,2C,Artificial Invitational Req 2D (XYZ)
+1C--1H--1S--2C--,2D,Required (XYZ)
+1C--1H--1S--2C--2D--,2H,5+!S and 4+!H (XYZ)
+1C--1H--1S--2C--2D--,2S,5+!S (XYZ)
+1C--1H--,2N,Balanced 18-19 Fewer 3!S possibly 4!H
 1C--1[DH]--2N--,3C,!D Length
 1C--1H--1S--1N--,2N,18-19
 1C--1H--2N--,3H,4!S and 4!H
@@ -16,13 +62,11 @@ Option,Toucan Club
 1C--1[DH]--,4C,4-Card Support -- Powerful !C suit
 1C--1[DH]--2N--,3N,To Play
 1C--1[DH]--2N--,4C,1430 Gerber
-1C--1D--2N--,4D,6+ !H
 1C--1H--2N--,4H,6+ !S
 # Stronger responses to 1C--,1D,
-1C--1D--,2D,Strong Jump Shift with !C and !D
+1C--1D--,2D,Strong Jump Shift with !C and !H
 1C--1D--,2S,Strong Jump Shift with !C and !S
 1C--1D--,[34]H,Standard Strong !H Raise
-1C--1D--,4D,!D Void Slammish
 1C__,1H,4+!S Transfer May be 5+=4+=x=x
 1C__1H__,1S,3!S
 1C--1H--,2S,4!S
@@ -45,6 +89,7 @@ Option,Toucan Club
 # Transfer to 2D
 1C--,2C,5+!D inderminant strength
 1C--2C--,2D,Accepts Transfer
+1C1H2C--,2D,Accepts Transfer
 1C--2C--,2N,18-19HCP Balanced
 1C--2C--,2H,4+!D; short !H; Minimum Values
 1C--2C--,2S,4+!D; short !S; Minimum Values
@@ -102,23 +147,15 @@ Option,Toucan Club
 1C--,4H,Transfer to !S
 # Page 11, 1C 1D/H 2NT
 1C--1[CD]--,2NT,18-19 Bal. no 4CS for partner's major
-1C--1D--2N--,3C,Shows length in !D
-1C--1D--2N--,3D,5+ !H
-1C--1D--2N--,3H,4!S and 4!H
-1C--1D--2N--,3S,4+!C Potential Slam Interest
-1C--1D--2N--,3N,To Play
 1C--1D--2N--,4C,Keycard Gerber
 # Page 12, strong jump shifts
 1C--1D--2D--,2S,Strong jump shift with !C and !S
 1C--1H--2D--,2S,Strong jump shift with !C and !S
-1C--1D--,3H,4+!H 16-18 HCP
 1C--1H--,3S,4+!S 16-18 HCP
-1C--1D--,4H,4+!H 19-21 HCP
 1C--1H--,4S,4+!S 19-21 HCP
 # Void showing with 4CS
 1C--1[DH]D--,4D,4CS; strong playing; void !D
 # 1C 1D 4C and 1C 1H 4C
-1C--1D--,4C,4!H probably 1=4=1=7 distribution
 1C--1H--,4C,4!S probably 4=1=1=7 distribution
 # Page 13 Weak sequences
 1C--1H--1S--,P,0-4HCP possibly 5=5-x-x
@@ -294,18 +331,4 @@ Option,1NSouth_African_Texas off
 1N__,4H,Transfer 4!S
 # Manual adjustments after training table
 # Sun Apr 25 11:20:34 PDT 2021
-1C--1D--1H--2D--,2S,4!S XYZ Response
 1C--1S--1N--,2N,Invitational Fewer than 4!C
-1C--1D--2H--,3N,!S Short Suit GT Kokish
-1C--1D--2H--,3C,!C Short Suit GT Kokish
-1C--1D--2H--3C--,3D,Help in !D?
-1C--1D--2H--3C--3D--,3H,No Help
-1C--1D--2H--3C--,3H,Help in !H?
-1C--1D--2H--3C--3H--,3H,No Help
-1C--1D--2H--,3D,!D Short Suit GT Kokish
-1C--1D--2H--,2S,Where do you have help? Kokish
-1C--1D--2H--2S--,2N,Help in !S Kokish
-1C--1D--2H--2S--,3C,Help in !C Kokish
-1C--1D--2H--2S--,3D,Help in !D Kokish
-1C--1D--2H--2S--,3H,No game interest
-1C--1D--2H--,3H,Kokish Trump Suit Quality Ask
