@@ -5,7 +5,7 @@ Shortcut,1C_,Transfers after 1!C Openings
 Shortcut,1D_,6+!D or 4+!D with singleton or void
 Option,Toucan Club
 ,1C,2+!C no 5-card Major -- Transfers On
-1C--,1D,4+!H Transfer
+1C__,1D,4+!H Transfer
 1C__1D--,1H,3!H Minimum Balanced
 1C--1D--1H--,1S,4!H and 4!S
 1C--1D--1H--,1N,To Play
@@ -83,27 +83,42 @@ Option,Toucan Club
 1C--1H--,[34]S,Standard Strong !S Raise
 1C--1H--,4H,!H Void Slammish
 1C__,1S,Suggests Opener bid 1NT
-1C--1S--1N--,2C,Natural Invitational
+1C__1S--,1N,Responder may pass; XYZ on
+1C--1S--1N--,2C,Invitational req 2!D (XYZ)
+1C--1S--1N--,2D,Artificial GF (XYZ)
 1C--1S--1N--,2H,Slammish Potential#Weak suit denying 2 of top 3 honors
-1C--1S--1N--,2D,Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--2H--,[23]N,Not good support for !H
 1C--1S--1N--,2S,Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--2S--,[23]N,Not good support for !S
 1C--1S--1N--,3C,Slammish Potential#Weak !C denying 2 of top 3 honors
-1C__,1N,Possibly weak hand with !C
+1C--1S--1N--3C--,3N,Not good support for !C
+1C__,1N,Weak hand with !C or want lead to Responder
 # Transfer to 2D
-1C--,2C,5+!D inderminant strength
-1C--2C--,2D,Accepts Transfer
-1C1H2C--,2D,Accepts Transfer
+1C--,2C,5+!D indeterminate strength
+1C--2C--,2D,Accepts Transfer bid shortness
+1C1D2C--,2D,Accepts Transfer bid shortness
+1C1H2C--,2D,Accepts Transfer bid shortness
+1C1S2C--,2D,Accepts Transfer bid shortness
+1C__2C--,2H,4+!D Shortness in !H
+1C__2C--,2S,4+!D Shortness in !S
 1C--2C--,2N,18-19HCP Balanced
-1C--2C--,2H,4+!D; short !H; Minimum Values
-1C--2C--,2S,4+!D; short !S; Minimum Values
-1C--2C--,3H,4+!D; Void !H; Maximum Values
-1C--2C--,3S,4+!D; Void !S; Maximum Values
+1C__2C--,3H,4+!D void in !H
+1C__2C--,3S,4+!D void in !S
+1C__2C--,2H,4+!D; short !H; Minimum Values
 # Soloway Jump Shifts
-1C--,2D,Transfer to !H#Slammish opposite singleton
-1C--2D--,2H, Accepts Transfer
-1C--,2H,Transfer to !S#Slammish opposite singleton
-1C--2D--2H--,2S,Short !S with slam interest
-1C--2D--2H--,3C,Short !C with slam interest
+1C--,2D,Transfer to !H Slammish opposite singleton
+1C--2D--,2H, Accepts Transfer; bid shortness or NT
+1C--2D--2H--,2S,Short !S
+1C--2D--2H--,3C,Short !C
+1C--2D--2H--,3D,Short !D
+1C--2D--2H--,3H,Control Bid 1st or 2nd round
+1C--2D--2H--,3N,Non-Serious 3NT make control bids or 4!H
+1C--2D--2H--,4H,To Play
+1C--2D--2H--,4S,Kickback 1430 Keycard for !H
+1C--2D--2H--,4N,Exclusion Keycard void !S
+1C--2D--2H--,5C,Exclusion Keycard void !5C
+1C--2D--2H--,5D,Exclusion Keycard void !5D
+1C--,2H,Transfer to !S Slammish opposite singleton
 1C--2D--2H--,2N,No Shortness
 1C--2H--,2S,Accepts Transfer
 1C--2H--2S--,2N,No Shortness

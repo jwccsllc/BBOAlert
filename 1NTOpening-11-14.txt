@@ -107,6 +107,7 @@ Option,1NTOpening 11+-14
 1N2S,Db,Negative DSI
 1N2S----,Db,Negative DSI
 1N2S,2N,Lebensohl
+1N----2S----,2N,Lebensohl; requests 3!C
 1N2S,3S,4+!H no !S Stop
 1N2[DHS]2N--,3C,Lebensohl Response
 Option,1NTDb Penalty

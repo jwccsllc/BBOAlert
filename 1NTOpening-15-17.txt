@@ -21,6 +21,8 @@ Option,1NTOpening 15+-17 Basic
 1N--2C--2D--,3H,Smolen 4=5-x-x GF
 1N--2C--2D--,3S,Smolen 5=4-x-x GF
 1N2[DHS]2N--,3C,Lebensohl Response
+1N2S,2N,Lebensohl
+1N----2S----,2N,Lebensohl; requests 3!C
 Option,1NTOpening 15+-17 Basic 2C Overcall
 1N2C,2C,Stayman
 1N2C,2D,Transfer !H

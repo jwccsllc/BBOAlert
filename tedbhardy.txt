@@ -857,7 +857,7 @@ Shortcut,1C_,Transfers after 1!C Openings
 Shortcut,1D_,6+!D or 4+!D with singleton or void
 Option,Toucan Club
 ,1C,2+!C no 5-card Major -- Transfers On
-1C--,1D,4+!H Transfer
+1C__,1D,4+!H Transfer
 1C__1D--,1H,3!H Minimum Balanced
 1C--1D--1H--,1S,4!H and 4!S
 1C--1D--1H--,1N,To Play
