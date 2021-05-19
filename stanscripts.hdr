@@ -1,0 +1,16 @@
+BBOalert
+//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
+
+Option,StanMetzScripts
+
+Option,ChangeCardColor OFF
+//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
+Option,ChangeCardColor ON
+//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
+
+Option,HoverBBOalertTab OFF
+//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
+Option,HoverBBOalertTab ON
+//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
+#
+Option
