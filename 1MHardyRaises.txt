@@ -12,8 +12,11 @@ Option,1MOpening_Hardy_Raises_@1@2
 # 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
-1H--1N--2C--,4H,5+!H Weak outside Ace or King
-1H--1N--2D--,4H,5+!H Weak outside Ace or King
+1H--1N--2[CD]--,4H,5+!H Weak; outside Ace or King
+1H--1N--2[CD]--4H--,4S,Where is Ace or King?
+1H--1N--2[CD]--4H--4S--,4N,!S Ace or King
+1H--1N--2[CD]--4H--4S--,5C,!C Ace or King
+1H--1N--2[CD]--4H--4S--,5D,!D Ace or King
 1H--1N--,2N,18-19 HCP Transfers on
 1H--1N--2N--,3C,Transfer !D
 1H--1N--2N--,3D,Constructive Raise of !H
@@ -51,9 +54,11 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S--,4S,5+!S Weak probable shortness
 1S1.,3S,4+!S Weak probably balanced
 1S1.,4S,5+!S Weak probable shortness
-1S--1N--2C--,4S,5+!S Weak outside Ace or King
-1S--1N--2D--,4S,5+!S Weak outside Ace or King
-1S--1N--2H--,4S,5+!S Weak outside Ace or King
+1S--1N--2[CDH]--,4S,5+!S Weak; outside Ace or King
+1S--1H--2[CDH]--4S--,4N,Where is Ace or King?
+1S--1H--2[CDH]--4S--4N--,5C,!C Ace or King
+1S--1H--2[CDH]--4S--4N--,5D,!D Ace or King
+1S--1H--2[CDH]--4S--4N--,5H,!H Ace or King
 1S--1N--,2N,18-19 HCP Transfers on
 1S--1N--2N--,3C,Transfer !D
 1S--1N--2N--,3D,Transfer !H

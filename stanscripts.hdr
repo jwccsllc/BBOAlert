@@ -13,4 +13,10 @@ Option,HoverBBOalertTab OFF
 Option,HoverBBOalertTab ON
 //Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
 #
+
+Option,ModifyOKButton OFF
+//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
+Option,ModifyOKButton ON
+//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(true);
+#
 Option

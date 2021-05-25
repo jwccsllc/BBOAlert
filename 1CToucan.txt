@@ -11,6 +11,7 @@ Option,Toucan Club
 1C--1D--1H--,1N,To Play
 1C--1D--1H--,2C,XYZ Invitational Requires 2!D
 1C--1D--1H--2C--,2D,XYZ Required Response
+1C--1D--1H--2C--2D--,2H,5+!H Invitational
 2C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
 2C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
 1C--1D--1H--,2D,Artificial Game Force (XYZ)
