@@ -285,6 +285,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1H--2N--,3H,Strong !H no shortness
 1H--2N--,3S,Short !S rebid shows void
 1H--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1H--2D--3C--3H--,3N,Non-Serious 3NT; invites control bids
 1S--2D--2N--3S--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
 1H--2N--,4C,5+ good !C
 1H--2N--,4D,5+ good !D
@@ -859,7 +860,7 @@ Option,2CDefense Precision
 
 # include 1CToucan.txt
 Option
-Shortcut,ww,Toucan Club 2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\n
+Shortcut,ww,Toucan Club (Short !C with transfer responses)\n2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\n
 Shortcut,1C_,Transfers after 1!C Openings
 Shortcut,1D_,6+!D or 4+!D with singleton or void
 Option,Toucan Club
@@ -1104,6 +1105,7 @@ Option,1NTOpening 15+-17 Advanced
 1N--2D--,3D,4+!H 2!D Maximum Values
 1N--2D--3D--,4D,Transfer !H
 1N--2D--,3H,4+!H Balanced Minimum
+1N--2D--3H--,4S,Keycard Ask in !H
 1N--2DDb,--,Fewer than 3!H
 1N--2DDb,2H,Three !H
 1N--2DDb,3C,4+!H 2!C Maximum Values
@@ -1218,6 +1220,7 @@ Option,UMJOODO On
 1D--2[HS]--2N--,3D,5=4-x-x maximum
 1D--2[HS]--2N--,3H,5=5-x-x minimum
 1D--2[HS]--2N--,3S,5=5-x-x maximum
+Option
 
 # include tedbhardy.extras
 # 4-5-x-x Flannery
