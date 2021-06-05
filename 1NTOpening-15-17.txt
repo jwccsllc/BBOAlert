@@ -6,6 +6,8 @@ Option,1NTOpening 15+-17 Basic
 1N--2D--,2S,4!H Max Values 2!S
 1N--2D--,3C,4!H Max Values 2!C
 1N--2D--,3D,4!H Max Values 2!D
+1N--2D--,3H,4+!H Balanced Minimum
+1N--2D--3H--,4S,Keycard Ask in !H
 1N--2D--3D--,4D,Transfer !H
 1N--2D2S,--,Holding 2!H
 1N--2D2S,2H,Holding 3!H

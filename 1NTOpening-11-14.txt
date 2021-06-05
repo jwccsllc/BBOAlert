@@ -12,6 +12,7 @@ Option,1NTOpening 11+-14
 1N--2D--,3C,4+!H 2!C Maximum Values
 1N--2D--,3D,4+!H 2!D Maximum Values
 1N--2D--,3H,4+!H Balanced Minimum
+1N--2D--3H--,4S,Keycard Ask in !H
 1N--2DDb,--,Fewer than 3!H
 1N--2DDb,2H,Three !H
 1N--2DDb,3C,4+!H 2!C Maximum Values
