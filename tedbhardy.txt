@@ -860,7 +860,7 @@ Option,2CDefense Precision
 
 # include 1CToucan.txt
 Option
-Shortcut,ww,Toucan Club (Short !C with transfer responses)\n2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\n
+Shortcut,ww,Toucan Club (Short !C with transfer responses)\n2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\nSystem Leads and Carding?\n
 Shortcut,1C_,Transfers after 1!C Openings
 Shortcut,1D_,6+!D or 4+!D with singleton or void
 Option,Toucan Club
