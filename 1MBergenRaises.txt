@@ -4,6 +4,8 @@ Option,1MOpening_Bergen_Raises_@1@2
 ,1S,
 # 1st and 2nd Seat
 1H--,1N,Forcing
+--1H--,1N,Forcing
+--1S--,1N,Forcing
 1H--1N--2[CD]--,2N,< 3!H Balanced Invitational
 1S--1N--2[CD]--,2N,< 3!S Balanced Invitational
 1H--,1S,4+ !S
