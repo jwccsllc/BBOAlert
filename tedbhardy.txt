@@ -3,7 +3,7 @@ BBOalert
 # include stdhdr.txt
 Script,onAnyOpponentChange
 
-setChatDestination('Opponents');
+// setChatDestination('Opponents');
 
 // if ("SW".indexOf(myDirection()) != -1) {
 // 	setTimeout(function () {
@@ -123,6 +123,8 @@ Option,1MOpening_Hardy_Raises_@1@2
 ,1S,
 1H--,1N,Forcing
 1S--,1N,Forcing
+--1S--,1N,Forcing
+--1H--,1N,Forcing
 1[HS]--,1N,Forcing
 1H--1N--2[CD]--,2N,< 3!H Balanced Invitational
 1S--1N--2[CD]--,2N,< 3!S Balanced Invitational
@@ -685,6 +687,7 @@ Option,XYZ
 
 # include defensemisc.txt
 Option
+1D1H1S2H,3H,Strong support of !S
 # Michaels Cue Bids
 1C,2C,Majors
 1C----,2C,Majors
