@@ -1,7 +1,7 @@
 BBOalert
 Script,onAnyOpponentChange
 
-setChatDestination('Opponents');
+// setChatDestination('Opponents');
 
 // if ("SW".indexOf(myDirection()) != -1) {
 // 	setTimeout(function () {
