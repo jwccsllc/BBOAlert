@@ -960,6 +960,8 @@ Option,Toucan Club
 # Transfer to 2D
 1C--,2C,5+!D indeterminate strength
 1C--2C--,2D,Accepts Transfer bid shortness
+1C1D,Db,Transfer to !H
+1C1H,Db,Transfer to !S
 1C1D2C--,2D,Accepts Transfer bid shortness
 1C1H2C--,2D,Accepts Transfer bid shortness
 1C1S2C--,2D,Accepts Transfer bid shortness

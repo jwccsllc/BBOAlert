@@ -1,4 +1,5 @@
 Option
+1D1H1S2H,3H,Strong support of !S
 # Michaels Cue Bids
 1C,2C,Majors
 1C----,2C,Majors
