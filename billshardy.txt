@@ -627,6 +627,8 @@ Option,4th_suit_forcing
 1D--1H--2C--,2S,4th suit forcing
 1D--1S--2C--,2H,4th suit forcing
 Option
+1C--1H--2H--2S--3D__,4S,Kickback Keycard ask in !H
+1C--1H--2H--2S--3D__4S--,5C,0 or 3 keycards in !H
 
 # include 1mSpiral.txt
 Option,Spiral
