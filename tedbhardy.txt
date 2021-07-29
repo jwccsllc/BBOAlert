@@ -558,6 +558,12 @@ Option,2C2D KokishRelay
 2C--2D--2S--2N--,3S,!S and no 2nd suit
 Option
 2C--2D--,2N,22-24 HCP Balanced Systems On
+2C--2H--,2N,22-24 HCP Balanced Systems On
+2C--2S--,2N,22-24 HCP Balanced Systems On
+2C--2H--2N--,3D,Transfer !H
+2C--2S--2N--,3D,Transfer !H
+2C--2S--2N--,3H,Transfer !S
+2C--2H--2N--,3H,Transfer !S
 2C--2D--2N--3D--,3H,fewer than 4 !H
 2C--2D--2N--3H--,3S,fewer than 4 !S
 Option
