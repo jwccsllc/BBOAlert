@@ -839,7 +839,7 @@ Option,XYZ
 /1[CDH]--1[DHS]--1N--2C--/,2D,Required after 2!C
 1C__1S__1N__,2D,Artificial Game Force
 1C--1S--1N--2D--,2S,3!S fewer than 4!H
-1C--1S--1N--2D--,2H,!4H may have 3!S
+1C--1S--1N--2D--,2H,4!H may have 3!S
 1D__1S__1N__,2C,Invitational Force 2!D
 1D__1S__1N__,2D,Artificial Game Force
 1D__1S__1N__,2N,Invitational < 4!D Support
