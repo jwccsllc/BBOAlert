@@ -50,3 +50,4 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 1C--1S--,1N,12-14 Balanced < 4!S
 1C--1S--,3S,18-19 4!S
 1D--1S--,1N,12-14 Balanced < 4!S
+1N----2D----,2N,Transfer !C Lebensohl

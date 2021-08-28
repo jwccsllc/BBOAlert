@@ -131,3 +131,4 @@ Option,1NTDb Penalty
 1[CD]__..__,1N,Balanced 15-17
 1[CD]..----,1N,Balanced 15-17
 1N2C2H--3D--,3H,Transfer !S
+1N----2D----,2N,Transfer !C Lebensohl

@@ -1,10 +1,9 @@
 BBOalert
 
 # include stdhdr.txt
-BBOalert
 Script,onAnyOpponentChange
 
-setChatDestination('Opponents');
+// setChatDestination('Opponents');
 
 // if ("SW".indexOf(myDirection()) != -1) {
 // 	setTimeout(function () {
@@ -13,9 +12,7 @@ setChatDestination('Opponents');
 // }
 Script
 
-
 # include tonymhardy.hdr
-BBOalert, file must begin with BBOalert keyword
 Option,TonyMarshall
 Shortcut,ww,2/1 11-14 Weak NT XYZ UDCA Rusinow v Suits Journalist v Notrump\n
 
@@ -28,8 +25,11 @@ Option
 
 # include shortcuts.txt
 Shortcut,SLC,System Leads and Carding?
-Shortcut,GTG,I am sorry but I must leave; Thanks to all; Bye
-Shortcut,ML,My last deal; Thanks to all
+Shortcut,SJS,Soloway Jump Shift (Strong suit with possibly only one loser opposite singleton)
+Shortcut,nexs,North Extremely Slow
+Shortcut,eexs,East Extremely Slow
+Shortcut,sexs,South Extremely Slow
+Shortcut,wexs,West Extremely Slow
 Shortcut,TC,Texas !C
 Shortcut,TD,Texas !D
 Shortcut,TH,Texas !H
@@ -55,11 +55,11 @@ Shortcut,KS,Odd number of key cards; Control !S
 Shortcut,LNA,Lead against NT : A = typically AKx
 Shortcut,LNK,Lead against NT : K = typically AKJ AKQ KQJ or KQT
 Shortcut,LNQ,Lead against NT : Q = typically QJT or QJ9
-Shortcut,LNJ,Lead against NT : J = typically AQJ or JTx
-Shortcut,LNT,Lead against NT : 10 = typically AJ10 or KJ10 ot 109x
-Shortcut,LSA,Lead against suit : A = typically AK even number of cards
-Shortcut,LSK,Lead against suit : K = typically AK odd number of cards
-Shortcut,LSQ,Lead against suit : Q = typically KQx
+Shortcut,LNJ,Lead against NT : J = JTxx No card higher
+Shortcut,LNT,Lead against NT : T = HT9x at least one of A K or Q
+Shortcut,LSA,Lead against suit : A = A[x] may have K shortness
+Shortcut,LSK,Lead against suit : K = AKx Second of touching honors
+Shortcut,LSQ,Lead against suit : Q = KQx Second of touching honors
 Shortcut,LSJ,Lead against suit : J = typically QJx
 Shortcut,LST,Lead against suit : 10 = typically J10x
 Shortcut,LFI,Low from interest
@@ -82,6 +82,7 @@ Option,1NTOpening 11+-14
 1N--2D--,3C,4+!H 2!C Maximum Values
 1N--2D--,3D,4+!H 2!D Maximum Values
 1N--2D--,3H,4+!H Balanced Minimum
+1N--2D--3H--,4S,Keycard Ask in !H
 1N--2DDb,--,Fewer than 3!H
 1N--2DDb,2H,Three !H
 1N--2DDb,3C,4+!H 2!C Maximum Values
@@ -98,15 +99,16 @@ Option,1NTOpening 11+-14
 1N--2H__,3S,4+!S Balanced Minimum
 1N--2H--3C--,3H,Transfer !H
 1N--,2S,Range Ask or !C
-1N--,2S__,2N,Minimum NT
+1N--2S--,2N,Minimum NT would not accept invitation
 1N--2S--,3C,Would accept invite to 3N
 1N--,2N,Transfer !D 3D is S/A
 1N--2N--,3C,Weak !D
 1N--2N--,3D,SuperAccept !D
-1N--,3C,Low Info Puppet not 4=4 majors
-1N--3C--,3D,No 5-card major
+1N--,3C,Puppet Stayman
+1N--3C--,3D,No 5-card major; at least 1 4CD Major
 1N--3C--3D--,3H,Holding 4!S
 1N--3C--3D--,3S,Holding 4!H
+1N--3C--3D--,4D,4!H and 4!S; Take your pick
 1N--3C--,3H,5!H
 1N--3C--,3S,5!S
 1N--,3D,5-5 Minors GF
@@ -176,6 +178,7 @@ Option,1NTOpening 11+-14
 1N2S,Db,Negative DSI
 1N2S----,Db,Negative DSI
 1N2S,2N,Lebensohl
+1N----2S----,2N,Lebensohl; requests 3!C
 1N2S,3S,4+!H no !S Stop
 1N2[DHS]2N--,3C,Lebensohl Response
 Option,1NTDb Penalty
@@ -197,16 +200,17 @@ Option,1NTDb Penalty
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1[CD]__..__,1N,Balanced 15-17
 1[CD]..----,1N,Balanced 15-17
+1N2C2H--3D--,3H,Transfer !S
+1N----2D----,2N,Transfer !C Lebensohl
 
 # include 2NTOpening.txt
-BBOalert
 Option,2NTOpening Puppet Stayman
 ,2N,20-21 May have 5-card major
 2N--,3C,Puppet Stayman
 2N--3C--,3D,No 5 card major at least 1 4 card major
 2N--3C--3D--,4D,Both Majors
 2N--3C--3D--,3H,4!S fewer !H
-2N--3C--3D--,3S,4!H fewer !S
+2N--3C__3D--,3S,4!H fewer !S
 2N--3C--3D--,3N,No 4 card major
 2N--3C--,3N,No 4 or 5 card major
 2N--3C--,3H,5 !H
@@ -220,8 +224,6 @@ Option,2NTOpening Puppet Stayman
 2N--4C--,4H,0 or 3 Aces
 2N--4C--,4S,2 Aces I hate my hand
 2N--4C--,4N,2 Aces I love my hand
-2N--,4D,Texas Transfer -> !H
-2N--,4H,Texas Transfer -> !S
 Option,2NT3S MSS Off
 2N--,3S,
 Option,2NT3S MSS On
@@ -235,20 +237,26 @@ Option,3NTOpening Acol/NAMYATS
 ,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
 
 # include 1MHardyRaises.txt
-BBOalert, file must begin with BBOalert keyword
 Option,1MOpening_Hardy_Raises_@1@2
 ,1H,
 ,1S,
 1H--,1N,Forcing
 1S--,1N,Forcing
+--1S--,1N,Forcing
+--1H--,1N,Forcing
 1[HS]--,1N,Forcing
-1H__,3H,4+!H probably balanced
-1S__,3S,4+!S probably balanced
+1H--1N--2[CD]--,2N,< 3!H Balanced Invitational
+1S--1N--2[CD]--,2N,< 3!S Balanced Invitational
+1H__,3H,Weak 4+!H probably balanced
+1S__,3S,Weak 4+!S probably balanced
 # 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
-1H--1N--2C--,4H,5+!H Weak outside Ace or King
-1H--1N--2D--,4H,5+!H Weak outside Ace or King
+1H--1N--2[CD]--,4H,5+!H Weak; outside Ace or King
+1H--1N--2[CD]--4H--,4S,Where is Ace or King?
+1H--1N--2[CD]--4H--4S--,4N,!S Ace or King
+1H--1N--2[CD]--4H--4S--,5C,!C Ace or King
+1H--1N--2[CD]--4H--4S--,5D,!D Ace or King
 1H--1N--,2N,18-19 HCP Transfers on
 1H--1N--2N--,3C,Transfer !D
 1H--1N--2N--,3D,Constructive Raise of !H
@@ -286,9 +294,11 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S--,4S,5+!S Weak probable shortness
 1S1.,3S,4+!S Weak probably balanced
 1S1.,4S,5+!S Weak probable shortness
-1S--1N--2C--,4S,5+!S Weak outside Ace or King
-1S--1N--2D--,4S,5+!S Weak outside Ace or King
-1S--1N--2H--,4S,5+!S Weak outside Ace or King
+1S--1N--2[CDH]--,4S,5+!S Weak; outside Ace or King
+1S--1H--2[CDH]--4S--,4N,Where is Ace or King?
+1S--1H--2[CDH]--4S--4N--,5C,!C Ace or King
+1S--1H--2[CDH]--4S--4N--,5D,!D Ace or King
+1S--1H--2[CDH]--4S--4N--,5H,!H Ace or King
 1S--1N--,2N,18-19 HCP Transfers on
 1S--1N--2N--,3C,Transfer !D
 1S--1N--2N--,3D,Transfer !H
@@ -353,7 +363,6 @@ Option,1MOpening_Hardy_Raises_@1@2
 1HDb3D--3H--3S--,3N,Where is void?
 1HDb3D--3H--3S--3N--,4C,Void !C
 1HDb3D--3H--3S--3N--,4D,Void !D
-1H1.3D--3H--3S--3N--,4H,Void !S
 # Spades
 # 1st and 2nd seats
 1S--,3H,9+-12 4+!S Shortness
@@ -397,6 +406,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1H--2N--,3H,Strong !H no shortness
 1H--2N--,3S,Short !S rebid shows void
 1H--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1H--2D--3C--3H--,3N,Non-Serious 3NT; invites control bids
 1S--2D--2N--3S--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
 1H--2N--,4C,5+ good !C
 1H--2N--,4D,5+ good !D
@@ -428,7 +438,6 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S--2N--,3D,Short !D rebid shows void
 1S--2N--,3H,Short !H rebid shows void
 1S--2N--,3S,Strong !S no shortness
-1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
 1S--2N--,4C,5+ good !C
 1S--2N--,4D,5+ good !D
 1S--2N--,4H,5+ good !H
@@ -451,10 +460,6 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S2C,3C,Limit Raise or better !S
 1S2D,3D,Limit Raise or better !S
 1H--1N--2S--,2N,Ingberman; weak xfer to !C
-1HDb,2D,Constructive !H raise
-1HDb,2H,Weak !H raise
-1SDb,2H,Constructive !S raise
-1SDb,2S,Weak !S raise
 # Kickback Sequences
 1H--2H--2S--3D--,4S,Kickback 1430 Keycard Ask
 1H--2H--2S--3D--4S--,4N,1 or 4 keycards
@@ -467,10 +472,12 @@ Option,1MOpening_Drury_On_@3@4
 ------1H--,2C,3Card Limit Raise (Drury)
 ------1H--,2D,4Card Limit Raise (Drury)
 ------1H--2D--,2N,Shortness?
+------1H--2C--2D--,2H,No shortness
 ------1S--,1N,Semi Forcing
 ------1S--,2C,3Card Limit Raise (Drury)
 ------1S--,2D,4Card Limit Raise (Drury)
 ------1S--2C--,3D,Shortness ?
+------1S--2C--2D--,2S,No shortness
 ------1S--2D--,2N,Shortness?
 ----1H--,1N,Semi Forcing
 ----1H--,2C,3Card Limit Raise (Drury)
@@ -520,9 +527,11 @@ Option,1MOvercall1NT Robeson
 # Preemptive raises of Opener's major
 1H1N,2H,Weak
 1H1N,3H,Weak
+1HDb,3H,Weak
 1H1N,4H,Weak
 1S1N,2S,Weak
 1S1N,3S,Weak
+1HDb,3S,Weak
 1S1N,4S,Weak
 # Fit-jumps
 1[HS]1N,3C,Fit-Jump, good 5+!C with support
@@ -531,10 +540,9 @@ Option,1MOvercall1NT Robeson
 1S1N,3H,Fit-Jump, good 5+!H with support
 Option,1MOvercall1NT Off
 Option
-1S--2H--2S--3S--,3N,Non-Serious 3NT%Mild Slam Try Responder Starts making control bids with slam interest
+1S--2H--2S--3S--,3N,Non-Serious 3NT#Mild Slam Try Responder Starts making control bids with slam interest
 
 # include 1minorOpenings.txt
-BBOalert
 # Minor Openings
 Option,1mOpenings
 1[CD]--1H1S,Db,Support X 3 card !H Support
@@ -575,6 +583,7 @@ Option,1mOpenings
 1C--1S--2D--,2H,<= 7 HCP weak Ingberman
 1C--1S--2D--,2N,Game Forcing, Ingberman
 1C--1H--2S--,2N,<= 7 HCP weak Ingberman
+1C--1S--2H--2N--,3C,Required Ingberman Response
 1D--1H--2S--,2N,<= 7 HCP weak Ingberman
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1D--,2D,4+!D Strong no 4CM or NT stops
@@ -618,6 +627,8 @@ Option,4th_suit_forcing
 1D--1H--2C--,2S,4th suit forcing
 1D--1S--2C--,2H,4th suit forcing
 Option
+1C--1H--2H--2S--3D__,4S,Kickback Keycard ask in !H
+1C--1H--2H--2S--3D__4S--,5C,0 or 3 keycards in !H
 
 # include 1mSpiral.txt
 Option,Spiral
@@ -683,15 +694,19 @@ Option,2C2D KokishRelay
 2C--2D--2S--2N--,3S,!S and no 2nd suit
 Option
 2C--2D--,2N,22-24 HCP Balanced Systems On
-2C--2D--2N--3D--,3H,fewer than 4 !S
+2C--2H--,2N,22-24 HCP Balanced Systems On
+2C--2S--,2N,22-24 HCP Balanced Systems On
+2C--2H__2N--,3D,Transfer !H
+2C--2S__2N--,3D,Transfer !H
+2C--2S__2N--,3H,Transfer !S
+2C--2H__2N--,3H,Transfer !S
+2C--2D--2N--3D--,3H,fewer than 4 !H
 2C--2D--2N--3H--,3S,fewer than 4 !S
 Option
 2C--2H--3H--4H--,4S,Kickback; Keycard for !H
 2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
 
-
 # include 2DHSOpenings.txt
-BBOalert
 Option,2DWeak_Simple_@1@2
 ,2D,5-11 Weak 6+!D
 Option,2DWeak_Simple_@3
@@ -755,8 +770,8 @@ Option
 # include 2DFlannery.txt
 Option,Flannery
 ,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
-1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
---1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+1H--,1N,Forcing; May have 4!S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+--1H--,1N,Forcing; May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 ----1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 ------1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
@@ -764,18 +779,16 @@ Option,Flannery
 ----1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 ------1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
 # Queries
-2D--,2N,Ask for description
-2D--2N--,3C,4=5=1=3 3!C
-2D--2N--,3D,4=5=3=1 3!D
-2D--2N--,3H,4=5=2=2 minimum
-2D--2N--,3N,4=5-x-x Balanced Maximum
-2D--2N--,3S,4=6=x-x 6!H
-2D--2N--,4C,4=5=0=4 4!C
-2D--2N--,4D,4=5=4=0 4!D
-
+2D__,2N,Ask for description
+2D__2N--,3C,4=5=1=3 3!C
+2D__2N--,3D,4=5=3=1 3!D
+2D__2N--,3H,4=5=2=2 minimum
+2D__2N--,3N,4=5-x-x Balanced Maximum
+2D__2N--,3S,4=6=x-x 6!H
+2D__2N--,4C,4=5=0=4 4!C
+2D__2N--,4D,4=5=4=0 4!D
 
 # include XYZ.txt
-BBOAlert
 Option,XYZ
 1C--1D--1N--,2C,Forcing, Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
@@ -792,28 +805,31 @@ Option,XYZ
 1C--1H--1N--,2N,Fewer than 4!C
 1C__1H__1N__2C__2D__,2N,Invitational 4+!C
 1C__1H__1N__,2N,Invitational Fewer 4!C
-1C__1H__1S__,2C,Invitational Force 2!D
+1C__1H__1S__,2C,Invitational Forces 2!D
 1C__1H__1S__2C__2D__,2N,Invitational 4+!C
 1C__1H__1S__,2D,Artificial Game Force
-1C--1H--1S--2D--,2H,3!H
-1C__1H__1S__,2C,Invitational Forces 2!D
-1C__1H__1S__,2D,Artificial Game Force
+1C--1H--1S--2D--,2H,3-card !H Support
 1C__1H__1S__,2H,5+!H Less than invitational
-1C__1H__1S__,2N,Invitational < 4!C Support
 1C__1H__1S__,2N,Invitational Fewer 4!C
 1C__1S__1N--,2C,Invitational Force 2!D
 /1[CDH]--1[DHS]--1N--2C--/,2D,Required after 2!C
 1C__1S__1N__,2D,Artificial Game Force
-1C--1S--1N--2D--,2S,3!S not 3!H
-1C--1S--1N--2D--,2H,!4H may have 3!S
 1C--1S--1N--2D--,2S,3!S fewer than 4!H
+1C--1S--1N--2D--,2H,4!H may have 3!S
 1D__1S__1N__,2C,Invitational Force 2!D
 1D__1S__1N__,2D,Artificial Game Force
 1D__1S__1N__,2N,Invitational < 4!D Support
 1D__1S__1N__,2S,5+!S Less than invitational
+# Slam Bidding Sequences
+1C--1H--,1S,4!S may have 3!H Probably balanced
+1C--1H--1S--2D--2H--,3H,6+ !H
+1C--1H--1S--2D--2H--3H--,4H,No slam interest
+1C--1H--1S--2D--2H--3H--4H--,4S,Kickback 1430 Keycard Asc
+1C--1H--1S--2D--2H--3H--4H--4S--,5C,0 or 3 keycards
 
 # include defensemisc.txt
 Option
+1D1H1S2H,3H,Strong support of !S
 # Michaels Cue Bids
 1C,2C,Majors
 1C----,2C,Majors
@@ -821,7 +837,6 @@ Option
 1D----,2D,Majors
 1C,2D,Weak
 1C,2N,!D + !H two suiter
-1D,2D,Majors
 1D,2N,!C + !H two suiter
 1H,2H,!S + Minor
 1S,2S,!H + Minor
@@ -829,8 +844,6 @@ Option
 1S--2S,3S,Michaels !H + minor
 # Unusual NT
 1[HS],2N,!C + !D two-suiter
-1C,2N,!D + !H two-suiter
-1D,2N,!C + !H two-suiter
 # Unusual v Unusual
 1H2N,Db,Penalize one of more of their suits
 1H2N,3C,Limit Raise of Better for !H
@@ -868,25 +881,38 @@ Option
 3[CHS]Db--4D--,4H,Keycard for !D (Kickback)
 
 # include 1NTdef-suction.txt
-BBOalert
 Option,1NTDefense Suction v Strong/Weak
 1N,[2-6]C,Single-Suit !D OR Two-Suit !H and !S
 1N[2-6]C--,[2-6]D,Required Relay
+1N----,[2-6]C,Single-Suit !D OR Two-Suit !H and !S
+1N----[2-6]C--,[2-6]D,Required Relay
 1N,[2-6]D,Single-Suit !H OR Two-Suit !S and !C
 1N[2-6]D--,[2-6]H,Required Relay
+1N----,[2-6]D,Single-Suit !H OR Two-Suit !S and !C
+1N----[2-6]D--,[2-6]H,Required Relay
 1N,[2-6]H,Single-Suit !S OR Two-Suit !C and !D
 1N[2-6]H--,[2-6]S,Required Relay
+1N----,[2-6]H,Single-Suit !S OR Two-Suit !C and !D
+1N----[2-6]H--,[2-6]S,Required Relay
 1N,[2-6]S,Non-Suits !C and !H OR !D and !S
 1N[2-6]S--,[2-6]N,Show Lower Suit
+1N----,[2-6]S,Non-Suits !C and !H OR !D and !S
+1N----[2-6]S--,[2-6]N,Show Lower Suit
 1N,[2-6]N,Single-Suit !C OR Two-Suit !D and !H
 1N[2-6]N--,[2-6]C,Required Relay
+1N----,[2-6]N,Single-Suit !C OR Two-Suit !D and !H
+1N----[2-6]N--,[2-6]C,Required Relay
 1N,Db,Single-Suit !C OR Two-Suit !D and !H
 1N,2N,Single-Suit !C OR Two-Suit !D and !H
+1N----,Db,Single-Suit !C OR Two-Suit !D and !H
+1N----,2N,Single-Suit !C OR Two-Suit !D and !H
 1NDb--,2C,Required Relay
 1N2N--,3C,Required Relay
 Option,2NTDefense Suction
 2N,3N,Single-Suit !C OR Two-Suit !D and !H
-2N3N--,4!C,Required Relay
+2N3N--,4C,Required Relay
+2N---,3N,Single-Suit !C OR Two-Suit !D and !H
+2N---3N,4C,Required Relay
 2N,[3-6]C,Single-Suit !D OR Two-suit !H and !S
 2N[3-6]C--,[2-6]D,Required Relay
 2N,[3-6]D,Single-Suit !H OR Two-Suit !S and !C
@@ -899,7 +925,6 @@ Option,2NTDefense Suction
 2N[3-6]N--,[2-6]C,Required Relay
 
 # include 1CDef-Suction.txt
-BBOalert
 # Defense Against Strong Club
 Option,1CDefense Standard
 1C,Db,Take-out Double
@@ -943,25 +968,26 @@ Option,1CDefense Precision
 1C--1D,3S,Two-Suit in !C and !H OR !D and !S
 1C--1D,4S,Two-Suit in !C and !H OR !D and !S
 
-
 # include 2CDef-Suction.txt
-BBOalerts
 # Defense Against Strong 2 Club
 Option,2CDefense Strong
 2C,Db,!D or !H and !S
 2C,2D,!H or !S and !C
 2C,2H,!S or !C and !D
 2C,2S,!C and !H or !D and !S
+2C2S--,2N,Asks about suits
 2C,2N,!C or !D and !H
 2C2N--,3C,Required Response
 2C,3C,!D or !H and !S
 2C,3D,!H or !S and !C
 2C,3H,!S or !C and !D
 2C,3S,!C and !H or !D and !S
+2C3S--,3N,Asks about suits
 2C,4C,!D or !H and !S
 2C,4D,!H or !S and !C
 2C,4H,!S or !C and !D
 2C,4S,!C and !H or !D and !S
+2C4S--,4N,Asks about suits
 2C--2D,Db,!H or !S and !C
 2C--2D,2H,!S or !C and !D
 2C--2D,2S,!C and !H or !D and !S
