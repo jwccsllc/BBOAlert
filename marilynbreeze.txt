@@ -396,6 +396,7 @@ Option,1mOpenings
 1C--,1N,6-9 HCP no 4-card major
 1C--,2N,10-12 HCP no 4-card major
 1C--,3N,13+ HCP no 4-card major
+1CDb,2D,Weak
 1D1H,3C,Weak
 1D1S,3C,Weak
 1D2C,2[HS],
