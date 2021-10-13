@@ -1,16 +1,40 @@
 BBOalert
 
-# include stdhdr.txt
-Script,onAnyOpponentChange
+# include prealert.txt
+//BBOalert
+//Script,onDataLoad,PREV_OPPS = "";
+//Script,onAuctionBegin
+if ((myDirection() == "S") || (myDirection() == "W")) {
+	ACT_OPPS = myOpponent(true) + "+" + myOpponent(false);
+	if (ACT_OPPS != PREV_OPPS) {
+		setChatMessage(findShortcut("ww"), true);
+		PREV_OPPS = ACT_OPPS;
+	}
+}
+//Script
 
-// setChatDestination('Opponents');
+# include stanscripts.hdr
+//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
 
-// if ("SW".indexOf(myDirection()) != -1) {
-// 	setTimeout(function () {
-// 		sendMessageToOpponents(findShortcut('ww'));
-// 	}, 500);
-// }
-Script
+Option,StanMetzScripts
+
+Option,ChangeCardColor ON
+//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
+Option,ChangeCardColor OFF
+//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
+
+Option,HoverBBOalertTab ON
+//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
+Option,HoverBBOalertTab OFF
+//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
+#
+
+Option,ModifyOKButton ON
+//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(true);
+Option,ModifyOKButton OFF
+//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
+#
+Option
 
 # include tedbhardy.hdr
 //Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
