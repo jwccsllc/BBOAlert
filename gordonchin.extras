@@ -1,0 +1,30 @@
+Option
+1D1H,2H,Limit Raise or better in !D
+1D1S,2S,Limit Raise or better in !D
+1D--,3C,5+ !C Invitational Values
+1D1S,3D,Weak
+1H1S,2S,Limit Raise or better in !H
+1H2C,3C,Limit Raise or better in !H
+1H2D,3D,Limit Raise or better in !H
+1S2C,3C,Limit Raise or better in !S
+1S2D,3D,Limit Raise or better in !S
+1S2H,3H,Limit Raise or better in !S
+1H--,3NT,13-15 3-card !H support balanced
+1S--,3NT,13-15 3-card !S support balanced
+Option,Sandwich NT
+1C--1D,1N,!H and !S Sandwich Weak
+1C--1H,1N,!D and !S Sandwich Weak
+1C--1S,1N,!D and !H Sandwich Weak
+1D--1H,1N,!C and !S Sandwich Weak
+1D--1S,1N,!C and !H Sandwich Weak
+1H--1S,1N,!C and !C Sandwich Weak
+Option,Namyats
+,4C,NAMYATS Transfer to !H
+4C--,4D,Slam interest in !H
+4C--4D--,4H,No Slam Interest
+,4D,NAMYATS Transfer to !S
+4D--,4H,Slam interest in !S
+4D--4H--,4S,No Slam Interest
+,4H,NAMYATS Preempt in !H
+,4S,NAMYATS Preempt in !S
+,3N,NAMYATS 4-level preempt !C or !D
