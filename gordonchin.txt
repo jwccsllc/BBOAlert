@@ -38,7 +38,7 @@ Option
 
 # include gordonchin.hdr
 Option,ChinAndCampbell
-Shortcut,ww,2/1; Standard Leads and Attitude; Rev Bergen Raises; Weak Jump Shifts\n
+Shortcut,ww,2/1; UDCA; Rev Bergen Raises; Weak Jump Shifts\n
 Shortcut,W0,2/1; Kokish 3-Way Game Tries; Weak Jump Shifts; 4th Suit Game Forcing
 
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndSandyFreeling.pdf
@@ -93,7 +93,7 @@ Shortcut,LN_,Journalist vs NT; Spot Leads Low from Interest
 # include 1NTOpening-15-17.txt
 Option,1NTOpening 15+-17 Basic
 ,1N,15-17
-1N--,2C,Stayman
+1N--,2C,Stayman at least one 4 card major
 1N--,2D,Transfer !H
 1N--2D--,2S,4!H Max Values 2!S
 1N--2D--,3C,4!H Max Values 2!C
@@ -104,21 +104,25 @@ Option,1NTOpening 15+-17 Basic
 1N--2D2S,--,Holding 2!H
 1N--2D2S,2H,Holding 3!H
 1N--,2H,Transfer !S
-1N--,2S,Transfer !C Pass or Correct
-1N--,2N,Invitational
-1N--,3C,5-5 Minors Pass or Correct
+1N--,2S,Range Ask No 4card Major
+1N--2S--,2N,Minimum balanced
+1N--2S--,3C,Maximum accept invite to 3NT
+1N--,2N,Relay to !D
+1N--2N--,3D,Minimum !D
+1N--2N--,3C,Hxx+ !D
+1N--,3C,Puppet Stayman
 1N--,3D,5-5 Minors Game Forcing
 1N--,3H,Short !H 3=1-(54) Game Forcing
 1N--,3S,Short !S 1=3-(54) Game Forcing
 1N--,4D,Transfer to !H
 1N--,4H,Transfer to !S
-1N--2C--2D--,3H,Smolen 4=5-x-x GF
-1N--2C--2D--,3S,Smolen 5=4-x-x GF
+1N--2C--2D--,3H,Smolen 5=4-x-x GF
+1N--2C--2D--,3S,Smolen 4=5-x-x GF
 1N2[DHS]2N--,3C,Lebensohl Response
 1N2S,2N,Lebensohl
 1N----2S----,2N,Lebensohl; requests 3!C
 Option,1NTOpening 15+-17 Basic 2C Overcall
-1N2C,2C,Stayman
+1N2C,Db,Stayman
 1N2C,2D,Transfer !H
 1N2C,2H,Transfer !S
 1N2C2H--,2S,Fewer than 4 !S
@@ -130,8 +134,8 @@ Option,1NTOpening 15+-17 Basic 2C Overcall
 1N2C,2S,Short !S 1=3-(54) Game Forcing
 1N2C,4D,Transfer to !H
 1N2C,4H,Transfer to !S
-1N2C2C--2D--,3H,Smolen 4=5-x-x GF
-1N2C2C--2D--,3S,Smolen 5=4-x-x GF
+1N2C2C--2D--,3S,Smolen 4=5-x-x GF
+1N2C2C--2D--,3H,Smolen 5=4-x-x GF
 ,1C,3+!C unbalanced or balanced 12-14 NT
 ,1D,4+!D or 4=4=3=2 unsuitable for 1NT opening
 1[CD]__1.__,1NT,Balanced 12-14

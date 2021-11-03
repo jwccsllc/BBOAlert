@@ -1,0 +1,17 @@
+BBOalert
+Option,1NTDefense Meckwell v Strong
+1N,2C,!C and a Major
+1N,2D,!D and a Major
+1N,2H,5+ !H
+1N,2S,5+ !S
+1N,2N,Minors
+1N,Db,Single Minor or !H and !S
+1N,2N,Minors
+Option,1NTDefense v Weak
+1N,2C,Single Suit
+1N,2D,Majors
+1N,2H,!H and a Minor
+1N,2S,!S and a Minor
+1N,2N,!H and a Minor
+1N,Db,15+ HCP Penalty
+1N,2N,Minors

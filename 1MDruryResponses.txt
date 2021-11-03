@@ -17,6 +17,8 @@ Option,1MDruryRebids Hardy
 # Heart Opening
 ----1[HS]--2C--,2D,Asks for shortness
 ----1H--2C--2D--,2H,No shortness
+----1H--2CDb2D--,2H,No shortness
+----1S--2CDb2D--,2S,No shortness
 ----1H--2C--2D--,2S,Short !S
 ----1H--2C--2D--,3C,Short !C
 ----1H--2C--2D--,3D,Short !D
