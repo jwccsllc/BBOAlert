@@ -449,10 +449,10 @@ Option
 
 # include 1MDruryResponses.txt
 Option
-----1[HS]--,2C,Drury 10-15 HCP 3-card support
-----1[HS]--,2D,Drury 10-15 HCP 4-card support
-------1[HS]--,2C,Drury 10-15 HCP 3-card support
-------1[HS]--,2D,Drury 10-15 HCP 4-card support
+----1[HS]--,2C,Drury 10-12 HCP 3-card support
+----1[HS]--,2D,Drury 10-12 HCP 4-card support
+------1[HS]--,2C,Drury 10-12 HCP 3-card support
+------1[HS]--,2D,Drury 10-12 HCP 4-card support
 ----1H--2[CD]--,2H,Minimum Opener
 ----1S--2[CD]--,2S,Minimum Opener
 ------1H--2[CD]--,2H,Minimum Opener
