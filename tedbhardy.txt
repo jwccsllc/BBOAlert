@@ -1252,14 +1252,14 @@ Option,1NSouth_African_Texas off
 # Manual adjustments after training table
 # Sun Apr 25 11:20:34 PDT 2021
 1C--1S--1N--,2N,Invitational Fewer than 4!C
-Option,UMJOODO On
-1D--,2H,5!S and 4!H or 5!H Constructive
-1D--,2S,5!S 4!H or 5!H invitational
-1D--2[HS]--,2N,Asks for Description
-1D--2[HS]--2N--,3C,5=4-x-x minimum
-1D--2[HS]--2N--,3D,5=4-x-x maximum
-1D--2[HS]--2N--,3H,5=5-x-x minimum
-1D--2[HS]--2N--,3S,5=5-x-x maximum
+#Option,UMJOODO On
+#1D--,2H,5!S and 4!H or 5!H Constructive
+#1D--,2S,5!S 4!H or 5!H invitational
+#1D--2[HS]--,2N,Asks for Description
+#1D--2[HS]--2N--,3C,5=4-x-x minimum
+#1D--2[HS]--2N--,3D,5=4-x-x maximum
+#1D--2[HS]--2N--,3H,5=5-x-x minimum
+#1D--2[HS]--2N--,3S,5=5-x-x maximum
 Option
 
 # include tedbhardy.extras
