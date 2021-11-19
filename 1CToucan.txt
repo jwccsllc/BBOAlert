@@ -366,3 +366,5 @@ Option,1NSouth_African_Texas off
 #1D--2[HS]--2N--,3H,5=5-x-x minimum
 #1D--2[HS]--2N--,3S,5=5-x-x maximum
 Option
+1C2H,2S,
+1D2H,2S,
