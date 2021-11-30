@@ -663,6 +663,7 @@ Option,XYZ
 
 # include defensemisc.txt
 Option
+1D--1H2C,Db,Support 3!H
 1D1H1S2H,3H,Strong support of !S
 # Michaels Cue Bids
 1C,2C,Majors
