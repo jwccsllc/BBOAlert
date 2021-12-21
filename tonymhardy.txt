@@ -465,6 +465,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1H--2H--2S--3D--4S--,4N,1 or 4 keycards
 1H--2H--2S--3D--4S--4N--,5C,Asking for Q!H
 1H--2H--2S--3D--4S--4N--5C--,5H,No Q!H
+1S--2N--3S--4N--,5D,0 or 3 keycards
 Option,1MOpening_Drury_On_@3@4
 --1H--,1N,Forcing
 --1S--,1N,Forcing

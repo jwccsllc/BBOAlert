@@ -12,6 +12,7 @@ Option
 ----1S--2[CD]--,4S,Natural
 ------1H--2[CD]--,4H,Natural
 ------1S--2[CD]--,4S,Natural
+1S--2N--3S--4N--,5D,0 or 3 keycards
 Option,1MDruryRebids Hardy
 # 3-card support
 # Heart Opening
