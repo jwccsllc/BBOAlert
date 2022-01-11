@@ -375,6 +375,7 @@ Option,4th_suit_forcing
 Option
 1C--1H--2H--2S--3D__,4S,Kickback Keycard ask in !H
 1C--1H--2H--2S--3D__4S--,5C,0 or 3 keycards in !H
+1D--2C--2S--3D--,4H,1430 Kickback Keycard for !D
 1C2H,2S,
 1D2H,2S,
 

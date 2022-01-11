@@ -1119,6 +1119,7 @@ Option,Toucan Club
 1D--1S--,4D,4-Card !S Support Very Distributional
 1D--,4D,Transer to !H
 1D--,4H,Transer to !S
+1D--2C--2S--3D--,4H,1430 Kickback Keycard for !D
 # Page 26 Competitive Bidding
 1C2C,2D,transfer to !H
 # TROTOD Transfer Responses Over Opponents Takeout Doubles
