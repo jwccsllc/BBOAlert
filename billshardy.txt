@@ -559,6 +559,9 @@ Option,1MOvercall1NT Robeson
 1S1N,3S,Weak
 1HDb,3S,Weak
 1S1N,4S,Weak
+# After Michael's
+1S2N,3H,
+1H2N,3S,
 # Fit-jumps
 1[HS]1N,3C,Fit-Jump, good 5+!C with support
 1[HS]1N,3D,Fit-Jump, good 5+!D with support
