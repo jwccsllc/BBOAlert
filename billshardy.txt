@@ -1037,6 +1037,11 @@ Option,2CDefense Strong
 2C--2D,4S,!C and !H or !D and !S
 Option,2CDefense Precision
 2C,Db,Take-out Double
+# Suction off against Precision
+2N,3C,
+2N,3D,
+2N,3H,
+2N,3S,
 
 # include billshardy.extras
 Option,XfersAfterJump2NT
