@@ -1,8 +1,10 @@
-#!/csrel27b/bin/python
+#!/csrel27b/bin/python3
 
 # $Header: /vol/cscvs/python-Csys/csmain.py,v 1.3 2007/10/06 00:45:43 csoftmgr Exp $
 # $Date: 2007/10/06 00:45:43 $
 
+import six
+import csspath
 import Csys, os, os.path, sys, re
 
 __doc__ = '''Write text file from objects in config file
@@ -20,13 +22,13 @@ def writeFile(cfg): #{
 	fname	= cfg.get('bboalert', 'outfile')
 	modules	= cfg.getList('bboalert', 'modules')
 	fh = Csys.openOut(fname)
-	fh.write('BBOalert\n')
+	fh.write(six.ensure_binary('BBOalert\n'))
 	for module in modules: #{
-		fh.write('\n# include %s\n' % module)
+		fh.write(six.ensure_binary('\n# include %s\n' % module))
 		data = open(module).read().rstrip()
 		data = re.sub(r'^BBOalert.*?\n+', '', data, 0,
 			re.IGNORECASE|re.MULTILINE|re.DOTALL)
-		fh.write(data + '\n')
+		fh.write(six.ensure_binary(data + '\n'))
 	#}
 	fh.close()
 #} writeFile

@@ -1,29 +1,26 @@
-#!/csrel27b/bin/python
+#!/csrel27b/bin/python3
 
 # $Header: /vol/cscvs/python-Csys/csmain.py,v 1.4 2009/11/25 07:49:41 csoftmgr Exp $
 # $Date: 2009/11/25 07:49:41 $
 
+from __future__ import division
+from past.builtins import cmp
+from future import standard_library
+standard_library.install_aliases()
+from builtins import range
+from past.utils import old_div
+from builtins import object
+import six
 import os, os.path, sys, re
-try: import Csys #{
-except: #{
-	sys.path.extend([
-		os.path.join(sys.prefix, 'lib/python'),
-		os.path.join(sys.prefix, 'lib/python/site-packages'),
-	])
-	import Csys
-#}}
+import csspath
+import Csys
 # from Tkinter import *
 # import Tkinter, Tkconstants, tkFileDialog
 from Csys.Curses import *
 from curses import panel
 from glob import glob
 import traceback
-try: #{{
-	from io import BytesIO
-#}
-except ImportError: #{
-	from cStringIO import StringIO as BytesIO
-#}}
+BytesIO = six.BytesIO
 
 __doc__ = '''File Selection
 
@@ -83,7 +80,7 @@ colPrompts = dict(
 ) # colPrompts
 
 colNames = ('files', 'selected')
-column_files, column_select = range(len(colNames))
+column_files, column_select = list(range(len(colNames)))
 
 def initTables(dir, selFile=None): #{
 	unerrs('dir = %s selFile = %s' % (dir, selFile))
@@ -161,7 +158,7 @@ def selectFiles(): #{
 	colwin_panel.top()
 	maxy_, max_x = re.win.getmaxyx()
 	offset = 0
-	colwidth = int(max_x / len(colNames))
+	colwidth = int(old_div(max_x, len(colNames)))
 	for name in colNames: #{
 		win = G.colWindows[name] = colwin.derwin(max_y, colwidth, 0, offset)
 		offset += colwidth

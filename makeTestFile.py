@@ -3,15 +3,10 @@
 # $Header: /vol/cscvs/python-Csys/csmain.py,v 1.4 2009/11/25 07:49:41 csoftmgr Exp $
 # $Date: 2009/11/25 07:49:41 $
 
+from __future__ import print_function
 import os, os.path, sys, re
-try: import Csys #{
-except: #{
-	sys.path.extend([
-		os.path.join(sys.prefix, 'lib/python'),
-		os.path.join(sys.prefix, 'lib/python/site-packages'),
-	])
-	import Csys
-#}}
+import csspath
+import Csys
 
 __doc__ = '''Make test file for BBOalert
 
@@ -65,11 +60,11 @@ def main(): #{
 	body = re.sub(r'^\s*?\n', '', body, flags=reOpts)
 	body = cmdPattern.sub('T', body)
 	body = re.sub(r'^T\s*\n', '', body, flags=reOpts).rstrip('T')
-	print(	'BBOalert\n%s\nScript,onDataLoad\n'
+	print((	'BBOalert\n%s\nScript,onDataLoad\n'
 			'let tests = `\n%s`\n\n'
 			'ALERTTESTER.runTests(tests);\n'
 			'Script'
-		) % (toptext, body)
+		) % (toptext, body))
 
 #}
 if __name__ == '__main__': #{

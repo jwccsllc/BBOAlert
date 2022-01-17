@@ -3,15 +3,10 @@
 # $Header: /vol/cscvs/python-Csys/csmain.py,v 1.4 2009/11/25 07:49:41 csoftmgr Exp $
 # $Date: 2009/11/25 07:49:41 $
 
+from __future__ import print_function
 import os, os.path, sys, re
-try: import Csys #{
-except: #{
-	sys.path.extend([
-		os.path.join(sys.prefix, 'lib/python'),
-		os.path.join(sys.prefix, 'lib/python/site-packages'),
-	])
-	import Csys
-#}}
+import csspath
+import Csys
 import six
 if six.PY3:
 	from io import open
@@ -72,7 +67,7 @@ def main(): #{
 			line = line.rstrip()
 			if skipPattern.search(line): #{{
 				if not line[0] == '#':
-					print(n, line)
+					print((n, line))
 			#}
 			else: #{
 				try: #{{
