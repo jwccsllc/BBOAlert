@@ -714,7 +714,7 @@ Option
 # Weak 3s
 3[CHS]Db--4D--,4H,Keycard for !D (Kickback)
 
-# include 1NTdef-meckwell-chinn.txt
+# include 1NTdef-meckwell-cap.txt
 Option,1NTDefense Meckwell v Strong
 1N,2C,!C and a Major
 1N,2D,!D and a Major
@@ -723,7 +723,7 @@ Option,1NTDefense Meckwell v Strong
 1N,2N,Minors
 1N,Db,Single Minor or !H and !S
 1N,2N,Minors
-Option,1NTDefense v Weak
+Option,1NTDefense Cappellitti v Weak
 1N,2C,Single Suit
 1N,2D,Majors
 1N,2H,!H and a Minor
@@ -731,6 +731,47 @@ Option,1NTDefense v Weak
 1N,2N,!H and a Minor
 1N,Db,15+ HCP Penalty
 1N,2N,Minors
+# Advancer's bids
+# (1N) 2C Responses
+1N2CDb,Rd,SOS
+1N2C2[DHS],DB,Takeout
+1N2C--,Pa,6+!C
+1N2C--,2D,Pass or Correct
+1N2C--,2H,6+!H Non Forcing
+1N2C--,2S,6+!S Non Forcing
+1N2C--,2N,10+HCP Balanced and Forcing 1 Round
+# (1N) 2D Responses
+1N2DDb,Rd,SOS asks to bid better major
+1N2D2[SH],Db,Penalty
+1N2D--,Pa,6+!D
+1N2D--,2H,Natural Preference - Non Forcing
+1N2D--,2S,Natural Preference - Non Forcing
+1N2D--,2N,Artifical 10+HCP - Forcing 
+# (1N) 2H Responses
+1N2HDb,Rd,SOS partner to bid better minor
+1N2H--,Pa,Weak with tolernace for !H
+1N2H--,2S,6+!S no heart support
+1N2H--,2N,No !H support show minor
+1N2H--,3C,6+Good !C no !H support non forcing
+1N2H--,3D,6+Good !D no !H support non forcing
+1N2H--,3H,3 card !H support non forcing
+# (1N) 2S Responses
+1N2SDb,Rd,SOS partner to bid better minor
+1N2S2.,Db,Penalty
+1N2S--,Pa,Weak with tolernace for !H
+1N2S--,2N,No !S support show minor
+1N2S--,3C,6+Good !C no !S support non forcing
+1N2S--,3D,6+Good !D no !S support non forcing
+1N2S--,3H,6+Good !H no !S support non forcing
+1N2S--,3S,3 card !S support non forcing
+# (1N) 2N Responses
+1N2N--,3C,Weak hand, tolerance for !C
+1N2N--,3D,Weak hand, tolerance for !D
+1N2N--,3H,6+!H no support for minors non forcing
+1N2N--,3S,6+!S no support for minors non forcing
+1N2N--,3N,To Play
+1N2N--,4C,3+!C non forcing
+1N2N--,4D,3+!D non forcing
 
 # include gordonchin.extras
 Option
