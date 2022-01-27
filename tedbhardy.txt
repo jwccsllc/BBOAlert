@@ -912,7 +912,7 @@ Shortcut,1D_,6+!D or 4+!D with singleton or void
 Option,Toucan Club
 ,1C,2+!C no 5-card Major -- Transfers On
 1C__,1D,4+!H Transfer
-1C__1D--,1H,3!H Minimum Balanced
+1C__1D--,1H,3!H
 1C--1D--1H--,1S,4!H and 4!S
 1C--1D--1H--,1N,To Play
 1C--1D--1H--,2C,XYZ Invitational Requires 2!D
@@ -1252,6 +1252,7 @@ Option,1NTOpening 15+-17 Advanced
 1N2D2N--,3C,Lebensohl Response
 1N2H2N--,3C,Lebensohl Response
 1N2S2N--,3C,Lebensohl Response
+1N----2[CDHS]----,2N,Lebensohl; requests 3!C
 Option,1NSouth_African_Texas on
 1N__,4C,Transfer 4!H South African Texas
 1N__,4D,Transfer 4!S South African Texas
