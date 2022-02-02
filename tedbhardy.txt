@@ -682,6 +682,8 @@ Option,Flannery
 2D__2N--,3S,4=6=x-x 6!H
 2D__2N--,4C,4=5=0=4 4!C
 2D__2N--,4D,4=5=4=0 4!D
+2DDb,2H,
+2DDb,2S,
 
 # include XYZ.txt
 Option,XYZ
