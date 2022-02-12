@@ -908,6 +908,8 @@ Option,1NTDefense Suction v Strong/Weak
 1N----[2-6]H--,[2-6]S,Required Relay
 1N,[2-6]S,Two-Suited !C and !H OR !D and !S
 1N[2-6]S--,[2-6]N,Show Lower Suit
+1N2S--2N--,3C,!C and !H
+1N2S--2N--,3D,!D and !S
 1N----,[2-6]S,Two-Suited !C and !H OR !D and !S
 1N----[2-6]S--,[2-6]N,Show Lower Suit
 1N,[2-6]N,Single-Suit !C OR Two-Suited !D and !H
