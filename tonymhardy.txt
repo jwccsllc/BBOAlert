@@ -181,6 +181,14 @@ Option,1NTOpening 11+-14
 1N----2S----,2N,Lebensohl; requests 3!C
 1N2S,3S,4+!H no !S Stop
 1N2[DHS]2N--,3C,Lebensohl Response
+1N--2H--2N--,3H,Transfer !S
+1N--2H--2N--,3H,Transfer !S
+1N--2H--3[CD]--,3H,Transfer !S
+1N--2D--2S--,3D,Transfer !H
+1N--2D--2S--,3D,Transfer !H
+1N--2D--2N--,3D,Transfer !H
+1N--2D--3C--,3D,Transfer !H
+1N--2D--3C--,4D,Transfer !H
 Option,1NTDb Penalty
 1NDb,--,Forcing runout single suited#Partner bids 5 card suit or XX
 1NDb----,2C,5!C Runout
