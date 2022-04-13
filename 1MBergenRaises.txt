@@ -11,6 +11,8 @@ Option,1MOpening_Bergen_Raises_@1@2
 1H--,1S,4+ !S
 1H--,2H,3 or 4 card raise
 1H--,3H,4+!H probably balanced
+1H--,3H,4+!H Weak; probably balanced
+1S--,3S,4+!S Weak; probably balanced
 1H--,4H,5+!H probable shortness
 1H--1N--2C--,4H,5+!H Weak outside Ace or King
 1H--1N--2D--,4H,5+!H Weak outside Ace or King

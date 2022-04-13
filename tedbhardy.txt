@@ -152,8 +152,8 @@ Option,1MOpening_Hardy_Raises_@1@2
 1[HS]--,1N,Forcing
 1H--1N--2[CD]--,2N,< 3!H Balanced Invitational
 1S--1N--2[CD]--,2N,< 3!S Balanced Invitational
-1H__,3H,Weak 4+!H probably balanced
-1S__,3S,Weak 4+!S probably balanced
+1H--,3H,4+!H Weak; probably balanced
+1S--,3S,4+!S Weak; probably balanced
 # 1st and 2nd Seat
 1H--,3H,4+!H probably balanced
 1H--,4H,5+!H probable shortness
@@ -766,6 +766,7 @@ Option
 1[CDHS],1N,15-18 NT Balanced Systems On
 1[CDHS]1N--,2C,Stayman
 1[CDHS]1N--,2D,Transfer to !H
+1S1NDb,2D,transfer !H
 1[CDHS]1N--2D--,2H,Fewer than 4!H
 1[CDHS]1N--,2H,Transfer to !S
 1[CDHS]1N--,2S,Range Ask bid 3!C if accept invite
