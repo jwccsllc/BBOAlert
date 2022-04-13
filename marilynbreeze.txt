@@ -706,7 +706,9 @@ Option
 # Weak 2s
 2[DHS]2N--,3C,Puppet Stayman
 2[DHS]2N--,3D,Transfer to !H
-2[DHS]2N--,3H,Transfer to !S
+2D----2N--,3D,Transfer to !H
+2D----2N--,3H,Transfer to !S
+2H----2N--,3H,transfer to !S
 2[DHS]2N--,4D,Transfer to !H
 2[DHS]2N--,4H,Transfer to !S
 # 1NT Overcalls

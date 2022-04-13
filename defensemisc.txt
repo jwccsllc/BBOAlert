@@ -30,13 +30,16 @@ Option
 # Weak 2s
 2[DHS]2N--,3C,Puppet Stayman
 2[DHS]2N--,3D,Transfer to !H
-2[DHS]2N--,3H,Transfer to !S
+2D----2N--,3D,Transfer to !H
+2D----2N--,3H,Transfer to !S
+2H----2N--,3H,transfer to !S
 2[DHS]2N--,4D,Transfer to !H
 2[DHS]2N--,4H,Transfer to !S
 # 1NT Overcalls
 1[CDHS],1N,15-18 NT Balanced Systems On
 1[CDHS]1N--,2C,Stayman
 1[CDHS]1N--,2D,Transfer to !H
+1S1NDb,2D,transfer !H
 1[CDHS]1N--2D--,2H,Fewer than 4!H
 1[CDHS]1N--,2H,Transfer to !S
 1[CDHS]1N--,2S,Range Ask bid 3!C if accept invite
