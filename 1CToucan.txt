@@ -329,24 +329,30 @@ Option,1NTOpening 15+-17 Advanced
 1N2D,Db,Negative DSI
 1N2D----,Db,Negative DSI
 # Lebensohl sequences
-1N2D,2N,Lebensohl
 1N2D,2H,To Play
+1N2D,2N,Transfer !C
+1N2D2N--,3C,Accept Transfer
 1N2D,2S,To Play
-1N2H,Db,Negative DSI
+1N2D,3C,Transfer !D
+1N2D,3H,Transfer !S
+1N2D,3S,Suggest 3NT with no !D stopper
 1N2H,2S,To Play
+1N2H,2N,Transfer !C
+1N2H,3C,Transfer !D
+1N2H,3D,4!S No heart stopper
+1N2H,3H,Transfer !S
+1N2H,3S,Suggest 3NT with no !H stopper
+1N2H,Db,Negative DSI
 1N2H----,Db,Negative DSI
-1N2H,2N,Lebensohl
-1N2H2N--3C--,3H,4+!S GF
-1N2H,3H,4+!S no !H stop
-1N2S,Db,Negative DSI
-1N2S2N--3C--,3S,4+!H GF
-1N2S----,Db,Negative DSI
-1N2S,2N,Lebensohl
+1N2H2N--,3C,Accept Transfer
+1N2S,2N,Transfer !C
+1N2S2N--,3C,Accept Transfer
+1N2S,3C,Transfer !D
+1N2S,3D,Transfer !H
 1N2S,3S,4+!H no !S Stop
-1N2D2N--,3C,Lebensohl Response
-1N2H2N--,3C,Lebensohl Response
-1N2S2N--,3C,Lebensohl Response
-1N----2[CDHS]----,2N,Lebensohl; requests 3!C
+1N2S,Db,Negative DSI
+1N2S----,Db,Negative DSI
+1N2S2N--3C--,3S,4+!H GF
 Option,1NSouth_African_Texas on
 1N__,4C,Transfer 4!H South African Texas
 1N__,4D,Transfer 4!S South African Texas
