@@ -170,7 +170,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S..,Db,Negative X showing 4+ !H
 # 3C responses
 1H--,3C,9+-12 3!H shortness 4!H no shortness
-1H--3C--3D,Describe hand
+1H--3C--,3D,Describe hand
 1H--3C--3D--,3H,4!H no shortness
 1H--3C--3D--,3N,Short !S
 1H--3C--3D--,4C,Short !C
@@ -211,7 +211,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S--1N--2N--,3S,Weak Raise of !S
 # 1S 3C Responses
 1S--,3C,9+-12 3!S shortness 4!S no shortness
-1S--3C--3D,Describe hand
+1S--3C--,3D,Clarify 3!C
 1S--3C--3D--,3S,4!S no shortness
 1S--3C--3D--,3C,Short !C
 1S--3C--3D--,4C,Short !C
@@ -926,8 +926,8 @@ Option,Toucan Club
 1C--1D--1H--,2C,XYZ Invitational Requires 2!D
 1C--1D--1H--2C--,2D,XYZ Required Response
 1C--1D--1H--2C--2D--,2H,5+!H Invitational
-2C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
-2C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
+1C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
+1C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
 1C--1D--1H--,2D,Artificial Game Force (XYZ)
 1C--1D--1H--2D--,2S,4!S (XYZ)
 1C--1D--1H--2D--,2N,Fewer than 4!S (XYZ)
@@ -1242,25 +1242,31 @@ Option,1NTOpening 15+-17 Advanced
 1N2CDb--2D--,3S,4!S 5+!H GF Smolen
 1N2D,Db,Negative DSI
 1N2D----,Db,Negative DSI
-# Lebensohl sequences
-1N2D,2N,Lebensohl
+# Rubensohl sequences
 1N2D,2H,To Play
+1N2D,2N,Transfer !C
+1N2D2N--,3C,Accept Transfer
 1N2D,2S,To Play
-1N2H,Db,Negative DSI
+1N2D,3C,Transfer !D
+1N2D,3H,Transfer !S
+1N2D,3S,Minors
 1N2H,2S,To Play
+1N2H,2N,Transfer !C
+1N2H,3C,Transfer !D
+1N2H,3D,4!S No heart stopper
+1N2H,3H,Transfer !S
+1N2H,3S,Minors
+1N2H,Db,Negative DSI
 1N2H----,Db,Negative DSI
-1N2H,2N,Lebensohl
-1N2H2N--3C--,3H,4+!S GF
-1N2H,3H,4+!S no !H stop
+1N2H2N--,3C,Accept Transfer
+1N2S,2N,Transfer !C
+1N2S2N--,3C,Accept Transfer
+1N2S,3C,Transfer !D
+1N2S,3D,Transfer !H
+1N2S,3H,4+!H no !S Stop
 1N2S,Db,Negative DSI
-1N2S2N--3C--,3S,4+!H GF
 1N2S----,Db,Negative DSI
-1N2S,2N,Lebensohl
-1N2S,3S,4+!H no !S Stop
-1N2D2N--,3C,Lebensohl Response
-1N2H2N--,3C,Lebensohl Response
-1N2S2N--,3C,Lebensohl Response
-1N----2[CDHS]----,2N,Lebensohl; requests 3!C
+1N2S2N--3C--,3S,4+!H GF
 Option,1NSouth_African_Texas on
 1N__,4C,Transfer 4!H South African Texas
 1N__,4D,Transfer 4!S South African Texas

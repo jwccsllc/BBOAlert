@@ -12,8 +12,8 @@ Option,Toucan Club
 1C--1D--1H--,2C,XYZ Invitational Requires 2!D
 1C--1D--1H--2C--,2D,XYZ Required Response
 1C--1D--1H--2C--2D--,2H,5+!H Invitational
-2C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
-2C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
+1C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
+1C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
 1C--1D--1H--,2D,Artificial Game Force (XYZ)
 1C--1D--1H--2D--,2S,4!S (XYZ)
 1C--1D--1H--2D--,2N,Fewer than 4!S (XYZ)
@@ -328,20 +328,20 @@ Option,1NTOpening 15+-17 Advanced
 1N2CDb--2D--,3S,4!S 5+!H GF Smolen
 1N2D,Db,Negative DSI
 1N2D----,Db,Negative DSI
-# Lebensohl sequences
+# Rubensohl sequences
 1N2D,2H,To Play
 1N2D,2N,Transfer !C
 1N2D2N--,3C,Accept Transfer
 1N2D,2S,To Play
 1N2D,3C,Transfer !D
 1N2D,3H,Transfer !S
-1N2D,3S,Suggest 3NT with no !D stopper
+1N2D,3S,Minors
 1N2H,2S,To Play
 1N2H,2N,Transfer !C
 1N2H,3C,Transfer !D
 1N2H,3D,4!S No heart stopper
 1N2H,3H,Transfer !S
-1N2H,3S,Suggest 3NT with no !H stopper
+1N2H,3S,Minors
 1N2H,Db,Negative DSI
 1N2H----,Db,Negative DSI
 1N2H2N--,3C,Accept Transfer
@@ -349,7 +349,7 @@ Option,1NTOpening 15+-17 Advanced
 1N2S2N--,3C,Accept Transfer
 1N2S,3C,Transfer !D
 1N2S,3D,Transfer !H
-1N2S,3S,4+!H no !S Stop
+1N2S,3H,4+!H no !S Stop
 1N2S,Db,Negative DSI
 1N2S----,Db,Negative DSI
 1N2S2N--3C--,3S,4+!H GF
