@@ -27,7 +27,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S..,Db,Negative X showing 4+ !H
 # 3C responses
 1H--,3C,9+-12 3!H shortness 4!H no shortness
-1H--3C--3D,Describe hand
+1H--3C--,3D,Describe hand
 1H--3C--3D--,3H,4!H no shortness
 1H--3C--3D--,3N,Short !S
 1H--3C--3D--,4C,Short !C
@@ -68,7 +68,7 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S--1N--2N--,3S,Weak Raise of !S
 # 1S 3C Responses
 1S--,3C,9+-12 3!S shortness 4!S no shortness
-1S--3C--3D,Describe hand
+1S--3C--,3D,Clarify 3!C
 1S--3C--3D--,3S,4!S no shortness
 1S--3C--3D--,3C,Short !C
 1S--3C--3D--,4C,Short !C
