@@ -437,6 +437,7 @@ Option,1MOvercall1NT Robeson
 1H1N,4H,Weak
 1S1N,2S,Weak
 1S1N,3S,Weak
+1S__,3S,weak
 1HDb,3S,Weak
 1S1N,4S,Weak
 # After Michael's
