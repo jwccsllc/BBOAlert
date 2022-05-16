@@ -1,4 +1,4 @@
-all: joel.conf joel.txt sfreeling.conf sfreeling.txt tedbhardy.conf tedbhardy.txt tonymhardy.conf tonymhardy.txt gordonchin.conf gordonchin.txt marilynbreeze.conf marilynbreeze.txt sayc.conf sayc.txt melinda.conf melinda.txt billshardy.conf billshardy.txt cmc.conf cmc.txt carlyng.conf carlyng.txt
+all: joel.conf joel.txt pattihartley.conf pattihartley.txt sfreeling.conf sfreeling.txt tedbhardy.conf tedbhardy.txt tonymhardy.conf tonymhardy.txt gordonchin.conf gordonchin.txt marilynbreeze.conf marilynbreeze.txt sayc.conf sayc.txt melinda.conf melinda.txt billshardy.conf billshardy.txt cmc.conf cmc.txt carlyng.conf carlyng.txt
 
 billshardy.txt: prealert.txt stanscripts.hdr billshardy.hdr shortcuts.txt 1NTOpening-11-14.txt 2NTOpening.txt 1MHardyRaises.txt 1minorOpenings.txt 1mSpiral.txt 2COpening.txt 2DHSOpenings.txt 2DFlannery.txt XYZ.txt defensemisc.txt 1NTdef-suction.txt 1CDef-Suction.txt 2CDef-Suction.txt billshardy.extras
 	./conf2txt.py billshardy.conf
@@ -20,6 +20,9 @@ marilynbreeze.txt: prealert.txt stanscripts.hdr marilynbreeze.hdr shortcuts.txt 
 
 melinda.txt: stdhdr.txt melinda.hdr shortcuts.txt 1NTOpening-15-17.txt 2NTOpening.txt 1MOpenings.txt 1minorOpenings.txt 1mSpiral.txt 2COpening.txt 2DHSOpenings.txt XYZ.txt defensemisc.txt 1NTdef-modcap.txt melinda.extras
 	./conf2txt.py melinda.conf
+
+pattihartley.txt: prealert.txt stanscripts.hdr pattihartley.hdr shortcuts.txt 2NTOpening.txt 1MOpenings.txt 1MDruryResponses.txt 2COpening.txt 2DHSOpenings.txt 2DFlannery.txt XYZ.txt defensemisc.txt 1NTdef-suction.txt 1CDef-Suction.txt 2CDef-Suction.txt 1CToucan.txt pattihartley.extras
+	./conf2txt.py pattihartley.conf
 
 sayc.txt: stanscripts.hdr sayc.hdr shortcuts.txt 1NTOpening-15-17.txt 2NTOpening.txt 1MOpenings.txt Kokish3WayGT.txt 1minorOpenings.txt 2COpening.txt 2DHSOpenings.txt defensemisc.txt 1NTdef-dont-cap.txt sayc.extras
 	./conf2txt.py sayc.conf
