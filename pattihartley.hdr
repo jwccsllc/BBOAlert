@@ -1,0 +1,26 @@
+BBOalert
+//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
+
+Option,HartleyAndCampbell
+#
+#Option,ChangeCardColor OFF
+#//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
+#Option,ChangeCardColor ON
+#//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
+#
+#Option,HoverBBOalertTab OFF
+#//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
+#Option,HoverBBOalertTab ON
+#//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
+#
+Option
+Shortcut,ww,Toucan Club 2/1 15-17 NT Upside Down Attitude\nShortcut,1C_,Transfers after 1!C Openings
+# Shortcut,1D_,6+!D or 4+!D with singleton or void
+
+Shortcut,W0,2/1; 14+-17 NT; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
+
+Shortcut,W1,Full CC http://bridge.celestial.com/CCs/billand_ted_bartunek_toucan_club.pdf
+
+Shortcut,W2,UDCA; Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even Low from Odd; Journalist Leads vs Notrump; Low from Interest
+
+Option

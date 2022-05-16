@@ -1,0 +1,35 @@
+# 4-5-x-x Flannery
+2D--2N--,3H,4=5=2=2 minimum
+2D--2N--,3S,4=5=2-2 maximum
+2D--2N--,3N,4=5-x-x Balanced Maximum
+[12]N--,3C,Puppet Stayman
+[12]N--3C--,3D,No 5 card major at least 1 4 card major
+[12]N--3C--3D--,4D,Both Majors
+[12]N--3C--3D--,3H,4!S fewer !H
+[12]N--3C--3D--,3S,4!H fewer !S
+[12]N--3C--3D--,3N,No 4 card major
+Option,1MOpening_Drury_On_@3@4
+------1[HS]--,2C,Limit Raise
+------1H--,1N,Semi Forcing
+------1H--,2C,3 or 4 Card Limit Raise (Drury)
+------1H--,2D,
+------1H--2D--,2N,
+------1S--,1N,Semi Forcing
+------1S--,2C,3 or 4 Card Limit Raise (Drury)
+------1S--,2D,
+------1S--2C--,3D,
+------1S--2C--2D--,2S,
+------1S--2D--,2N,
+------1S--2D--2N--,3S,
+----1[HS]--,2C,Limit Raise
+----1H--,1N,Semi Forcing
+----1H--,2C,3 or 4 Card Limit Raise (Drury)
+----1H--,2D,
+----1H--2D--,2N,
+----1S--,1N,Semi Forcing
+----1S--,2C,3 or 4 Card Limit Raise (Drury)
+----1S--,2D,
+----1S--2C--,3D,
+----1S--2C--2D--,2S,
+----1S--2D--,2N,
+----1S--2D--2N--,3S,

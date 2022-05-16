@@ -1,0 +1,1025 @@
+BBOalert
+
+# include prealert.txt
+//BBOalert
+//Script,onDataLoad,PREV_OPPS = "";
+//Script,onAuctionBegin
+if ((myDirection() == "S") || (myDirection() == "W")) {
+	ACT_OPPS = myOpponent(true) + "+" + myOpponent(false);
+	if (ACT_OPPS != PREV_OPPS) {
+		setChatMessage(findShortcut("ww"), true);
+		PREV_OPPS = ACT_OPPS;
+	}
+}
+//Script
+
+# include stanscripts.hdr
+//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
+
+Option,StanMetzScripts
+
+Option,ChangeCardColor ON
+//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
+Option,ChangeCardColor OFF
+//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
+
+Option,HoverBBOalertTab ON
+//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
+Option,HoverBBOalertTab OFF
+//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
+#
+
+Option,ModifyOKButton ON
+//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(true);
+Option,ModifyOKButton OFF
+//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
+#
+Option
+
+# include pattihartley.hdr
+//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
+
+Option,HartleyAndCampbell
+#
+#Option,ChangeCardColor OFF
+#//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
+#Option,ChangeCardColor ON
+#//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
+#
+#Option,HoverBBOalertTab OFF
+#//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
+#Option,HoverBBOalertTab ON
+#//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
+#
+Option
+Shortcut,ww,Toucan Club 2/1 15-17 NT Upside Down Attitude\nShortcut,1C_,Transfers after 1!C Openings
+# Shortcut,1D_,6+!D or 4+!D with singleton or void
+
+Shortcut,W0,2/1; 14+-17 NT; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
+
+Shortcut,W1,Full CC http://bridge.celestial.com/CCs/billand_ted_bartunek_toucan_club.pdf
+
+Shortcut,W2,UDCA; Trump Suit Preference; Rusinow Leads vs Suits; 3rd from Even Low from Odd; Journalist Leads vs Notrump; Low from Interest
+
+Option
+
+# include shortcuts.txt
+Shortcut,SLC,System Leads and Carding?
+Shortcut,SJS,Soloway Jump Shift (Strong suit with possibly only one loser opposite singleton)
+Shortcut,nexs,North Extremely Slow
+Shortcut,eexs,East Extremely Slow
+Shortcut,sexs,South Extremely Slow
+Shortcut,wexs,West Extremely Slow
+Shortcut,TC,Texas !C
+Shortcut,TD,Texas !D
+Shortcut,TH,Texas !H
+Shortcut,TS,Texas !S
+Shortcut,XC,Transfer->!C
+Shortcut,XD,Transfer->!D
+Shortcut,XH,Transfer->!H
+Shortcut,XS,Transfer->!S
+Shortcut,CC,Control !C
+Shortcut,CD,Control !D
+Shortcut,CH,Control !H
+Shortcut,CS,Control !S
+Shortcut,SA_,Super Accept
+Shortcut,SC,Stopper !C
+Shortcut,SD,Stopper !D
+Shortcut,SH,Stopper !H
+Shortcut,SS,Stopper !S
+Shortcut,KE,Even number of key cards
+Shortcut,KC,Odd number of key cards; Control !C
+Shortcut,KD,Odd number of key cards; Control !D
+Shortcut,KH,Odd number of key cards; Control !H
+Shortcut,KS,Odd number of key cards; Control !S
+Shortcut,LNA,Lead against NT : A = typically AKx
+Shortcut,LNK,Lead against NT : K = typically AKJ AKQ KQJ or KQT
+Shortcut,LNQ,Lead against NT : Q = typically QJT or QJ9
+Shortcut,LNJ,Lead against NT : J = JTxx No card higher
+Shortcut,LNT,Lead against NT : T = HT9x at least one of A K or Q
+Shortcut,LSA,Lead against suit : A = A[x] may have K shortness
+Shortcut,LSK,Lead against suit : K = AKx Second of touching honors
+Shortcut,LSQ,Lead against suit : Q = KQx Second of touching honors
+Shortcut,LSJ,Lead against suit : J = typically QJx
+Shortcut,LST,Lead against suit : 10 = typically J10x
+Shortcut,LFI,Low from interest
+Shortcut,UD_,UDCA; Trump Suit Preference
+Shortcut,LS_,Rusinow vs Suits; Spot Leads 3rd from Even Low from Odd
+Shortcut,LN_,Journalist vs NT; Spot Leads Low from Interest
+
+# include 2NTOpening.txt
+Option,2NTOpening Puppet Stayman
+,2N,20-21 May have 5-card major
+2N--,3C,Puppet Stayman
+2N--3C--,3D,No 5 card major at least 1 4 card major
+2N--3C--3D--,4D,Both Majors
+2N--3C--3D--,3H,4!S fewer !H
+2N--3C__3D--,3S,4!H fewer !S
+2N--3C--3D--,3N,No 4 card major
+2N--3C--,3N,No 4 or 5 card major
+2N--3C--,3H,5 !H
+2N--3C--,3S,5 !S
+2N--,3D,Transfer -> !H
+2N--,3H,Transfer -> !S
+2N--,4D,Transfer to !H
+2N--,4H,Transfer to !S
+2N--,4C,1430 Gerber
+2N--4C--,4D,1 or 4 Aces
+2N--4C--,4H,0 or 3 Aces
+2N--4C--,4S,2 Aces I hate my hand
+2N--4C--,4N,2 Aces I love my hand
+Option,2NT3S MSS Off
+2N--,3S,
+Option,2NT3S MSS On
+2N--,3S,Minor Suit Stayman#https://www.bridgebum.com/minor_suit_stayman.php
+2N--3S--,3N,No 4 card minor
+2N--3S--,4C,4+!C may have 4!D
+2N--3S--,4D,4+!D fewer than 4!C
+Option,3NTOpening Gambling
+,3N,Gambling 3NT 7+Solid !C or !D#Nothing Higher than Queen outside
+Option,3NTOpening Acol/NAMYATS
+,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
+
+# include 1MOpenings.txt
+Option,1MOpening_2/1_Vanilla_@1@2
+,1H,
+,1S,
+1H--,1N,Forcing
+1S--,1N,Forcing
+--1H--,1N,Forcing
+--1S--,1N,Forcing
+1H--1N--2[CD]--,2N,< 3!H Balanced Invitational
+1S--1N--2[CD]--,2N,< 3!S Balanced Invitational
+1H__,2S,Weak Jump Shift
+1H__,3C,Weak Jump Shift
+1H__,3D,Weak Jump Shift
+1H--,3N,13-15 Balanced 3-card support NT stoppers
+1S__,3C,Weak Jump Shift
+1S__,3D,Weak Jump Shift
+1S__,3H,Weak Jump Shift
+1S--,3N,13-15 Balanced 3-card support NT stoppers
+1H--,2N,15+ Jacoby 2NT Standard Responses
+1H--2N--,3C,Short !C rebid shows void
+1H--2N--,3D,Short !D rebid shows void
+1H--2N--,3H,Strong !H no shortness
+1H--2N--,3S,Short !S rebid shows void
+1H--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1H--2D--3C--3H--,3N,Non-Serious 3NT; invites control bids
+1S--2D--2N--3S--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1H--2N--,4C,5+ good !C
+1H--2N--,4D,5+ good !D
+1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1S2C2H3C,Db,Support Double 3 !H
+1S2D2H3D,Db,Support Double 3 !H
+1H--1N--2S--,2N,Ingberman; weak xfer to !C
+1HDb,2D,Constructive !H raise
+1HDb,2H,Weak !H raise
+1SDb,2H,Constructive !S raise
+1SDb,2S,Weak !S raise
+# Kickback Sequences
+1H--2H--2S--3D--,4S,Kickback 1430 Keycard Ask
+1H--2H--2S--3D--4S--,4N,1 or 4 keycards
+1H--2H--2S--3D--4S--4N--,5C,Asking for Q!H
+1H--2H--2S--3D--4S--4N--5C--,5H,No Q!H
+1S--2N--3S--4N--,5D,0 or 3 keycards
+Option,1MOpening_Drury_On_@3@4
+------1H--,1N,Semi Forcing
+------1H--,2C,3Card Limit Raise (Drury)
+------1H--,2D,4Card Limit Raise (Drury)
+------1H--2D--,2N,Shortness?
+------1H--2D--2N--,2H,No Shortness
+------1S--,1N,Semi Forcing
+------1S--,2C,3Card Limit Raise (Drury)
+------1S--,2D,4Card Limit Raise (Drury)
+------1S--2C--,3D,Shortness ?
+------1S--2C--2D--,2S,No shortness
+------1S--2D--,2N,Shortness?
+------1S--2D--2N--,3S,No Shortness
+----1H--,1N,Semi Forcing
+----1H--,2C,3Card Limit Raise (Drury)
+----1H--,2D,4Card Limit Raise (Drury)
+----1H--2C--,3D,Shortness ?
+----1H--2D--,2N,Shortness?
+----1S--,1N,Semi Forcing
+----1S--,2C,3Card Limit Raise (Drury)
+----1S--,2D,4Card Limit Raise (Drury)
+----1S--2C--,3D,Shortness ?
+----1S--2D--,2N,Shortness?
+Option,KokishGT
+1H--2H--,2S,Kokish GT where could you help?
+1H--2H--2S--,2N,Help in !S
+1H--2H--2S--,3C,Help in !C
+1H--2H--2S--,3D,Help in !D
+1H--2H--2S--,3H,No help
+1H--2H--,3H,Trump Quality Ask
+1H--2H--3H--,3N,Bad !H good hand for NT
+1H--2H--3H--,4H,Good !H good hand
+1H--2H--3H--,--,Bad !H weak
+# spades
+1S--2S--,2N,Kokish GT where could you help?
+1S--2S--2N--,3C,Help in !C
+1S--2S--2N--,3D,Help in !D
+1S--2S--2N--,3H,Help in !H
+1S--2S--2N--,3S,No help
+1S--2S--,3S,Trump Quality Ask
+1S--2S--3S--,--,Bad !S weak
+1S--2S--3S--,3N,Bad !S good hand for NT
+1S--2S--3S--,4S,Good !S good hand
+Option
+Option,1MOvercall1NT Robeson
+# From Andy Robeson's Partnership Bidding Pg 42
+1[CDHS]1N,Db,Penalty forcing to 2!S X
+1H1N,2C,Majors -- 5+!S Hx+!H
+1S1N,2C,Majors -- 5+!H Hx+!S
+1H1N,2D,Sound !H Raise
+1S1N,2D,Sound !S Raise
+1H1N,2S,Natural; No fit; non-forcing
+1S1N,2H,Natural; No fit; non-forcing
+# Preemptive raises of Opener's major
+1H1N,2H,Weak
+1H1N,3H,Weak
+1H1N,4H,Weak
+1S1N,2S,Weak
+1S1N,3S,Weak
+1S1N,4S,Weak
+# Fit-jumps
+1[HS]1N,3C,Fit-Jump, good 5+!C with support
+1[HS]1N,3D,Fit-Jump, good 5+!D with support
+1H1N,3S,Fit-Jump, good 5+!S with support
+1S1N,3H,Fit-Jump, good 5+!H with support
+Option,1MOvercall1NT Off
+Option
+
+# include 2COpening.txt
+Option,2COpening ControlSteps On
+2C--,2D,1 King or fewer (Kokish Relays on)
+2C--,2H,2 Controls Ace or 2 Kings
+2C--,2S,3 Controls Ace and King
+2C--,2N,3 Controls 3 Kings
+2C--,3C,4 Controls Ace=2 King=1
+2C--,3D,5 Controls Ace=2 King=1
+2C--2[DHS]--2N--,3C,Puppet Stayman
+Option,2COpening ControlSteps Off
+2C--,2D,Waiting
+2C--2D--2.,3[CD],Cheapest Minimum
+2C--2[DHS]--2N--,3C,Puppet Stayman
+Option,2C2D KokishRelay
+2C--2D--,2H,Relay to 2!S
+2C--2D--2H--,2S,Mandatory Response to 2!H
+2C--2D--2H--2S--,2N,25+ HCP Balanced Systems On
+2C--2D--2H--2S--2N--,3C,Puppet Stayman
+2C--2D--2H--2S--2N--,3D,Xfer to !H
+2C--2D--2H--2S--2N--3D--,3H,Fewer than 4!H
+2C--2D--2H--2S--2N--3D--,4H,4+ !H
+2C--2D--2H--2S--2N--,3H,Xfer to !S
+2C--2D--2H--2S--2N--3H--,4S,4+ !S
+2C--2D--2H--2S--2N--3H--,3S,Fewer than 4!S
+2C--2D--2H--2S--,3C,!H and !C
+2C--2D--2H--2S--,3D,!H and !D
+2C--2D--2H--2S--,3H,!H and no second suit
+2C--2D--,2S,Relay to 2!NT
+2C--2D--2S--,2N,Mandatory Response to 2!S
+2C--2D--2S--2N--,3C,!S and !C
+2C--2D--2S--2N--,3D,!S and !D
+2C--2D--2S--2N--,3H,!S and !H with longer !S
+2C--2D--2S--2N--,3S,!S and no 2nd suit
+Option
+2C--2D--,2N,22-24 HCP Balanced Systems On
+2C--2H--,2N,22-24 HCP Balanced Systems On
+2C--2S--,2N,22-24 HCP Balanced Systems On
+2C--2H__2N--,3D,Transfer !H
+2C--2S__2N--,3D,Transfer !H
+2C--2S__2N--,3H,Transfer !S
+2C--2H__2N--,3H,Transfer !S
+2C--2D--2N--3D--,3H,fewer than 4 !H
+2C--2D--2N--3H--,3S,fewer than 4 !S
+Option
+2C--2H--3H--4H--,4S,Kickback; Keycard for !H
+2C--2H--3H--4H--4S--4N--,5C,Q of !H Ask (Kickback)
+
+# include 2DHSOpenings.txt
+Option,2DWeak_Simple_@1@2
+,2D,5-11 Weak 6+!D
+Option,2DWeak_Simple_@3
+,2D,5-11 Weak 5+!D
+Option,2DWeak_Simple_@4
+,2D,10-15 6+!D
+Option,2HSWeak_@1@2
+,2H,5-11 Weak 6+ !H
+,2S,5-11 Weak 6+ !S
+Option,2HSWeak_@3
+,2H,5-11 Weak 5+ !H
+,2S,5-11 Weak 5+ !S
+Option,2HSWeak_@4
+,2H,10-15 6+!H
+,2S,10-15 6+!S
+Option,2DQuery Ogust
+2D--,2N,Ogust
+2D--2N--,3C, Bad Hand bad Suit
+2D--2N--,3D, Bad Hand good Suit
+2D--2N--,3H, Good Hand Good Suit
+2D--2N--,3S, Good Hand Good Suit
+2DDb,2H,McCabe#Lead Directing Partner should raise to 3!D
+2DDb,2S,McCabe#Lead Directing Partner should raise to 3!D
+2DDb,3C,McCabe#Lead Directing Partner should raise to 3!D
+Option,2HSQuery Ogust
+2H--,2N,Ogust
+2H--2N--,3C, Bad Hand bad Suit
+2H--2N--,3D, Bad Hand good Suit
+2H--2N--,3H, Good Hand Good Suit
+2H--2N--,3S, Good Hand Good Suit
+2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
+2S--,2N,Ogust
+2S--2N--,3C, Bad Hand bad Suit
+2S--2N--,3D, Bad Hand good Suit
+2S--2N--,3H, Good Hand Bad Suit
+2S--2N--,3S, Good Hand Good Suit
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
+Option,2HSQuery Feature
+2H--,2N,Feature Request
+2H--2N--,3C,Feature in !C
+2H--2N--,3D,Feature in !D
+2H--2N--,3H,No Feature
+2S--,2N,Feature Request
+2S--2N--,3C,Feature in !C
+2S--2N--,3D,Feature in !D
+2S--2N--,3H,Feature in !H
+2S--2N--,2S,No Feature
+Option,2H2SMcCabe
+2HDb,2C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3C,McCabe#Lead Directing Partner should raise to 3!H
+2HDb,3D,McCabe#Lead Directing Partner should raise to 3!H
+2SDb,3C,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3D,McCabe#Lead Directing Partner should raise to 3!S
+2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
+Option
+
+# include 2DFlannery.txt
+Option,Flannery
+,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
+1H--,1N,Forcing; May have 4!S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+--1H--,1N,Forcing; May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+----1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+------1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+--1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+----1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+------1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+# Queries
+2D__,2N,Ask for description
+2D__2N--,3C,4=5=1=3 3!C
+2D__2N--,3D,4=5=3=1 3!D
+2D__2N--,3H,4=5=2=2 minimum
+2D__2N--,3N,4=5-x-x Balanced Maximum
+2D__2N--,3S,4=6=x-x 6!H
+2D__2N--,4C,4=5=0=4 4!C
+2D__2N--,4D,4=5=4=0 4!D
+2DDb,2H,
+2DDb,2S,
+
+# include XYZ.txt
+Option,XYZ
+1C--1D--1N--,2C,Forcing, Invitational
+1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+1C__1D__1H__,2C,Invitational Force 2!D
+1...1...1...,2C,Invitational Force 2!D
+1C__1D__1H__,2D,Artifical Game Force
+1C__1D__1N__,2C,Invitational Force 2!D
+1C__1D__1N__,2D,Artifical Game Force
+1C__1D__1S__,2C,Invitational Force 2!D
+1C__1D__1S__,2D,Artifical Game Force
+1C--1H--1N--,2C,Invitational force 2!D by Opener
+1...1...1...2C..,2D,Required response
+1...1...1...,2D,Artificial Game Forcing
+1C--1H--1N--,2N,Fewer than 4!C
+1C__1H__1N__2C__2D__,2N,Invitational 4+!C
+1C__1H__1N__,2N,Invitational Fewer 4!C
+1C__1H__1S__,2C,Invitational Forces 2!D
+1C__1H__1S__2C__2D__,2N,Invitational 4+!C
+1C__1H__1S__,2D,Artificial Game Force
+1C--1H--1S--2D--,2H,3-card !H Support
+1C__1H__1S__,2H,5+!H Less than invitational
+1C__1H__1S__,2N,Invitational Fewer 4!C
+1C__1S__1N--,2C,Invitational Force 2!D
+/1[CDH]--1[DHS]--1N--2C--/,2D,Required after 2!C
+1C__1S__1N__,2D,Artificial Game Force
+1C--1S--1N--2D--,2S,3!S fewer than 4!H
+1C--1S--1N--2D--,2H,4!H may have 3!S
+1D__1S__1N__,2C,Invitational Force 2!D
+1D__1S__1N__,2D,Artificial Game Force
+1D__1S__1N__,2N,Invitational < 4!D Support
+1D__1S__1N__,2S,5+!S Less than invitational
+# Slam Bidding Sequences
+1C--1H--,1S,4!S may have 3!H Probably balanced
+1C--1H--1S--2D--2H--,3H,6+ !H
+1C--1H--1S--2D--2H--3H--,4H,No slam interest
+1C--1H--1S--2D--2H--3H--4H--,4S,Kickback 1430 Keycard Asc
+1C--1H--1S--2D--2H--3H--4H--4S--,5C,0 or 3 keycards
+
+# include defensemisc.txt
+Option
+1D--1H2C,Db,Support 3!H
+1D1H1S2H,3H,Strong support of !S
+# Michaels Cue Bids
+1C,2C,Majors
+1C----,2C,Majors
+1D,2D,Majors
+1D----,2D,Majors
+1C,2D,Weak
+1C--1D,2H,weak
+1C,2N,!D + !H two suiter
+1D,2N,!C + !H two suiter
+1H,2H,!S + Minor
+1S,2S,!H + Minor
+1H--2H,3H,Michaels !S + minor
+1S--2S,3S,Michaels !H + minor
+# Unusual NT
+1[HS],2N,!C + !D two-suiter
+# Unusual v Unusual
+1H2N,Db,Penalize one of more of their suits
+1H2N,3C,Limit Raise of Better for !H
+1H2N,3D,5+!S 10+HCP
+1H2N,3H,Weak !H Raise
+1H2N,3S,6+!S Weak
+1S2N,Db,Penalize one of more of their suits
+1S2N,3C,5+!H 10+HCP
+1S2N,3D,Limit Raise of Better for !S
+1S2N,3H,6+!H Weak
+1S2N,3S,Weak !S Raise
+# Weak 2s
+2[DHS]2N--,3C,Puppet Stayman
+2[DHS]2N--,3D,Transfer to !H
+2D----2N--,3D,Transfer to !H
+2D----2N--,3H,Transfer to !S
+2H----2N--,3H,transfer to !S
+2[DHS]2N--,4D,Transfer to !H
+2[DHS]2N--,4H,Transfer to !S
+# 1NT Overcalls
+1[CDHS],1N,15-18 NT Balanced Systems On
+1[CDHS]1N--,2C,Stayman
+1[CDHS]1N--,2D,Transfer to !H
+1S1NDb,2D,transfer !H
+1[CDHS]1N--2D--,2H,Fewer than 4!H
+1[CDHS]1N--,2H,Transfer to !S
+1[CDHS]1N--,2S,Range Ask bid 3!C if accept invite
+1[CDHS]1N--2S--,2N,Refuse Invite
+1[CDHS]1N--2S--,3C,Accept Invite
+1[CDHS]1N--,2NT,Transfer to !D 3!D Super Accept
+1[CDHS]1N--2NT--,3C,Weak !D
+1[CDHS]1N--2NT--,3D,3+ good !D Super Accept
+1[CDHS]1N--,3C,Puppet Stayman
+1[CDHS]1N--,3D,5-5 Minors Game Forcing
+1[CDHS]1N--,3H,3=1=4-5 GF
+1[CDHS]1N--,3S,1=3=4-5 GF
+# Weak 3s
+3[CHS]Db--4D--,4H,Keycard for !D (Kickback)
+
+# include 1NTdef-suction.txt
+Option,1NTDefense Suction v Strong/Weak
+1N,[2-6]C,Single-Suit !D OR Two-Suited !H and !S
+1N[2-6]C--,[2-6]D,Required Relay
+1N----,[2-6]C,Single-Suit !D OR Two-Suited !H and !S
+1N----[2-6]C--,[2-6]D,Required Relay
+1N,[2-6]D,Single-Suit !H OR Two-Suited !S and !C
+1N[2-6]D--,[2-6]H,Required Relay
+1N----,[2-6]D,Single-Suit !H OR Two-Suited !S and !C
+1N----[2-6]D--,[2-6]H,Required Relay
+1N,[2-6]H,Single-Suit !S OR Two-Suited !C and !D
+1N[2-6]H--,[2-6]S,Required Relay
+1N----,[2-6]H,Single-Suit !S OR Two-Suited !C and !D
+1N----[2-6]H--,[2-6]S,Required Relay
+1N,[2-6]S,Two-Suited !C and !H OR !D and !S
+1N[2-6]S--,[2-6]N,Show Lower Suit
+1N2S--2N--,3C,!C and !H
+1N2S--2N--,3D,!D and !S
+1N----,[2-6]S,Two-Suited !C and !H OR !D and !S
+1N----[2-6]S--,[2-6]N,Show Lower Suit
+1N,[2-6]N,Single-Suit !C OR Two-Suited !D and !H
+1N[2-6]N--,[2-6]C,Required Relay
+1N----,[2-6]N,Single-Suit !C OR Two-Suited !D and !H
+1N----[2-6]N--,[2-6]C,Required Relay
+1N,Db,Single-Suit !C OR Two-Suited !D and !H
+1N,2N,Single-Suit !C OR Two-Suited !D and !H
+1N----,Db,Single-Suit !C OR Two-Suited !D and !H
+1N----,2N,Single-Suit !C OR Two-Suited !D and !H
+1NDb--,2C,Required Relay
+1N2N--,3C,Required Relay
+Option,2NTDefense Suction
+2N,3N,Single-Suit !C OR Two-Suited !D and !H
+2N3N--,4C,Required Relay
+2N---,3N,Single-Suit !C OR Two-Suited !D and !H
+2N---3N,4C,Required Relay
+2N,[3-6]C,Single-Suit !D OR Two-suited !H and !S
+2N[3-6]C--,[2-6]D,Required Relay
+2N,[3-6]D,Single-Suit !H OR Two-Suited !S and !C
+2N[3-6]D--,[2-6]H,Required Relay
+2N,[3-6]H,Single-Suit !S OR Two-Suited !C and !D
+2N[3-6]H--,[2-6]S,Required Relay
+2N,[3-6]S,Two-Suits !C and !H OR !D and !S
+2N[3-6]S--,[2-6]N,Show Lower Suit
+2N,[3-6]N,Single-Suit !C OR Two-Suited !D and !H
+2N[3-6]N--,[2-6]C,Required Relay
+
+# include 1CDef-Suction.txt
+# Defense Against Strong Club
+Option,1CDefense Standard
+1C,Db,Take-out Double
+Option,1CDefense Precision
+1C,Db,Single-Suit !D OR Two-Suit !H and 1S
+1C,2C,Single-Suit !D OR Two-Suit !H and 1S
+1C,3C,Single-Suit !D OR Two-Suit !H and 1S
+1C,4C,Single-Suit !D OR Two-Suit !H and 1S
+1C,1D,Single-Suit !H OR Two-Suit !S and 1C
+1C,2D,Single-Suit !H OR Two-Suit !S and 1C
+1C,3D,Single-Suit !H OR Two-Suit !S and 1C
+1C,4D,Single-Suit !H OR Two-Suit !S and 1C
+1C,1H,Single-Suit !S OR Two-Suit !C and 1D
+1C,2H,Single-Suit !S OR Two-Suit !C and 1D
+1C,3H,Single-Suit !S OR Two-Suit !C and 1D
+1C,4H,Single-Suit !S OR Two-Suit !C and 1D
+1C,1S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,2S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,3S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,4S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,1N,Single-Suit !C OR Two-Suit !D and !H
+1C1N--,2C,Relay to !D
+1C,2N,Single-Suit !C OR Two-Suit !D and !H
+1C,3N,Single-Suit !C OR Two-Suit !D and !H
+1C,4N,Single-Suit !C OR Two-Suit !D and !H
+1C--1D,2C,Single-Suit !D OR Two-Suit !H and 1S
+1C2N--,3C,Relay to !D
+1C3N--,4C,Relay to !D
+1C4N--,5C,Relay to !D
+1C--1D,3C,Single-Suit !D OR Two-Suit !H and !S
+1C--1D,4C,Single-Suit !D OR Two-Suit !H and !S
+1C--1D,2D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,3D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,4D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,1H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,2H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,3H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,4H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,1S,Two-Suit in !C and !H OR !D and !S
+1C--1D,2S,Two-Suit in !C and !H OR !D and !S
+1C--1D,3S,Two-Suit in !C and !H OR !D and !S
+1C--1D,4S,Two-Suit in !C and !H OR !D and !S
+
+# include 2CDef-Suction.txt
+# Defense Against Strong 2 Club
+Option,2CDefense Strong
+2C,Db,!D or !H and !S
+2C,2D,!H or !S and !C
+2C,2H,!S or !C and !D
+2C,2S,!C and !H or !D and !S
+2C2S--,2N,Asks about suits
+2C,2N,!C or !D and !H
+2C2N--,3C,Required Response
+2C,3C,!D or !H and !S
+2C,3D,!H or !S and !C
+2C,3H,!S or !C and !D
+2C,3S,!C and !H or !D and !S
+2C3S--,3N,Asks about suits
+2C,4C,!D or !H and !S
+2C,4D,!H or !S and !C
+2C,4H,!S or !C and !D
+2C,4S,!C and !H or !D and !S
+2C4S--,4N,Asks about suits
+2C--2D,Db,!H or !S and !C
+2C--2D,2H,!S or !C and !D
+2C--2D,2S,!C and !H or !D and !S
+2C--2D,3C,!D or !H and !S
+2C--2D,3D,!H or !S and !C
+2C--2D,3H,!S or !C and !D
+2C--2D3S--,3N,Show lowest suit of 2-suiter
+2C--2D,3S,!C and !H or !D and !S
+2C--2D,4C,!D or !H and !S
+2C--2D,4D,!H or !S and !C
+2C--2D,4H,!S or !C and !D
+2C--2D,4S,!C and !H or !D and !S
+Option,2CDefense Precision
+2C,Db,Take-out Double
+# Suction off against Precision
+2N,3C,
+2N,3D,
+2N,3H,
+2N,3S,
+
+# include 1CToucan.txt
+Option
+Shortcut,ww,Toucan Club (Short !C with transfer responses)\n2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\nSystem Leads and Carding?\n
+Shortcut,1C_,Transfers after 1!C Openings
+Shortcut,1D_,6+!D or 4+!D with singleton or void
+Option,Toucan Club
+,1C,2+!C no 5-card Major -- Transfers On
+1C__,1D,4+!H Transfer
+1C__1D--,1H,3!H
+1C--1D--1H--,1S,4!H and 4!S
+1C--1D--1H--,1N,To Play
+1C--1D--1H--,2C,XYZ Invitational Requires 2!D
+1C--1D--1H--2C--,2D,XYZ Required Response
+1C--1D--1H--2C--2D--,2H,5+!H Invitational
+1C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
+1C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
+1C--1D--1H--,2D,Artificial Game Force (XYZ)
+1C--1D--1H--2D--,2S,4!S (XYZ)
+1C--1D--1H--2D--,2N,Fewer than 4!S (XYZ)
+1C--1D--1H--,2H,5+1H Less than invitational
+1C--1D__,Db,3!H Support
+1C__1D__,1S,4!S fewer than 3!H
+1C__1D__,1N,Balanced 11-14 fewer than 3!H fewer than 4!S
+1C__1D__,2H,4!H
+1C1DDb--,2H,4!H
+1C--1D--2H--,2S,Where do you have help? Kokish
+1C--1D--2H--2S--,2N,Help in !S Kokish
+1C--1D--2H--2S--,3C,Help in !C Kokish
+1C--1D--2H--2S--,3D,Help in !D Kokish
+1C--1D--2H--2S--,3H,No game interest
+1C--1D--2H--,2N,!S Short Suit GT Kokish
+1C--1D--2H--,3C,!C Short Suit GT Kokish
+1C--1D--2H--3C--,3D,Help in !D?
+1C--1D--2H--3C--3D--,3H,No Help
+1C--1D--2H--3C--,3H,Help in !H?
+1C--1D--2H--3C--3H--,3H,No Help
+1C--1D--2H--,3D,!D Short Suit GT Kokish
+1C--1D--2H--,3H,Kokish Trump Suit Quality Ask
+# Opener with 18-19 no major support
+1C--1D--,2N,Balanced 18-19 Fewer 3!H and fewer 4!S
+1C--1D--2N--,3C,Shows length in !D
+1C--1D--2N--,3D,5+ !H
+1C--1D--2N--,3H,4!S and 4!H
+1C--1D--2N--,3S,6+!C Potential Slam Interest
+1C--1D--2N--,3N,To Play
+1C--1D--2N--,4D,6+ !H
+1C--1D--,3H,4!H 16-18 Support Points
+1C--1D--,3N,Strong hand long !C and stoppers
+1C--1D--,4C,4!H Strong !C likely 1=4=1=7
+1C--1D--,4D,4!H strong playing Void !D
+1C--1D--,4H,4!H 19-21 Support Points
+1C--1D--2N--,4C,1430 Gerber
+1C--,1H,Transfer to !S
+1C--1H--,1S,3-Card !S Support
+1C--1H--,2N,Balanced 18-19 Fewer 3!S possibly 4!H
+1C--1H--,4C,4-Card Support -- Powerful !C suit
+1C--1H--1S--,1N,To Play
+1C--1H--1S--,2C,Artificial Invitational Req 2D (XYZ)
+1C--1H--1S--1N--,2N,18-19
+1C--1H--1S--2C--,2D,Required (XYZ)
+1C--1H--1S--2C--2D--,2H,5+!S and 4+!H (XYZ)
+1C--1H--1S--2C--2D--,2S,5+!S (XYZ)
+1C--1H--2N--,3C,!D Length
+1C--1H--2N--,3H,4!S and 4!H
+1C--1H--2N--,3N,To Play
+1C--1H--2N--,3S,4+!C with slam interest
+1C--1H--2N--,4C,1430 Gerber
+1C--1H--2N--,4H,6+ !S
+# Stronger responses to 1C--,1D,
+1C--1D--,2D,Strong Jump Shift with !C and !H
+1C--1D--,2S,Strong Jump Shift with !C and !S
+1C--1D--,[34]H,Standard Strong !H Raise
+1C__,1H,4+!S Transfer May be 5+=4+=x=x
+1C__1H__,1S,3!S
+1C--1H--,2S,4!S
+1C--1H--1S--,2D,Artificial GF XYZ
+1C--1H--1S--2D--,2H,4!H
+1C--1H--,1N,Balanced 11-14 Fewer than 3!S
+1C__1H__,Db,3!S
+1C__1H__,2S,4!S
+1C1H,Db,4+!S Negative X
+1C1S,Db,4+!H Negative Double
+# Stronger responses to 1C--,1H,
+1C--1H--,2D,Strong Jump Shift with !C and !D
+1C--1H--,[34]S,Standard Strong !S Raise
+1C--1H--,4H,!H Void Slammish
+1C__,1S,Suggests Opener bid 1NT
+1C__1S--,1N,Responder may pass; XYZ on
+1C--1S--1N--,2C,Invitational req 2!D (XYZ)
+1C--1S--1N--,2D,Artificial GF (XYZ)
+1C--1S--1N--,2H,Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--2H--,[23]N,Not good support for !H
+1C--1S--1N--,2S,Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--2S--,[23]N,Not good support for !S
+1C--1S--1N--,3C,Slammish Potential#Weak !C denying 2 of top 3 honors
+1C--1S--1N--3C--,3N,Not good support for !C
+1C__,1N,Weak hand with !C or want lead to Responder
+# Transfer to 2D
+1C--,2C,5+!D indeterminate strength
+1C1H,2C,Transfer !D
+1C1S,2C,Transfer !D
+1C__2C__,2D,Accepts Transfer bid shortness
+1C1D,Db,Transfer to !H
+1C1H,Db,Transfer to !S
+1C1D2C--,2D,Accepts Transfer bid shortness
+1C1H2C--,2D,Accepts Transfer bid shortness
+1C1S2C--,2D,Accepts Transfer bid shortness
+1C__2C--,2H,4+!D Shortness in !H
+1C__2C--,2S,4+!D Shortness in !S
+1C--2C--,2N,18-19HCP Balanced
+1C__2C--,3H,4+!D void in !H
+1C__2C--,3S,4+!D void in !S
+1C__2C--,2H,4+!D; short !H; Minimum Values
+# Soloway Jump Shifts
+1C--,2D,Transfer to !H Slammish opposite singleton
+1C--2D--,2H, Accepts Transfer; bid shortness or NT
+1C--2D--2H--,2S,Short !S
+1C--2D--2H--,3C,Short !C
+1C--2D--2H--,3D,Short !D
+1C--2D--2H--,3H,Control Bid 1st or 2nd round
+1C--2D--2H--,3N,Non-Serious 3NT make control bids or 4!H
+1C--2D--2H--,4H,To Play
+1C--2D--2H--,4S,Kickback 1430 Keycard for !H
+1C--2D--2H--,4N,Exclusion Keycard void !S
+1C--2D--2H--,5C,Exclusion Keycard void !5C
+1C--2D--2H--,5D,Exclusion Keycard void !5D
+1C--,2H,Transfer to !S Slammish opposite singleton
+1C--2D--2H--,2N,No Shortness
+1C--2H--,2S,Accepts Transfer
+1C--2H--2S--,2N,No Shortness
+1C--2H--2S--,3C,Short !C with slam interest
+1C--2H--2S--,3D,Short !D with slam interest
+1C--2H--2S--,3H,Short !H with slam interest
+1C--,3C,Transfer to !D#Slammish opposite singleton
+1C--3C--,3D, Accepts Transfer
+1C--3C--3D--,3H,Short !H with slam interest
+1C--3C--3D--,3S,Short !S with slam interest
+1C--3C--3D--,3N,No Shortness
+1C--,2S,Long !C either weak or strong
+1C--2S--,3C,To Play?
+1C--2S--3C--,3D,Strong hand; singleton !D
+1C--2S--3C--,3H,Strong hand; singleton !H
+1C--2S--3C--,3S,Strong hand; singleton !S
+1C--2S--3C--,4D,Strong hand; void !D
+1C--2S--3C--,4H,Strong hand; void !H
+1C--2S--3C--,4S,Strong hand; void !S
+1C--2S--,2N,Opener is willing to play 3NT
+1C--2S--2N--,3C,To Play
+1C--2S--2N--,3N,To Play
+1C--2S--2N--,3D,Strong hand; singleton !D
+1C--2S--2N--,3H,Strong hand; singleton !H
+1C--2S--2N--,3S,Strong hand; singleton !S
+1C--2S--2N--,4D,Strong hand; void !D
+1C--2S--2N--,4H,Strong hand; void !H
+1C--2S--2N--,4S,Strong hand; void !S
+# Game Forcing 5-5 minors
+1C--,2N,Game Forcing 5-5 minors
+1C--2N--,3C,Prefers !C
+1C--2N--3C--,4D,14-30 Kickback Key Card for !C
+1C--2N--3C--,4H,14-30 Kickback Key Card for !D
+1C--2N--,3D,Prefers !D
+1C--2N--,3H,Cue Bid !H with slam interest
+1C--2N--,3S,Cue Bid !S with slam interest
+1C--2N--,3N,No slam interest Pass or Correct
+# Page 11, 1C 3 and 4 level transfers
+1C--,3D,Transfer to !H
+1C--,3H,Transfer to !S
+1C--,3S,Transfer to !C
+1C--,4C,Keycard for !C
+1C--,4D,Transfer to !H
+1C--,4H,Transfer to !S
+# Page 11, 1C 1D/H 2NT
+1C--1C--,2NT,18-19 Bal. no 4CS for partner's major
+1C--1D--,2NT,18-19 Bal. no 4CS for partner's major
+# Page 12, strong jump shifts
+1C--1D--2D--,2S,Strong jump shift with !C and !S
+1C--1H--2D--,2S,Strong jump shift with !C and !S
+1C--1H--,3S,4+!S 16-18 HCP
+1C--1H--,4D,4+!S; strong playing; void !D
+1C--1H--,4S,4+!S 19-21 HCP
+# 1C 1D 4C and 1C 1H 4C
+# Page 13 Weak sequences
+1C--1H--1S--,P,0-4HCP possibly 5=5-x-x
+1C--1H--1N--,2H,0-4HCP 5=5-x-x
+# Long weak suit, slammish hand
+1C--1S--2N--,3C,Long weak !C Slammish
+1C--1S--2N--3C--,3N,Denies !C Fit; Slam Suitable
+1C--1S--2N--,3H,Long weak !H Slammish
+1C--1S--2N--3H--,3N,Denies !H Fit; Slam Suitable
+1C--1S--2N--3H--,4H,4!H Fit; Slam Unsuitable
+1C--1S--2N--,3S,Long weak !S Slammish
+1C--1S--2N--3S--,3N,Denies !S Fit; Slam Suitable
+1C--1S--2N--3S--,4S,4!S Fit; Slam Unsuitable
+# Page 15, 1D Openings
+,1D,6+!D or 4+!D side singleton or void
+1D--1H--,1N,3=1=5=4 distribution
+1D--1H--,2C,<3!H <4!S longer !C than !D
+1D--1H--,2D,<3!H <4!S longer !D than !C
+1D--1H--,2H,3-Card Support !H
+1D--1H--,3H,4-Card Support !H
+1D--1S--,1N,1=4=4=4 or 1=4=5=3 distribution
+1D--1S--,2C,<3!S longer !C than !D
+1D--1S--,2D,<3!S longer !D than !C
+1D--1S--,2S,3-Card Support !S
+1D--1S--,3S,4-Card Support !S
+# Page 18
+1D--1H--,2NT,Good hand strong !D or 4CS for !H#Denies 3CS Relay to 3!C
+1D--1H--2N--,3C,Most normal hands
+1D--1H--2N--3C--,3D,Denies 4-Card Support !H
+1D--1H--2N--3C--,3H,4-Card Support !H Better than Minimum
+1D--1H--2N--,3D,Very Weak Pass or Correct
+1D--1S--,2NT,Good hand strong !D or 4CS for !S#Denies 3CS Relay to 3!C
+1D--1S--2N--,3C,Most normal hands
+1D--1S--2N--,3H,5+=5+=x-x#With 5=4 would accept the transfer
+1D--1S--2N--,3S,6+!S weak hand
+1D--1S--2N--,4H,5+=5+=-x-x with GF values
+1D--1S--2N--,4S,6+Good !S #suggesting this as final contract
+1D--1H--,3D,Strong hand with 3-Card !H Support
+1D--1S--,3D,Strong hand with 3-Card !S Support
+1D--1H--,4D,4-Card !H Support Very Distributional
+1D--1S--,4D,4-Card !S Support Very Distributional
+1D--,4D,Transer to !H
+1D--,4H,Transer to !S
+1D--2C--2S--3D--,4H,1430 Kickback Keycard for !D
+# Page 26 Competitive Bidding
+1C2C,2D,transfer to !H
+# TROTOD Transfer Responses Over Opponents Takeout Doubles
+1DDb,Rd,Transfer to !H
+1DDb,1H,Transfer to !S
+1DDb,1S,Transfer to NT
+1DDb,1N,Transfer to !C
+1HDb,1N,Transfer to !C
+1HDb,2C,Transfer to !D
+1HDb,2D,Constructive Raise of !H
+1HDb,2H,Weak Raise of !H
+1SDb,1N,Transfer to !C
+1SDb,2C,Transfer to !D
+1SDb,2D,Transfer to !H
+1SDb,2H,Constructive Raise of !S
+1SDb,2S,Weak Raise of !S
+Option,1NTOpening 15+-17 Advanced
+,1N,15-17
+1N--,2C,Stayman at least 1 4CM
+1N--,2D,Transfer !H
+1N--2D2S,--,Holding 2!H
+1N--2D2S,2H,Holding 3!H
+1N--2D2S----,3D,Transfer !H
+1N--2D--,2H,Fewer than 4!H
+1N--2D--,2N,4+!H 3=4=3=3 Maximum Values
+1N--2D--,3C,4+!H 2!C Maximum Values
+1N--2D--,3D,4+!H 2!D Maximum Values
+1N--2D--3D--,4D,Transfer !H
+1N--2D--,3H,4+!H Balanced Minimum
+1N--2D--3H--,4S,Keycard Ask in !H
+1N--2DDb,--,Fewer than 3!H
+1N--2DDb,2H,Three !H
+1N--2DDb,3C,4+!H 2!C Maximum Values
+1N--2DDb,3D,4+!H 2!D Maximum Values
+1N--2DDb,3H,4+!H Balanced Minimum
+1N--,2H,Transfer !S
+1N--2HDb,--,Fewer than 3!S
+1N--2HDb,2S,Three !S
+1N--2H--,2S,Fewer than 4!S
+1N--2H__,2N,4+!S 4=3=3=3 Maximum Values
+1N--2H__,3C,4+!S 2!C Maximum Values
+1N--2H__,3D,4+!S 2!D Maximum Values
+1N--2H__,3H,4+!S 2!H Maximum Values
+1N--2H__,3S,4+!S Balanced Minimum
+1N--2H--3C--,3H,Transfer !H
+1N--,2S,Range Ask or !C
+1N--2S--,2N,Minimum NT would not accept invitation
+1N--2S--,3C,Would accept invite to 3N
+1N--,2N,Transfer !D 3D is S/A
+1N--2N--,3C,Weak !D
+1N--2N--,3D,SuperAccept !D
+1N--,3C,Puppet Stayman
+1N--3C--,3D,No 5-card major; at least 1 4CD Major
+1N--3C--3D--,3H,Holding 4!S
+1N--3C--3D--,3S,Holding 4!H
+1N--3C--3D--,4D,4!H and 4!S; Take your pick
+1N--3C--,3H,5!H
+1N--3C--,3S,5!S
+1N--,3D,5-5 Minors GF
+1N--,3H,3=1-(5-4) GF
+1N--,3S,1=3-(5-4) GF
+1N--2C--2D--,3H,4!H 5+!S GF Smolen
+1N----2D--2H2N--,3C,Lebensohl response
+1N--2C--2D--,3S,4!S 5+!H GF Smolen
+# after 2C interference 
+1N2C,2D,Transfer !H
+1N2C2D--,2H,Fewer than 4!H
+1N2C2D--,2N,4+!H 3=4=3=3 Maximum Values
+1N2C2D--,3C,4+!H 2!C Maximum Values
+1N2C2D--,3D,4+!H 2!D Maximum Values
+1N2C2D--,3H,4+!H Balanced Minimum
+1N2C2DDb,--,Fewer than 3!H
+1N2C2DDb,2H,Three !H
+1N2C2DDb,2N,4+!H 3=4=3=3 Maximum Values
+1N2C2DDb,3C,4+!H 2!C Maximum Values
+1N2C2DDb,3D,4+!H 2!D Maximum Values
+1N2C2DDb,3H,4+!H Balanced Minimum
+1N2C,2H,Transfer !S
+1N2C2H--,2S,Fewer than 4 !S
+1N2C2HDb,--,Fewer than 3!S
+1N2C2HDb,2S,Three !S
+1N2C2HDb,2N,4+!S 3=4=3=3 Maximum Values
+1N2C2HDb,3C,4+!S 2!C Maximum Values
+1N2C2HDb,3D,4+!S 2!D Maximum Values
+1N2C2HDb,3H,4+!S 2!H Maximum Values
+1N2C2HDb,3S,4+!S Balanced Minimum
+1N2C,2S,Range Ask or !C
+1N2C2S__,2N,Minimum NT
+1N2C2S__2N--,3C,Max NT
+1N2C,2N,Transfer !D 3D is S/A
+1N2C2N--,3C,Weak !D
+1N2C2N--,3D,SuperAccept !D
+1N2C,3C,Low Info Puppet not 4=4 majors
+1N2C3C--,3D,No 5-card major
+1N2C3C--3D--,3H,Holding 4!S
+1N2C3C--3D--,3S,Holding 4!H
+1N2C3C--,3H,5!H
+1N2C3C--,3S,5!S
+1N2C,3D,5-5 Minors GF
+1N2C,3H,3=1-(5-4) GF
+1N2C,3S,1=3-(5-4) GF
+1N2CDb--2D--,3H,4!H 5+!S GF Smolen
+1N2C--2D--2H2N--,3C,Lebensohl response
+1N2CDb--2D--,3S,4!S 5+!H GF Smolen
+1N2D,Db,Negative DSI
+1N2D----,Db,Negative DSI
+# Rubensohl sequences
+1N2D,2H,To Play
+1N2D,2N,Transfer !C
+1N2D2N--,3C,Accept Transfer
+1N2D,2S,To Play
+1N2D,3C,Transfer !D
+1N2D,3H,Transfer !S
+1N2D,3S,Minors
+1N2H,2S,To Play
+1N2H,2N,Transfer !C
+1N2H,3C,Transfer !D
+1N2H,3D,4!S No heart stopper
+1N2H,3H,Transfer !S
+1N2H,3S,Minors
+1N2H,Db,Negative DSI
+1N2H----,Db,Negative DSI
+1N2H2N--,3C,Accept Transfer
+1N2S,2N,Transfer !C
+1N2S2N--,3C,Accept Transfer
+1N2S,3C,Transfer !D
+1N2S,3D,Transfer !H
+1N2S,3H,4+!H no !S Stop
+1N2S,Db,Negative DSI
+1N2S----,Db,Negative DSI
+1N2S2N--3C--,3S,4+!H GF
+Option,1NSouth_African_Texas on
+1N__,4C,Transfer 4!H South African Texas
+1N__,4D,Transfer 4!S South African Texas
+1N__,4H,To Play-South African Texas
+1N__,4S,To Play-South African Texas
+Option,1NSouth_African_Texas off
+1N__,4C,1430 Gerber
+1N__,4D,Transfer 4!H
+1N__,4H,Transfer 4!S
+# Manual adjustments after training table
+# Sun Apr 25 11:20:34 PDT 2021
+1C--1S--1N--,2N,Invitational Fewer than 4!C
+#Option,UMJOODO On
+#1D--,2H,5!S and 4!H or 5!H Constructive
+#1D--,2S,5!S 4!H or 5!H invitational
+#1D--2[HS]--,2N,Asks for Description
+#1D--2[HS]--2N--,3C,5=4-x-x minimum
+#1D--2[HS]--2N--,3D,5=4-x-x maximum
+#1D--2[HS]--2N--,3H,5=5-x-x minimum
+#1D--2[HS]--2N--,3S,5=5-x-x maximum
+Option
+1C2H,2S,
+1D2H,2S,
+
+# include pattihartley.extras
+# 4-5-x-x Flannery
+2D--2N--,3H,4=5=2=2 minimum
+2D--2N--,3S,4=5=2-2 maximum
+2D--2N--,3N,4=5-x-x Balanced Maximum
+[12]N--,3C,Puppet Stayman
+[12]N--3C--,3D,No 5 card major at least 1 4 card major
+[12]N--3C--3D--,4D,Both Majors
+[12]N--3C--3D--,3H,4!S fewer !H
+[12]N--3C--3D--,3S,4!H fewer !S
+[12]N--3C--3D--,3N,No 4 card major
+Option,1MOpening_Drury_On_@3@4
+------1[HS]--,2C,Limit Raise
+------1H--,1N,Semi Forcing
+------1H--,2C,3 or 4 Card Limit Raise (Drury)
+------1H--,2D,
+------1H--2D--,2N,
+------1S--,1N,Semi Forcing
+------1S--,2C,3 or 4 Card Limit Raise (Drury)
+------1S--,2D,
+------1S--2C--,3D,
+------1S--2C--2D--,2S,
+------1S--2D--,2N,
+------1S--2D--2N--,3S,
+----1[HS]--,2C,Limit Raise
+----1H--,1N,Semi Forcing
+----1H--,2C,3 or 4 Card Limit Raise (Drury)
+----1H--,2D,
+----1H--2D--,2N,
+----1S--,1N,Semi Forcing
+----1S--,2C,3 or 4 Card Limit Raise (Drury)
+----1S--,2D,
+----1S--2C--,3D,
+----1S--2C--2D--,2S,
+----1S--2D--,2N,
+----1S--2D--2N--,3S,
