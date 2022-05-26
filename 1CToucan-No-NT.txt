@@ -1,0 +1,254 @@
+BBOalert, Toucan Club
+Option
+Shortcut,ww,Toucan Club (Short !C with transfer responses)\n2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\nSystem Leads and Carding?\n
+Shortcut,1C_,Transfers after 1!C Openings
+Shortcut,1D_,6+!D or 4+!D with singleton or void
+Option,Toucan Club
+,1C,2+!C no 5-card Major -- Transfers On
+1C__,1D,4+!H Transfer
+1C__1D--,1H,3!H
+1C--1D--1H--,1S,4!H and 4!S
+1C--1D--1H--,1N,To Play
+1C--1D--1H--,2C,XYZ Invitational Requires 2!D
+1C--1D--1H--2C--,2D,XYZ Required Response
+1C--1D--1H--2C--2D--,2H,5+!H Invitational
+1C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
+1C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
+1C--1D--1H--,2D,Artificial Game Force (XYZ)
+1C--1D--1H--2D--,2S,4!S (XYZ)
+1C--1D--1H--2D--,2N,Fewer than 4!S (XYZ)
+1C--1D--1H--,2H,5+1H Less than invitational
+1C--1D__,Db,3!H Support
+1C__1D__,1S,4!S fewer than 3!H
+1C__1D__,1N,Balanced 11-14 fewer than 3!H fewer than 4!S
+1C__1D__,2H,4!H
+1C1DDb--,2H,4!H
+1C--1D--2H--,2S,Where do you have help? Kokish
+1C--1D--2H--2S--,2N,Help in !S Kokish
+1C--1D--2H--2S--,3C,Help in !C Kokish
+1C--1D--2H--2S--,3D,Help in !D Kokish
+1C--1D--2H--2S--,3H,No game interest
+1C--1D--2H--,2N,!S Short Suit GT Kokish
+1C--1D--2H--,3C,!C Short Suit GT Kokish
+1C--1D--2H--3C--,3D,Help in !D?
+1C--1D--2H--3C--3D--,3H,No Help
+1C--1D--2H--3C--,3H,Help in !H?
+1C--1D--2H--3C--3H--,3H,No Help
+1C--1D--2H--,3D,!D Short Suit GT Kokish
+1C--1D--2H--,3H,Kokish Trump Suit Quality Ask
+# Opener with 18-19 no major support
+1C--1D--,2N,Balanced 18-19 Fewer 3!H and fewer 4!S
+1C--1D--2N--,3C,Shows length in !D
+1C--1D--2N--,3D,5+ !H
+1C--1D--2N--,3H,4!S and 4!H
+1C--1D--2N--,3S,6+!C Potential Slam Interest
+1C--1D--2N--,3N,To Play
+1C--1D--2N--,4D,6+ !H
+1C--1D--,3H,4!H 16-18 Support Points
+1C--1D--,3N,Strong hand long !C and stoppers
+1C--1D--,4C,4!H Strong !C likely 1=4=1=7
+1C--1D--,4D,4!H strong playing Void !D
+1C--1D--,4H,4!H 19-21 Support Points
+1C--1D--2N--,4C,1430 Gerber
+1C--,1H,Transfer to !S
+1C--1H--,1S,3-Card !S Support
+1C--1H--,2N,Balanced 18-19 Fewer 3!S possibly 4!H
+1C--1H--,4C,4-Card Support -- Powerful !C suit
+1C--1H--1S--,1N,To Play
+1C--1H--1S--,2C,Artificial Invitational Req 2D (XYZ)
+1C--1H--1S--1N--,2N,18-19
+1C--1H--1S--2C--,2D,Required (XYZ)
+1C--1H--1S--2C--2D--,2H,5+!S and 4+!H (XYZ)
+1C--1H--1S--2C--2D--,2S,5+!S (XYZ)
+1C--1H--2N--,3C,!D Length
+1C--1H--2N--,3H,4!S and 4!H
+1C--1H--2N--,3N,To Play
+1C--1H--2N--,3S,4+!C with slam interest
+1C--1H--2N--,4C,1430 Gerber
+1C--1H--2N--,4H,6+ !S
+# Stronger responses to 1C--,1D,
+1C--1D--,2D,Strong Jump Shift with !C and !H
+1C--1D--,2S,Strong Jump Shift with !C and !S
+1C--1D--,[34]H,Standard Strong !H Raise
+1C__,1H,4+!S Transfer May be 5+=4+=x=x
+1C__1H__,1S,3!S
+1C--1H--,2S,4!S
+1C--1H--1S--,2D,Artificial GF XYZ
+1C--1H--1S--2D--,2H,4!H
+1C--1H--,1N,Balanced 11-14 Fewer than 3!S
+1C__1H__,Db,3!S
+1C__1H__,2S,4!S
+1C1H,Db,4+!S Negative X
+1C1S,Db,4+!H Negative Double
+# Stronger responses to 1C--,1H,
+1C--1H--,2D,Strong Jump Shift with !C and !D
+1C--1H--,[34]S,Standard Strong !S Raise
+1C--1H--,4H,!H Void Slammish
+1C__,1S,Suggests Opener bid 1NT
+1C__1S--,1N,Responder may pass; XYZ on
+1C--1S--1N--,2C,Invitational req 2!D (XYZ)
+1C--1S--1N--,2D,Artificial GF (XYZ)
+1C--1S--1N--,2H,Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--2H--,[23]N,Not good support for !H
+1C--1S--1N--,2S,Slammish Potential#Weak suit denying 2 of top 3 honors
+1C--1S--1N--2S--,[23]N,Not good support for !S
+1C--1S--1N--,3C,Slammish Potential#Weak !C denying 2 of top 3 honors
+1C--1S--1N--3C--,3N,Not good support for !C
+1C__,1N,Weak hand with !C or want lead to Responder
+# Transfer to 2D
+1C--,2C,5+!D indeterminate strength
+1C1H,2C,Transfer !D
+1C1S,2C,Transfer !D
+1C__2C__,2D,Accepts Transfer bid shortness
+1C1D,Db,Transfer to !H
+1C1H,Db,Transfer to !S
+1C1D2C--,2D,Accepts Transfer bid shortness
+1C1H2C--,2D,Accepts Transfer bid shortness
+1C1S2C--,2D,Accepts Transfer bid shortness
+1C__2C--,2H,4+!D Shortness in !H
+1C__2C--,2S,4+!D Shortness in !S
+1C--2C--,2N,18-19HCP Balanced
+1C__2C--,3H,4+!D void in !H
+1C__2C--,3S,4+!D void in !S
+1C__2C--,2H,4+!D; short !H; Minimum Values
+# Soloway Jump Shifts
+1C--,2D,Transfer to !H Slammish opposite singleton
+1C--2D--,2H, Accepts Transfer; bid shortness or NT
+1C--2D--2H--,2S,Short !S
+1C--2D--2H--,3C,Short !C
+1C--2D--2H--,3D,Short !D
+1C--2D--2H--,3H,Control Bid 1st or 2nd round
+1C--2D--2H--,3N,Non-Serious 3NT make control bids or 4!H
+1C--2D--2H--,4H,To Play
+1C--2D--2H--,4S,Kickback 1430 Keycard for !H
+1C--2D--2H--,4N,Exclusion Keycard void !S
+1C--2D--2H--,5C,Exclusion Keycard void !5C
+1C--2D--2H--,5D,Exclusion Keycard void !5D
+1C--,2H,Transfer to !S Slammish opposite singleton
+1C--2D--2H--,2N,No Shortness
+1C--2H--,2S,Accepts Transfer
+1C--2H--2S--,2N,No Shortness
+1C--2H--2S--,3C,Short !C with slam interest
+1C--2H--2S--,3D,Short !D with slam interest
+1C--2H--2S--,3H,Short !H with slam interest
+1C--,3C,Transfer to !D#Slammish opposite singleton
+1C--3C--,3D, Accepts Transfer
+1C--3C--3D--,3H,Short !H with slam interest
+1C--3C--3D--,3S,Short !S with slam interest
+1C--3C--3D--,3N,No Shortness
+1C--,2S,Long !C either weak or strong
+1C--2S--,3C,To Play?
+1C--2S--3C--,3D,Strong hand; singleton !D
+1C--2S--3C--,3H,Strong hand; singleton !H
+1C--2S--3C--,3S,Strong hand; singleton !S
+1C--2S--3C--,4D,Strong hand; void !D
+1C--2S--3C--,4H,Strong hand; void !H
+1C--2S--3C--,4S,Strong hand; void !S
+1C--2S--,2N,Opener is willing to play 3NT
+1C--2S--2N--,3C,To Play
+1C--2S--2N--,3N,To Play
+1C--2S--2N--,3D,Strong hand; singleton !D
+1C--2S--2N--,3H,Strong hand; singleton !H
+1C--2S--2N--,3S,Strong hand; singleton !S
+1C--2S--2N--,4D,Strong hand; void !D
+1C--2S--2N--,4H,Strong hand; void !H
+1C--2S--2N--,4S,Strong hand; void !S
+# Game Forcing 5-5 minors
+1C--,2N,Game Forcing 5-5 minors
+1C--2N--,3C,Prefers !C
+1C--2N--3C--,4D,14-30 Kickback Key Card for !C
+1C--2N--3C--,4H,14-30 Kickback Key Card for !D
+1C--2N--,3D,Prefers !D
+1C--2N--,3H,Cue Bid !H with slam interest
+1C--2N--,3S,Cue Bid !S with slam interest
+1C--2N--,3N,No slam interest Pass or Correct
+# Page 11, 1C 3 and 4 level transfers
+1C--,3D,Transfer to !H
+1C--,3H,Transfer to !S
+1C--,3S,Transfer to !C
+1C--,4C,Keycard for !C
+1C--,4D,Transfer to !H
+1C--,4H,Transfer to !S
+# Page 11, 1C 1D/H 2NT
+1C--1C--,2NT,18-19 Bal. no 4CS for partner's major
+1C--1D--,2NT,18-19 Bal. no 4CS for partner's major
+# Page 12, strong jump shifts
+1C--1D--2D--,2S,Strong jump shift with !C and !S
+1C--1H--2D--,2S,Strong jump shift with !C and !S
+1C--1H--,3S,4+!S 16-18 HCP
+1C--1H--,4D,4+!S; strong playing; void !D
+1C--1H--,4S,4+!S 19-21 HCP
+# 1C 1D 4C and 1C 1H 4C
+# Page 13 Weak sequences
+1C--1H--1S--,P,0-4HCP possibly 5=5-x-x
+1C--1H--1N--,2H,0-4HCP 5=5-x-x
+# Long weak suit, slammish hand
+1C--1S--2N--,3C,Long weak !C Slammish
+1C--1S--2N--3C--,3N,Denies !C Fit; Slam Suitable
+1C--1S--2N--,3H,Long weak !H Slammish
+1C--1S--2N--3H--,3N,Denies !H Fit; Slam Suitable
+1C--1S--2N--3H--,4H,4!H Fit; Slam Unsuitable
+1C--1S--2N--,3S,Long weak !S Slammish
+1C--1S--2N--3S--,3N,Denies !S Fit; Slam Suitable
+1C--1S--2N--3S--,4S,4!S Fit; Slam Unsuitable
+# Page 15, 1D Openings
+,1D,6+!D or 4+!D side singleton or void
+1D--1H--,1N,3=1=5=4 distribution
+1D--1H--,2C,<3!H <4!S longer !C than !D
+1D--1H--,2D,<3!H <4!S longer !D than !C
+1D--1H--,2H,3-Card Support !H
+1D--1H--,3H,4-Card Support !H
+1D--1S--,1N,1=4=4=4 or 1=4=5=3 distribution
+1D--1S--,2C,<3!S longer !C than !D
+1D--1S--,2D,<3!S longer !D than !C
+1D--1S--,2S,3-Card Support !S
+1D--1S--,3S,4-Card Support !S
+# Page 18
+1D--1H--,2NT,Good hand strong !D or 4CS for !H#Denies 3CS Relay to 3!C
+1D--1H--2N--,3C,Most normal hands
+1D--1H--2N--3C--,3D,Denies 4-Card Support !H
+1D--1H--2N--3C--,3H,4-Card Support !H Better than Minimum
+1D--1H--2N--,3D,Very Weak Pass or Correct
+1D--1S--,2NT,Good hand strong !D or 4CS for !S#Denies 3CS Relay to 3!C
+1D--1S--2N--,3C,Most normal hands
+1D--1S--2N--,3H,5+=5+=x-x#With 5=4 would accept the transfer
+1D--1S--2N--,3S,6+!S weak hand
+1D--1S--2N--,4H,5+=5+=-x-x with GF values
+1D--1S--2N--,4S,6+Good !S #suggesting this as final contract
+1D--1H--,3D,Strong hand with 3-Card !H Support
+1D--1S--,3D,Strong hand with 3-Card !S Support
+1D--1H--,4D,4-Card !H Support Very Distributional
+1D--1S--,4D,4-Card !S Support Very Distributional
+1D--,4D,Transer to !H
+1D--,4H,Transer to !S
+1D--2C--2S--3D--,4H,1430 Kickback Keycard for !D
+# Page 26 Competitive Bidding
+1C2C,2D,transfer to !H
+# TROTOD Transfer Responses Over Opponents Takeout Doubles
+1DDb,Rd,Transfer to !H
+1DDb,1H,Transfer to !S
+1DDb,1S,Transfer to NT
+1DDb,1N,Transfer to !C
+1HDb,1N,Transfer to !C
+1HDb,2C,Transfer to !D
+1HDb,2D,Constructive Raise of !H
+1HDb,2H,Weak Raise of !H
+1SDb,1N,Transfer to !C
+1SDb,2C,Transfer to !D
+1SDb,2D,Transfer to !H
+1SDb,2H,Constructive Raise of !S
+1SDb,2S,Weak Raise of !S
+# Manual adjustments after training table
+# Sun Apr 25 11:20:34 PDT 2021
+1C--1S--1N--,2N,Invitational Fewer than 4!C
+#Option,UMJOODO On
+#1D--,2H,5!S and 4!H or 5!H Constructive
+#1D--,2S,5!S 4!H or 5!H invitational
+#1D--2[HS]--,2N,Asks for Description
+#1D--2[HS]--2N--,3C,5=4-x-x minimum
+#1D--2[HS]--2N--,3D,5=4-x-x maximum
+#1D--2[HS]--2N--,3H,5=5-x-x minimum
+#1D--2[HS]--2N--,3S,5=5-x-x maximum
+Option
+1C2H,2S,
+1D2H,2S,
