@@ -1,0 +1,86 @@
+BBOalert
+Option,1MOpening_2/1_Vanilla_@1@2
+,1H,
+,1S,
+1H--,1N,Forcing
+1S--,1N,Forcing
+--1H--,1N,Forcing
+--1S--,1N,Forcing
+1H--1N--2[CD]--,2N,< 3!H Balanced Invitational
+1S--1N--2[CD]--,2N,< 3!S Balanced Invitational
+1H__,2S,Weak Jump Shift
+1H__,3C,Weak Jump Shift
+1H__,3D,Weak Jump Shift
+1H--,3N,13-15 Balanced 3-card support NT stoppers
+1S__,3C,Weak Jump Shift
+1S__,3D,Weak Jump Shift
+1S__,3H,Weak Jump Shift
+1S--,3N,13-15 Balanced 3-card support NT stoppers
+1H--,2N,15+ Jacoby 2NT Standard Responses
+1H--2N--,3C,Short !C rebid shows void
+1H--2N--,3D,Short !D rebid shows void
+1H--2N--,3H,Strong !H no shortness
+1H--2N--,3S,Short !S rebid shows void
+1H--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1H--2D--3C--3H--,3N,Non-Serious 3NT; invites control bids
+1S--2D--2N--3S--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1H--2N--,4C,5+ good !C
+1H--2N--,4D,5+ good !D
+1S--2N--,3N,Non-Serious 3NT#No slam interest partner control bids if Interested in slam
+1S2C2H3C,Db,Support Double 3 !H
+1S2D2H3D,Db,Support Double 3 !H
+1H--1N--2S--,2N,Ingberman; weak xfer to !C
+1HDb,2D,Constructive !H raise
+1HDb,2H,Weak !H raise
+1SDb,2H,Constructive !S raise
+1SDb,2S,Weak !S raise
+# Kickback Sequences
+1H--2H--2S--3D--,4S,Kickback 1430 Keycard Ask
+1H--2H--2S--3D--4S--,4N,1 or 4 keycards
+1H--2H--2S--3D--4S--4N--,5C,Asking for Q!H
+1H--2H--2S--3D--4S--4N--5C--,5H,No Q!H
+1S--2N--3S--4N--,5D,0 or 3 keycards
+Option,KokishGT
+1H--2H--,2S,Kokish GT where could you help?
+1H--2H--2S--,2N,Help in !S
+1H--2H--2S--,3C,Help in !C
+1H--2H--2S--,3D,Help in !D
+1H--2H--2S--,3H,No help
+1H--2H--,3H,Trump Quality Ask
+1H--2H--3H--,3N,Bad !H good hand for NT
+1H--2H--3H--,4H,Good !H good hand
+1H--2H--3H--,--,Bad !H weak
+# spades
+1S--2S--,2N,Kokish GT where could you help?
+1S--2S--2N--,3C,Help in !C
+1S--2S--2N--,3D,Help in !D
+1S--2S--2N--,3H,Help in !H
+1S--2S--2N--,3S,No help
+1S--2S--,3S,Trump Quality Ask
+1S--2S--3S--,--,Bad !S weak
+1S--2S--3S--,3N,Bad !S good hand for NT
+1S--2S--3S--,4S,Good !S good hand
+Option
+Option,1MOvercall1NT Robeson
+# From Andy Robeson's Partnership Bidding Pg 42
+1[CDHS]1N,Db,Penalty forcing to 2!S X
+1H1N,2C,Majors -- 5+!S Hx+!H
+1S1N,2C,Majors -- 5+!H Hx+!S
+1H1N,2D,Sound !H Raise
+1S1N,2D,Sound !S Raise
+1H1N,2S,Natural; No fit; non-forcing
+1S1N,2H,Natural; No fit; non-forcing
+# Preemptive raises of Opener's major
+1H1N,2H,Weak
+1H1N,3H,Weak
+1H1N,4H,Weak
+1S1N,2S,Weak
+1S1N,3S,Weak
+1S1N,4S,Weak
+# Fit-jumps
+1[HS]1N,3C,Fit-Jump good 5+!C with support
+1[HS]1N,3D,Fit-Jump good 5+!D with support
+1H1N,3S,Fit-Jump good 5+!S with support
+1S1N,3H,Fit-Jump good 5+!H with support
+Option,1MOvercall1NT Off
+Option
