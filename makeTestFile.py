@@ -49,7 +49,7 @@ def main(): #{
 		sys.stdout = sys.stderr
 	#}
 	Csys.getoptionsEnvironment(options)
-	toptext = open('alertTester.txt', 'rb').read()
+	toptext = open('alertTester.txt', 'r').read()
 	body = open(args[0]).read()
 	reOpts = re.MULTILINE|re.DOTALL|re.IGNORECASE
 	commentPattern = re.compile(r'^#.*?$', reOpts)
