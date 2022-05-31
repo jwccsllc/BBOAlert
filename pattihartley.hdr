@@ -1,19 +1,10 @@
 BBOalert
-//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
-
 Option,HartleyAndCampbell
-#
-#Option,ChangeCardColor OFF
-#//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
-#Option,ChangeCardColor ON
-#//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
-#
-#Option,HoverBBOalertTab OFF
-#//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
-#Option,HoverBBOalertTab ON
-#//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
-#
-Option
+
+Script,F1,R = C.match(makeRegExp)[1];
+Script,F2,R = C.match(makeRegExp)[2];
+Script,F3,R = C.match(makeRegExp)[3];
+
 Shortcut,ww,Toucan Club 2/1 15-17 NT Upside Down Attitude\nShortcut,1C_,Transfers after 1!C Openings
 # Shortcut,1D_,6+!D or 4+!D with singleton or void
 

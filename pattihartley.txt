@@ -1074,3 +1074,19 @@ Option
 [12]N--3C--3D--,3H,4!S fewer !H
 [12]N--3C--3D--,3S,4!H fewer !S
 [12]N--3C--3D--,3N,No 4 card major
+Option,2NT_3S_SlamTry
+2N__,3S,Forces 3NT
+2N__3S(Db|--),3N,Forded
+2N__3S(Db|--)3N(Db|--),4C,6+!C Slam Invitational
++,	4D,6+!D Slam Invitational
++,	4H,!H Splinter 5-5 Minors Invitational
++,	4S,!S Splinter 5-5 Minors Invitational
++,	4N,2=2=(54) Quantitave Slam Invitational
+2N__3S(Db|--)3N(Db|--),4([CD]),!%F3% Slam try
++,	(4D|4H|4S|5C|5D),1430 RKCS
++,	4N,Signoff
+2N__3S(Db|--)3N(Db|--)4([HS]),!%F3% Splinter 5-5 Minors
++,	(4N|5C|5D),No slam interest signoff
++,	(6H|6D),Signoff
+2N__3S(Db|--)3N(Db|--),4N,2=2-(54) Quantitave
+2N__3S(Db|--)3N(Db|--)4N(Db|--),(--|5C|5D|6C|6D|6N),Signoff
