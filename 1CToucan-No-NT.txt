@@ -1,55 +1,68 @@
 BBOalert, Toucan Club
 Option
+
+Script,F1,R = C.match(makeRegExp)[1];
+Script,F2,R = C.match(makeRegExp)[2];
+Script,F3,R = C.match(makeRegExp)[3];
+
 Shortcut,ww,Toucan Club (Short !C with transfer responses)\n2/1 15-17 NT UDCA Rusinow v Suits Journalist v Notrump\nSystem Leads and Carding?\n
 Shortcut,1C_,Transfers after 1!C Openings
 Shortcut,1D_,6+!D or 4+!D with singleton or void
-Option,Toucan Club
+
+Option,Toucan_Club on
 ,1C,2+!C no 5-card Major -- Transfers On
-1C__,1D,4+!H Transfer
-1C__1D--,1H,3!H
-1C--1D--1H--,1S,4!H and 4!S
-1C--1D--1H--,1N,To Play
-1C--1D--1H--,2C,XYZ Invitational Requires 2!D
-1C--1D--1H--2C--,2D,XYZ Required Response
-1C--1D--1H--2C--2D--,2H,5+!H Invitational
-1C--1D--1H--2C--2D--,2S,4+!H and 4!S (XYZ)
-1C--1D--1H--2C--2D--,2N,Balanced fewer than  4!S (XYZ)
-1C--1D--1H--,2D,Artificial Game Force (XYZ)
-1C--1D--1H--2D--,2S,4!S (XYZ)
-1C--1D--1H--2D--,2N,Fewer than 4!S (XYZ)
-1C--1D--1H--,2H,5+1H Less than invitational
-1C--1D__,Db,3!H Support
-1C__1D__,1S,4!S fewer than 3!H
-1C__1D__,1N,Balanced 11-14 fewer than 3!H fewer than 4!S
-1C__1D__,2H,4!H
-1C1DDb--,2H,4!H
-1C--1D--2H--,2S,Where do you have help? Kokish
-1C--1D--2H--2S--,2N,Help in !S Kokish
-1C--1D--2H--2S--,3C,Help in !C Kokish
-1C--1D--2H--2S--,3D,Help in !D Kokish
-1C--1D--2H--2S--,3H,No game interest
-1C--1D--2H--,2N,!S Short Suit GT Kokish
-1C--1D--2H--,3C,!C Short Suit GT Kokish
-1C--1D--2H--3C--,3D,Help in !D?
-1C--1D--2H--3C--3D--,3H,No Help
-1C--1D--2H--3C--,3H,Help in !H?
-1C--1D--2H--3C--3H--,3H,No Help
-1C--1D--2H--,3D,!D Short Suit GT Kokish
-1C--1D--2H--,3H,Kokish Trump Suit Quality Ask
+1C(Db|--),	1D,Transfer !H
++,	1H,Transfer !S
++,	1H,Suggest NT
++,	1N,Transfer !C
++,	2C,Transfer !D
+1C(Db|--)1D(Db|--),	1H,3!H
++,	1S,4!S < 3!H
++,	1N,<4 !S < 3!H Balanced
++,	2H,4!H
++,	3H,4!H Invite game
+1C(Db|--)1H(Db|--)1H(Db|--),1S,4!H and 4!S
++,	1N,To Play
++,	2C,XYZ Invitational Requires 2!D
++,	2D,XYZ Game Force
+
+1C(Db|--)1D(Db|--)1H(Db|--)2C(Db|--),2D,XYZ Required Response
+1C(Db|--)1D(Db|--)1H(Db|--)2C(Db|--)2D(Db|--),2H,5+!H (XYZ)
++,	2S,4+!H and 4!S (XYZ)
++,	2N,Balanced 4 or more !C (XYZ)
+
+1C(Db|--)1D(Db|--)1H(Db|--),2D,Artificial Game Force (XYZ)
+1C(Db|--)1D(Db|--)1H(Db|--)2D(Db|--),2H, fewer than 4!S (XYZ)
++,	2S,4!S and 4!H (XYZ)
++,	2N,4!H and Fewer than 4!S (XYZ)
+
+1C(Db|--)1D(Db|--)2H(Db|--),2S,Where do you have help? Kokish
+1C(Db|--)1D(Db|--)2H(Db|--)2S(Db|00),2N,Help in !S Kokish
++,	3C,Help in !C Kokish
++,	3D,Help in !D Kokish
++,	3H,No game interest
+1C(Db|--)1D(Db|--)2H(Db|--),2N,!S Short Suit GT Kokish
+1C(Db|--)1D(Db|--)2H(Db|--),3C,Short Suit !C
+1C(Db|--)1D(Db|--)2H(Db|--)3C(Db|--),3D,Short Suit !D
++,	3H,No game Interest
+1C(Db|--)1D(Db|--)2H(Db|--),3H,Trump Quality Ask
+1C(Db|--)1D(Db|--)2H(Db|--)3H(Db|--),Pa,No Interest in game
++,	3N,Balanced poor !H
++,	4H,Good !H and values
 # Opener with 18-19 no major support
-1C--1D--,2N,Balanced 18-19 Fewer 3!H and fewer 4!S
-1C--1D--2N--,3C,Shows length in !D
-1C--1D--2N--,3D,5+ !H
-1C--1D--2N--,3H,4!S and 4!H
-1C--1D--2N--,3S,6+!C Potential Slam Interest
-1C--1D--2N--,3N,To Play
-1C--1D--2N--,4D,6+ !H
-1C--1D--,3H,4!H 16-18 Support Points
-1C--1D--,3N,Strong hand long !C and stoppers
-1C--1D--,4C,4!H Strong !C likely 1=4=1=7
-1C--1D--,4D,4!H strong playing Void !D
-1C--1D--,4H,4!H 19-21 Support Points
-1C--1D--2N--,4C,1430 Gerber
+1C(Db|--)1D(Db|--),2N,Balanced 18-19 Fewer 3!H and fewer 4!S
+1C(Db|--)1D(Db|--)2N(Db|--),3C,Shows length in !D
++,	3D,5 !H
++,	3H,4!S and 4!H
++,	3S,6+!C Potential Slam Interest
++,	3N,To Play
++,	4C,1430 Gerber
++,	4D,6+ !H
+1C(Db|--)1D(Db|--),3H,4!H 16-18 Support Points
+1C(Db|--)1D(Db|--),3N,Strong hand long !C and stoppers
+1C(Db|--)1D(Db|--),4C,4!H Strong !C likely 1=4=1=7
+1C(Db|--)1D(Db|--),4D,4!H strong playing Void !D
+1C(Db|--)1D(Db|--),4H,4!H 19-21 Support Points
 1C--,1H,Transfer to !S
 1C--1H--,1S,3-Card !S Support
 1C--1H--,2N,Balanced 18-19 Fewer 3!S possibly 4!H
