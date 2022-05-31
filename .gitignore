@@ -8,6 +8,7 @@
 *.zip
 .DS_Store
 BBOalert.js
+Descr.*
 d.*
 sample.docx
 sample.txt
