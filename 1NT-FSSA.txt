@@ -1,0 +1,11 @@
+Option,Fit Showing Super Accepts
+1N--2D--,2H,Fewer than 4 !H
+1N--2D--,3S,4!H 2 !S Max Values
+1N--2D--,2N,4!H 3=4=3=3 Max Values
+1N--2D--,3C,4!H 2 !C Max Values
+1N--2D--,3D,4!H 2 !D Max Values
+1N--2H--,2S,Fewer than 4 !S
+1N--2H--,2N,4!S 4=3=3=3 Max Values
+1N--2H--,3C,4!S 2 !C Max Values
+1N--2H--,3D,4!S 2 !D Max Values
+1N--2H--,3H,4!S 2 !H Max Values
