@@ -129,17 +129,17 @@ Option,2NTOpening Puppet Stayman
 2N--4C--,4H,0 or 3 Aces
 2N--4C--,4S,2 Aces I hate my hand
 2N--4C--,4N,2 Aces I love my hand
-Option,2NT3S MSS Off
-2N--,3S,
 Option,2NT3S MSS On
 2N--,3S,Minor Suit Stayman#https://www.bridgebum.com/minor_suit_stayman.php
 2N--3S--,3N,No 4 card minor
 2N--3S--,4C,4+!C may have 4!D
 2N--3S--,4D,4+!D fewer than 4!C
+Option,2NT3S MSS Off
+2N--,3S,
 Option,3NTOpening Gambling
 ,3N,Gambling 3NT 7+Solid !C or !D#Nothing Higher than Queen outside
 Option,3NTOpening Acol/NAMYATS
-,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
+,3N,16-21 HCP; (semi)solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. opener should not have void or singleton.
 
 # include 1MHardyRaises.txt
 Option,1MOpening_Hardy_Raises_@1@2
@@ -213,10 +213,9 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S--,3C,9+-12 3!S shortness 4!S no shortness
 1S--3C--,3D,Clarify 3!C
 1S--3C--3D--,3S,4!S no shortness
-1S--3C--3D--,3C,Short !C
 1S--3C--3D--,4C,Short !C
 1S--3C--3D--,4D,Short !D
-1S--3C--3D--,4H,Short !S
+1S--3C--3D--,4H,Short !H
 1S--3C--3D--,3H,Shortness is void
 1S--3C--3D--3H--,3S,Where is shortness
 1S--3C--3D--3H--3S--,4C,Void !C
@@ -457,107 +456,31 @@ Option
 1S--2H--2S--3S--,3N,Non-Serious 3NT#Mild Slam Try Responder Starts making control bids with slam interest
 
 # include 1MDruryResponses.txt
-Option
-----1[HS]--,2C,Drury 10-12 HCP 3-card support
-----1[HS]--,2D,Drury 10-12 HCP 4-card support
-------1[HS]--,2C,Drury 10-12 HCP 3-card support
-------1[HS]--,2D,Drury 10-12 HCP 4-card support
-----1H--2[CD]--,2H,Minimum Opener
-----1S--2[CD]--,2S,Minimum Opener
-------1H--2[CD]--,2H,Minimum Opener
-------1S--2[CD]--,2S,Minimum Opener
-----1H--2[CD]--,4H,Natural
-----1S--2[CD]--,4S,Natural
-------1H--2[CD]--,4H,Natural
-------1S--2[CD]--,4S,Natural
-1S--2N--3S--4N--,5D,0 or 3 keycards
-Option,1MDruryRebids Hardy
-# 3-card support
-# Heart Opening
-----1[HS]--2C--,2D,Asks for shortness
-----1H--2C--2D--,2H,No shortness
-----1H--2CDb2D--,2H,No shortness
-----1S--2CDb2D--,2S,No shortness
-----1H--2C--2D--,2S,Short !S
-----1H--2C--2D--,3C,Short !C
-----1H--2C--2D--,3D,Short !D
-------1H--2C--2D--,2S,Short !S
-------1H--2C--2D--,3C,Short !C
-------1H--2C--2D--,3D,Short !D
-# Spade Opening
-----1S--2C--2D--,2S,No shortness
-----1S--2C--2D--,2H,Short !H
-----1S--2C--2D--,3C,Short !C
-----1S--2C--2D--,3D,Short !D
-------1S--2C--2D--,2H,Short !H
-------1S--2C--2D--,3C,Short !C
-------1S--2C--2D--,3D,Short !D
-------1[HS]--2C--,2D,Asks for shortness
-# 4-card support
-----1[HS]--2D--,2NT,Asks for Shortness
-# Heart Opening
-----1H--2D--2N--,3C,Short !C
-----1H--2D--2N--,3D,Short !D
-----1H--2D--2N--,3H,No shortness
-----1H--2D--2N--,3S,Short !S
-------1H--2D--2N--,3C,Short !C
-------1H--2D--2N--,3D,Short !D
-------1H--2D--2N--,3H,No shortness
-------1H--2D--2N--,3S,Short !S
-# Spade
-----1S--2D--2N--,3C,Short !C
-----1S--2D--2N--,3D,Short !D
-----1S--2D--2N--,3H,Short !H
-----1S--2D--2N--,3S,No Shortness
-------1S--2D--2N--,3C,Short !C
-------1S--2D--2N--,3D,Short !D
-------1S--2D--2N--,3H,Short !H
-------1S--2D--2N--,3S,No Shortness
-Option,1MDruryRebids Kokish
-# 3-card support
-# Heart Opening
-----1H--2C--,2D,Full Opening with !D
-----1H--2C--,2S,Kokish GT; Where can you help
-----1H--2C--,2N,Shortness in !S
-----1H--2C--,3C,Shortness in !C
-----1H--2C--,3D,Shortness in !D
-------1H--2C--,2D,Full Opening with !D
-------1H--2C--,2S,Kokish GT; Where can you help
-------1H--2C--,2N,Shortness in !S
-------1H--2C--,3C,Shortness in !C
-------1H--2C--,3D,Shortness in !D
-# Spade Opening
-----1S--2C--,2D,Full Opening with !D
-----1S--2C--,2H,Full Opening with !H
-----1S--2C--,2N,Kokish GT; Where can you help
-----1S--2C--,3C,Shortness in !C
-----1S--2C--,3D,Shortness in !D
-----1S--2C--,3H,Shortness in !H
-------1S--2C--,2D,Full Opening with !D
-------1S--2C--,2H,Full Opening with !H
-------1S--2C--,2S,Kokish GT: Where can you help
-------1S--2C--,2N,Shortness in !S
-------1S--2C--,3C,Shortness in !C
-------1S--2C--,3H,Shortness in !H
-# 4-card support
-# Heart Opening
-----1H--2D--,2S,Kokish GT: Where can you help
-----1H--2D--,2N,Shortness in !S
-----1H--2D--,3C,Shortness in !C
-----1H--2D--,3D,Shortness in !D
-------1H--2D--,2S,Kokish GT: Where can you help
-------1H--2D--,2N,Shortness in !S
-------1H--2D--,3C,Shortness in !C
-------1H--2D--,3D,Shortness in !D
-# Spade
-----1S--2D--,2H,4+ !H
-----1S--2D--,2N,Kokish GT; where can you help
-----1S--2D--,3C,Shortness in !C
-----1S--2D--,3D,Shortness in !D
-------1S--2D--,2H,4+ !H
-------1S--2D--,2N,Shortness in !H
-------1S--2D--,3C,Shortness in !C
-------1S--2D--,3D,Shortness in !D
+Option,1MOpening_Drury_On_@3@4
+------1[HS]--,2C,Limit Raise
+------1H--,1N,Semi Forcing
+------1H--,2C,3 or 4 Card Limit Raise (Drury)
+------1H--,2D,
+------1H--2D--,2N,
+------1S--,1N,Semi Forcing
+------1S--,2C,3 or 4 Card Limit Raise (Drury)
+------1S--,2D,
+------1S--2C--,3D,
+------1S--2C--2D--,2S,
+------1S--2D--,2N,
+------1S--2D--2N--,3S,
+----1[HS]--,2C,Limit Raise
+----1H--,1N,Semi Forcing
+----1H--,2C,3 or 4 Card Limit Raise (Drury)
+----1H--,2D,
+----1H--2D--,2N,
+----1S--,1N,Semi Forcing
+----1S--,2C,3 or 4 Card Limit Raise (Drury)
+----1S--,2D,
+----1S--2C--,3D,
+----1S--2C--2D--,2S,
+----1S--2D--,2N,
+----1S--2D--2N--,3S,
 
 # include 2COpening.txt
 Option,2COpening ControlSteps On
@@ -692,7 +615,7 @@ Option,Flannery
 
 # include XYZ.txt
 Option,XYZ
-1C--1D--1N--,2C,Forcing, Invitational
+1C--1D--1N--,2C,Forcing Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
 1C__1D__1H__,2C,Invitational Force 2!D
 1...1...1...,2C,Invitational Force 2!D
