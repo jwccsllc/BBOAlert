@@ -232,13 +232,13 @@ Option,2NTOpening Puppet Stayman
 2N--4C--,4H,0 or 3 Aces
 2N--4C--,4S,2 Aces I hate my hand
 2N--4C--,4N,2 Aces I love my hand
-Option,2NT3S MSS Off
-2N--,3S,
 Option,2NT3S MSS On
 2N--,3S,Minor Suit Stayman#https://www.bridgebum.com/minor_suit_stayman.php
 2N--3S--,3N,No 4 card minor
 2N--3S--,4C,4+!C may have 4!D
 2N--3S--,4D,4+!D fewer than 4!C
+Option,2NT3S MSS Off
+2N--,3S,
 Option,3NTOpening Gambling
 ,3N,Gambling 3NT 7+Solid !C or !D#Nothing Higher than Queen outside
 Option,3NTOpening Acol/NAMYATS
@@ -316,10 +316,9 @@ Option,1MOpening_Hardy_Raises_@1@2
 1S--,3C,9+-12 3!S shortness 4!S no shortness
 1S--3C--,3D,Clarify 3!C
 1S--3C--3D--,3S,4!S no shortness
-1S--3C--3D--,3C,Short !C
 1S--3C--3D--,4C,Short !C
 1S--3C--3D--,4D,Short !D
-1S--3C--3D--,4H,Short !S
+1S--3C--3D--,4H,Short !H
 1S--3C--3D--,3H,Shortness is void
 1S--3C--3D--3H--,3S,Where is shortness
 1S--3C--3D--3H--3S--,4C,Void !C

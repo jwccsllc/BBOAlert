@@ -1,0 +1,5 @@
+Option,1NTOpening South African Transfers
+1N--,4C,Transfer to !H
+1N--,4D,Transfer to !S
+1N--,4H,To Play
+1N--,4S,To Play

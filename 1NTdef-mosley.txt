@@ -1,0 +1,8 @@
+BBOalert
+Option,1NTDefense Mosley
+1N,2C,Majors
+1N,2D,1 Suited Major
+1N,2H,!H + Minor
+1N,2S,!S + Minor
+1N,2N,Minors
+1N,Db,15+ HCP Penalty; Systems On
