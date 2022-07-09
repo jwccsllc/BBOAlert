@@ -145,6 +145,7 @@ Option,1NTOpening 11+-14
 1N--,4S,To Play,South African Texas
 1N--2C--2D--,3H,4!H 5+!S GF Smolen
 1N----2D--2H2N--,3C,Lebensohl response
+1N2H2N--3C--,3H,!S and !H stopper
 1N--2C--2D--,3S,4!S 5+!H GF Smolen
 # after 2C interference 
 1N2C,2D,Transfer !H
@@ -267,7 +268,7 @@ Option,2NT3S MSS Off
 Option,3NTOpening Gambling
 ,3N,Gambling 3NT 7+Solid !C or !D#Nothing Higher than Queen outside
 Option,3NTOpening Acol/NAMYATS
-,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
+,3N,16-21 HCP; (semi)solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. opener should not have void or singleton.
 
 # include 1MHardyRaises.txt
 Option,1MOpening_Hardy_Raises_@1@2
@@ -838,7 +839,7 @@ Option,Flannery
 
 # include XYZ.txt
 Option,XYZ
-1C--1D--1N--,2C,Forcing, Invitational
+1C--1D--1N--,2C,Forcing Invitational
 1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
 1C__1D__1H__,2C,Invitational Force 2!D
 1...1...1...,2C,Invitational Force 2!D

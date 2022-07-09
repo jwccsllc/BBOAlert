@@ -50,6 +50,7 @@ Option,1NTOpening 11+-14
 1N--,4S,To Play,South African Texas
 1N--2C--2D--,3H,4!H 5+!S GF Smolen
 1N----2D--2H2N--,3C,Lebensohl response
+1N2H2N--3C--,3H,!S and !H stopper
 1N--2C--2D--,3S,4!S 5+!H GF Smolen
 # after 2C interference 
 1N2C,2D,Transfer !H
