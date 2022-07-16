@@ -1,0 +1,17 @@
+Option
+1D1H,2H,Limit Raise or better in !D
+1D1S,2S,Limit Raise or better in !D
+1D1S,3D,Weak
+1H1S,2S,Limit Raise or better in !H
+1H2C,3C,Limit Raise or better in !H
+1H2D,3D,Limit Raise or better in !H
+1S2C,3C,Limit Raise or better in !S
+1S2D,3D,Limit Raise or better in !S
+1S2H,3H,Limit Raise or better in !S
+#Option,Sandwich NT
+#1C--1D,1N,!H and !S Sandwich Weak
+#1C--1H,1N,!D and !S Sandwich Weak
+#1C--1S,1N,!D and !H Sandwich Weak
+#1D--1H,1N,!C and !S Sandwich Weak
+#1D--1S,1N,!C and !H Sandwich Weak
+#1H--1S,1N,!C and !C Sandwich Weak
