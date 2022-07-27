@@ -225,7 +225,7 @@ Option,Toucan Club
 1D--,4D,Transer to !H
 1D--,4H,Transer to !S
 1D--2C--2S--3D--,4H,1430 Kickback Keycard for !D
-# Page 26 Competitive Bidding
+# Page 94 Competitive Bidding
 1C2C,2D,transfer to !H
 # TROTOD Transfer Responses Over Opponents Takeout Doubles
 1DDb,Rd,Transfer to !H
@@ -379,3 +379,13 @@ Option,1NSouth_African_Texas off
 Option
 1C2H,2S,
 1D2H,2S,
+# Major Suit 1M 2C sequences
+Option,1Major_2C
+1[HS]--,1N,Forcing
+1[HS]--,2C,Forcing 2/1 or 3-cd limit raise
+1[HS]--2C--,2D,Describe Hand
+1H--2C--2D--,2H,3 card balanced limit Raise
+1S--2C--2D--,2S,3 card balanced limit Raise
+1H--2C--,2H,No game interest vs Limit Raise
+1S--2C--,2H,No game interest vs Limit Raise
+1S--2C--,2H,4!H Minimum Hand

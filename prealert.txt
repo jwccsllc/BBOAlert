@@ -9,3 +9,4 @@ if ((myDirection() == "S") || (myDirection() == "W")) {
 	}
 }
 //Script
+Script,onAnyOpponentChange,initOptionDefaults();
