@@ -34,6 +34,8 @@ Option,ModifyOKButton ON
 Option,ModifyOKButton OFF
 //Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
 #
+Option,Manual Alerts OFF
+Option,Manual Alerts ON
 Option
 
 # include carlyng.hdr
@@ -187,7 +189,7 @@ Option,2NT3S MSS Off
 Option,3NTOpening Gambling
 ,3N,Gambling 3NT 7+Solid !C or !D#Nothing Higher than Queen outside
 Option,3NTOpening Acol/NAMYATS
-,3N,16-21 HCP; a solid or semi-solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. Further, opener should not have void or singleton.
+,3N,16-21 HCP; (semi)solid minor suit with at least 6-7 cards#expected to have stoppers in at least 2 (usually all 3) outside suits. opener should not have void or singleton.
 
 # include 1MRevBergenRaises.txt
 Option,1MOpening_Reverse_Bergen_Raises_@1@2
@@ -600,6 +602,7 @@ Option
 2C--2H--,2N,22-24 HCP Balanced Systems On
 2C--2S--,2N,22-24 HCP Balanced Systems On
 2C--2H__2N--,3D,Transfer !H
+2C--2DDb2N--,3D,Transfer !H
 2C--2S__2N--,3D,Transfer !H
 2C--2S__2N--,3H,Transfer !S
 2C--2H__2N--,3H,Transfer !S

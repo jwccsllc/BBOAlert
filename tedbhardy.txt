@@ -35,6 +35,8 @@ Option,ModifyOKButton ON
 Option,ModifyOKButton OFF
 //Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
 #
+Option,Manual Alerts OFF
+Option,Manual Alerts ON
 Option
 
 # include tedbhardy.hdr
@@ -521,6 +523,7 @@ Option
 2C--2H--,2N,22-24 HCP Balanced Systems On
 2C--2S--,2N,22-24 HCP Balanced Systems On
 2C--2H__2N--,3D,Transfer !H
+2C--2DDb2N--,3D,Transfer !H
 2C--2S__2N--,3D,Transfer !H
 2C--2S__2N--,3H,Transfer !S
 2C--2H__2N--,3H,Transfer !S
