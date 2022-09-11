@@ -19,4 +19,6 @@ Option,ModifyOKButton ON
 Option,ModifyOKButton OFF
 //Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
 #
+Option,Manual Alerts OFF
+Option,Manual Alerts ON
 Option
