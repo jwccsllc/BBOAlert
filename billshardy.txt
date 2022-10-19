@@ -988,7 +988,7 @@ Option,2NTDefense Suction
 # include 1CDef-Suction.txt
 # Defense Against Strong Club
 Option,1CDefense Standard
-1C,Db,Take-out Double
+1C,Db,!D or !H and !S
 Option,1CDefense Precision
 1C,Db,Single-Suit !D OR Two-Suit !H and 1S
 1C,2C,Single-Suit !D OR Two-Suit !H and 1S
