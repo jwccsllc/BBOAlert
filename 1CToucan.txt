@@ -290,6 +290,7 @@ Option,1NTOpening 15+-17 Advanced
 1N----2D--2H2N--,3C,Lebensohl response
 1N--2C--2D--,3S,4!S 5+!H GF Smolen
 # after 2C interference 
+1N2C,Db,Stayman
 1N2C,2D,Transfer !H
 1N2C2D--,2H,Fewer than 4!H
 1N2C2D--,2N,4+!H 3=4=3=3 Maximum Values
