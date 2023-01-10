@@ -1,0 +1,90 @@
+
+
+
+
+
+dealer south
+
+south_notrump_shape = (
+	shape(south,any 4333) or shape(south,any 4432) or shape(south,any 5332)
+)
+south_has_3_quicktricks = (
+	(hascard(south, AS) and hascard(south, KS) and (
+		(hascard(south, AH) or hascard(south, AD) or hascard(south, AC))
+	))
+	or (hascard(south, AH) and hascard(south, KH) and (
+		(hascard(south, AS) or hascard(south, AD) or hascard(south, AC))
+	))
+	or (hascard(south, AD) and hascard(south, KD) and (
+		(hascard(south, AS) or hascard(south, AH) or hascard(south, AC))
+	))
+	or (hascard(south, AC) and hascard(south, KC) and (
+		(hascard(south, AS) or hascard(south, AH) or hascard(south, AD))
+	))
+)
+south_open_weak_1NT = (
+	south_notrump_shape and (
+		(hcp(south) == 11 and south_has_3_quicktricks) or
+		(hcp(south) >= 12 and hcp(south) <= 14)
+	)
+)
+south_open_strong_1NT = (
+	south_notrump_shape and (hcp(south) >= 15 and hcp(south) <= 17)
+)
+
+north_stayman_spades = shape(north,4xxx)
+north_stayman_hearts = shape(north,x4xx)
+north_stayman = north_stayman_spades or north_stayman_hearts
+north_weak_low = hcp(north)>=0 and hcp(north)<=7 
+north_has_major = shape(north,9xxx + x4xx + x8xx + 7xxx + x7xx + 4xxx + 5xxx + x9xx + x6xx + x5xx + 8xxx + 6xxx)
+north_interesting_low = hcp(north)>=8 and hcp(north)<=11 
+north_invitational = hcp(north) >= 11 and hcp(north)<=13
+north_has_response = hcp(north) >= 8
+north_interesting_high = hcp(north)>=13 and hcp(north)<=18
+north_slam_interest = hcp(north) >= 16
+
+north_jacoby2NT = north_slam_interest and shape(north,4225 + 4423 + 4243 + 4324 + 5224 + 6223 + 7222 + 4234 + 4522 + 4333 + 6322 + 4342 + 4432 + 5233 + 5332 + 6232 + 5422 + 4252 + 5242 + 5323)
+
+south_major =
+	hcp(south)>=12 && hcp(south)<=20
+	and shape(south,7xxx + 8xxx + 6xxx + 9xxx + 5xxx)
+
+north_3c =
+	(hcp(north) >= 10 && hcp(north) <= 12)
+	and (
+		shape(north,31xx + 3x1x + 30xx + 3xx0 + 3xx1 + 3x0x)
+		or shape(north,4225 + 6223 + 5224 + 4324 + 4243 + 4423 + 4234 + 7222 + 4522 + 4342 + 6322 + 4333 + 5332 + 5233 + 4432 + 4252 + 5422 + 6232 + 5323 + 5242)
+	)
+
+north_3h =
+	(hcp(north) >= 10 && hcp(north) <= 12)
+	and (shape(north,5xx1 + 90xx + 5x1x + 71xx + 50xx + 6xx0 + 9x0x + 80xx + 8xx0 + 8xx1 + 9x1x + 6x0x + 4xx0 + 4x0x + 7x1x + 4xx1 + 8x1x + 61xx + 9xx1 + 70xx + 5xx0 + 41xx + 40xx + 4x1x + 9xx0 + 81xx + 5x0x + 7xx0 + 7x0x + 51xx + 60xx + 6xx1 + 7xx1 + 6x1x + 91xx + 8x0x))
+
+north_3NT =
+	(hcp(north) >= 13 && hcp(north) <= 15)
+	and (shape(north,8x0x + 7xx1 + 6x1x + 91xx + 6xx1 + 60xx + 51xx + 7xx0 + 7x0x + 5x0x + 81xx + 9xx0 + 40xx + 4x1x + 41xx + 70xx + 5xx0 + 9xx1 + 61xx + 8x1x + 4xx1 + 7x1x + 4x0x + 4xx0 + 6x0x + 9x1x + 8xx1 + 8xx0 + 80xx + 9x0x + 6xx0 + 50xx + 71xx + 5x1x + 5xx1 + 90xx))
+
+north_4c =
+	shape(north,5224 + 6223 + 4423 + 4243 + 4324 + 7222 + 4522 + 6322 + 5233 + 4432 + 4252 + 6232 + 5323 + 5242 + 4225 + 4234 + 4342 + 4333 + 5332 + 5422) and
+	(hcp(north) >= 13 && hcp(north) <= 15) and
+	(
+		spades(north) == 4 and (
+			(hascard(north, AS) and hascard(north, KS)) or
+			(hascard(north, AS) and hascard(north, QS)) or
+			(hascard(north, KS) and hascard(north, QS))
+		) or (spades(north) > 4 and (
+			(hascard(north, AS) or hascard(north, KS))
+		))
+	)
+
+north_4d = (
+	shape(north,4234 + 4225 + 5422 + 4342 + 4333 + 5332 + 7222 + 4522 + 5224 + 6223 + 4423 + 4243 + 4324 + 4252 + 6232 + 5323 + 5242 + 6322 + 5233 + 4432)
+	and (hcp(north) >= 13 && hcp(north) <= 15)
+	and not north_4c
+)
+
+
+
+
+condition
+	south_open_strong_1NT
