@@ -1180,7 +1180,6 @@ Option
 ------1H--,1N,Semi-Forcing
 ----1H--,2C,3Card Limit Raise (Drury)
 ----1H--,2D,4Card Limit Raise (Drury)
---1S--,1N,Semi Forcing
 ----1S--,1N,Semi Forcing
 ------1S--,2C,3Card Limit Raise (Drury)
 ------1S--,2D,4Card Limit Raise (Drury)

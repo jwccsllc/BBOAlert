@@ -16,27 +16,29 @@ if ((myDirection() == "N") || (myDirection() == "E")) {
 # include stanscripts.hdr
 //Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
 
-Option,StanMetzScripts
+Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
 
-Option,ChangeCardColor ON
-//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
-Option,ChangeCardColor OFF
-//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
-
-Option,HoverBBOalertTab ON
-//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
-Option,HoverBBOalertTab OFF
-//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
-#
-
-Option,ModifyOKButton ON
-//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(true);
-Option,ModifyOKButton OFF
-//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
-#
-Option,Manual Alerts OFF
-Option,Manual Alerts ON
-Option
+##Option,StanMetzScripts
+##
+##Option,ChangeCardColor ON
+##//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
+##Option,ChangeCardColor OFF
+##//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
+##
+##Option,HoverBBOalertTab ON
+##//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
+##Option,HoverBBOalertTab OFF
+##//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
+###
+##
+##Option,ModifyOKButton ON
+##//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(true);
+##Option,ModifyOKButton OFF
+##//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
+###
+##Option,Manual Alerts OFF
+##Option,Manual Alerts ON
+##Option
 
 # include carlyng.hdr
 Option,CarlieGAndCampbell
