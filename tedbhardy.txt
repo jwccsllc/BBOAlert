@@ -14,33 +14,6 @@ if ((myDirection() == "S") || (myDirection() == "W")) {
 //Script
 Script,onAnyOpponentChange,initOptionDefaults();
 
-# include stanscripts.hdr
-//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
-
-Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
-
-##Option,StanMetzScripts
-##
-##Option,ChangeCardColor ON
-##//Script,onAnyMutation,stanmazLib.CARD_COLORS(true);
-##Option,ChangeCardColor OFF
-##//Script,onAnyMutation,stanmazLib.CARD_COLORS(false);
-##
-##Option,HoverBBOalertTab ON
-##//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(true);
-##Option,HoverBBOalertTab OFF
-##//Script,onAnyMutation,stanmazLib.HOVER_BBOALERT_TAB(false);
-###
-##
-##Option,ModifyOKButton ON
-##//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(true);
-##Option,ModifyOKButton OFF
-##//Script,onAnyMutation,stanmazLib.NEW_OK_BUTTON(false);
-###
-##Option,Manual Alerts OFF
-##Option,Manual Alerts ON
-##Option
-
 # include tedbhardy.hdr
 //Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
 
@@ -948,6 +921,7 @@ Option,Toucan Club
 1C__,1N,Weak hand with !C or want lead to Responder
 # Transfer to 2D
 1C--,2C,5+!D indeterminate strength
+1C2C,Db,5+!D indeterminate strength
 1C1H,2C,Transfer !D
 1C1S,2C,Transfer !D
 1C__2C__,2D,Accepts Transfer bid shortness
