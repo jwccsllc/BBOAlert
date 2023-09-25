@@ -14,7 +14,7 @@ if ((myDirection() == "N") || (myDirection() == "E")) {
 //Script
 
 # include stanscripts.hdr
-//Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
+# //Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
 
 Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
 

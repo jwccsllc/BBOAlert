@@ -100,6 +100,7 @@ Option,Toucan Club
 1C__,1N,Weak hand with !C or want lead to Responder
 # Transfer to 2D
 1C--,2C,5+!D indeterminate strength
+1C2C,Db,5+!D indeterminate strength
 1C1H,2C,Transfer !D
 1C1S,2C,Transfer !D
 1C__2C__,2D,Accepts Transfer bid shortness
