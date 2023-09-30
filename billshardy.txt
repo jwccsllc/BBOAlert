@@ -1,19 +1,5 @@
 BBOalert
 
-# include prealert.txt
-//BBOalert
-//Script,onDataLoad,PREV_OPPS = "";
-//Script,onAuctionBegin
-if ((myDirection() == "S") || (myDirection() == "W")) {
-	ACT_OPPS = myOpponent(true) + "+" + myOpponent(false);
-	if (ACT_OPPS != PREV_OPPS) {
-		setChatMessage(findShortcut("ww"), true);
-		PREV_OPPS = ACT_OPPS;
-	}
-}
-//Script
-Script,onAnyOpponentChange,initOptionDefaults();
-
 # include stanscripts.hdr
 # //Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
 
@@ -44,7 +30,7 @@ Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin
 # include billshardy.hdr
 Option,StewartAndCampbell
 
-Shortcut,ww,2/1 11-14 Weak NT XYZ UDCA Rusinow v Suits Journalist v Notrump\nSystem Leads and Carding?\n
+Shortcut,ww,2/1 11-14 Weak NT XYZ UDCA Rusinow v Suits Journalist v Notrump\nSystem Leads and Carding?\nCC posted
 
 Shortcut,W0,2/1; 11-14 NT; Hardy Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 
