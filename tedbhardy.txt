@@ -1,19 +1,5 @@
 BBOalert
 
-# include prealert.txt
-//BBOalert
-//Script,onDataLoad,PREV_OPPS = "";
-//Script,onAuctionBegin
-if ((myDirection() == "S") || (myDirection() == "W")) {
-	ACT_OPPS = myOpponent(true) + "+" + myOpponent(false);
-	if (ACT_OPPS != PREV_OPPS) {
-		setChatMessage(findShortcut("ww"), true);
-		PREV_OPPS = ACT_OPPS;
-	}
-}
-//Script
-Script,onAnyOpponentChange,initOptionDefaults();
-
 # include stanscripts.hdr
 # //Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
 
@@ -1249,3 +1235,13 @@ Option,1Major_2C
 [12]N--3C--3D--,3H,4!S fewer !H
 [12]N--3C--3D--,3S,4!H fewer !S
 [12]N--3C--3D--,3N,No 4 card major
+# Kickback Sequences
+1H--2H--2S--3D--,4S,Kickback 3014 Keycard Ask
+1H--2H--2S--3D--4S--,4N,0 or 3 keycards
+1H--2H--2S--3D--4S--4N--,5C,Asking for Q!H
+1H--2H--2S--3D--4S--4N--5C--,5H,No Q!H
+1S--2N--3S--4N--,5D,3 or 0 keycards
+# include 2COpening.txt
+Option,2COpening ControlSteps On
+2C--,2H,1 King or fewer (Kokish Relays on)
+2C--,2D,2 Controls Ace or 2 Kings
