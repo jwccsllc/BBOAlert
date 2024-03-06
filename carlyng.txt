@@ -1,18 +1,5 @@
 BBOalert
 
-# include prealertnorth.txt
-//BBOalert
-//Script,onDataLoad,PREV_OPPS = "";
-//Script,onAuctionBegin
-if ((myDirection() == "N") || (myDirection() == "E")) {
-	ACT_OPPS = myOpponent(true) + "+" + myOpponent(false);
-	if (ACT_OPPS != PREV_OPPS) {
-		setChatMessage(findShortcut("ww"), true);
-		PREV_OPPS = ACT_OPPS;
-	}
-}
-//Script
-
 # include stanscripts.hdr
 # //Javascript,https://raw.githubusercontent.com/stanmaz/BBOalert/master/Scripts/stanmazLib.js
 
@@ -42,12 +29,12 @@ Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin
 
 # include carlyng.hdr
 Option,CarlieGAndCampbell
-Shortcut,ww,2/1; UDCA; Rev Bergen Raises; XYZ; Weak Jump Shifts\n
+Shortcut,ww,2/1; UDCA; Rev Bergen Raises; XYZ\nUDCA Rusinow v Suits Journalist v Notrump\nSystem Leads and Carding?\n
 Shortcut,W0,2/1; Kokish 3-Way Game Tries; Weak Jump Shifts; 4th Suit Game Forcing
 
+Shortcut,W0,2/1; 14+-17 NT; Rev Bergen Major Raises; Kokish 3-Way Game Tries; XYZ; Weak Jump Shifts; 4th Suit Game Forcing
 Shortcut,W1,Full CC http://bridge.celestial.com/CCs/BillAndCarlynGauen.pdf
 
-Shortcut,W2,Standard Leads and Carding; spot leads 4th best
 Option
 
 # include shortcuts.txt
@@ -473,6 +460,33 @@ Option,KokishGT
 1S--2S--3S--,4S,Good !S good hand
 Option
 
+# include 1MDruryResponses.txt
+Option,1MOpening_Drury_On_@3@4
+------1[HS]--,2C,Limit Raise
+------1H--,1N,Semi Forcing
+------1H--,2C,3 or 4 Card Limit Raise (Drury)
+------1H--,2D,
+------1H--2D--,2N,
+------1S--,1N,Semi Forcing
+------1S--,2C,3 or 4 Card Limit Raise (Drury)
+------1S--,2D,
+------1S--2C--,3D,
+------1S--2C--2D--,2S,
+------1S--2D--,2N,
+------1S--2D--2N--,3S,
+----1[HS]--,2C,Limit Raise
+----1H--,1N,Semi Forcing
+----1H--,2C,3 or 4 Card Limit Raise (Drury)
+----1H--,2D,
+----1H--2D--,2N,
+----1S--,1N,Semi Forcing
+----1S--,2C,3 or 4 Card Limit Raise (Drury)
+----1S--,2D,
+----1S--2C--,3D,
+----1S--2C--2D--,2S,
+----1S--2D--,2N,
+----1S--2D--2N--,3S,
+
 # include 1minorOpenings.txt
 # Minor Openings
 Option,1mOpenings
@@ -565,6 +579,19 @@ Option
 1D--2C--2S--3D--,4H,1430 Kickback Keycard for !D
 1C2H,2S,
 1D2H,2S,
+Option,SPIRAL on
+1[CD]--1H--2H--,2S,Spiral Quantity and Quality ask
+1[CD]--1H--2H--2S--,2N,3 !H Minimum
+1[CD]--1H--2H--2S--,3C,3 !H Maximum
+1[CD]--1H--2H--2S--,3D,4 !H Minimum
+1[CD]--1H--2H--2S--,3C,4 !H Maximum
+# 
+1[CD]--1S--2S--,2N,Spiral Quantity and Quality ask
+1[CD]--1S--2S--2N--,3C,3 !S Minimum
+1[CD]--1S--2S--2N--,3D,3 !S Maximum
+1[CD]--1S--2S--2N--,3H,4 !S Minimum
+1[CD]--1S--2S--2N--,3S,4 !S Maximum
+Option,SPIRAL off
 
 # include 2COpening.txt
 Option,2COpening ControlSteps On
@@ -675,6 +702,68 @@ Option,2H2SMcCabe
 2SDb,3H,McCabe#Lead Directing Partner should raise to 3!S
 Option
 
+# include 2DFlannery.txt
+Option,Flannery
+,2D,Flannery 11-15HCP 4!S=5!H or 4!S=6!H
+1H--,1N,Forcing; May have 4!S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+--1H--,1N,Forcing; May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+----1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+------1H--,1N,May have 4 !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+--1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+----1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+------1H--,1S,5+ !S#Flannery 4=5-x-x too strong to open 2!D will open 1!H
+# Queries
+2D__,2N,Ask for description
+2D__2N--,3C,4=5=1=3 3!C
+2D__2N--,3D,4=5=3=1 3!D
+2D__2N--,3H,4=5=2=2 minimum
+2D__2N--,3N,4=5-x-x Balanced Maximum
+2D__2N--,3S,4=6=x-x 6!H
+2D__2N--,4C,4=5=0=4 4!C
+2D__2N--,4D,4=5=4=0 4!D
+2DDb,2H,
+2DDb,2S,
+
+# include XYZ.txt
+Option,XYZ
+1C--1D--1N--,2C,Forcing Invitational
+1C--1D--1N--2C--2D--,2N,Balanced with 4!C support
+1C__1D__1H__,2C,Invitational Force 2!D
+1...1...1...,2C,Invitational Force 2!D
+1C__1D__1H__,2D,Artifical Game Force
+1C__1D__1N__,2C,Invitational Force 2!D
+1C__1D__1N__,2D,Artifical Game Force
+1C__1D__1S__,2C,Invitational Force 2!D
+1C__1D__1S__,2D,Artifical Game Force
+1C--1H--1N--,2C,Invitational force 2!D by Opener
+1...1...1...2C..,2D,Required response
+1...1...1...,2D,Artificial Game Forcing
+1C--1H--1N--,2N,Fewer than 4!C
+1C__1H__1N__2C__2D__,2N,Invitational 4+!C
+1C__1H__1N__,2N,Invitational Fewer 4!C
+1C__1H__1S__,2C,Invitational Forces 2!D
+1C__1H__1S__2C__2D__,2N,Invitational 4+!C
+1C__1H__1S__,2D,Artificial Game Force
+1C--1H--1S--2D--,2H,3-card !H Support
+1C__1H__1S__,2H,5+!H Less than invitational
+1C__1H__1S__,2N,Invitational Fewer 4!C
+1C__1S__1N--,2C,Invitational Force 2!D
+/1[CDH]--1[DHS]--1N--2C--/,2D,Required after 2!C
+1C__1S__1N__,2D,Artificial Game Force
+1C--1S--1N--2D--,2S,3!S fewer than 4!H
+1C--1S--1N--2D--,2H,4!H may have 3!S
+1D__1S__1N__,2C,Invitational Force 2!D
+1D__1S__1N__,2D,Artificial Game Force
+1D__1S__1N__,2N,Invitational < 4!D Support
+1D__1S__1N__,2S,5+!S Less than invitational
+# Slam Bidding Sequences
+1C--1H--,1S,4!S may have 3!H Probably balanced
+1C--1H--1S--2D--2H--,3H,6+ !H
+1C--1H--1S--2D--2H--3H--,4H,No slam interest
+1C--1H--1S--2D--2H--3H--4H--,4S,Kickback 1430 Keycard Asc
+1C--1H--1S--2D--2H--3H--4H--4S--,5C,0 or 3 keycards
+
 # include defensemisc.txt
 Option
 1D--1H2C,Db,Support 3!H
@@ -720,6 +809,7 @@ Option
 1S1NDb,2D,transfer !H
 1[CDHS]1N--2D--,2H,Fewer than 4!H
 1[CDHS]1N--,2H,Transfer to !S
+1[CDHS]1N--2H--,2S,fewer than 4 !S
 1[CDHS]1N--,2S,Range Ask bid 3!C if accept invite
 1[CDHS]1N--2S--,2N,Refuse Invite
 1[CDHS]1N--2S--,3C,Accept Invite
@@ -733,63 +823,135 @@ Option
 # Weak 3s
 3[CHS]Db--4D--,4H,Keycard for !D (Kickback)
 
-# include 1NTdef-dont-cap.txt
-Option,1NTDefense DONT v Strong
-1N,2C,!C + Higher Suit
-1N,2D,!D + Higher Suit
-1N,2H,!H + !S
-1N,2S,5+ !S Weaker than Double 2!S
-1N,Db,Single Suited Hand
-1N,2N,Minors
-Option,1NTDefense Cap v Weak
-1N,2C,Single Suit
-1N,2D,Majors
-1N,2H,!H and a Minor
-1N,2S,!S and a Minor
-1N,2N,!H and a Minor
-1N,Db,15+ HCP Penalty
-1N,2N,Minors
-# Advancer's bids
-# (1N) 2C Responses
-1N2CDb,Rd,SOS
-1N2C2[DHS],DB,Takeout
-1N2C--,Pa,6+!C
-1N2C--,2D,Pass or Correct
-1N2C--,2H,6+!H Non Forcing
-1N2C--,2S,6+!S Non Forcing
-1N2C--,2N,10+HCP Balanced and Forcing 1 Round
-# (1N) 2D Responses
-1N2DDb,Rd,SOS asks to bid better major
-1N2D2[SH],Db,Penalty
-1N2D--,Pa,6+!D
-1N2D--,2H,Natural Preference - Non Forcing
-1N2D--,2S,Natural Preference - Non Forcing
-1N2D--,2N,Artifical 10+HCP - Forcing 
-# (1N) 2H Responses
-1N2HDb,Rd,SOS partner to bid better minor
-1N2H--,Pa,Weak with tolernace for !H
-1N2H--,2S,6+!S no heart support
-1N2H--,2N,No !H support show minor
-1N2H--,3C,6+Good !C no !H support non forcing
-1N2H--,3D,6+Good !D no !H support non forcing
-1N2H--,3H,3 card !H support non forcing
-# (1N) 2S Responses
-1N2SDb,Rd,SOS partner to bid better minor
-1N2S2.,Db,Penalty
-1N2S--,Pa,Weak with tolernace for !H
-1N2S--,2N,No !S support show minor
-1N2S--,3C,6+Good !C no !S support non forcing
-1N2S--,3D,6+Good !D no !S support non forcing
-1N2S--,3H,6+Good !H no !S support non forcing
-1N2S--,3S,3 card !S support non forcing
-# (1N) 2N Responses
-1N2N--,3C,Weak hand, tolerance for !C
-1N2N--,3D,Weak hand, tolerance for !D
-1N2N--,3H,6+!H no support for minors non forcing
-1N2N--,3S,6+!S no support for minors non forcing
-1N2N--,3N,To Play
-1N2N--,4C,3+!C non forcing
-1N2N--,4D,3+!D non forcing
+# include 1NTdef-suction.txt
+Option,1NTDefense Suction v Strong/Weak
+1N,[2-6]C,Single-Suit !D OR Two-Suited !H and !S
+1N[2-6]C--,[2-6]D,Required Relay
+1N----,[2-6]C,Single-Suit !D OR Two-Suited !H and !S
+1N----[2-6]C--,[2-6]D,Required Relay
+1N,[2-6]D,Single-Suit !H OR Two-Suited !S and !C
+1N[2-6]D--,[2-6]H,Required Relay
+1N----,[2-6]D,Single-Suit !H OR Two-Suited !S and !C
+1N----[2-6]D--,[2-6]H,Required Relay
+1N,[2-6]H,Single-Suit !S OR Two-Suited !C and !D
+1N[2-6]H--,[2-6]S,Required Relay
+1N----,[2-6]H,Single-Suit !S OR Two-Suited !C and !D
+1N----[2-6]H--,[2-6]S,Required Relay
+1N,[2-6]S,Two-Suited !C and !H OR !D and !S
+1N[2-6]S--,[2-6]N,Show Lower Suit
+1N2S--2N--,3C,!C and !H
+1N2S--2N--,3D,!D and !S
+1N----,[2-6]S,Two-Suited !C and !H OR !D and !S
+1N----[2-6]S--,[2-6]N,Show Lower Suit
+1N,[2-6]N,Single-Suit !C OR Two-Suited !D and !H
+1N[2-6]N--,[2-6]C,Required Relay
+1N----,[2-6]N,Single-Suit !C OR Two-Suited !D and !H
+1N----[2-6]N--,[2-6]C,Required Relay
+1N,Db,Single-Suit !C OR Two-Suited !D and !H
+1N,2N,Single-Suit !C OR Two-Suited !D and !H
+1N----,Db,Single-Suit !C OR Two-Suited !D and !H
+1N----,2N,Single-Suit !C OR Two-Suited !D and !H
+1NDb--,2C,Required Relay
+1N2N--,3C,Required Relay
+Option,2NTDefense Suction
+2N,3N,Single-Suit !C OR Two-Suited !D and !H
+2N3N--,4C,Required Relay
+2N---,3N,Single-Suit !C OR Two-Suited !D and !H
+2N---3N,4C,Required Relay
+2N,[3-6]C,Single-Suit !D OR Two-suited !H and !S
+2N[3-6]C--,[2-6]D,Required Relay
+2N,[3-6]D,Single-Suit !H OR Two-Suited !S and !C
+2N[3-6]D--,[2-6]H,Required Relay
+2N,[3-6]H,Single-Suit !S OR Two-Suited !C and !D
+2N[3-6]H--,[2-6]S,Required Relay
+2N,[3-6]S,Two-Suits !C and !H OR !D and !S
+2N[3-6]S--,[2-6]N,Show Lower Suit
+2N,[3-6]N,Single-Suit !C OR Two-Suited !D and !H
+2N[3-6]N--,[2-6]C,Required Relay
+
+# include 1CDef-Suction.txt
+# Defense Against Strong Club
+Option,1CDefense Standard
+1C,Db,!D or !H and !S
+Option,1CDefense Precision
+1C,Db,Single-Suit !D OR Two-Suit !H and 1S
+1C,2C,Single-Suit !D OR Two-Suit !H and 1S
+1C,3C,Single-Suit !D OR Two-Suit !H and 1S
+1C,4C,Single-Suit !D OR Two-Suit !H and 1S
+1C,1D,Single-Suit !H OR Two-Suit !S and 1C
+1C,2D,Single-Suit !H OR Two-Suit !S and 1C
+1C,3D,Single-Suit !H OR Two-Suit !S and 1C
+1C,4D,Single-Suit !H OR Two-Suit !S and 1C
+1C,1H,Single-Suit !S OR Two-Suit !C and 1D
+1C,2H,Single-Suit !S OR Two-Suit !C and 1D
+1C,3H,Single-Suit !S OR Two-Suit !C and 1D
+1C,4H,Single-Suit !S OR Two-Suit !C and 1D
+1C,1S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,2S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,3S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,4S,Two-Suit !C and !H OR Two-Suit !D and !S
+1C,1N,Single-Suit !C OR Two-Suit !D and !H
+1C1N--,2C,Relay to !D
+1C,2N,Single-Suit !C OR Two-Suit !D and !H
+1C,3N,Single-Suit !C OR Two-Suit !D and !H
+1C,4N,Single-Suit !C OR Two-Suit !D and !H
+1C--1D,2C,Single-Suit !D OR Two-Suit !H and 1S
+1C2N--,3C,Relay to !D
+1C3N--,4C,Relay to !D
+1C4N--,5C,Relay to !D
+1C--1D,3C,Single-Suit !D OR Two-Suit !H and !S
+1C--1D,4C,Single-Suit !D OR Two-Suit !H and !S
+1C--1D,2D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,3D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,4D,Single-Suit !H OR Two-Suit !S and !C
+1C--1D,1H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,2H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,3H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,4H,Single-Suit !S OR Two-Suit !C and !D
+1C--1D,1S,Two-Suit in !C and !H OR !D and !S
+1C--1D,2S,Two-Suit in !C and !H OR !D and !S
+1C--1D,3S,Two-Suit in !C and !H OR !D and !S
+1C--1D,4S,Two-Suit in !C and !H OR !D and !S
+
+# include 2CDef-Suction.txt
+# Defense Against Strong 2 Club
+Option,2CDefense Strong
+2C,Db,!D or !H and !S
+2C,2D,!H or !S and !C
+2C,2H,!S or !C and !D
+2C,2S,!C and !H or !D and !S
+2C2S--,2N,Asks about suits
+2C,2N,!C or !D and !H
+2C2N--,3C,Required Response
+2C,3C,!D or !H and !S
+2C,3D,!H or !S and !C
+2C,3H,!S or !C and !D
+2C,3S,!C and !H or !D and !S
+2C3S--,3N,Asks about suits
+2C,4C,!D or !H and !S
+2C,4D,!H or !S and !C
+2C,4H,!S or !C and !D
+2C,4S,!C and !H or !D and !S
+2C4S--,4N,Asks about suits
+2C--2D,Db,!H or !S and !C
+2C--2D,2H,!S or !C and !D
+2C--2D,2S,!C and !H or !D and !S
+2C--2D,3C,!D or !H and !S
+2C--2D,3D,!H or !S and !C
+2C--2D,3H,!S or !C and !D
+2C--2D3S--,3N,Show lowest suit of 2-suiter
+2C--2D,3S,!C and !H or !D and !S
+2C--2D,4C,!D or !H and !S
+2C--2D,4D,!H or !S and !C
+2C--2D,4H,!S or !C and !D
+2C--2D,4S,!C and !H or !D and !S
+Option,2CDefense Precision
+2C,Db,Take-out Double
+# Suction off against Precision
+2N,3C,
+2N,3D,
+2N,3H,
+2N,3S,
 
 # include carlyng.extras
 Option
@@ -806,7 +968,7 @@ Option
 1H--,3NT,13-15 3-card !H support balanced
 1S--,3NT,13-15 3-card !S support balanced
 # 1NT 3-level responses
-1N--,3C,6+!C with Slam Interest
-1N--,3D,6+!D with Slam Interest
-1N--,3H,6+!H with Slam Interest
-1N--,3S,6+!S with Slam Interest
+#1N--,3C,6+!C with Slam Interest
+#1N--,3D,6+!D with Slam Interest
+#1N--,3H,6+!H with Slam Interest
+#1N--,3S,6+!S with Slam Interest
