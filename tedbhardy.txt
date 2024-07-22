@@ -687,6 +687,7 @@ Option
 1S1NDb,2D,transfer !H
 1[CDHS]1N--2D--,2H,Fewer than 4!H
 1[CDHS]1N--,2H,Transfer to !S
+1[CDHS]1N--2H--,2S,fewer than 4 !S
 1[CDHS]1N--,2S,Range Ask bid 3!C if accept invite
 1[CDHS]1N--2S--,2N,Refuse Invite
 1[CDHS]1N--2S--,3C,Accept Invite
@@ -849,7 +850,7 @@ Option,Toucan Club
 1C--1D--1H--,2D,Artificial Game Force (XYZ)
 1C--1D--1H--2D--,2S,4!S (XYZ)
 1C--1D--1H--2D--,2N,Fewer than 4!S (XYZ)
-1C--1D--1H--,2H,5+1H Less than invitational
+1C--1D--1H--,2H,5+!H Less than invitational
 1C--1D__,Db,3!H Support
 1C__1D__,1S,4!S fewer than 3!H
 1C__1D__,1N,Balanced 11-14 fewer than 3!H fewer than 4!S
