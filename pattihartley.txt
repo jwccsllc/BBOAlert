@@ -785,6 +785,7 @@ Option
 1S1NDb,2D,transfer !H
 1[CDHS]1N--2D--,2H,Fewer than 4!H
 1[CDHS]1N--,2H,Transfer to !S
+1[CDHS]1N--2H--,2S,fewer than 4 !S
 1[CDHS]1N--,2S,Range Ask bid 3!C if accept invite
 1[CDHS]1N--2S--,2N,Refuse Invite
 1[CDHS]1N--2S--,3C,Accept Invite
