@@ -1227,7 +1227,10 @@ Option,1Major_2C
 Option,1mRevFlannery ON
 1[CD]--,2H,5+!S 4+!H Constructive
 1[CD]--,2S,5+!S 4+!H Invitational
-#
+1[CD]--2[HS]--,2N,Describe
+1[CD]--2[HS]--2N--,3C,4!H
+1[CD]--2[HS]--2N--,3D,5!H
+Option,1mRevFlannery OFF
 
 # include brianpotter.extras
 # # 4-5-x-x Flannery
