@@ -1,0 +1,20 @@
+# # 4-5-x-x Flannery
+# 2D--2N--,3H,4=5=2=2 minimum
+# 2D--2N--,3S,4=5=2-2 maximum
+# 2D--2N--,3N,4=5-x-x Balanced Maximum
+[12]N--,3C,Puppet Stayman
+[12]N--3C--,3D,No 5 card major at least 1 4 card major
+[12]N--3C--3D--,4D,Both Majors
+[12]N--3C--3D--,3H,4!S fewer !H
+[12]N--3C--3D--,3S,4!H fewer !S
+[12]N--3C--3D--,3N,No 4 card major
+# Kickback Sequences
+1H--2H--2S--3D--,4S,Kickback 3014 Keycard Ask
+1H--2H--2S--3D--4S--,4N,0 or 3 keycards
+1H--2H--2S--3D--4S--4N--,5C,Asking for Q!H
+1H--2H--2S--3D--4S--4N--5C--,5H,No Q!H
+1S--2N--3S--4N--,5D,3 or 0 keycards
+# include 2COpening.txt
+Option,2COpening ControlSteps On
+2C--,2H,1 King or fewer (Kokish Relays on)
+2C--,2D,2 Controls Ace or 2 Kings
