@@ -1,4 +1,4 @@
-#!/csrel27c/bin/python3.9
+#!/usr/bin/env python3
 
 # $Header: /vol/cscvs/python-Csys/csmain.py,v 1.4 2009/11/25 07:49:41 csoftmgr Exp $
 # $Date: 2009/11/25 07:49:41 $
