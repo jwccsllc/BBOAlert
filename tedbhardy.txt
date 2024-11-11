@@ -920,7 +920,7 @@ Option,Toucan Club
 1C--1H--,2D,Strong Jump Shift with !C and !D
 1C--1H--,[34]S,Standard Strong !S Raise
 1C--1H--,4H,!H Void Slammish
-1C__,1S,Suggests Opener bid 1NT
+1C__,1S,No 4+ card major, suggests 1NT
 1C__1S--,1N,Responder may pass; XYZ on
 1C--1S--1N--,2C,Invitational req 2!D (XYZ)
 1C--1S--1N--,2D,Artificial GF (XYZ)
@@ -1253,3 +1253,21 @@ Option,1mRevFlannery OFF
 Option,2COpening ControlSteps On
 2C--,2H,1 King or fewer (Kokish Relays on)
 2C--,2D,2 Controls Ace or 2 Kings
+Option,UMJOOMO On
+1C--,2H,5!S and 4!H or 5!H Constructive
+1C--,2S,5!S 4!H or 5!H invitational
+1C--2H--,2N,Asks for Description
+1C--2H--2N--,3C,5=4-x-x minimum
+1C--2H--2N--,3D,5=4-x-x maximum
+1C--2H--2N--,3H,5=5-x-x minimum
+1C--2H--2N--,3S,5=5-x-x maximum
+1D--,2H,5!S and 4!H or 5!H Constructive
+1D--,2S,5!S 4!H or 5!H invitational
+1D--2H--,2N,Asks for Description
+1D--2H--2N--,3C,5=4-x-x minimum
+1D--2H--2N--,3D,5=4-x-x maximum
+1D--2H--2N--,3H,5=5-x-x minimum
+1D--2H--2N--,3S,5=5-x-x maximum
+Option,UMJOOMO Off
+1[CD]--,2H,Weak
+1[CD]--,2S,Weak

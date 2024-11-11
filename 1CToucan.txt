@@ -87,7 +87,7 @@ Option,Toucan Club
 1C--1H--,2D,Strong Jump Shift with !C and !D
 1C--1H--,[34]S,Standard Strong !S Raise
 1C--1H--,4H,!H Void Slammish
-1C__,1S,Suggests Opener bid 1NT
+1C__,1S,No 4+ card major, suggests 1NT
 1C__1S--,1N,Responder may pass; XYZ on
 1C--1S--1N--,2C,Invitational req 2!D (XYZ)
 1C--1S--1N--,2D,Artificial GF (XYZ)
